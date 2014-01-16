@@ -11,7 +11,7 @@ Quick introduction to script processing:
 
 3) Create an account for yourself on github, and set up SSH keys to the account.
 
-4) Run: ```git clone git@github.com/matt-viblio/tsl```
+4) Run: ```git clone git@github.com:matt-viblio/tsl```
 
 5) Add the parent directory of the tsl directory to your PYTHONPATH environment variable, on *NIX this can be done with:
 
