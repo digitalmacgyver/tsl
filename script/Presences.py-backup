@@ -1,0 +1,63 @@
+import os
+import json
+import re
+
+import tsl.script.Script
+
+class Presences( tsl.script.Script ):
+    '''p = Presences( 'Name of Movie', [outdir='/tmp/movie-stuff'] )
+    p.presences = foo
+    p.presence_ns = bar
+    p.presence_sn = baz
+
+    p.save( [outdir='/tmp/movie-stuff' ) # Defaults to .
+         # Creates files in outdir called 'name_of_movie_presence[s|_ns|_sn].json'
+
+    p.load( [outdir='/tmp/movie-stuff', presences='../p.json', presence_ns='ns.json', presence_sn='/tmp/sn.json' ] )
+         # Defaults to . and the filenames created by Presences.save
+    '''
+
+    def __init__( self, script, outdir=None ):
+        self.script = script
+        self.script_fname = re.sub( r'\s+', '_', script.lower() )
+
+        self.presences = []
+        self.presence_sn = {}
+        self.presence_ns = {}
+
+        self.outdir = outdir
+
+        outputs = [ 'presences', 'presence_sn', 'presence_ns' ]
+
+    def load( self, loaddir=None, presences=None, presence_ns=None, presence_sn=None ):
+        if loaddir is None:
+            if self.outdir is None:
+                loaddir = '.'
+            else:
+                loaddir = self.outdir
+
+        loadfiles = {}
+
+        if presences is None:
+            loadfiles['presences'] = "%s/%s_%s.json" % ( loaddir, self.script_fname, 'presences' )
+        else:
+            loadfiles['presences'] = presences
+
+        if presence_ns is None:
+            loadfiles['presence_ns'] = "%s/%s_%s.json" % ( loaddir, self.script_fname, 'presence_ns' )
+        else:
+            loadfiles['presence_ns'] = presences
+
+        if presence_sn is None:
+            loadfiles['presence_sn'] = "%s/%s_%s.json" % ( loaddir, self.script_fname, 'presence_sn' )
+        else:
+            loadfiles['presence_sn'] = presences
+
+        input_files = self.outputs
+
+        for input_file in input_files:
+            f = open( loadfiles[input_file], 'r' )
+            data = self.__getattribute__( input_file )
+            data = json.load( f )
+            f.close()
+            
