@@ -13,11 +13,16 @@ import tsl.script.Script
 import tsl.script.Structure
 
 scripts = [
-    ( 'The Big Lebowski', '../example-scripts/the_big_lebowski.txt' ),
     ( 'Chinatown', '../example-scripts/chinatown.txt' ),
     ( 'Dune', '../example-scripts/dune.txt' ),
     ( 'Ghostbusters', '../example-scripts/ghostbusters.txt' ),
     ( 'The Matrix', '../example-scripts/the_matrix.txt' ),
+    ( 'Good Will Hunting', '../example-scripts/good_will_hunting.txt' ),
+    ( 'The Book of Eli', '../example-scripts/the_book_of_eli.txt' ),
+    ( 'Starwars', '../example-scripts/starwars.txt' ),
+    ( 'Alien', '../example-scripts/alien.txt' ),
+    ( 'Vertigo', '../example-scripts/vertigo.txt' ),
+    ( 'Terminator 2', '../example-scripts/terminator_2.txt' )
     ]
 
 def process_script( script, parse_mode=STRICT ):
@@ -31,6 +36,7 @@ def process_script( script, parse_mode=STRICT ):
 
     f = open( script_file, 'r' )
     body = f.readlines()
+    body = [ unicode( x, errors='ignore' ) for x in body ]
     script_lines = tsl.script.parse.load.load_txt( body, lines_per_page = 56 )
     f.close()
 

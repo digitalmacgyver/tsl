@@ -315,6 +315,45 @@ def parse_script_lines( Script ):
     # Delete the stub scene we seeded the data structure with.
     del script['scenes']['0']
 
+    script_total_words = 0
+    script_dialog_words = 0
+
+    # Add word counts.
+    for scene_id in script['scenes'].keys():
+        scene = script['scenes'][scene_id]
+        
+        total_words = 0
+        dialog_words = 0
+
+        for block in scene['scene_blocks']:
+            block_type = block['block_type']
+            first_line = block['first_line']
+            last_line  = block['last_line']
+            
+            block_words = 0
+
+            if block_type == EMPTY:
+                block['total_words'] = 0
+                continue
+
+            for line in range( first_line-1, last_line ):
+                word_count = len( script_lines[line]['content'].split() )
+                block_words += word_count
+                
+                if block_type == DIALOG:
+                    dialog_words += word_count
+
+            block['total_words'] = block_words
+            total_words += block_words
+
+        scene['total_words'] = total_words
+        scene['dialog_words'] = dialog_words
+        script_total_words += total_words
+        script_dialog_words += dialog_words
+
+    script['total_words'] = script_total_words
+    script['dialog_words'] = script_dialog_words
+
     structure = tsl.script.Structure.Structure( Script.script, Script.outdir )
     structure.structure = script
 
@@ -381,6 +420,37 @@ def compute_presence_and_interactions( Script, Structure, parse_mode=STRICT ):
                 
             elif not block['block_type'] in [ERROR, EMPTY, PAGE_NUM]:
                 print "ERROR: Unknown block type, skipping block with type:", block['block_type']
+
+    # Augment dialog presence with the words of dialog spoken.
+    for presence in Presences.presences:
+        presence_type = presence['presence_type']
+        scene_id = presence['where']['scene_id']
+        first_line = presence['where']['line_no']
+        
+        if presence_type != DISCUSS:
+            continue
+
+        scene_blocks = script['scenes'][scene_id]['scene_blocks']
+        dialog_block = None
+        dialog_words = 0
+        for scene_block in scene_blocks:
+            if scene_block['first_line'] <= first_line and scene_block['last_line'] >= first_line:
+                dialog_block = scene_block
+                break
+        line_types = dialog_block['line_types']
+        for ( line_id, line_type ) in sorted( line_types.items(), key=lambda x: int( x[0] ) ):
+            line_no = int( line_id )
+            
+            if line_no < first_line:
+                continue
+            elif line_no == first_line:
+                dialog_words += len( script_lines[line_no-1]['content'].split() )
+            elif line_type == DIALOG_HEADER:
+                break
+            else:
+                dialog_words += len( script_lines[line_no-1]['content'].split() )
+
+        presence['dialog_words'] = dialog_words
 
     return ( Presences, Interactions )
 

@@ -16,11 +16,16 @@ from tsl.script.reports.reports import top_presences, top_interactions, get_pres
 
 
 scripts = [
-    #( 'The Big Lebowski', '../example-scripts/the_big_lebowski.txt' ),
     ( 'Chinatown', '../example-scripts/chinatown.txt' ),
     ( 'Dune', '../example-scripts/dune.txt' ),
     ( 'Ghostbusters', '../example-scripts/ghostbusters.txt' ),
     ( 'The Matrix', '../example-scripts/the_matrix.txt' ),
+    ( 'Good Will Hunting', '../example-scripts/good_will_hunting.txt' ),
+    ( 'The Book of Eli', '../example-scripts/the_book_of_eli.txt' ),
+    ( 'Starwars', '../example-scripts/starwars.txt' ),
+    ( 'Alien', '../example-scripts/alien.txt' ),
+    ( 'Vertigo', '../example-scripts/vertigo.txt' ),
+    ( 'Terminator 2', '../example-scripts/terminator_2.txt' )
     ]
 
 def process_script( script ):
@@ -35,7 +40,10 @@ def process_script( script ):
 
     print "Working on:", name
 
-    outdir = '../example-scripts/parsed/' + re.sub( r'\s+', '_', name.lower() )
+    file_dir = '../example-scripts/parsed/'
+    file_name = re.sub( r'\s+', '_', name.lower() )
+
+    outdir = file_dir + file_name
 
     Script = tsl.script.Script.Script( name, outdir )
     Script.load()
@@ -61,7 +69,25 @@ def process_script( script ):
     words = [ w.lower() for w in text ]
     vocab = sorted( set( words ) )
     output['distinct_words'] = len( vocab )
+
+    # Word categories
+    if True:
+        tagged_words = nltk.pos_tag( text )
+        porter = nltk.PorterStemmer()
+        stemmed_tags = [ ( porter.stem( t[0].lower() ), t[1] ) for t in tagged_words ]
+        fd = nltk.FreqDist( stemmed_tags )
+        verbs = [ word for ( word, tag ) in fd if ( tag.startswith('V') and len( word ) > 3 )]
+        adj = [ word for ( word, tag ) in fd if ( tag.startswith('JJ') and len( word ) > 1 ) ]
+        adv = [ word for ( word, tag ) in fd if ( tag.startswith('RB') and len( word ) > 1 ) ]
+        nouns = [ word for ( word, tag ) in fd if ( tag in ('NN', 'NNS' ) and len( word ) > 1 ) ]
+                 
+        output['vocabulary'] = {}
+        output['vocabulary']['adjectives'] = adj[:10]
+        output['vocabulary']['non_proper_nouns'] = nouns[:10]
+        output['vocabulary']['verbs'] = verbs[:10]
     
+    
+
     #import pdb
     #pdb.set_trace()
 
@@ -103,10 +129,52 @@ def process_script( script ):
 
     scene_talker_data = sorted( scene_talker_data, key=lambda a: int( a[0] ) )
     
+    output['title'] = name
     output['characters_speaking_in_scene_stats'] = get_stats( scene_talker_data )
     #output['characters_speaking_in_scene'] = scene_talker_data
 
-    print json.dumps( output, sort_keys=True, indent=4 )
+    # Ratio of dialog to non-dialog words per scene.
+    scenes = Structure.structure['scenes']
+    scene_word_ratios = [ ( x[0], float( x[1]['dialog_words'] ) / x[1]['total_words'] ) for x in scenes.items() ]
+    output['dialog_to_total_word_ratio_in_scenes_stats'] = get_stats( scene_word_ratios )
+
+    # Global word counts
+    output['total_words'] = Structure.structure['total_words']
+    output['dialog_words'] = Structure.structure['dialog_words']
+
+    # % of dialog by top-N speakers.
+    dialog_by_top_chars = []
+    for character in top_characters:
+        name = character[0]
+        
+        dialog = 0
+        for ( scene_id, presences ) in Presences.presence_ns[name].items():
+            if scene_id == 'noun_type':
+                continue
+            for presence in presences:
+                if presence['presence_type'] == DISCUSS:
+                    dialog += presence['dialog_words']
+        dialog_by_top_chars.append( { 'character' : name, 'appearances' : character[2], 'percent_dialog' : float( dialog ) / Structure.structure['dialog_words'] } )
+
+    output['percent_dialog_by_top_10_characters'] = dialog_by_top_chars[:10]
+                
+    # % of words in the top-N locations
+    words_at_top_locs = []
+    for location in top_locations:
+        name = location[0]
+
+        words = 0
+        for ( scene_id, presences ) in Presences.presence_ns[name].items():
+            if scene_id == 'noun_type':
+                continue
+            words += Structure.structure['scenes'][scene_id]['total_words']
+
+        words_at_top_locs.append( { 'location' : name, 'appearances' : location[2], 'percent_words' : float( words ) / Structure.structure['total_words'] } )
+
+    output['percent_words_by_top_10_locations'] = words_at_top_locs[:10]
+
+    f = open( file_dir + file_name + '/%s_metrics.json' % ( file_name ), 'w' )
+    json.dump( output, f, sort_keys=True, indent=4 )
 
 
 def get_stats( data ):
