@@ -30,4 +30,4 @@ cd utils
 
 8) Look at the parsed output under example-scripts/parsed
 
-9) Look at the [generate_reports.py](utils/generate_reports.py) and [partition.py](utils/partition.py) utility scripts for examples with what can be done with the parsed data
+9) Look at the [generate_reports.py](utils/generate_reports.py) and [partition.py](utils/partition.py) utility scripts for examples with what can be done with the parsed data (these scripts will produce their output under the example-scripts/parsed director)
