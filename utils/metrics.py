@@ -106,7 +106,7 @@ def process_script( script ):
     for scene in scenes:
         if top_characters[0][0] in Presences.presence_sn[scene]:
             main_character_appearances += 1
-    output['precentage_of_scenes_with_main_character'] = float( main_character_appearances ) / scene_count
+    output['percentage_of_scenes_with_main_character'] = float( main_character_appearances ) / scene_count
     output['main_character'] = top_characters[0][0]
 
     # Characters speaking in scene.
