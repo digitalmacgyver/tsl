@@ -145,6 +145,7 @@ def process_script( script ):
     # % of dialog by top-N speakers.
     dialog_by_top_chars = []
     for character in top_characters:
+
         name = character[0]
         
         dialog = 0
