@@ -16,16 +16,16 @@ from tsl.script.reports.reports import top_presences, top_interactions, get_pres
 
 
 scripts = [
-    ( 'Chinatown', '../example-scripts/chinatown.txt' ),
-    ( 'Dune', '../example-scripts/dune.txt' ),
-    ( 'Ghostbusters', '../example-scripts/ghostbusters.txt' ),
-    ( 'The Matrix', '../example-scripts/the_matrix.txt' ),
-    ( 'Good Will Hunting', '../example-scripts/good_will_hunting.txt' ),
+#    ( 'Chinatown', '../example-scripts/chinatown.txt' ),
+#    ( 'Dune', '../example-scripts/dune.txt' ),
+#    ( 'Ghostbusters', '../example-scripts/ghostbusters.txt' ),
+#    ( 'The Matrix', '../example-scripts/the_matrix.txt' ),
+#    ( 'Good Will Hunting', '../example-scripts/good_will_hunting.txt' ),
     ( 'The Book of Eli', '../example-scripts/the_book_of_eli.txt' ),
-    ( 'Starwars', '../example-scripts/starwars.txt' ),
-    ( 'Alien', '../example-scripts/alien.txt' ),
-    ( 'Vertigo', '../example-scripts/vertigo.txt' ),
-    ( 'Terminator 2', '../example-scripts/terminator_2.txt' )
+#    ( 'Starwars', '../example-scripts/starwars.txt' ),
+#    ( 'Alien', '../example-scripts/alien.txt' ),
+#    ( 'Vertigo', '../example-scripts/vertigo.txt' ),
+#    ( 'Terminator 2', '../example-scripts/terminator_2.txt' )
     ]
 
 def process_script( script ):
@@ -71,7 +71,7 @@ def process_script( script ):
     output['distinct_words'] = len( vocab )
 
     # Word categories
-    if True:
+    if False:
         tagged_words = nltk.pos_tag( text )
         porter = nltk.PorterStemmer()
         stemmed_tags = [ ( porter.stem( t[0].lower() ), t[1] ) for t in tagged_words ]
@@ -86,7 +86,38 @@ def process_script( script ):
         output['vocabulary']['non_proper_nouns'] = nouns[:10]
         output['vocabulary']['verbs'] = verbs[:10]
     
-    
+    # R-numbers
+    porter = nltk.PorterStemmer()
+    word_line_offsets = {}
+    for line in Script.script_lines:
+        content = line['content']
+        line_no = line['line_no']
+
+        line_words = nltk.wordpunct_tokenize( content )
+        line_stems = [ porter.stem( w.lower() ) for w in line_words if re.search( r'\w', w ) ]
+
+        for stem in line_stems:
+            if stem in word_line_offsets:
+                word_line_offsets[stem].append( line_no )
+            else:
+                word_line_offsets[stem] = [ line_no ]
+
+
+    lines_per_page = 56
+    print "word, occurences, max_page_gap, num_gaps_15_page_or_more, num_gaps_30_page_or_more"
+    for word in sorted( word_line_offsets.keys() ):
+        offsets = word_line_offsets[word]
+        gap_lengths =  [ ( offsets[idx] - offsets[max(idx-1, 0)] ) for idx in range( len( offsets ) ) ]
+        max_gap = max( gap_lengths )
+        
+        num_15_pagegap = sum( [ 1 for gap in gap_lengths if gap >= lines_per_page*15 ] )
+        num_30_pagegap = sum( [ 1 for gap in gap_lengths if gap >= lines_per_page*30 ] )
+
+        #print "%s,%s,%s,%s,%s" % ( word, len( offsets ), max_gap/15, num_15_pagegap, num_30_pagegap )
+        #print "%s occured %s times, had a maximum gap of %s pages and %s gaps of 15 pages or more" % ( word, len( offsets ), max_gap/15, num_15_pagegap )
+
+    #sys.exit( 0 )
+
 
     #import pdb
     #pdb.set_trace()
