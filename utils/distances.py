@@ -1,8 +1,12 @@
 #!/usr/bin/env python
 
 import json
+import math
+import matplotlib.pyplot as plt
+import networkx as nx
 import numpy
 import os
+import sys
 
 # Read in movie JSON files.
 movies_dir = "../example-scripts/parsed"
@@ -57,7 +61,6 @@ def compute_distances( movies, dist_funcs, distance_func ):
                 distances[k1] = { k2 : distance }
     return distances
 
-
 def eccentricity( distances ):
     '''A hash of movie, eccentricity.'''
     result = {}
@@ -66,6 +69,17 @@ def eccentricity( distances ):
         numerator = 0
         for k2, distance in distances[k1].items():
             numerator += distance
+        result[k1] = numerator / denominator
+    return result
+
+def density( distances ):
+    '''A hash of movie, density.'''
+    result = {}
+    denominator = len( distances.keys() )
+    for k1 in sorted( distances.keys() ):
+        numerator = 0
+        for k2, distance in distances[k1].items():
+            numerator += 1 / math.e**( distance**2 )
         result[k1] = numerator / denominator
     return result
 
@@ -248,11 +262,27 @@ print "Distances:"
 pp.pprint( distances )
 
 projection_func = eccentricity
+#projection_func = density
 projection = compute_projection( distances, projection_func )
 print "Eccentricities:"
 pp.pprint( projection )
 
-covering = [ (0, 15), (14, 16), (15, 17), (16, 99) ]
+def make_covering( low, high, width, overlap ):
+    step = float( width ) / overlap
+    current = low
+    covering = []
+    while current < high:
+        covering.append( ( current, current + width ) )
+        current += step
+    return covering
+
+cover_width = 4
+
+covering = make_covering( 13, 36, cover_width, 4 )
+
+print "Covering is:", covering
+
+#covering = [ (0, 15), (14, 16), (15, 17), (16, 99) ]
 
 inverse_covering = get_inverse_covering( projection, covering )
 
@@ -260,14 +290,33 @@ epsilon_candidates = cluster_epsilon_finder( movies, distances )
 print "Cluster epsilon candidates", epsilon_candidates
 epsilon = numpy.median( epsilon_candidates )*1.01
 print "Epsilon selected as: (multiplied by 1.01 to handle rounding errors)", epsilon
+epsilon = 10
 
 
+graph = nx.Graph()
 
-for partition in inverse_covering:
+for p_idx, partition in enumerate( inverse_covering ):
     partition_clusters = get_clusters( partition['movies'], distances, epsilon )
     print "Range from %s to %s had %s movies, which formed the following clusters:" % ( partition['range'][0], partition['range'][1], len( partition['movies'].keys() ) )
     
     for idx, cluster in enumerate( partition_clusters ):
         print "\tCluster %s" % idx
+        label = 'Cover %s: ' % ( p_idx ) + ', '.join( sorted( cluster.keys() ) )
+        graph.add_node( label )
+
         for movie in sorted( cluster.keys() ):
+            graph.node[label][movie] = True
             print "\t\t%s" % movie
+            for node, data in graph.nodes( data=True ):
+                if movie in data and node != label:
+                    graph.add_edge( node, label )
+ 
+
+#nx.write_dot( graph, 'file.dot' )           
+#positions = nx.graphviz_layout( graph, prog='neato' )
+#positions = nx.spring_layout( graph )
+#nx.draw( graph, pos=positions )
+nx.draw_circular( graph )
+#nx.draw_random( graph )
+#plt.show()
+plt.savefig( "cover_width_%s_epsilon_%0.02f.png" % ( cover_width, epsilon ) )
