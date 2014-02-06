@@ -79,7 +79,12 @@ def density( distances ):
     for k1 in sorted( distances.keys() ):
         numerator = 0
         for k2, distance in distances[k1].items():
-            numerator += 1 / math.e**( distance**2 )
+            try:
+                numerator += 1 / math.e**( distance**2 )
+            except:
+                # If we have an overflow don't worry about it, just
+                # add nothing.
+                pass
         result[k1] = numerator / denominator
     return result
 
@@ -276,7 +281,7 @@ def make_covering( low, high, width, overlap ):
         current += step
     return covering
 
-cover_width = 4
+cover_width = 64
 
 covering = make_covering( 13, 36, cover_width, 4 )
 
@@ -289,8 +294,8 @@ inverse_covering = get_inverse_covering( projection, covering )
 epsilon_candidates = cluster_epsilon_finder( movies, distances )
 print "Cluster epsilon candidates", epsilon_candidates
 epsilon = numpy.median( epsilon_candidates )*1.01
+#epsilon = 10
 print "Epsilon selected as: (multiplied by 1.01 to handle rounding errors)", epsilon
-epsilon = 10
 
 
 graph = nx.Graph()
@@ -316,7 +321,23 @@ for p_idx, partition in enumerate( inverse_covering ):
 #positions = nx.graphviz_layout( graph, prog='neato' )
 #positions = nx.spring_layout( graph )
 #nx.draw( graph, pos=positions )
-nx.draw_circular( graph )
 #nx.draw_random( graph )
 #plt.show()
-plt.savefig( "cover_width_%s_epsilon_%0.02f.png" % ( cover_width, epsilon ) )
+
+#nx.draw_circular( graph )
+#plt.savefig( "density_cover_width_%s_epsilon_%0.02f.png" % ( cover_width, epsilon ) )
+
+
+'''
+When using density we get really really tiny things:
+{   u'Alien': 0.10000043024379664,
+    u'Chinatown': 0.1,
+    u'Dune': 0.10001667649205928,
+    u'Ghostbusters': 0.10000000851696096,
+    u'Good Will Hunting': 0.10000000000237834,
+    u'Starwars': 0.10001666797509837,
+    u'Terminator 2': 0.14858264889740103,
+    u'The Book of Eli': 0.10000055771078295,
+    u'The Matrix': 0.14858222171456978,
+    u'Vertigo': 0.10000055770840462}
+'''
