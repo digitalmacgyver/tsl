@@ -1,12 +1,16 @@
 #!/usr/bin/env python
 
 import json
+import numpy
 import os
 
 # Read in movie JSON files.
 movies_dir = "../example-scripts/parsed"
 
 def get_movies( movies_dir ):
+    '''Returns a hash keyed on movie title whose body is the Python
+    data structure made up of the _metrics.json for this film in the
+    movies_dir.'''
     movies = {}
     for dirpath, dirnames, filenames in os.walk( movies_dir):
         for directory in dirnames:
@@ -36,8 +40,8 @@ def cartesian_distance( dists ):
     return total_dist**0.5
 
 def compute_distances( movies, dist_funcs, distance_func ):
-    '''Hash of hash, keys are two movies, value is distance between
-    them.'''
+    '''Returns a hash of hash.  The keys are every pair of movies, and
+    the value is distance between them.'''
     distances = {}
     for k1 in sorted( movies.keys() ):
         for k2 in sorted( movies.keys() ):
@@ -95,10 +99,12 @@ def get_inverse_covering( projection, covering ):
 
     return inverse_covering
                 
-def get_clusters( movies_input, distances, threshold ):
-    '''Given a hash of movie keys, the distances data structure, and a
-    threshold distance, returns an array of hashes of movie keys where
-    each hash is a cluster.'''
+def get_clusters( movies_input, distances, epsilon ):
+    '''Given a hash of movie keys, the distances data structure, and
+    epsilon threshold distance, returns an array of hashes of movie
+    keys where each hash is a cluster is a subset of the imput movies
+    containing the points which are within a transitive closure of
+    episolon of one another.'''
 
     # Don't change the input value.
     movies = {}
@@ -118,7 +124,7 @@ def get_clusters( movies_input, distances, threshold ):
                 del movies[movie]
             else:
                 for cluster_movie in current_cluster.keys():
-                    if distances[cluster_movie][movie] < threshold:
+                    if distances[cluster_movie][movie] <= epsilon:
                         current_cluster[movie] = True
                         if movie in movies:
                             del movies[movie]
@@ -127,6 +133,97 @@ def get_clusters( movies_input, distances, threshold ):
 
     return clusters
 
+def cluster_epsilon_finder( movies, distances ):
+    '''Calculates epsilon via the following algorithm:
+
+    1. Clusters are defined to be a non-empty set of points, initially
+    we have one cluster per point.
+
+    2. Distance between clusters is defined to be the minimum distance
+    between any two points in either cluster.
+
+    3. We iteratively aggregate the two clusters having the minimum
+    distance until there is only one cluster, while recording the
+    distances involved.
+
+    4. We select the median distance recorded in step 3.
+    '''
+    # Handle pathological cases
+    if not len( movies ):
+        raise Exception("Expected at least one movie in cluster_epsilon_finder.")
+    elif len( movies ) == 1:
+        return [0]
+    
+    cluster_distances = []
+
+    # Create the initial cluster.
+    min_i = None
+    min_j = None
+    min_dist = None
+    for i in movies.keys():
+        for j in movies.keys():
+            if i == j:
+                continue
+            else:
+                if min_dist is None or distances[i][j] < min_dist:
+                    min_dist = distances[i][j]
+                    min_i = i
+                    min_j = j
+    clusters = [ { min_i : True, min_j : True } ]
+    cluster_distances.append( distances[min_i][min_j] )
+
+    for movie in movies.keys():
+        if movie != min_i and movie != min_j:
+            clusters.append( { movie : True } )
+    
+    # Process the rest of the points.
+    while len( clusters ) > 1:
+        min_dist = None
+        min_i = None
+        min_j = None
+        
+        for i_idx, cluster_i in enumerate( clusters ):
+            for j_idx, cluster_j in enumerate( clusters ):
+                if i_idx == j_idx:
+                    continue
+                else:
+                    for i in cluster_i.keys():
+                        for j in cluster_j.keys():
+                            if min_dist is None or distances[i][j] < min_dist:
+                                min_dist = distances[i][j]
+                                min_i_idx = i_idx
+                                min_j_idx = j_idx
+                                min_cluster_i = cluster_i
+                                min_cluster_j = cluster_j
+                                min_i = i
+                                min_j = j
+        # There are a few cases:
+        #
+        # 1. min_cluster_i and j are in singleton clusters := make a
+        # new cluster of the two of them.
+        #
+        # 2. min_cluster_i or j is a singleton, but the other is not
+        # := add the singleton to the larger cluster.
+        #
+        # 3. Neither min_cluster_i or j is a singleton := merge the
+        # two.
+        cluster_distances.append( min_dist )
+        if len( min_cluster_i.keys() ) == 1 and len( min_cluster_j.keys() ) == 1:
+            min_cluster_i[min_j] = True
+            clusters = clusters[:min_j_idx] + clusters[min_j_idx+1:]
+        elif len( min_cluster_i.keys() ) == 1 and len( min_cluster_j.keys() ) > 1:
+            min_cluster_j[min_i] = True
+            clusters = clusters[:min_i_idx] + clusters[min_i_idx+1:]
+        elif len( min_cluster_i.keys() ) > 1 and len( min_cluster_j.keys() ) == 1:
+            min_cluster_i[min_j] = True
+            clusters = clusters[:min_j_idx] + clusters[min_j_idx+1:]
+        else:
+            for j_point in min_cluster_j.keys():
+                min_cluster_i[j_point] = True
+            clusters = clusters[:min_j_idx] + clusters[min_j_idx+1:]
+
+    return cluster_distances
+
 movies = get_movies( movies_dir )
 
 # Dimensions
@@ -134,7 +231,7 @@ movies = get_movies( movies_dir )
 # Don't change the order of things here unless you also change the
 # dist_funcs key lookups in register_dist_funcs
 
-dimensions = [ 'main_character_interlocutor_count', 'precentage_of_scenes_with_main_character' ]
+dimensions = [ 'main_character_interlocutor_count', 'percentage_of_scenes_with_main_character' ]
 
 dist_funcs = {}
 
@@ -159,12 +256,18 @@ covering = [ (0, 15), (14, 16), (15, 17), (16, 99) ]
 
 inverse_covering = get_inverse_covering( projection, covering )
 
+epsilon_candidates = cluster_epsilon_finder( movies, distances )
+print "Cluster epsilon candidates", epsilon_candidates
+epsilon = numpy.median( epsilon_candidates )*1.01
+print "Epsilon selected as: (multiplied by 1.01 to handle rounding errors)", epsilon
+
+
+
 for partition in inverse_covering:
-    partition_clusters = get_clusters( partition['movies'], distances, 10 )
+    partition_clusters = get_clusters( partition['movies'], distances, epsilon )
     print "Range from %s to %s had %s movies, which formed the following clusters:" % ( partition['range'][0], partition['range'][1], len( partition['movies'].keys() ) )
     
     for idx, cluster in enumerate( partition_clusters ):
         print "\tCluster %s" % idx
         for movie in sorted( cluster.keys() ):
             print "\t\t%s" % movie
-
