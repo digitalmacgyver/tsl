@@ -24,15 +24,13 @@ scripts = [
      ( 'Vertigo', '../example-scripts/vertigo.txt' ),
      ( 'Terminator 2', '../example-scripts/terminator_2.txt' ),
      ( 'Ratatouille', '../example-scripts/ratatouille.txt' ),
-    # Questionable formatting
+     # Questionable formatting
      ( 'Analyze That', '../example-scripts/analyze_that.txt' ),
      ( 'Batman Begins', '../example-scripts/batman_begins.txt' ),
      ( 'Death to Smoochy', '../example-scripts/death_to_smoochy.txt' ),
      ( 'Get Carter', '../example-scripts/get_carter.txt' ),
      ( 'Gothika', '../example-scripts/gothika.txt' ),
      ( 'Groundhogs Day', '../example-scripts/groundhogs_day.txt' ),
-     ( 'Hudson Hawk', '../example-scripts/hudson_hawk.txt' ),
-     ( 'Jeepers 2', '../example-scripts/jeepers_2.txt' ),
      ( 'Red Planet', '../example-scripts/red_planet.txt' ),
      ( 'Smurfs', '../example-scripts/smurfs.txt' ),
      ( 'Sweet November', '../example-scripts/sweet_november.txt' ),

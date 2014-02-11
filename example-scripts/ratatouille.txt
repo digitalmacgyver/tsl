@@ -1,4 +1,4 @@
-INT - A TELEVISION SET
+INT. - A TELEVISION SET
 
 -tuned to a DOCUMENTARY. As an old fashioned World GLOBE 
 rotates in a sea of clouds, the EIFFEL TOWER slowly comes 
@@ -55,7 +55,7 @@ The SOUND of wind rattling barren branches...
 
 ...and we FADE IN to reveal:
 
-EXT - FRENCH COUNTRYSIDE - LATE AFTERNOON
+EXT. - FRENCH COUNTRYSIDE - LATE AFTERNOON
 
 A light rain falls on a SMALL FARMHOUSE. The last remaining 
 dead leaves tremble in the gusts. The quiet is shattered by a 
@@ -83,7 +83,7 @@ to feel sympathetic towards the little guy.
       bit. What’s my problem? First of 
       all--
 
-EXT - OUTSIDE THE FARMHOUSE - DUSK - WEEKS EARLIER
+EXT. - OUTSIDE THE FARMHOUSE - DUSK - WEEKS EARLIER
 
 A SILHOUETTE darts out from behind a wooden barrel, pausing 
 upright against a blood red sky. Mangy, sinister, the 
@@ -157,7 +157,7 @@ him, snatching the core from his hands.
 
                                       4.
 
-INT - SHED - MINUTES LATER
+INT. - SHED - MINUTES LATER
 
 Still holding the APPLE CORE, Remy sniffs the air, following 
 a scent to a tarp in the corner. He lifts it, REVEALING: a 
@@ -170,7 +170,7 @@ can of RAT POISON. The other rats REACT. Django’s impressed.
       feeling pretty good about my gift. 
       Until Dad gave me a job--
 
-EXT - FARMHOUSE - COMPOST PILE - DAY
+EXT. - FARMHOUSE - COMPOST PILE - DAY
 
 A line of rats file past REMY, holding up rotted scraps of 
 food so that each one passes under his nose. 
@@ -201,7 +201,7 @@ Remy waits, expecting the rat to get his joke. Beat.
 
 The rat moves on. Remy rolls resumes his bored inspection.
 
-INT - INSIDE ATTIC - LATE AFTERNOON
+INT. - INSIDE ATTIC - LATE AFTERNOON
 
 Django & Remy stand on a beat-up chair, overlooking the rat 
 clan as they go about their day. 
@@ -234,7 +234,7 @@ They continue to quarrel. It’s clear this is an old argument.
       Let’s just say we have different 
       points of view. 
 
-INT - ATTIC - NIGHT  
+INT. - ATTIC - NIGHT  
 
 Django and Emile are gobbling up an assortment of RUBBISH, 
 which is in fact dinner. REMY watches them, appalled. He 
@@ -269,7 +269,7 @@ He pushes the rotted food away. Django reacts.
       and away from the humans. It’s 
       dangerous. 
 
-EXT - OUTSIDE THE FARMHOUSE - DUSK
+EXT. - OUTSIDE THE FARMHOUSE - DUSK
 
 Remy watches the farmhouse, drawn to the warm light and the 
 sounds emanating from inside.
@@ -278,7 +278,7 @@ sounds emanating from inside.
       I know I’m supposed to hate humans. 
       But there’s something about them...
 
-INT - FARMHOUSE - KITCHEN
+INT. - FARMHOUSE - KITCHEN
 
 Remy carefully sneaks into the kitchen. 
 
@@ -326,7 +326,7 @@ and dancing in harmony with the others.
 A light SNAPS ON, breaking the spell. The OLD LADY has 
 awakened. Remy drops the food and scampers away. 
 
-EXT - FIELD - DAY
+EXT. - FIELD - DAY
 
 Remy follows a pleasant scent in the air. It leads him to a 
 beautiful MUSHROOM.
@@ -336,7 +336,7 @@ beautiful MUSHROOM.
       only one who knew about it was 
       Emile.
 
-EXT - BEHIND THE FARM HOUSE - LATE AFTERNOON
+EXT. - BEHIND THE FARM HOUSE - LATE AFTERNOON
 
 Emile is atop a full garbage can, rooting around under the 
 lid. Remy calls up from the tall grass below.
@@ -352,7 +352,7 @@ Emile looks up, holding the remains of a brown-bag lunch.
       you’re good at hiding food, help me 
       find a good place to put this!
 
-EXT - GRASSY FIELD - LATE AFTERNOON
+EXT. - GRASSY FIELD - LATE AFTERNOON
 
 Remy and Emile walk together; Emile on all fours, dragging 
 the enormous bag he grips between his teeth, while Remy walks 
@@ -439,7 +439,7 @@ farmhouse roof. He GRINS.
              REMY (CONT’D)
       --ooooohh yeah. Come on!
 
-EXT - ROOFTOP - LATER
+EXT. - ROOFTOP - LATER
 
 Remy has skewered the mushroom and cheese onto part of the TV 
 antennae, which he has bent over the smoking chimney top, 
@@ -508,7 +508,7 @@ REMY & EMILE
 (together)
 --it’s in the kitchen. 
 
-INT - FARMHOUSE KITCHEN - MINUTES LATER
+INT. - FARMHOUSE KITCHEN - MINUTES LATER
 
 Emile frets, looking nervously at the old lady, still fast 
 asleep in front of the TV. Remy RUMMAGES through her spices.
@@ -568,7 +568,7 @@ He resumes rummaging through the spices. Emile FRETS.
       you’re involving me in crime. And I 
       let you. Why do I let you?
 
-INT - FARMHOUSE ATTIC - SAME MOMENT
+INT. - FARMHOUSE ATTIC - SAME MOMENT
 
 RATS stream in from a crack in the wall, throwing food from 
 the compost pile on to a heap. DJANGO is at the center, 
@@ -577,7 +577,7 @@ overseeing things. He turns away, distracted--
              DJANGO
       What’s taking those kids so long?
 
-INT - RESUME KITCHEN - REMY AND EMILE 
+INT. - RESUME KITCHEN - REMY AND EMILE 
 
 Remy locates a tiny vial of saffron, holds it up.
 
@@ -722,12 +722,12 @@ looks back to Gusteau’s COOKBOOK--
 
 --and TURNS BACK, rushing into the flood of fleeing rats! 
 
-EXT - OUTSIDE THE FARMHOUSE
+EXT. - OUTSIDE THE FARMHOUSE
 
 RATS are diving out the windows, streaming through cracks, 
 racing across the grass to the banks of a nearby stream.
 
-EXT - BY THE STREAM
+EXT. - BY THE STREAM
 
 The rats run into the tall grass, pulling aside camouflage, 
 REVEALING several WATERCRAFT built from junk. The RATS push 
@@ -736,7 +736,7 @@ them into the water and climb aboard. DJANGO urges them on.
              DJANGO
       GO GO GO! MOVE MOVE MOVE!
 
-INT - INSIDE THE FARMHOUSE KITCHEN
+INT. - INSIDE THE FARMHOUSE KITCHEN
 
 Remy, the last remaining rat, struggles with GUSTEAU’S 
 COOKBOOK. A strange BREATHING SOUND causes him to look up: 
@@ -746,7 +746,7 @@ CANNISTER. She starts after Remy, SPRAYING GAS everywhere.
 With a burst of adrenaline Remy hoists the COOKBOOK onto his 
 back and makes a running LEAP through the window--
 
-EXT - OUTSIDE THE FARMOUSE
+EXT. - OUTSIDE THE FARMOUSE
 
 --and lands on the lawn in a shower of glass. It appears the 
 COOKBOOK itself is struggling to catch up to the fleeing rats-
@@ -756,7 +756,7 @@ COOKBOOK itself is struggling to catch up to the fleeing rats-
 
                                       15.
 
-EXT - ON THE RIVER
+EXT. - ON THE RIVER
 
 RAIN starts to fall. The last RAT BOAT has shoved off from 
 shore, but DJANGO’s boat lingers under the FOOTBRIDGE.
@@ -811,7 +811,7 @@ drainpipe before the LADY can get off a shot. She CURSES.
 
                                       16.
 
-INT - TUNNEL - CONTINUOUS
+INT. - TUNNEL - CONTINUOUS
 
 Remy paddles. Ahead, Django’s BOAT vanishes into the dark.
 
@@ -858,7 +858,7 @@ amazed he’s still alive. He collapses, exhausted.
 
                                DISSOLVE TO:
 
-INT - SOMEWHERE IN THE SEWER SYSTEM - NIGHT
+INT. - SOMEWHERE IN THE SEWER SYSTEM - NIGHT
 
 A soaked and exhausted Remy has pulled his battered cookbook 
 to the sewer bank. It’s dark and cold, it smells bad, but 
@@ -925,7 +925,7 @@ as he scurries up into a BUILDING-- between walls, through
 pipes, under floors,allowing GLIMPSES into the HUMAN world 
 around him. Remy moves through a crack, emerges into--
 
-INT - APARTMENT KITCHEN 
+INT. - APARTMENT KITCHEN 
 
 In the next room A PARTY is in progress. Remy spies a loaf of 
 BREAD. Famished, he grabs it, prepares to take a bite when- 
@@ -958,7 +958,7 @@ glowing and semi-transparent.
 The GUSTEAU SPRITE VANISHES. Remy shakes it off. He puts the 
 bread down, denying his growing hunger, and moves on.
 
-INT - BETWEEN THE WALLS
+INT. - BETWEEN THE WALLS
 
 Remy MOVES, following his exceptional nose. We see glimpses 
 of many French lives; 
@@ -989,13 +989,13 @@ each other, blood in their eyes--
 --and KISS. Remy rolls his eyes and moves on, through dark, 
 tight spaces... into a pipe and emerges onto--
 
-EXT - OUTSIDE THE BUILDING - ROOFTOPS - DUSK
+EXT. - OUTSIDE THE BUILDING - ROOFTOPS - DUSK
 
 CAMERA follows as Remy scampers along railings and ledges, 
 past windows, up vines, BOOMING UP as the ROOFTOP FALLS AWAY 
 TO REVEAL--
 
-EXT - A STUNNING PANORAMA; PARIS AT NIGHT. 
+EXT. - A STUNNING PANORAMA; PARIS AT NIGHT. 
 
 It is GORGEOUS-- a vast, luminous jewel. Remy is GOBSMACKED.
 
@@ -1026,7 +1026,7 @@ Remy heads off toward the restaurant.
 
                                       20.
 
-INT - KITCHEN - GUSTEAU’S RESTAURANT
+INT. - KITCHEN - GUSTEAU’S RESTAURANT
 
 WAITERS and COOKS bustle back and forth preparing elaborate 
 meals with energetic precision; the complex dance of Haute 
@@ -1143,7 +1143,7 @@ Skinner disappears into his office, which once belonged to
 the great Gusteau himself. Linguini turns back to the other 
 cooks, who are already handing him his work clothes.
 
-EXT - ROOFTOP - ABOVE GUSTEAU’S KITCHEN - MINUTES LATER
+EXT. - ROOFTOP - ABOVE GUSTEAU’S KITCHEN - MINUTES LATER
 
 Remy and the Gusteau sprite look down through the SKYLIGHT 
 into GUSTEAU’S kitchen. Remy watches, rapt as the CHEFS 
@@ -1250,13 +1250,13 @@ The skylight suddenly gives way, and Remy PLUNGES down--
 
                                       24.
 
-INT - GUSTEU’S KITCHEN
+INT. - GUSTEU’S KITCHEN
 
 With a SPLASH Remy lands in a sink filled with soapy 
 dishwater. He paddles to the surface, climbs onto the counter 
 and tumbles over the edge, hitting the floor with a SPLAT.
 
-INT - KITCHEN FLOOR - UNDER THE COUNTER - CONTINUOUS
+INT. - KITCHEN FLOOR - UNDER THE COUNTER - CONTINUOUS
 
 Remy HIDES. GIANT FEET (belonging to busy COOKS) boom by on 
 either side. Surrounded by the enemies of rat kind, Remy is 
@@ -1297,7 +1297,7 @@ from the oven to another passing trolley, which bursts into--
 
                                       25.
 
-INT - THE DINING ROOM - CONTINUOUS
+INT. - THE DINING ROOM - CONTINUOUS
 
 Remy is wheeled into the plush hush of the restaurant, and 
 pulls up to a table of well-dressed DINERS. A WAITERS HAND 
@@ -1307,7 +1307,7 @@ reaches down for a peppermill, grabbing REMY instead--
 Remy, who quickly leaps on to another passing trolley, the 
 one heading back to the kitchen.
 
-INT - GUSTEU’S KITCHEN - CONTINUOUS
+INT. - GUSTEU’S KITCHEN - CONTINUOUS
 
 Remy jumps off the trolley and hides. He looks up at the 
 window -- 
@@ -1422,12 +1422,12 @@ dining room.
 But Mustafa is gone and it is TOO LATE.  Skinner anxiously 
 looks through the door windows into the dining room-- 
 
-INT - SKINNER’S POV: THE DINING ROOM
+INT. - SKINNER’S POV: THE DINING ROOM
 
 --the soup is served to a WOMAN DINER. She tastes it, REACTS 
 visibly, and motions for the waiter.  
 
-INT - RESUME KITCHEN - GUSTEAU & SKINNER
+INT. - RESUME KITCHEN - GUSTEAU & SKINNER
 
 Wilting, Skinner turns his building rage toward Linguini. 
 
@@ -1474,7 +1474,7 @@ face a riot of bewilderment.
              MUSTAFA
       She liked the soup.
 
-INT - UNDER THE COLLANDER
+INT. - UNDER THE COLLANDER
 
 The GUSTEAU SPRITE stops Remy.
 
@@ -1533,7 +1533,7 @@ he HATES that. He turns to Linguini, his face DARK.
              COLETTE
       Anyone can cook.
 
-INT - UNDER THE COLLANDER
+INT. - UNDER THE COLLANDER
 
 The Gusteau sprite NUDGES Remy.
 
@@ -1550,7 +1550,7 @@ isn’t lost on Skinner. His face softens into an icy smile.
       If he wishes to swim in dangerous 
       waters who are we to deny him? 
 
-INT - UNDER THE COLLANDER
+INT. - UNDER THE COLLANDER
 
 Remy’s totally absorbed in this conflict. A COUGH causes Remy 
 to looks up: the GUSTEAU SPRITE gestures at the window.
@@ -1638,12 +1638,12 @@ Linguini CLAPS a jar over Remy. Seals it.
 
 Linguini nods and quickly EXITS the kitchen’s back door.
 
-EXT - ALLEY BEHIND GUSTEAU’S KITCHEN - CONTINUOUS - NIGHT
+EXT. - ALLEY BEHIND GUSTEAU’S KITCHEN - CONTINUOUS - NIGHT
 
 Linguini hops aboard a bicycle and peddles into the gloom, 
 carrying Remy in the jar with him. 
 
-EXT - ALONG THE SEINE - NIGHT
+EXT. - ALONG THE SEINE - NIGHT
 
 The waterfront, normally so beautiful, seems dark and 
 forboding this night. Linguini slows his bicycle and pulls up 
@@ -1705,7 +1705,7 @@ JAR INTO THE SEINE. Horrified, Linguini DIVES IN after it.
 
                               JUMP CUT TO:
 
-EXT - ALONG BANKS OF SEINE - MINUTES LATER
+EXT. - ALONG BANKS OF SEINE - MINUTES LATER
 
 Linguini sits on a bench, soaking wet, the jar with Remy 
 successfully retrieved and sitting next to him.
@@ -1741,7 +1741,7 @@ the CLICKING of tiny claws on cement. Linguini looks up--
 REMY, very cautiously, is coming toward him, back into the 
 light. Remy looks at Linguini... who SMILES.
 
-INT - LINGUINI’S FLAT - NIGHT
+INT. - LINGUINI’S FLAT - NIGHT
 
 Darkness. we hear KEYS fumbling in a lock. Linguini KICKS the 
 warped door a few times, opening it enough to enter, and 
@@ -1795,7 +1795,7 @@ Remy grins, slowly closes his eyes. Dreaming.
 
                                       34.
 
-INT - LINGUINI’S FLAT - MORNING
+INT. - LINGUINI’S FLAT - MORNING
 
 Linguini AWAKENS with a start. He looks up at the oven mitt--
 
@@ -1857,7 +1857,7 @@ of food, when Linguini snatches him up---
 
 --and runs out of the apartment.
 
-INT - GUSTEU’S KITCHEN - MORNING
+INT. - GUSTEU’S KITCHEN - MORNING
 
 The cooks are circled around Colette, listening with interest 
 as she reads a review aloud from the morning paper. 
@@ -1883,7 +1883,7 @@ Skinner has ENTERED, and is now stopped in his tracks.
       recaptured our attention. Only time 
       will tell if they deserve it.”
 
-EXT - IN ALLEY OUTSIDE GUSTEAU’S 
+EXT. - IN ALLEY OUTSIDE GUSTEAU’S 
 
 Linguini waits outside, Remy in palm, staring uncomfortably 
 at the kitchen entrance, working up the nerve to go inside. 
@@ -1913,7 +1913,7 @@ entrance, psyching himself up--
              LINGUINI
       So... LETS DO THIS THING!!
 
-INT - KITCHEN - GUSTEAU’S    
+INT. - KITCHEN - GUSTEAU’S    
 
 The back door SLAMS OPEN. All heads swing to a slightly 
 crazed LINGUINI standing in the doorway. He wilts a bit with 
@@ -1938,7 +1938,7 @@ blocked writer facing a blank page.
 
       Soup.
 
-INT - LINGUINI’S STATION - MINUTES LATER
+INT. - LINGUINI’S STATION - MINUTES LATER
 
 Raw soup stock bubbles at a low boil on the stove. Linguini 
 stares at the variety carefully prepared of ingredients-- 
@@ -1968,7 +1968,7 @@ giggling, yelping Linguini. Visibly panicked, the
 giggling/yelping Linguini TURNS, lurching from his station to 
 the food safe, and closing himself inside.
 
-INT - INSIDE FOOD VAULT - CONTINUOUS
+INT. - INSIDE FOOD VAULT - CONTINUOUS
 
 Linguini RIPS his shirt open, exposing his chest and arms, 
 which are covered in angry red BITE MARKS.
@@ -2021,7 +2021,7 @@ straightens his clothes as he thinks out loud.
       GOURMET COOKING I WILL NEVER PULL 
       THIS OFF-- 
 
-INT - KITCHEN - OUTSIDE FOOD VAULT 
+INT. - KITCHEN - OUTSIDE FOOD VAULT 
 
 Passing the food vault Skinner hears a VOICE from within. 
 
@@ -2073,20 +2073,20 @@ Linguini makes a hasty exit. Skinner calls out after him.
       ONE CAN GET TOO FAMILIAR WITH 
       VEGETABLES YOU KNOW!
 
-INT - KITCHEN - CONTINUOUS
+INT. - KITCHEN - CONTINUOUS
 
 Linguini speaks to Remy, who he’s hidden under his TOQUE--
 
              LINGUINI
       That was close. You okay up there?
 
-INT - INSIDE LINGUINI’S TOQUE
+INT. - INSIDE LINGUINI’S TOQUE
 
 Remy’s surroundings are visible through the thin fabric. He 
 looks up AND SEES they are about to COLLIDE with--
 
 --a WAITER CARRYING A TRAY PILED WITH DISHES. Remy YANKS BACK 
-INT - LINGUINI’S HAIR like horses REINS, CAUSING-
+INT. - LINGUINI’S HAIR like horses REINS, CAUSING-
 
 LINGUINI  
 
@@ -2096,7 +2096,7 @@ under the tray of dishes--
 --and BACK UP AGAIN, miraculously averting disaster. Linguini 
 blinks in amazement: what just happened? He ducks into the--
 
-INT - BATHROOM
+INT. - BATHROOM
 
 LINGUINI removes his toque, looks at Remy in the mirror.
 
@@ -2129,7 +2129,7 @@ Remy stops, looks at the panting Linguini in the mirror.
       One look and I knew, each of us had 
       the same crazy idea...
 
-INT - LINGUINI’S FLAT - NIGHT (MONTAGE: LEARNING TO COOK)  
+INT. - LINGUINI’S FLAT - NIGHT (MONTAGE: LEARNING TO COOK)  
 
 Using hanks of Linguini’s hair to control Linguini’s actions, 
 Remy pilots Linguini(who is blindfolded to keep him from 
@@ -2145,7 +2145,7 @@ cooking machine.
 
                               DISSOLVE TO:
 
-INT - KITCHEN - NEXT DAY
+INT. - KITCHEN - NEXT DAY
 
 Linguini stands off to the side, fretting as Skinner pulls a 
 ladle of soup from a Linguini’s pot and tastes it. 
@@ -2227,7 +2227,7 @@ Colette EXITS. Linguini peeks over the counter, dazzled.
 
       Wow...
 
-INT - SKINNER’S OFFICE
+INT. - SKINNER’S OFFICE
 
 Skinner watches as ad man FRANCOIS DUPUIS finishes pitching 
 his campaign for the latest GUSTEAU’S FROZEN FOOD product. 
@@ -2288,7 +2288,7 @@ and wider with each line. He GASPS, seizing the phone.
              SKINNER
       Get my lawyer--!
 
-INT - SKINNER’S OFFICE - AN HOUR LATER
+INT. - SKINNER’S OFFICE - AN HOUR LATER
 
 Skinner’s lawyer TALON LABARTHE is reading GUSTEAU’S WILL. 
 
@@ -2394,7 +2394,7 @@ carefully inside a handkerchief, and pocketing it.
 
 Talon exits. Skinner stands inert, spooked.
 
-INT - KITCHEN  
+INT. - KITCHEN  
 
 Linguini finishes dicing a red pepper. He sets down his 
 knife, carefully scoops up the small pile of dicings, walks 
@@ -2521,7 +2521,7 @@ shows it to Linguini.
 
 She holds the loaf to her ears, Linguini leans in to listen.
 
-INT - INSIDE LINGUINI’S TOQUE
+INT. - INSIDE LINGUINI’S TOQUE
 
 Remy also LEANS IN to listen. Colette gives the bread a 
 SQUEEZE. The CRACKLE is seductive.
@@ -2666,14 +2666,14 @@ They exchange smiles and resume work. PAUSE.
              COLETTE
       For taking it.
 
-INT - INSIDE SKINNER’S CAR - MOVING - NIGHT
+INT. - INSIDE SKINNER’S CAR - MOVING - NIGHT
 
 Skinner listens to the radio. Suddenly he SITS UP--
 
 HIS POV THROUGH WINDSHIELD:
 
 Remy scampers across the alley to the kitchen entrance behind 
-INT - GUSTEU’S... and into the hands of a kneeling Linguini.
+INT. - GUSTEU’S... and into the hands of a kneeling Linguini.
 
              SKINNER
 
@@ -2691,7 +2691,7 @@ kneeling, Linguini holds up a set of KEYS.
 
 Skinner is BAFFLED.
 
-INT - GUSTEU’S - DINING AREA - NIGHT
+INT. - GUSTEU’S - DINING AREA - NIGHT
 
 There is noticeably more energy and fewer empty tables in the 
 dining room. Mustafa arrives at a table of FOOD SNOBS.
@@ -2721,7 +2721,7 @@ dining room. Mustafa arrives at a table of FOOD SNOBS.
 
 Mustafa stands there, slack-jawed and blinking.
 
-INT - KITCHEN
+INT. - KITCHEN
 
 Mustafa crashes through the swinging doors in a panic.
 
@@ -2862,7 +2862,7 @@ Sounds awful. Colette shrugs it off and turns to Linguini.
              LINGUINI
       Uh-- veal... stomach?
 
-INT - INSIDE LINGUINI’S TOQUE - MINUTES LATER 
+INT. - INSIDE LINGUINI’S TOQUE - MINUTES LATER 
 
 Remy pilots Linguini’s hand to lift the small pot of snail 
 porridge off the burner and up to Linguini’s toque for an 
@@ -2877,7 +2877,7 @@ LINGUINI
 suddenly LEANS FORWARD, tilting his toque over the fragrant 
 STEAM from the simmering pot. 
 
-INT - INSIDE LINGUINI’S TOQUE
+INT. - INSIDE LINGUINI’S TOQUE
 
 Remy takes a WHIFF, likes what he smells. Inspired, he pilots 
 Linguini out into the kitchen.
@@ -2889,7 +2889,7 @@ LINGUINI
 --is alarmed by his sudden ramble, completely unsure of where 
 he’s going, what he’s looking for.
 
-INT - UNDER THE TOQUE
+INT. - UNDER THE TOQUE
 
 Remy maneuvers Linguini spasmodically past the other cooks 
 stations, wildly sniffing around for the next ingredient, a 
@@ -2905,7 +2905,7 @@ the new ingredients to a heating pan.
 Linguini JERKS forward, tilting his toque over the pan, then 
 PEELS OUT of his station, once again on the move.
 
-INT - KITCHEN -SAME TIME
+INT. - KITCHEN -SAME TIME
 
 Linguini ZIPS about snatching ingredients from the other 
 cooks stations, a Porche apologizing for its driver. 
@@ -2988,7 +2988,7 @@ separate dishes, giving the appearance of a competition.
              COLETTE
       Come get it! 
 
-INT - UNDER THE TOQUE
+INT. - UNDER THE TOQUE
 
 Remy watches anxiously as Colette sets the plate at the pass 
 to be picked up, a hank of hair in each paw, waiting for an 
@@ -3059,7 +3059,7 @@ Colette is nonplussed. Skinner FLINCHES, then forces a smile.
              SKINNER
       That’s... wonderful. 
 
-INT - INSIDE LINGUINI’S TOQUE
+INT. - INSIDE LINGUINI’S TOQUE
 
 Remy slaps his paws together, relishing the night ahead.
 
@@ -3069,7 +3069,7 @@ Crosscut between the dining room and the kitchen: orders pile
 up as word of the “special” spreads between diners. Remy 
 pilots Linguini, preparing plate after plate of their hit.
 
-INT - THE KITCHEN - LATER
+INT. - THE KITCHEN - LATER
 
 The dinner rush is over. The cooks congratulate their new 
 comrade Linguini, toasting him glasses of table wine.
@@ -3081,7 +3081,7 @@ within Linguini’s toque--
 
 --the SILHOUETTE OF A RAT. Skinner’s EYES going WIDE.
 
-EXT - BACK ENTRANCE - GUSTEAU’S
+EXT. - BACK ENTRANCE - GUSTEAU’S
 
 After a quick look around to make sure no one’s watching, 
 Linguini removes his toque and lets Remy out.
@@ -3096,7 +3096,7 @@ at Linguini, who raises his glass in a salute to the rat.
 
 Linguini smiles and turns back inside.
 
-INT - KITCHEN - CONTINUOUS
+INT. - KITCHEN - CONTINUOUS
 
 We follow Linguini as he crosses the kitchen, humming happily 
 to himself. PANNING INTO FRAME is SKINNER; perched high atop 
@@ -3138,7 +3138,7 @@ Colette watches Skinner steer Linguini into his office.
 
 He exits chuckling. Colette slowly turns away, stung. 
 
-INT - INSIDE SKINNER’S OFFICE
+INT. - INSIDE SKINNER’S OFFICE
 
 Skinner settles in behind the massive desk that was formerly 
 Gusteau’s. Linguini sits uneasily at a chair facing him, 
@@ -3174,7 +3174,7 @@ a wastebasket, and offers up a newly opened bottle of wine.
 
 They clink... and DRINK.
 
-EXT - OUTSIDE KITCHEN - BACK ENTRANCE - GUSTEAU’S
+EXT. - OUTSIDE KITCHEN - BACK ENTRANCE - GUSTEAU’S
 
 Remy munches contentedly and stares at the starry sky, loving 
 his bread, his cheese, his life. He breaks the top off a 
@@ -3233,7 +3233,7 @@ Remy grabs the wad and throws it away with a flourish.
 
 Remy turns on his heel and marches back into the kitchen.
 
-INT - KITCHEN - MOMENTS LATER
+INT. - KITCHEN - MOMENTS LATER
 
 Remy climbs to the pull handle on the FOOD SAFE DOOR and 
 hesitates there. LAUGHTER emanates from inside of Skinner’s 
@@ -3257,7 +3257,7 @@ pushes it open, UNLOCKING the massive door. GUSTEAU appears.
 Remy shoves past the Gusteau spite and into the safe. The 
 sprite VANISHES.
 
-INT - INSIDE SKINNER’S OFFICE - SAME TIME
+INT. - INSIDE SKINNER’S OFFICE - SAME TIME
 
 Linguini sits back in his chair, looking a bit tipsy.
 
@@ -3314,7 +3314,7 @@ He offers his glass to Skinner, who refills it generously.
         (pointed)
       ...rats.
 
-EXT - BACK ENTRANCE - GUSTEAU’S - MINUTES LATER
+EXT. - BACK ENTRANCE - GUSTEAU’S - MINUTES LATER
 
 Remy carries a small bundle of gourmet foodstuffs from the 
 kitchen, only to find Emile again munching on garbage.
@@ -3426,7 +3426,7 @@ He glares furiously at Remy, whose resolve starts to crumble.
              REMY
       Well, it wouldn’t hurt to visit...
 
-INT - INSIDE SKINNER’S OFFICE - STILL LATER
+INT. - INSIDE SKINNER’S OFFICE - STILL LATER
 
 A few EMPTY BOTTLES of wine litter Skinner’s desk. Linguini 
 is BOMBED, but Skinner’s increasingly desperate inquisition 
@@ -3487,7 +3487,7 @@ He drops the empty bottle into the trash with a loud THUNK.
              SKINNER (CONT’D)
       --we are all out of wine.
 
-INT - INSIDE SEWER - RAT COMMONS - A LITTLE LATER
+INT. - INSIDE SEWER - RAT COMMONS - A LITTLE LATER
 
 Several channels converge into a wide, open area as dreary 
 and uninviting as any sewer, save for a flotilla of tiny 
@@ -3506,7 +3506,7 @@ An enormous CHEER erupts. Emile joins Django and Remy as the
 clan crowds around them. Remy’s joy is clouded with doubt; 
 what about his new life?
 
-INT - RAT ENCAMPMENT - LATER
+INT. - RAT ENCAMPMENT - LATER
 
 A PARTY is in full swing. The entire rat clan has come out to 
 bop to boisterous MUSIC played by a jazzy RAT BAND, kicking 
@@ -3646,7 +3646,7 @@ off. Reluctantly, Remy does likewise, leaving Emile alone.
              EMILE
       You know... I think I’ll stay here. 
 
-INT - KITCHEN - GUSTEAU’S RESTAURANT - SAME TIME
+INT. - KITCHEN - GUSTEAU’S RESTAURANT - SAME TIME
 
 The sound of raindrops patter against the skylight. Skinner, 
 bundled up in a well-tailored overcoat, throws a scarf around 
@@ -3672,7 +3672,7 @@ Linguini slumps and drunkenly shakes his head “no”.
 Skinner exits, humming. Linguini watches him go with weary 
 eyes. He turns to face the messy kitchen... and wilts.
 
-EXT - PARIS STREET - NIGHT
+EXT. - PARIS STREET - NIGHT
 
 It’s raining harder now. Django and Remy arrive at a drain 
 opening, through which can be glimpsed the rough cobblestones 
@@ -3741,7 +3741,7 @@ starts back to Gusteau’s. Django calls after him.
              REMY
       With luck... forward.
 
-EXT - OUTSIDE BACK KITCHEN ENTRANCE - GUSTEAU’S - MORNING
+EXT. - OUTSIDE BACK KITCHEN ENTRANCE - GUSTEAU’S - MORNING
 
 The storm has passed and the sky is cloudless and clear. As a 
 weary Remy exits the sewer, the fresh air hits his nostrils 
@@ -3754,7 +3754,7 @@ on two legs, throwing a reckless wave at a passing CYCLIST.
 The cyclist DOUBLE-TAKES, craning his neck to look at the 
 bizarre sight-- and collides with a parked car. 
 
-INT - KITCHEN - GUSTEAU’S RESTAURANT 
+INT. - KITCHEN - GUSTEAU’S RESTAURANT 
 
 Remy enters and looks around. No one has arrived yet. Remy 
 steps on to the counter top and surveys the kitchen, savoring 
@@ -3810,7 +3810,7 @@ nod, then turn back to his work.
       a drink? That’s big... that’s big. 
       What did he say? 
 
-INT - UNDER LINGUINI’S TOQUE
+INT. - UNDER LINGUINI’S TOQUE
 
 Remy hesitates. There’s no hair he can pull for speech! 
 Desperate, he pulls the head-turn hair again. 
@@ -3835,7 +3835,7 @@ Linguini is silent. He resumes cutting. Colette goes cold.
       tricks to dazzle the boss, and then 
       you blow past me?
 
-INT - UNDER LINGUINI’S TOQUE
+INT. - UNDER LINGUINI’S TOQUE
 
 Things are going bad fast. Remy keeps Linguini chopping, 
 hoping desperately for an idea to salvage the situation. 
@@ -3883,7 +3883,7 @@ watch he go. Linguini turns to Remy.
 
 He grabs the toque with Remy inside and runs after Colette.
 
-EXT - OUTSIDE GUSTEAU’S - ALLEY BEHIND KITCHEN - CONTINUOUS
+EXT. - OUTSIDE GUSTEAU’S - ALLEY BEHIND KITCHEN - CONTINUOUS
 
 Colette is already on her motorcycle. Linguini runs to her.
 
@@ -3901,7 +3901,7 @@ Colette is already on her motorcycle. Linguini runs to her.
              LINGUINI
       But I don’t! Really! It’s not me!
 
-INT - UNDER LINGUINI’S TOQUE
+INT. - UNDER LINGUINI’S TOQUE
 
 Remy eyes widen: this can’t be happening.
 
@@ -3932,7 +3932,7 @@ RESUME LINGUINI & COLETTE
              LINGUINI
       But... I have a secret. 
 
-INT - UNDER LINGUINI’S TOQUE
+INT. - UNDER LINGUINI’S TOQUE
 
 Remy’s really getting worried now.
 
@@ -4001,7 +4001,7 @@ cannister of PEPPER SPRAY. Linguini continues, impassioned.
 Colette looks WORRIED. With great resolve and trembling 
 hands, Linguini slowly reaches up to remove his toque--
 
-INT - INSIDE LINGUINI’S TOQUE
+INT. - INSIDE LINGUINI’S TOQUE
 
 Through the cloth Remy watches LINGUINI’S HANDS CLOSING IN-- 
 about to expose him and ruin it all! He YANKS on Linguini’s 
@@ -4013,7 +4013,7 @@ ON LINGUINI
 frozen, pepper spray in hand, her shock and surprise 
 surpassed only by Linguini’s own.
 
-INT - INSIDE LINGUINI’S TOQUE
+INT. - INSIDE LINGUINI’S TOQUE
 
 With furrowed brows and gritted teeth, Remy maintains 
 Linguini’s forward thrust kiss. This could go either way. 
@@ -4027,12 +4027,12 @@ wrap around each other.
 
                                       75.
 
-INT - INSIDE LINGUINI’S TOQUE
+INT. - INSIDE LINGUINI’S TOQUE
 
 Remy COLLAPSES with relief. For the moment anyway, the 
 fragile charade survives.
 
-INT - INSIDE EGO’S OFFICE - LATE AFTERNOON
+INT. - INSIDE EGO’S OFFICE - LATE AFTERNOON
 
 A very tall, very narrow room, simultaneously grand and 
 claustrophobic. Its soaring windows are framed by heavy 
@@ -4135,7 +4135,7 @@ Ego now LOOMS over the cowering Minion.
 
                                       77.
 
-INT - SKINNER’S OFFICE - DAY
+INT. - SKINNER’S OFFICE - DAY
 
 Skinner is seated at his desk, his head in his hands. Talon 
 sits in a chair across from him, sipping an espresso.
@@ -4211,12 +4211,12 @@ Skinner is suddenly aware that Talon is staring at him.
         (pointedly)
       About you?
 
-INT - KITCHEN  
+INT. - KITCHEN  
 
 Linguini/Remy are cooking. As Colette walks by, Linguini’s 
 eyes, then head start to follow her--
 
-INT - INSIDE LINGUINI’S TOQUE
+INT. - INSIDE LINGUINI’S TOQUE
 
 Remy wonders why Linguini’s head has drifted away from the 
 task at hand. He looks up: sees Colette. Rolling his eyes at 
@@ -4231,11 +4231,11 @@ now. And Linguini’s eyes have drifted back to her..
 ...following the curves of her legs slowly up... to her FACE. 
 She turns, catching him-- and SMILES. He smiles back.
 
-INT - INSIDE LINGUINI’S TOQUE
+INT. - INSIDE LINGUINI’S TOQUE
 
 With waning patience, Remy again JERKS Remy back on task.
 
-INT - SKINNER’S OFFICE - SAME TIME
+INT. - SKINNER’S OFFICE - SAME TIME
 
 Skinner PACES back and forth in front of Talon.
 
@@ -4285,7 +4285,7 @@ Talon prepares to leave, hesitates at the door--
 
 Talon shrugs, chuckles and EXITS. Skinner stares, HAUNTED. 
 
-INT - KITCHEN  
+INT. - KITCHEN  
 
 Under Remy’s direction, Linguini reaches for a spice. Colette 
 interrupts, handing him another one.
@@ -4295,7 +4295,7 @@ interrupts, handing him another one.
 
                                       80.
 
-INT - UNDER THE TOQUE
+INT. - UNDER THE TOQUE
 
 Remy looks at the offered spice, and scowls; he begs to 
 differ. As Linguini reaches to take the spice, Remy pulls 
@@ -4318,13 +4318,13 @@ smiles at Colette.
 
 Underneath the toque, Remy GRIMACES.
 
-EXT - ALLEYWAY BEHIND KITCHEN - LATER
+EXT. - ALLEYWAY BEHIND KITCHEN - LATER
 
 The dinner rush finished, Linguini and Colette exit the 
 kitchen laughing and holding hands. She pulls him aboard her 
 motorcycle and they peel out into the young Paris night. 
 
-EXT - PARIS STREETS - TRAVELING - NIGHT
+EXT. - PARIS STREETS - TRAVELING - NIGHT
 
 Linguini and Colette laugh and scream as the wind rips by, 
 Linguini barely able to hang on to his toque and we realize--
@@ -4352,7 +4352,7 @@ sweethearts arms.
 Her escort swats at Remy with his coat. Remy runs, jumping 
 into a nearby STORM DRAIN.
 
-INT - INSIDE THE STORM DRAIN
+INT. - INSIDE THE STORM DRAIN
 
 Remy tumbles to the cement floor, his heart pounding. Through 
 the grate he sees the legs of the WOMAN and her ESCORT.
@@ -4369,7 +4369,7 @@ sewer’s darkness.
       was. How the world really saw me. 
       And it just kept getting better...
 
-EXT - OUTSIDE BACK ENTRANCE - GUSTEAU’S - DAWN
+EXT. - OUTSIDE BACK ENTRANCE - GUSTEAU’S - DAWN
 
 Remy emerges from the curb drain, turns into the alley behind 
 GUSTEU’S and heads up the back steps...
@@ -4418,14 +4418,14 @@ GIT has approached.
         (SCOWLS at Emile)
       No, there is not. Wait here.
 
-INT - KITCHEN - MOMENTS LATER
+INT. - KITCHEN - MOMENTS LATER
 
 Assured the kitchen is empty, Remy hops to door handle of the 
 food safe and grabs it with both arms, plants his feet on the 
 door and pulls. The handle doesn’t budge, the door is LOCKED. 
 Remy is puzzled. He looks toward SKINNER’S OFFICE.
 
-INT - SKINNER’S OFFICE
+INT. - SKINNER’S OFFICE
 
 Remy enters, a little nervous, and scampers up to Skinner’s 
 desk. A framed black and white PHOTO of Gusteau speaks.
@@ -4549,7 +4549,7 @@ SKINNER OPENS the office door and FREEZES-- stunned by the
 bizarre sight of a RAT on his desk top. Remy SNATCHES the 
 DOCUMANTS in his mouth and RUNS. 
 
-EXT - OUTSIDE BACK KITCHEN ENTRANCE - MORNING - CONTINUOUS
+EXT. - OUTSIDE BACK KITCHEN ENTRANCE - MORNING - CONTINUOUS
 
 Remy races out into the street. Hot on his heels, Skinner 
 runs smack into LALO on a moped. Before the mortified Lalo 
@@ -4562,7 +4562,7 @@ can apologize Skinner is back on his feet.
 With an crazed shriek, Skinner pushes Lalo off the scooter, 
 jumps on and roars off down the street.
 
-EXT - PARIS STREETS - CONTINUOUS
+EXT. - PARIS STREETS - CONTINUOUS
 
 Skinner screeches to a stop at the INTERSECTION, looks around 
 wildly for Remy. He sights the DOCUMENTS scampering through 
@@ -4570,7 +4570,7 @@ traffic and guns the motor, recklessly giving chase.
 
                                       85.
 
-EXT - NEAR THE SEINE - MOVING WITH SKINNER
+EXT. - NEAR THE SEINE - MOVING WITH SKINNER
 
 Closing in on Remy, Skinner reaches down to snatch the 
 documents when the rat suddenly VEERS. Skinner’s Moped 
@@ -4582,7 +4582,7 @@ still clutched in his mouth. Remy LAUGHS. A gust from a
 passing BUS sweeps the WILL from Remy’s open jaws and high 
 into the air, where it flutters out over the river’s edge.
 
-EXT - MOVING ALONG THE BANKS - CONTINUOUS
+EXT. - MOVING ALONG THE BANKS - CONTINUOUS
 
 SKINNER sees his chance. He clambers aboard the Moped and 
 takes off after the will, dodging obstacles and passers-by to 
@@ -4602,7 +4602,7 @@ believe he’s got both documents again.
 Neither can Skinner. He ditches the Moped and LEAPS to the 
 deck of the Seine boat. 
 
-EXT - ON THE SEINE - MOVING BETWEEN THE BOATS
+EXT. - ON THE SEINE - MOVING BETWEEN THE BOATS
 
 Remy, documents in mouth, leaps to another passing boat, 
 Skinner still hot on his tail.
@@ -4628,7 +4628,7 @@ breakfast like an inept magician as he--
 the Seine as Remy hops up to a bridge passing overhead, 
 scampering safely away with Skinner’s papers.
 
-INT - GUSTEU’S - SKINNER’S OFFICE - AN HOUR LATER
+INT. - GUSTEU’S - SKINNER’S OFFICE - AN HOUR LATER
 
 Skinner returns to his office, soaked and furious... only to 
 find LINGUINI sitting at his desk.
@@ -4650,7 +4650,7 @@ headlights look on his face, a HEADLINE reads:
 
       RISING STAR CHEF DECLARED LEGAL OWNER OF GUSTEAU’S
 
-INT - INSIDE SKINNER’S (NOW LINGUINI’S) OFFICE - DAY
+INT. - INSIDE SKINNER’S (NOW LINGUINI’S) OFFICE - DAY
 
 Linguini is surrounded by the other COOKS, who raise flutes 
 of champagne in a toast to their new owner. Laughing, Colette 
@@ -4681,7 +4681,7 @@ In the alley behind the kitchen, the COOKS symbolically burn
 the GUSTEAU STANDEES created to promote Skinner’s hated 
 FROZEN FOOD line. All cheer as the FLAMES rise higher.
 
-INT - DINING AREA - GUSTEAU’S - EARLY EVENING - DAYS LATER
+INT. - DINING AREA - GUSTEAU’S - EARLY EVENING - DAYS LATER
 
 FLASHES POP. Linguini sits at a table, posing for photos. 
 Several JOURNALISTS hover nearby shouting questions.
@@ -4692,7 +4692,7 @@ Several JOURNALISTS hover nearby shouting questions.
       yet you have no formal training. 
       What is the secret to your genius?
 
-INT - INSIDE LINGUINI’S TOQUE
+INT. - INSIDE LINGUINI’S TOQUE
 
 Remy reacts to the question, looking down at the head beneath 
 him as if to say: ”Yeah smart guy, what is your secret?”
@@ -4726,7 +4726,7 @@ WITH LINGUINI
         (lamely, trying it out)
       ...the Gusteau part...?
 
-INT - UNDER THE TOQUE
+INT. - UNDER THE TOQUE
 
 Remy tugs a hair tuft, causing Linguini to bop himself in the 
 head with his frying pan. 
@@ -4756,7 +4756,7 @@ teeth, making a squeaking sound.
              LINGUINI (CONT’D)
       Something stuck in my teeth. 
 
-INT - OFFICES - MINISTRY OF HEALTH - DAY
+INT. - OFFICES - MINISTRY OF HEALTH - DAY
 
 Drab and cluttered. A battered telephone rings at the desk of 
 NADAR LESSARD, a bored bureaucrat. He turns from a pile of 
@@ -4800,7 +4800,7 @@ Lessard hangs up. Skinner listens to the dial tone, deflated.
              SKINNER
       --stole my documents...
 
-INT - KITCHEN - GUSTEAU’S RESTAURANT 
+INT. - KITCHEN - GUSTEAU’S RESTAURANT 
 
 Horst looks at the clock, scowls, and turns to Colette.
 
@@ -4812,7 +4812,7 @@ Horst looks at the clock, scowls, and turns to Colette.
 
 She heaves an annoyed sigh and heads out to the dining area. 
 
-INT - DINING AREA
+INT. - DINING AREA
 
 Colette enters the swirl of activity to confront Linguini. He 
 shoots her a cocky smile, offering her a glass of champagne.
@@ -4854,7 +4854,7 @@ Linguini, who is still seated.
       sporting chance as you are new to 
       this game.
 
-INT - UNDER THE TOQUE
+INT. - UNDER THE TOQUE
 
 Remy watches with fear and awe. 
 
@@ -4913,7 +4913,7 @@ He calls back to the press in apology--
       She meant to say “it’s dinner time, 
       and we’re French”--!
 
-INT - HEAD CHEF’S OFFICE - MOMENTS LATER
+INT. - HEAD CHEF’S OFFICE - MOMENTS LATER
 
 Remy stands on the desk top, glowering at Linguini.
 
@@ -4936,14 +4936,14 @@ an “about time” look, climbs up his arm and under his toque.
       matters here. Colette knows how to 
       cook too, you know--
 
-INT - UNDER THE TOQUE
+INT. - UNDER THE TOQUE
 
 The last straw. Remy grabs a hair hank and pulls-- too hard.
 
              LINGUINI (CONT’D)
       --- OW!! Alright that’s it!!
 
-EXT - OUTSIDE BACK KITCHEN ENTRANCE - DUSK
+EXT. - OUTSIDE BACK KITCHEN ENTRANCE - DUSK
 
 The door bangs open, Linguini storms out, mashing his toque 
 against his head, angrily shuts the door behind him. He yanks 
@@ -4954,7 +4954,7 @@ his toque off and gets in Remy’s tiny face--
       not your puppet, and you’re not my-- 
       uh, puppet... controlling... guy. 
 
-EXT - FROM THE ROOF ABOVE
+EXT. - FROM THE ROOF ABOVE
 
 SKINNER watches this strange scene, his jaw hanging open... 
 
@@ -5002,7 +5002,7 @@ The other rats laugh. Remy’s face goes hard.
         (to Emile, evil grin)
       --tell Dad to bring the whole clan.
 
-INT - LINGUINI’S APARTMENT - NIGHT
+INT. - LINGUINI’S APARTMENT - NIGHT
 
 Linguini returns, calling out in the darkened apartment. 
 
@@ -5011,7 +5011,7 @@ Linguini returns, calling out in the darkened apartment.
 
 He looks in Remy’s little sleeping area, finding it EMPTY.
 
-INT - KITCHEN - GUSTEAU’S - NIGHT
+INT. - KITCHEN - GUSTEAU’S - NIGHT
 
 Horst puts the kitchen to bed. He pulls on his coat and turns 
 the LIGHTS OUT. Beat. A metal GRATE in the floor lifts up, 
@@ -5069,7 +5069,7 @@ he’s caught the rats MID-HEIST.
       Gusteau or you know, people will be 
       disappointed. It’s weird... 
 
-INT - INSIDE THE FOOD SAFE: MORE QUICK SHOTS
+INT. - INSIDE THE FOOD SAFE: MORE QUICK SHOTS
 
 RATS HIDE; up on the shelves, in EGG CARTONS, inside the 
 holes in a wedge of SWISS CHEESE, submerged in an open sack 
@@ -5101,7 +5101,7 @@ REMY listens to Linguini, shamed by his kind words.
       never failed me, and I should never 
       forget that.  
 
-INT - INSIDE THE FOOD SAFE
+INT. - INSIDE THE FOOD SAFE
 
 Emile, now stuffed and lumpy with grapes, eyes the last 
 REMAINING GRAPE on the stem. Balancing on a CHEESE WHEEL, he 
@@ -5137,7 +5137,7 @@ that rushes past Linguini’s feet and out the open door.
 
                                       96.
 
-EXT - OUTSIDE KITCHEN - REAR ENTRANCE - CONTINUOUS
+EXT. - OUTSIDE KITCHEN - REAR ENTRANCE - CONTINUOUS
 
 The door bursts open and a flood of rats pour out the rear 
 door into the alley, Linguini behind them brandishing a mop.
@@ -5191,7 +5191,7 @@ The MENU lowers, revealing EGO. He GRINS, ravenous.
 Linguini is frozen in fear, his heart pounding as Ego’s cold 
 chuckle turns into a ROAR--
 
-INT - INSIDE HEAD CHEF’S OFFICE - MORNING - CONTINUOUS
+INT. - INSIDE HEAD CHEF’S OFFICE - MORNING - CONTINUOUS
 
 Linguini AWAKENS. Someone is POUNDING is at his office door.
 
@@ -5210,7 +5210,7 @@ The door opens and Colette leans in, speaking tenderly--
              COLETTE
       You are the boss. Inspire them.
 
-INT - KITCHEN - MINUTES LATER  
+INT. - KITCHEN - MINUTES LATER  
 
 Linguini places a step ladder at the front of the kitchen and 
 stands on the top step. He clears his throat.
@@ -5235,7 +5235,7 @@ The staff pauses and turns their attentions to Linguini.
 The COOKS exchange confused glances. Colette wilts. This is 
 not the inspiration she had in mind.
 
-EXT - OUTSIDE REAR KITCHEN ENTRANCE - GUSTEAU’S - SAME MOMENT
+EXT. - OUTSIDE REAR KITCHEN ENTRANCE - GUSTEAU’S - SAME MOMENT
 
 Remy is watching this through the kitchen window. He sighs.
 
@@ -5276,7 +5276,7 @@ up the trap/cage, grinning ear to ear.
       You may think you are a chef, but 
       you are still... only a rat. 
 
-INT - KITCHEN - SAME TIME
+INT. - KITCHEN - SAME TIME
 
 The cooks are sitting now, bored out of their minds. Linguini 
 is still talking.
@@ -5314,7 +5314,7 @@ grunts, cries and hand claps they return to work.
         (a beat too late)
       Yeah--! Let’s-- okay...
 
-EXT - STREET NEAR GUSTEAU’S - MOMENTS LATER
+EXT. - STREET NEAR GUSTEAU’S - MOMENTS LATER
 
 Remy’s cage is set down inside the trunk of SKINNER’S CAR. 
 Remy looks up at Skinner.
@@ -5333,7 +5333,7 @@ cautiously.
              SKINNER
       Au revoir, rat!
 
-INT - GUSTEAU’S RESTAURANT - DINING AREA - NIGHT  
+INT. - GUSTEAU’S RESTAURANT - DINING AREA - NIGHT  
 
 Mustafa draws a deep breath, gathering courage. He turns and 
 approaches Ego’s table. 
@@ -5401,10 +5401,10 @@ head toward Ego and speaks to his waiter--
 
                                      101.
 
-INT - INSIDE SKINNER’S CAR TRUNK
+INT. - INSIDE SKINNER’S CAR TRUNK
 
 Remy sits in the corner of his cage, alone and defeated. The 
-INT - GUSTEU SPRITE appears. He studies Remy, speaking quietly.
+INT. - GUSTEU SPRITE appears. He studies Remy, speaking quietly.
 
              GUSTEAU
       So... we’ve given up.
@@ -5453,7 +5453,7 @@ something hits the street pavement outside.
 
                                      102.
 
-EXT - CATHEDRAL ACROSS FROM GUSTEAU’S - DUSK
+EXT. - CATHEDRAL ACROSS FROM GUSTEAU’S - DUSK
 
 A STONE GARGOYLE has just missed the trunk of Skinner’s car 
 and SHATTERED on the pavement. DJANGO, clearly annoyed, calls 
@@ -5465,7 +5465,7 @@ gargoyle-less balustrade above.
 
 Git grunts, moves to the next gargoyle and PUSHES--
 
-INT - INSIDE SKINNER’S CAR TRUNK
+INT. - INSIDE SKINNER’S CAR TRUNK
 
 Remy, alert and excited now, calls out.
 
@@ -5503,7 +5503,7 @@ it open. Remy jumps out, gives Django and Emile quick hugs--
 
                                      103.
 
-INT - INSIDE KITCHEN - GUSTEAU’S - SAME TIME
+INT. - INSIDE KITCHEN - GUSTEAU’S - SAME TIME
 
 CHAOS. Tempers are flaring, orders are piling up and the 
 kitchen is dissolving under Linguini’s leadership. Holding a 
@@ -5569,7 +5569,7 @@ Linguini runs into his office and slams the door closed.
 
                                      104.
 
-EXT - OUTSIDE BACK KITCHEN ENTRANCE - GUSTEAU’S - SAME TIME
+EXT. - OUTSIDE BACK KITCHEN ENTRANCE - GUSTEAU’S - SAME TIME
 
 Django and Emile rush to stop Remy as he heads toward the 
 kitchen door--
@@ -5678,7 +5678,7 @@ closes the door behind him.
 
                                      106.
 
-EXT - PARIS STREETS - MOVING WITH COLETTE - NIGHT
+EXT. - PARIS STREETS - MOVING WITH COLETTE - NIGHT
 
 COLETTE speeds her motorcycle recklessly through the streets, 
 crying. A car horn BLASTS. She STARTLES, hits the brakes and 
@@ -5697,7 +5697,7 @@ CLOSE ON COLETTE. Behind her the traffic light TURNS green.
 WIDE SHOT: The traffic on either side of her begins to go. 
 Colette sits atop her motorcycle-- motionless.
 
-INT - RESUME GUSTEAU’S KITCHEN
+INT. - RESUME GUSTEAU’S KITCHEN
 
 Alone in the empty kitchen, Remy faces the dining room door, 
 feeling Ego on the other side, waiting. Remy slowly turns 
@@ -5749,7 +5749,7 @@ inspector, yelling as he exits out the door.
       DELTA TEAM FOLLOW ME! THE REST OF 
       YOU STAY AND HELP REMY!
 
-EXT - ALLEY BEHIND GUSTEAU’S - INSIDE INSPECTOR’S CAR 
+EXT. - ALLEY BEHIND GUSTEAU’S - INSIDE INSPECTOR’S CAR 
 
 The inspector JAMS his keys into the ignition and turns. The 
 ENGINE won’t turn over. He glances at the rear view mirror 
@@ -5761,7 +5761,7 @@ ENGINE comes to life. Tires SQUEAL, smoking as the car roars
 from the alley in reverse and pulls a 180 into the street, 
 the rats covering it like a grey moss-- 
 
-INT - KITCHEN - SAME TIME
+INT. - KITCHEN - SAME TIME
 
 The dishwasher opens with a WHOOSH of steam: DOZENS OF RATS 
 EMERGE, their fur clean and fluffy. They disperse with Swat 
@@ -5810,7 +5810,7 @@ note pad. A big smile stretches across Skinner’s face.
              SKINNER
       Please. Take all the time you need.
 
-INT - KITCHEN
+INT. - KITCHEN
 
 The kitchen is going like blazes; RATS are sauteing, spicing, 
 grilling, cooking up a storm. Remy, nearly overwhelmed with 
@@ -5827,7 +5827,7 @@ control. Tempted by the sauce, he tries to sneak a lick.
      (stopping himself)
                      Sorry!
 
-INT - DINING AREA - SAME TIME
+INT. - DINING AREA - SAME TIME
 
 Ego looks impatiently at his watch, scribbles in his notepad. 
 Then his eyes fall to the soup. He pulls the bowl to him, 
@@ -5835,7 +5835,7 @@ dips a spoon in, TASTING IT. Not bad...
 
                                      109.
 
-INT - KITCHEN
+INT. - KITCHEN
 
 The RATS are functioning like a well-oiled machine; the 
 perfectly prepared meals hit the pass as quickly as Linguini 
@@ -5886,7 +5886,7 @@ Remy PAUSES, considering this.
 
                                      110.
 
-INT - KITCHEN / DINING AREA
+INT. - KITCHEN / DINING AREA
 
 INTERCUT: (1) Remy REIMAGINING the ratatouille; re-inventing 
 it step by step and demonstrating what he wants to Colette, 
@@ -5912,7 +5912,7 @@ Linguini watches, withering.
 As Ego’s lips close around the ratatouille, the sound, the 
 restaurant around him is WHISKED AWAY--
 
-EXT - FLASHBACK: FRENCH COUNTRYSIDE - A LIFETIME AGO
+EXT. - FLASHBACK: FRENCH COUNTRYSIDE - A LIFETIME AGO
 
 We are inside a cozy cottage on a golden summer day. The 
 front door is open, a newly crashed BICYCLE lays on the 
@@ -5947,7 +5947,7 @@ it. He’s stunned; loving and hating it all at once--
         (as he eats)
       No... no, it can’t be...
 
-INT - KITCHEN 
+INT. - KITCHEN 
 
 Skinner BURSTS through the double doors.
 
@@ -5957,13 +5957,13 @@ Skinner BURSTS through the double doors.
 
 A kitchen full of RATS all stop and LOOK UP AT HIM. CUT TO--
 
-INT - INSIDE FOOD SAFE
+INT. - INSIDE FOOD SAFE
 
 Skinner, bound and gagged, is tossed roughly into the corner, 
 where he lands next to the equally bound and gagged HEALTH 
 INSPECTOR. They yell muffled protests as the door slams shut.
 
-INT - DINING AREA
+INT. - DINING AREA
 
 A long FINGER dabs the last smear of remaining sauce from the 
 plate of ratatouille. We follow it to Ego’s smiling lips. He 
@@ -6034,7 +6034,7 @@ at this in grim deadpan.
       He doesn’t react beyond asking an 
       occasional question. 
 
-INT - DINING AREA
+INT. - DINING AREA
 
 Linguini and Colette are now seated at a table opposite Ego. 
 Remy sits on the table facing Ego, who occasionally glances 
@@ -6052,7 +6052,7 @@ down at him. Finally Ego gets up, and bows slightly.
              REMY (V.O., CONT’)
       --and leaves without another word. 
 
-INT - EGO’S OFFICE - NIGHT  
+INT. - EGO’S OFFICE - NIGHT  
 
 In a SERIES OF SHOTS Ego is seen pacing, brooding, staring 
 out one of the enormous picture windows flanking his portrait 
@@ -6137,7 +6137,7 @@ the sky creeps into dawn.
       nothing less than the finest Chef 
       in France. 
 
-INT - KITCHEN - GUSTEAU’S - MORNING
+INT. - KITCHEN - GUSTEAU’S - MORNING
 
 V.O. CONTINUES as a Colette & Linguini read EGO’S REVIEW-- 
 
@@ -6168,7 +6168,7 @@ SHOT: A bored worker for the MINISTRY OF HEALTH pastes
       lost his job and his credibility. 
       But don’t feel too bad for him...
 
-INT - A BISTRO - DAY - THE PRESENT
+INT. - A BISTRO - DAY - THE PRESENT
 
 In a tiny, warmly lit room, a GROUP OF RATS (including DJANGO 
 & EMILE) are seated around a basket, which has been 
@@ -6201,7 +6201,7 @@ especially for him. He’s quickly dropped into the kitchen.
 
                                      116.
 
-INT - BISTRO KITCHEN - CONTINUOUS
+INT. - BISTRO KITCHEN - CONTINUOUS
 
 The BASKET with Remy drops to the counter and Remy hops off. 
 Colette sets down a plate of Remy’s now-famous Ratatouille, 
@@ -6241,7 +6241,7 @@ food and life.
 
 CAMERA CONTINUES out the window and we are--
 
-EXT - OUTSIDE THE BISTRO - PARIS - DUSK
+EXT. - OUTSIDE THE BISTRO - PARIS - DUSK
 
 A long line of customers has formed outside, waiting to get 
 in. An elegant METAL SIGN comes into view, featuring a rat 

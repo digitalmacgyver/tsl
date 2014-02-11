@@ -14,18 +14,30 @@ import tsl.script.Structure
 from tsl.script.parse.const import CHARACTER, DISCUSS, LOCATION, SETTING
 from tsl.script.reports.reports import top_presences, top_interactions, get_presence_csv, get_interaction_csv
 
-
 scripts = [
-    ( 'Chinatown', '../example-scripts/chinatown.txt' ),
-    ( 'Dune', '../example-scripts/dune.txt' ),
-    ( 'Ghostbusters', '../example-scripts/ghostbusters.txt' ),
-    ( 'The Matrix', '../example-scripts/the_matrix.txt' ),
-    ( 'Good Will Hunting', '../example-scripts/good_will_hunting.txt' ),
-    ( 'The Book of Eli', '../example-scripts/the_book_of_eli.txt' ),
-    ( 'Starwars', '../example-scripts/starwars.txt' ),
-    ( 'Alien', '../example-scripts/alien.txt' ),
-    ( 'Vertigo', '../example-scripts/vertigo.txt' ),
-    ( 'Terminator 2', '../example-scripts/terminator_2.txt' )
+     ( 'Chinatown', '../example-scripts/chinatown.txt' ),
+     ( 'Dune', '../example-scripts/dune.txt' ),
+     ( 'Ghostbusters', '../example-scripts/ghostbusters.txt' ),
+     ( 'The Matrix', '../example-scripts/the_matrix.txt' ),
+     ( 'Good Will Hunting', '../example-scripts/good_will_hunting.txt' ),
+     ( 'The Book of Eli', '../example-scripts/the_book_of_eli.txt' ),
+     ( 'Starwars', '../example-scripts/starwars.txt' ),
+     ( 'Alien', '../example-scripts/alien.txt' ),
+     ( 'Vertigo', '../example-scripts/vertigo.txt' ),
+     ( 'Terminator 2', '../example-scripts/terminator_2.txt' ),
+     ( 'Ratatouille', '../example-scripts/ratatouille.txt' ),
+     # Questionable formatting
+     ( 'Analyze That', '../example-scripts/analyze_that.txt' ),
+     ( 'Batman Begins', '../example-scripts/batman_begins.txt' ),
+     ( 'Death to Smoochy', '../example-scripts/death_to_smoochy.txt' ),
+     ( 'Get Carter', '../example-scripts/get_carter.txt' ),
+     ( 'Gothika', '../example-scripts/gothika.txt' ),
+     ( 'Groundhogs Day', '../example-scripts/groundhogs_day.txt' ),
+     ( 'Red Planet', '../example-scripts/red_planet.txt' ),
+     ( 'Smurfs', '../example-scripts/smurfs.txt' ),
+     ( 'Sweet November', '../example-scripts/sweet_november.txt' ),
+     ( 'Taking Lives', '../example-scripts/taking_lives.txt' ),
+     ( 'Thirteen Ghosts', '../example-scripts/thirteen_ghosts.txt' ),
     ]
 
 def process_script( script ):
@@ -78,7 +90,7 @@ def process_script( script ):
     output['distinct_words'] = len( vocab )
 
     # Word categories
-    if False:
+    if True:
         tagged_words = nltk.pos_tag( text )
         porter = nltk.PorterStemmer()
         stemmed_tags = [ ( porter.stem( t[0].lower() ), t[1] ) for t in tagged_words ]
