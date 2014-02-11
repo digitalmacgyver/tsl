@@ -75,7 +75,6 @@ def eccentricity( distances ):
 def density( distances ):
     '''A hash of movie, density.'''
     result = {}
-    denominator = len( distances.keys() )
     for k1 in sorted( distances.keys() ):
         numerator = 0
         for k2, distance in distances[k1].items():
@@ -85,7 +84,7 @@ def density( distances ):
                 # If we have an overflow don't worry about it, just
                 # add nothing.
                 pass
-        result[k1] = numerator / denominator
+        result[k1] = numerator
     return result
 
 def compute_projection( distances, projection_func ):
@@ -281,7 +280,7 @@ def make_covering( low, high, width, overlap ):
         current += step
     return covering
 
-cover_width = 64
+cover_width = 4
 
 covering = make_covering( 13, 36, cover_width, 4 )
 
@@ -324,8 +323,8 @@ for p_idx, partition in enumerate( inverse_covering ):
 #nx.draw_random( graph )
 #plt.show()
 
-#nx.draw_circular( graph )
-#plt.savefig( "density_cover_width_%s_epsilon_%0.02f.png" % ( cover_width, epsilon ) )
+nx.draw_circular( graph )
+plt.savefig( "cover_width_%s_epsilon_%0.02f.png" % ( cover_width, epsilon ) )
 
 
 '''

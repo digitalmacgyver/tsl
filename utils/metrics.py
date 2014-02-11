@@ -92,7 +92,55 @@ def process_script( script ):
         output['vocabulary']['adjectives'] = adj[:10]
         output['vocabulary']['non_proper_nouns'] = nouns[:10]
         output['vocabulary']['verbs'] = verbs[:10]
-    
+
+    # Word categories
+    #
+    # DEBUG - Limit this to action text.
+    if False:
+        tagged_words = nltk.pos_tag( text )
+        porter = nltk.PorterStemmer()
+        stemmed_tags = [ ( porter.stem( t[0].lower() ), t[1] ) for t in tagged_words ]
+
+        import pylab
+
+        text_to_comp = stemmed_tags
+
+        #print text_to_comp
+
+        verbs = [ text_to_comp[x][0] for x in range( len( text_to_comp ) )
+                  if text_to_comp[x][1].startswith( 'V' ) and len( text_to_comp[x][0] ) > 2 and text_to_comp[x][0] not in [ 'think', 'know', 'want', 'feel', 'see', 'here', 'say', 'happen', 'move', 'touch', 'there', 'have', 'were', 'are', 'saw', 'was', 'said', 'thought', 'knew', 'wanted', 'felt', 'happened', 'moved', 'touched', 'had', 'gitt' ] ]
+
+        print verbs
+
+        points = [(x,y) for x in range( len( text_to_comp ) )
+                  for y in range( 1 )
+                  if text_to_comp[x][1].startswith( 'V' ) and len( text_to_comp[x][0] ) > 2 and text_to_comp[x][0] not in [ 'think', 'know', 'want', 'feel', 'see', 'here', 'say', 'happen', 'move', 'touch', 'there', 'have', 'were', 'are', 'saw', 'was', 'said', 'thought', 'knew', 'wanted', 'felt', 'happened', 'moved', 'touched', 'had', 'gitt' ] ]
+
+        if points:
+            x, y = list(zip(*points))
+        else:
+            x = y = ()
+        pylab.plot(x, y, "b|", scalex=.1)
+        pylab.yticks(list(range(1)), ['verbs'], color="b")
+        pylab.ylim(-1, 1)
+        pylab.title("Lexical Dispersion Plot")
+        pylab.xlabel("Word Offset")
+        pylab.show()
+
+        #stemmed_tags.dispersion_plot( [ word[0] for word in stemmed_tags if word[1].startswith( 'V' ) ] )
+
+        '''
+        for idx, tword in enumerate( stemmed_tags ):
+            word, tag = tword
+            if not tag.startswith( 'V' ) or len( word ) <= 2:
+                continue
+            if word not in [ 'think', 'know', 'want', 'feel', 'see', 'here', 'say', 'happen', 'move', 'touch', 'there', 'have' ]:
+                print idx
+                '''
+        sys.exit( 0 )
+
+
+
     # R-numbers
     if False:
         porter = nltk.PorterStemmer()
