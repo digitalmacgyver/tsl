@@ -11,7 +11,7 @@ import sys
 # Read in movie JSON files.
 movies_dir = "../example-scripts/parsed"
 
-output_dir = "/wintmp/movies/graph/"
+outdir = "/wintmp/movie/graph/"
 
 def get_movies( movies_dir ):
     '''Returns a hash keyed on movie title whose body is the Python
@@ -362,7 +362,7 @@ def make_graph( low, high, width, overlap, epsilon ):
     plt.figure( figsize=(16,9) )
     nx.draw( graph, pos=positions )
     filename = "cover_width_%s_overlap_%s_epsilon_%0.02f" % ( width, overlap, epsilon )
-    plt.savefig( "%s.png" % ( filename ) )
+    plt.savefig( outdir+"%s.png" % ( filename ) )
 
     output_d3( filename, vertices, edges, "Cover width: %s, Overlap: %s, Epsilon: %0.02f" % ( width, overlap, epsilon ) )
 
