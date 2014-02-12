@@ -11,6 +11,8 @@ import sys
 # Read in movie JSON files.
 movies_dir = "../example-scripts/parsed"
 
+output_dir = "/wintmp/movies/graph/"
+
 def get_movies( movies_dir ):
     '''Returns a hash keyed on movie title whose body is the Python
     data structure made up of the _metrics.json for this film in the
@@ -280,15 +282,90 @@ def make_covering( low, high, width, overlap ):
         current += step
     return covering
 
-cover_width = 4
+def output_d3( filename, vertices, edges, header ):
+    f = open( outdir+filename+".json", 'w' )
+    json.dump( { "nodes" : vertices, "links" : edges }, f )
+    f.close()
+    f = open( outdir+"graphs.html", 'a' )
+    html_body = '''
+<p>
+%s
+</p>
+<script>
+script_graph( "%s", width=768, height=432 );
+</script>
+''' % ( header, filename+".json" )
+    f.write( html_body )
+    f.close()
 
-covering = make_covering( 13, 36, cover_width, 4 )
+def make_graph( low, high, width, overlap, epsilon ):
+    covering = make_covering( low, high, width, overlap )
 
-print "Covering is:", covering
+    print "Covering is:", covering
 
-#covering = [ (0, 15), (14, 16), (15, 17), (16, 99) ]
+    inverse_covering = get_inverse_covering( projection, covering )
 
-inverse_covering = get_inverse_covering( projection, covering )
+    # Array of { "name":"Foo","group":cluster_idx }
+    vertices = []
+    # Array of { "source":idx of thing in vertices, "target":idx of thing in vertices", value:1 }
+    edges = []
+
+    graph = nx.Graph()
+
+    label_to_vertex = {}
+
+    for p_idx, partition in enumerate( inverse_covering ):
+        partition_clusters = get_clusters( partition['movies'], distances, epsilon )
+        print "Range from %s to %s had %s movies, which formed the following clusters:" % ( partition['range'][0], partition['range'][1], len( partition['movies'].keys() ) )
+
+        for idx, cluster in enumerate( partition_clusters ):
+            print "\tCluster %s" % idx
+            label = 'Cover %s: ' % ( p_idx ) + ', '.join( sorted( cluster.keys() ) )
+            graph.add_node( label )
+            
+            vertices.append( { "name" : label, "group" : p_idx } )
+            label_to_vertex[label] = len( vertices ) - 1
+
+            for movie in sorted( cluster.keys() ):
+                graph.node[label][movie] = True
+                print "\t\t%s" % movie
+                for node, data in graph.nodes( data=True ):
+                    if movie in data and node != label:
+                        graph.add_edge( node, label )
+
+                        edges.append( { "source" : label_to_vertex[node], "target" : label_to_vertex[label], "value" : 1 } )
+ 
+                        
+        #nx.write_dot( graph, 'file.dot' )           
+        #positions = nx.graphviz_layout( graph, prog='neato' )
+        #positions = nx.spring_layout( graph )
+        #nx.draw( graph, pos=positions )
+        #nx.draw_random( graph )
+        #plt.show()
+
+    #nx.draw_circle( graph )
+
+    '''
+    positions = nx.spring_layout( graph, scale=1024 )
+    plt.figure( 1, figsize=(16,16) )
+    nx.draw( graph, positions, font_size=8 )
+    plt.show()
+    #plt.figure( num=None, figsize=( 8, 8 ), facecolor='w', edgecolor='k' )
+    #plt.savefig( "8x8_cover_width_%s_overlap_%s_epsilon_%0.02f.png" % ( width, overlap, epsilon ) )
+    #plt.figure( num=None, figsize=( 16, 16 ) )
+    #plt.savefig( "16x16_cover_width_%s_overlap_%s_epsilon_%0.02f.png" % ( width, overlap, epsilon ) )
+    '''
+    #import pdb
+    #pdb.set_trace()
+    plt.clf()
+    positions = nx.spring_layout( graph, k=.1, iterations=100 )
+    plt.figure( figsize=(16,9) )
+    nx.draw( graph, pos=positions )
+    filename = "cover_width_%s_overlap_%s_epsilon_%0.02f" % ( width, overlap, epsilon )
+    plt.savefig( "%s.png" % ( filename ) )
+
+    output_d3( filename, vertices, edges, "Cover width: %s, Overlap: %s, Epsilon: %0.02f" % ( width, overlap, epsilon ) )
+
 
 epsilon_candidates = cluster_epsilon_finder( movies, distances )
 print "Cluster epsilon candidates", epsilon_candidates
@@ -296,47 +373,38 @@ epsilon = numpy.median( epsilon_candidates )*1.01
 #epsilon = 10
 print "Epsilon selected as: (multiplied by 1.01 to handle rounding errors)", epsilon
 
+f = open( outdir+"graphs.html", 'w' )
+html_front = '''
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
 
-graph = nx.Graph()
+.node {
+  stroke: #fff;
+  stroke-width: 1.5px;
+}
 
-for p_idx, partition in enumerate( inverse_covering ):
-    partition_clusters = get_clusters( partition['movies'], distances, epsilon )
-    print "Range from %s to %s had %s movies, which formed the following clusters:" % ( partition['range'][0], partition['range'][1], len( partition['movies'].keys() ) )
-    
-    for idx, cluster in enumerate( partition_clusters ):
-        print "\tCluster %s" % idx
-        label = 'Cover %s: ' % ( p_idx ) + ', '.join( sorted( cluster.keys() ) )
-        graph.add_node( label )
+.link {
+  stroke: #999;
+  stroke-opacity: .6;
+}
 
-        for movie in sorted( cluster.keys() ):
-            graph.node[label][movie] = True
-            print "\t\t%s" % movie
-            for node, data in graph.nodes( data=True ):
-                if movie in data and node != label:
-                    graph.add_edge( node, label )
- 
-
-#nx.write_dot( graph, 'file.dot' )           
-#positions = nx.graphviz_layout( graph, prog='neato' )
-#positions = nx.spring_layout( graph )
-#nx.draw( graph, pos=positions )
-#nx.draw_random( graph )
-#plt.show()
-
-nx.draw_circular( graph )
-plt.savefig( "cover_width_%s_epsilon_%0.02f.png" % ( cover_width, epsilon ) )
-
-
+</style>
+<body>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="graph.js"></script>
 '''
-When using density we get really really tiny things:
-{   u'Alien': 0.10000043024379664,
-    u'Chinatown': 0.1,
-    u'Dune': 0.10001667649205928,
-    u'Ghostbusters': 0.10000000851696096,
-    u'Good Will Hunting': 0.10000000000237834,
-    u'Starwars': 0.10001666797509837,
-    u'Terminator 2': 0.14858264889740103,
-    u'The Book of Eli': 0.10000055771078295,
-    u'The Matrix': 0.14858222171456978,
-    u'Vertigo': 0.10000055770840462}
+f.write( html_front )
+f.close()
+
+for width in [ 128, 64, 32, 16, 8, 4, 2, 1, .5, .25 ]:
+#for width in [4]:
+    make_graph( 14, 74, width, 3, epsilon )
+    make_graph( 14, 74, width, 4, epsilon )
+
+f = open( outdir+"graphs.html", 'a' )
+html_back = '''
+</body>
 '''
+f.write( html_back )
+f.close()
