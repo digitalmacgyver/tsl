@@ -87,10 +87,15 @@ def process_script( script ):
     text = nltk.Text( word_tokens )
     words = [ w.lower() for w in text ]
     vocab = sorted( set( words ) )
+    english_words = set( w.lower() for w in nltk.corpus.words.words() )
+    exotic_words = [ e for e in words if e not in english_words ]
+    distinct_exotic_words = set( exotic_words )
+    output['exocit_words'] = len( exotic_words )
+    output['distinct_exotic_words'] = len( distinct_exotic_words )
     output['distinct_words'] = len( vocab )
 
     # Word categories
-    if True:
+    if False:
         tagged_words = nltk.pos_tag( text )
         porter = nltk.PorterStemmer()
         stemmed_tags = [ ( porter.stem( t[0].lower() ), t[1] ) for t in tagged_words ]
@@ -139,7 +144,7 @@ def process_script( script ):
         pylab.xlabel("Word Offset")
         pylab.show()
 
-        #stemmed_tags.dispersion_plot( [ word[0] for word in stemmed_tags if word[1].startswith( 'V' ) ] )
+        stemmed_tags.dispersion_plot( [ word[0] for word in stemmed_tags if word[1].startswith( 'V' ) ] )
 
         '''
         for idx, tword in enumerate( stemmed_tags ):
@@ -188,7 +193,17 @@ def process_script( script ):
     # Distinct locations
     output['distinct_locations'] = len( top_locations )
 
+    # Number of location changes.
+    location_changes = 0
+    current_location = None
+    for presence in Presences.presences:
+        if presence['presence_type'] == SETTING and presence['noun_type'] == LOCATION:
+            if presence['name'] != current_location:
+                location_changes += 1
+            current_location = presence['name']
+    output['location_changes'] = location_changes
     
+
     # Percentage of scenes with main character
     scenes = Presences.presence_sn.keys()
     scene_count = len( scenes )
@@ -231,6 +246,14 @@ def process_script( script ):
     # Global word counts
     output['total_words'] = Structure.structure['total_words']
     output['dialog_words'] = Structure.structure['dialog_words']
+
+    # % of action words.
+    total_action_words = 0
+    for scene in Structure.structure['scenes'].keys():
+        for block in Structure.structure['scenes'][scene]['scene_blocks']:
+            if block['block_type'] == 'ACTION':
+                total_action_words += block['total_words']
+    output['total_action_words'] = total_action_words
 
     # % of dialog by top-N speakers.
     dialog_by_top_chars = []

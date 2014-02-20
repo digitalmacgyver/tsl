@@ -293,9 +293,8 @@ to become the real thing.
 
 Gallagher is last.  Turns his face from the sunlight.
 
-       Finally.
-
                  GALLAGHER
+       Finally.
 
 7D
 
@@ -434,7 +433,6 @@ Burchenal laughs it off.  Hands back the analyzer.
        And I'll be relying on you.
 
                  BURCHENAL
-
             (beat)
        If anyone can do it, it's me.
 
@@ -459,9 +457,8 @@ He snaps off a switch in a wall panel.  Snaps it back
 on.  Pettengill watches a readout, sees a light flick
 from red to green.
 
-       Clear.
-
                  PETTENGILL
+       Clear.
 
                  BOWMAN
        All set.  I'm going to the flight
@@ -472,11 +469,9 @@ Starts out.
        O.M.S./R.C.S.
 
                  SANTEN
-
-                 PETTENGILL
-
        Clear.
 
+                 PETTENGILL
             (as Bowman passes)
        I'm still getting my head around
        the fact we're really doing this.
@@ -490,9 +485,8 @@ She goes.
                  SANTEN
        Optical Alignment Sight.
 
-       Clear.
-
                  PETTENGILL
+       Clear.
 
                  SANTEN
        Got half a million hits on my
@@ -527,13 +521,12 @@ CONTINUED:
        And you know you'd love having
        half of 'em... Master Timing Unit.
 
+                 PETTENGILL
        Clear.
 
+                 SANTEN
        That's it.
 
-                 PETTENGILL
-
-                 SANTEN
 
 13
 

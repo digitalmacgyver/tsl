@@ -11,7 +11,7 @@ import sys
 # Read in movie JSON files.
 movies_dir = "../example-scripts/parsed"
 
-outdir = "/wintmp/movie/graph/"
+outdir = "/wintmp/movie/graph4/"
 
 def get_movies( movies_dir ):
     '''Returns a hash keyed on movie title whose body is the Python
@@ -133,21 +133,40 @@ def get_clusters( movies_input, distances, epsilon ):
     
     clusters = []
 
+    #import pdb
+    #pdb.set_trace()
+
     while len( movies ):
-        # Avoid iterating over something we're changing.
-        movie_keys = movies.keys()
         current_cluster = {}
 
-        for movie in movie_keys:
-            if len( current_cluster ) == 0:
-                current_cluster[movie] = True
-                del movies[movie]
-            else:
-                for cluster_movie in current_cluster.keys():
-                    if distances[cluster_movie][movie] <= epsilon:
-                        current_cluster[movie] = True
-                        if movie in movies:
-                            del movies[movie]
+        cluster_changed = True
+        while cluster_changed:
+            cluster_changed = False
+            movie_keys = movies.keys()
+            for movie in movie_keys:
+                if len( current_cluster ) == 0:
+                    cluster_changed = True
+                    current_cluster[movie] = True
+                    del movies[movie]
+                else:
+                    for cluster_movie in current_cluster.keys():
+                        if distances[cluster_movie][movie] <= epsilon:
+                            cluster_changed = True
+                            current_cluster[movie] = True
+                            if movie in movies:
+                                del movies[movie]
+
+
+        #for movie in movie_keys:
+        #    if len( current_cluster ) == 0:
+        #        current_cluster[movie] = True
+        #        del movies[movie]
+        #    else:
+        #        for cluster_movie in current_cluster.keys():
+        #            if distances[cluster_movie][movie] <= epsilon:
+        #                current_cluster[movie] = True
+        #                if movie in movies:
+        #                    del movies[movie]
             
         clusters.append( current_cluster )
 
@@ -321,18 +340,41 @@ def make_graph( low, high, width, overlap, epsilon ):
         for idx, cluster in enumerate( partition_clusters ):
             print "\tCluster %s" % idx
             label = 'Cover %s: ' % ( p_idx ) + ', '.join( sorted( cluster.keys() ) )
-            graph.add_node( label )
-            
-            vertices.append( { "name" : label, "group" : p_idx } )
-            label_to_vertex[label] = len( vertices ) - 1
+
+            #graph.add_node( label )
+            #vertices.append( { "name" : label, "group" : p_idx } )
+            #label_to_vertex[label] = len( vertices ) - 1
+
+            #import pdb
+            #pdb.set_trace()
+
+            add_to_graph = True
+            for node, data in graph.nodes( data=True ):
+                same_as_existing = True
+                for movie in cluster.keys():
+                    if movie not in data:
+                        same_as_existing = False
+                for movie in data.keys():
+                    if movie not in cluster:
+                        same_as_existing = False
+                if same_as_existing:
+                    add_to_graph = False
+                    print "Skipping cluster: %s as identical to %s" % ( label, node )
+                    break
+
+
+            if add_to_graph:
+                graph.add_node( label )
+                vertices.append( { "name" : label, "group" : p_idx, "elements" : len( cluster.keys() ), "shading" : float( partition['range'][0] ) / high } )
+                label_to_vertex[label] = len( vertices ) - 1
 
             for movie in sorted( cluster.keys() ):
-                graph.node[label][movie] = True
+                if add_to_graph:
+                    graph.node[label][movie] = True
                 print "\t\t%s" % movie
                 for node, data in graph.nodes( data=True ):
-                    if movie in data and node != label:
+                    if movie in data and node != label and add_to_graph:
                         graph.add_edge( node, label )
-
                         edges.append( { "source" : label_to_vertex[node], "target" : label_to_vertex[label], "value" : 1 } )
  
                         
@@ -397,10 +439,12 @@ html_front = '''
 f.write( html_front )
 f.close()
 
-for width in [ 128, 64, 32, 16, 8, 4, 2, 1, .5, .25 ]:
+#epsilon = 10
+
 #for width in [4]:
-    make_graph( 14, 74, width, 3, epsilon )
-    make_graph( 14, 74, width, 4, epsilon )
+for width in [ 128, 64, 32, 16, 8, 4, 2, 1, .5, .25 ]:
+    make_graph( 0, 74, width, 2, epsilon )
+#    make_graph( 0, 74, width, 4, epsilon )
 
 f = open( outdir+"graphs.html", 'a' )
 html_back = '''

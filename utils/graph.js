@@ -32,7 +32,7 @@ function script_graph( filename, width=512, height=288, show_labels=false ) {
 
 	    node = gnodes.append( "circle" )
 		.attr( "class", "node" )
-	        .attr( "r", 5 )
+		.attr( "r", 5 )
 		.style( "fill", function( d ) { return color( d.group ); } )
 		.call( force.drag );
 	    
@@ -43,8 +43,9 @@ function script_graph( filename, width=512, height=288, show_labels=false ) {
 		.data(graph.nodes)
 		.enter().append("circle")
 		.attr("class", "node")
-		.attr("r", 5)
-		.style("fill", function(d) { return color(d.group); })
+		.attr("r", function( d ) { return 4*Math.sqrt( d.elements ); } )
+		.style("fill", function(d) { return "black"; return color(d.group); })
+		.style("fill-opacity", function( d ) { return 0.1+d.shading; } )
 		.call(force.drag);
 
 	    node.append("title")
