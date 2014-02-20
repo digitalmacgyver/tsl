@@ -7,14 +7,23 @@ import tsl.script.Script
 import tsl.script.Structure
 
 scripts = [
-    ( 'The Big Lebowski', '../example-scripts/the_big_lebowski.txt' ),
-    ( 'Chinatown', '../example-scripts/chinatown.txt' ),
-    ( 'Dune', '../example-scripts/dune.txt' ),
+    #( 'The Big Lebowski', '../example-scripts/the_big_lebowski.txt' ),
+    #( 'Chinatown', '../example-scripts/chinatown.txt' ),
+    #( 'Dune', '../example-scripts/dune.txt' ),
     ( 'Ghostbusters', '../example-scripts/ghostbusters.txt' ),
-    ( 'The Matrix', '../example-scripts/the_matrix.txt' ),
+    #( 'The Matrix', '../example-scripts/the_matrix.txt' ),
     ]
 
-def get_partitions( presence, c ):
+def get_dramatic_unit_partitions( presence, c ):
+    '''A dramatic unit is a consecutive sequence of scenes where c
+    percent of characters or more appearing in scenes N and N+1 appear
+    in scene N+1.  C is the input parameter.  Any scenes which have 0
+    characters appearing are appended to the prior DU.
+
+    Returns an array of arrays.  The elements of the outer array
+    are the dramatic units, the elements of the inner array are the
+    scenes numbers of the sceens within those dramatic units.
+    '''
     prior_chars = set()
     current_chars = set()
 
@@ -61,33 +70,35 @@ def print_script( structure, text, name, partitions, c ):
                 for line in text[ int( first_line )-1 : int( last_line )-2 ]:
                     outfile.write( line['content'] )
 
+if __name__ == '__main__':
 
-coefs = [ 0.01, 0.25 , 0.5, 1 ]
+    coefs = [ 0.01, 0.25 , 0.5, 1 ]
 
-for film in scripts:
-    name = film[0]
+    for film in scripts:
+        name = film[0]
     
-    outdir = '../example-scripts/parsed/' + re.sub( r'\s+', '_', name.lower() )
+        outdir = '../example-scripts/parsed/' + re.sub( r'\s+', '_', name.lower() )
 
-    Script = tsl.script.Script.Script( name, outdir )
-    Script.load()
+        Script = tsl.script.Script.Script( name, outdir )
+        Script.load()
 
-    Structure = tsl.script.Structure.Structure( name, outdir )
-    Structure.load()
+        Structure = tsl.script.Structure.Structure( name, outdir )
+        Structure.load()
 
-    Presences = tsl.script.Presences.Presences( name, outdir )
-    Presences.load()
+        Presences = tsl.script.Presences.Presences( name, outdir )
+        Presences.load()
 
-    presence_sn = Presences.presence_sn
-    structure = Structure.structure
-    text = Script.script_lines
+        presence_sn = Presences.presence_sn
+        structure = Structure.structure
+        text = Script.script_lines
 
-    print "%s has %s scenes" % ( name, len( presence_sn.keys() ) )
+        print "%s has %s scenes" % ( name, len( presence_sn.keys() ) )
 
-    for c in coefs:
-        partitions = get_partitions( presence_sn, c )
-        print "For coefficient %s there were %s dramatic units in %s" % ( c, len( partitions ), name )
-        
-        print_script( structure, text, name, partitions, c )
+        for c in coefs:
+            partitions = get_dramatic_unit_partitions( presence_sn, c )
+            print "For coefficient %s there were %s dramatic units in %s" % ( c, len( partitions ), name )
+            print "Partitions were:", partitions
+
+            #print_script( structure, text, name, partitions, c )
 
 

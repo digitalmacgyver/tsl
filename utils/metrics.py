@@ -14,6 +14,8 @@ import tsl.script.Structure
 from tsl.script.parse.const import CHARACTER, DISCUSS, LOCATION, SETTING
 from tsl.script.reports.reports import top_presences, top_interactions, get_presence_csv, get_interaction_csv
 
+from tsl.utils.partition import get_dramatic_unit_partitions
+
 scripts = [
     ( 'Chinatown', '../example-scripts/chinatown.txt' ),
     ( 'Dune', '../example-scripts/dune.txt' ),
@@ -90,7 +92,7 @@ def process_script( script ):
     english_words = set( w.lower() for w in nltk.corpus.words.words() )
     exotic_words = [ e for e in words if e not in english_words ]
     distinct_exotic_words = set( exotic_words )
-    output['exocit_words'] = len( exotic_words )
+    output['exotic_words'] = len( exotic_words )
     output['distinct_exotic_words'] = len( distinct_exotic_words )
     output['distinct_words'] = len( vocab )
 
@@ -287,6 +289,27 @@ def process_script( script ):
 
     output['percent_words_by_top_10_locations'] = words_at_top_locs[:10]
 
+
+    # Number of characters in dialog per DU.
+    dus = get_dramatic_unit_partitions( Presences.presence_sn, 0.5 )
+    speaker_count = []
+    for du in dus:
+        speakers = {}
+        for scene_idx in du:
+            for name, presences in Presences.presence_sn["%s" % scene_idx].items():
+                if name in speakers:
+                    continue
+                for presence in presences:
+                    if presence['noun_type'] == CHARACTER:
+                        if presence['presence_type'] == DISCUSS:
+                            speakers[presence['name']] = True
+                            break
+                    else:
+                        break
+        speaker_count.append( len( speakers.keys() ) )
+    output['du_speakers'] = speaker_count
+
+    # Write the output.
     f = open( file_dir + file_name + '/%s_metrics.json' % ( file_name ), 'w' )
     json.dump( output, f, sort_keys=True, indent=4 )
 
