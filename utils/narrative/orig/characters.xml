@@ -1,0 +1,24 @@
+<characters>
+<character group="4" id="0" name="Lucky Luke"/>
+<character group="0" id="1" name="Ma Dalton"/>
+<character group="4" id="2" name="Jolly Jumper"/>
+<character group="0" id="3" name="Rantanplan"/>
+<character group="2" id="4" name="Joe Dalton"/>
+<character group="2" id="5" name="William Dalton"/>
+<character group="2" id="6" name="Jack Dalton"/>
+<character group="2" id="7" name="Averell Dalton"/>
+<character group="0" id="8" name="Ma Dalton's Cat"/>
+<character group="4" id="15" name="Carriage driver"/>
+<character group="0" id="16" name="Sheriff"/>
+<character group="5" id="17" name="Butcher"/>
+<character group="3" id="18" name="Prison warden"/>
+<character group="2" id="19" name="Prison guards"/>
+<character group="3" id="20" name="Prisoners"/>
+<character group="6" id="21" name="Robbers"/>
+<character group="5" id="22" name="Vet"/>
+<character group="1" id="23" name="Banker"/>
+<character group="1" id="24" name="Bank owner"/>
+<character group="1" id="25" name="Sheriff 2"/>
+<character group="5" id="26" name="Farmer"/>
+<character group="7" id="27" name="Burley"/>
+</characters>

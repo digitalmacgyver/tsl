@@ -1,0 +1,4233 @@
+{
+    "panels": 24473, 
+    "scenes": [
+        {
+            "characters": {}, 
+            "chars": [], 
+            "duration": 54, 
+            "id": 0, 
+            "location": "NEW YORK PUBLIC LIBRARY", 
+            "location_number": 1, 
+            "scene_dialog_words": 0, 
+            "scene_number": 1, 
+            "scene_percentage": 0.0022065133003718383, 
+            "scene_start_percentage": 0.0022065133003718383, 
+            "scene_total_words": 54, 
+            "start": 0
+        }, 
+        {
+            "characters": {}, 
+            "chars": [], 
+            "duration": 114, 
+            "id": 1, 
+            "location": "MAIN READING ROOM", 
+            "location_number": 2, 
+            "scene_dialog_words": 0, 
+            "scene_number": 2, 
+            "scene_percentage": 0.004658194745229436, 
+            "scene_start_percentage": 0.006864708045601275, 
+            "scene_total_words": 114, 
+            "start": 54
+        }, 
+        {
+            "characters": {
+                "LIBRARIAN": {
+                    "appearances": 5, 
+                    "dialog_percentage": 1.0, 
+                    "dialog_words": 16
+                }
+            }, 
+            "chars": [
+                13
+            ], 
+            "duration": 288, 
+            "id": 2, 
+            "location": "WORK AREA", 
+            "location_number": 3, 
+            "scene_dialog_words": 16, 
+            "scene_number": 3, 
+            "scene_percentage": 0.01176807093531647, 
+            "scene_start_percentage": 0.018632778980917745, 
+            "scene_total_words": 288, 
+            "start": 168
+        }, 
+        {
+            "characters": {
+                "LIBRARIAN": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }
+            }, 
+            "chars": [
+                13
+            ], 
+            "duration": 41, 
+            "id": 3, 
+            "location": "NEXT AISLE", 
+            "location_number": 4, 
+            "scene_dialog_words": 0, 
+            "scene_number": 4, 
+            "scene_percentage": 0.0016753156539860254, 
+            "scene_start_percentage": 0.02030809463490377, 
+            "scene_total_words": 41, 
+            "start": 456
+        }, 
+        {
+            "characters": {}, 
+            "chars": [], 
+            "duration": 32, 
+            "id": 4, 
+            "location": "COLUMBIA UNIVERSITY", 
+            "location_number": 5, 
+            "scene_dialog_words": 0, 
+            "scene_number": 5, 
+            "scene_percentage": 0.0013075634372573858, 
+            "scene_start_percentage": 0.02161565807216116, 
+            "scene_total_words": 32, 
+            "start": 497
+        }, 
+        {
+            "characters": {
+                "VENKMAN": {
+                    "appearances": 1, 
+                    "dialog_percentage": 1.0, 
+                    "dialog_words": 25
+                }
+            }, 
+            "chars": [
+                0
+            ], 
+            "duration": 83, 
+            "id": 5, 
+            "location": "BASEMENT -- WEAVER HALL", 
+            "location_number": 6, 
+            "scene_dialog_words": 25, 
+            "scene_number": 6, 
+            "scene_percentage": 0.003391492665386344, 
+            "scene_start_percentage": 0.0250071507375475, 
+            "scene_total_words": 83, 
+            "start": 529
+        }, 
+        {
+            "characters": {
+                "COED": {
+                    "appearances": 11, 
+                    "dialog_percentage": 0.08602150537634409, 
+                    "dialog_words": 40
+                }, 
+                "LIBRARIAN": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }, 
+                "SOPHOMORE": {
+                    "appearances": 16, 
+                    "dialog_percentage": 0.15268817204301074, 
+                    "dialog_words": 71
+                }, 
+                "STANTZ": {
+                    "appearances": 6, 
+                    "dialog_percentage": 0.1935483870967742, 
+                    "dialog_words": 90
+                }, 
+                "VENKMAN": {
+                    "appearances": 33, 
+                    "dialog_percentage": 0.567741935483871, 
+                    "dialog_words": 264
+                }
+            }, 
+            "chars": [
+                14, 
+                10, 
+                0, 
+                13, 
+                1
+            ], 
+            "duration": 840, 
+            "id": 6, 
+            "location": "PARANORMAL STUDIES LAB -- SAME TIME", 
+            "location_number": 7, 
+            "scene_dialog_words": 465, 
+            "scene_number": 7, 
+            "scene_percentage": 0.03432354022800638, 
+            "scene_start_percentage": 0.05933069096555388, 
+            "scene_total_words": 840, 
+            "start": 612
+        }, 
+        {
+            "characters": {
+                "STANTZ": {
+                    "appearances": 5, 
+                    "dialog_percentage": 0.3884297520661157, 
+                    "dialog_words": 47
+                }, 
+                "VENKMAN": {
+                    "appearances": 4, 
+                    "dialog_percentage": 0.6115702479338843, 
+                    "dialog_words": 74
+                }
+            }, 
+            "chars": [
+                1, 
+                0
+            ], 
+            "duration": 145, 
+            "id": 7, 
+            "location": "PUBLIC LIBRARY", 
+            "location_number": 8, 
+            "scene_dialog_words": 121, 
+            "scene_number": 8, 
+            "scene_percentage": 0.005924896825072529, 
+            "scene_start_percentage": 0.0652555877906264, 
+            "scene_total_words": 145, 
+            "start": 1452
+        }, 
+        {
+            "characters": {
+                "LIBRARIAN": {
+                    "appearances": 2, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }, 
+                "SPENGLER": {
+                    "appearances": 2, 
+                    "dialog_percentage": 0.1565217391304348, 
+                    "dialog_words": 18
+                }, 
+                "STANTZ": {
+                    "appearances": 3, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }, 
+                "VENKMAN": {
+                    "appearances": 12, 
+                    "dialog_percentage": 0.4956521739130435, 
+                    "dialog_words": 57
+                }
+            }, 
+            "chars": [
+                2, 
+                0, 
+                13, 
+                1
+            ], 
+            "duration": 243, 
+            "id": 8, 
+            "location": "MAIN READING ROOM", 
+            "location_number": 2, 
+            "scene_dialog_words": 115, 
+            "scene_number": 9, 
+            "scene_percentage": 0.009929309851673273, 
+            "scene_start_percentage": 0.07518489764229967, 
+            "scene_total_words": 243, 
+            "start": 1597
+        }, 
+        {
+            "characters": {
+                "LIBRARIAN": {
+                    "appearances": 4, 
+                    "dialog_percentage": 0.23140495867768596, 
+                    "dialog_words": 28
+                }, 
+                "SPENGLER": {
+                    "appearances": 2, 
+                    "dialog_percentage": 0.03305785123966942, 
+                    "dialog_words": 4
+                }, 
+                "STANTZ": {
+                    "appearances": 3, 
+                    "dialog_percentage": 0.11570247933884298, 
+                    "dialog_words": 14
+                }, 
+                "VENKMAN": {
+                    "appearances": 7, 
+                    "dialog_percentage": 0.5371900826446281, 
+                    "dialog_words": 65
+                }
+            }, 
+            "chars": [
+                2, 
+                0, 
+                13, 
+                1
+            ], 
+            "duration": 164, 
+            "id": 9, 
+            "location": "AN OFFICE", 
+            "location_number": 9, 
+            "scene_dialog_words": 121, 
+            "scene_number": 10, 
+            "scene_percentage": 0.006701262615944102, 
+            "scene_start_percentage": 0.08188616025824377, 
+            "scene_total_words": 164, 
+            "start": 1840
+        }, 
+        {
+            "characters": {
+                "SPENGLER": {
+                    "appearances": 4, 
+                    "dialog_percentage": 0.375, 
+                    "dialog_words": 3
+                }, 
+                "STANTZ": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }, 
+                "VENKMAN": {
+                    "appearances": 2, 
+                    "dialog_percentage": 0.625, 
+                    "dialog_words": 5
+                }
+            }, 
+            "chars": [
+                1, 
+                0, 
+                2
+            ], 
+            "duration": 139, 
+            "id": 10, 
+            "location": "DEEP IN THE STACKS", 
+            "location_number": 10, 
+            "scene_dialog_words": 8, 
+            "scene_number": 11, 
+            "scene_percentage": 0.0056797286805867694, 
+            "scene_start_percentage": 0.08756588893883055, 
+            "scene_total_words": 139, 
+            "start": 2004
+        }, 
+        {
+            "characters": {
+                "SPENGLER": {
+                    "appearances": 5, 
+                    "dialog_percentage": 0.027777777777777776, 
+                    "dialog_words": 4
+                }, 
+                "STANTZ": {
+                    "appearances": 11, 
+                    "dialog_percentage": 0.4305555555555556, 
+                    "dialog_words": 62
+                }, 
+                "VENKMAN": {
+                    "appearances": 8, 
+                    "dialog_percentage": 0.4861111111111111, 
+                    "dialog_words": 70
+                }
+            }, 
+            "chars": [
+                2, 
+                0, 
+                1
+            ], 
+            "duration": 333, 
+            "id": 11, 
+            "location": "DARK AISLE", 
+            "location_number": 11, 
+            "scene_dialog_words": 144, 
+            "scene_number": 12, 
+            "scene_percentage": 0.01360683201895967, 
+            "scene_start_percentage": 0.10117272095779022, 
+            "scene_total_words": 333, 
+            "start": 2143
+        }, 
+        {
+            "characters": {
+                "LIBRARIAN": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }, 
+                "VENKMAN": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.35294117647058826, 
+                    "dialog_words": 6
+                }
+            }, 
+            "chars": [
+                13, 
+                0
+            ], 
+            "duration": 61, 
+            "id": 12, 
+            "location": "LIBRARY -- MAIN ENTRANCE", 
+            "location_number": 12, 
+            "scene_dialog_words": 17, 
+            "scene_number": 13, 
+            "scene_percentage": 0.0024925428022718916, 
+            "scene_start_percentage": 0.1036652637600621, 
+            "scene_total_words": 61, 
+            "start": 2476
+        }, 
+        {
+            "characters": {
+                "SPENGLER": {
+                    "appearances": 7, 
+                    "dialog_percentage": 0.21893491124260356, 
+                    "dialog_words": 37
+                }, 
+                "STANTZ": {
+                    "appearances": 5, 
+                    "dialog_percentage": 0.3668639053254438, 
+                    "dialog_words": 62
+                }, 
+                "VENKMAN": {
+                    "appearances": 8, 
+                    "dialog_percentage": 0.41420118343195267, 
+                    "dialog_words": 70
+                }
+            }, 
+            "chars": [
+                1, 
+                0, 
+                2
+            ], 
+            "duration": 215, 
+            "id": 13, 
+            "location": "COLUMBIA UNIVERSITY", 
+            "location_number": 5, 
+            "scene_dialog_words": 169, 
+            "scene_number": 14, 
+            "scene_percentage": 0.008785191844073061, 
+            "scene_start_percentage": 0.11245045560413516, 
+            "scene_total_words": 215, 
+            "start": 2537
+        }, 
+        {
+            "characters": {
+                "SPENGLER": {
+                    "appearances": 2, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }, 
+                "VENKMAN": {
+                    "appearances": 2, 
+                    "dialog_percentage": 1.0, 
+                    "dialog_words": 22
+                }
+            }, 
+            "chars": [
+                0, 
+                2
+            ], 
+            "duration": 59, 
+            "id": 14, 
+            "location": "WEAVER HALL", 
+            "location_number": 13, 
+            "scene_dialog_words": 22, 
+            "scene_number": 15, 
+            "scene_percentage": 0.002410820087443305, 
+            "scene_start_percentage": 0.11486127569157847, 
+            "scene_total_words": 59, 
+            "start": 2752
+        }, 
+        {
+            "characters": {
+                "SPENGLER": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }, 
+                "STANTZ": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.2898550724637681, 
+                    "dialog_words": 20
+                }, 
+                "VENKMAN": {
+                    "appearances": 2, 
+                    "dialog_percentage": 0.7101449275362319, 
+                    "dialog_words": 49
+                }
+            }, 
+            "chars": [
+                1, 
+                2, 
+                0
+            ], 
+            "duration": 86, 
+            "id": 15, 
+            "location": "WEAVER HALL", 
+            "location_number": 13, 
+            "scene_dialog_words": 69, 
+            "scene_number": 16, 
+            "scene_percentage": 0.003514076737629224, 
+            "scene_start_percentage": 0.1183753524292077, 
+            "scene_total_words": 86, 
+            "start": 2811
+        }, 
+        {
+            "characters": {
+                "SPENGLER": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }, 
+                "STANTZ": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }, 
+                "VENKMAN": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }
+            }, 
+            "chars": [
+                1, 
+                0, 
+                2
+            ], 
+            "duration": 45, 
+            "id": 16, 
+            "location": "BASEMENT", 
+            "location_number": 14, 
+            "scene_dialog_words": 0, 
+            "scene_number": 17, 
+            "scene_percentage": 0.0018387610836431987, 
+            "scene_start_percentage": 0.1202141135128509, 
+            "scene_total_words": 45, 
+            "start": 2897
+        }, 
+        {
+            "characters": {
+                "STANTZ": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.06091370558375635, 
+                    "dialog_words": 12
+                }, 
+                "VENKMAN": {
+                    "appearances": 10, 
+                    "dialog_percentage": 0.28426395939086296, 
+                    "dialog_words": 56
+                }
+            }, 
+            "chars": [
+                1, 
+                0
+            ], 
+            "duration": 223, 
+            "id": 17, 
+            "location": "LAB", 
+            "location_number": 15, 
+            "scene_dialog_words": 197, 
+            "scene_number": 18, 
+            "scene_percentage": 0.009112082703387406, 
+            "scene_start_percentage": 0.1293261962162383, 
+            "scene_total_words": 223, 
+            "start": 2942
+        }, 
+        {
+            "characters": {
+                "STANTZ": {
+                    "appearances": 6, 
+                    "dialog_percentage": 0.6021505376344086, 
+                    "dialog_words": 112
+                }, 
+                "VENKMAN": {
+                    "appearances": 4, 
+                    "dialog_percentage": 0.3978494623655914, 
+                    "dialog_words": 74
+                }
+            }, 
+            "chars": [
+                0, 
+                1
+            ], 
+            "duration": 217, 
+            "id": 18, 
+            "location": "COLUMBIA UNIVERSITY -- DAY", 
+            "location_number": 16, 
+            "scene_dialog_words": 186, 
+            "scene_number": 19, 
+            "scene_percentage": 0.008866914558901647, 
+            "scene_start_percentage": 0.13819311077513996, 
+            "scene_total_words": 217, 
+            "start": 3165
+        }, 
+        {
+            "characters": {}, 
+            "chars": [], 
+            "duration": 8, 
+            "id": 19, 
+            "location": "WIDE ANGLE VIEW OF MANHATTAN", 
+            "location_number": 17, 
+            "scene_dialog_words": 0, 
+            "scene_number": 20, 
+            "scene_percentage": 0.00032689085931434644, 
+            "scene_start_percentage": 0.1385200016344543, 
+            "scene_total_words": 8, 
+            "start": 3382
+        }, 
+        {
+            "characters": {
+                "SPENGLER": {
+                    "appearances": 3, 
+                    "dialog_percentage": 0.16393442622950818, 
+                    "dialog_words": 20
+                }, 
+                "STANTZ": {
+                    "appearances": 5, 
+                    "dialog_percentage": 0.29508196721311475, 
+                    "dialog_words": 36
+                }, 
+                "VENKMAN": {
+                    "appearances": 5, 
+                    "dialog_percentage": 0.5409836065573771, 
+                    "dialog_words": 66
+                }
+            }, 
+            "chars": [
+                0, 
+                2, 
+                1
+            ], 
+            "duration": 150, 
+            "id": 20, 
+            "location": "AVENUE OF THE AMERICAS", 
+            "location_number": 18, 
+            "scene_dialog_words": 122, 
+            "scene_number": 21, 
+            "scene_percentage": 0.006129203612143996, 
+            "scene_start_percentage": 0.1446492052465983, 
+            "scene_total_words": 150, 
+            "start": 3390
+        }, 
+        {
+            "characters": {
+                "VENKMAN": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }
+            }, 
+            "chars": [
+                0
+            ], 
+            "duration": 63, 
+            "id": 21, 
+            "location": "FIREHALL", 
+            "location_number": 19, 
+            "scene_dialog_words": 0, 
+            "scene_number": 22, 
+            "scene_percentage": 0.002574265517100478, 
+            "scene_start_percentage": 0.14722347076369877, 
+            "scene_total_words": 63, 
+            "start": 3540
+        }, 
+        {
+            "characters": {
+                "SPENGLER": {
+                    "appearances": 3, 
+                    "dialog_percentage": 0.03787878787878788, 
+                    "dialog_words": 5
+                }, 
+                "STANTZ": {
+                    "appearances": 3, 
+                    "dialog_percentage": 0.09090909090909091, 
+                    "dialog_words": 12
+                }, 
+                "VENKMAN": {
+                    "appearances": 2, 
+                    "dialog_percentage": 0.3560606060606061, 
+                    "dialog_words": 47
+                }
+            }, 
+            "chars": [
+                2, 
+                0, 
+                1
+            ], 
+            "duration": 168, 
+            "id": 22, 
+            "location": "GARAGE BAY", 
+            "location_number": 20, 
+            "scene_dialog_words": 132, 
+            "scene_number": 23, 
+            "scene_percentage": 0.006864708045601275, 
+            "scene_start_percentage": 0.15408817880930004, 
+            "scene_total_words": 168, 
+            "start": 3603
+        }, 
+        {
+            "characters": {}, 
+            "chars": [], 
+            "duration": 124, 
+            "id": 23, 
+            "location": "UPPER WEST SIDE", 
+            "location_number": 21, 
+            "scene_dialog_words": 0, 
+            "scene_number": 24, 
+            "scene_percentage": 0.00506680831937237, 
+            "scene_start_percentage": 0.1591549871286724, 
+            "scene_total_words": 124, 
+            "start": 3771
+        }, 
+        {
+            "characters": {}, 
+            "chars": [], 
+            "duration": 17, 
+            "id": 24, 
+            "location": "HIGH-RISE APARTMENT BUILDING -- LOBBY", 
+            "location_number": 22, 
+            "scene_dialog_words": 0, 
+            "scene_number": 25, 
+            "scene_percentage": 0.0006946430760429861, 
+            "scene_start_percentage": 0.1598496302047154, 
+            "scene_total_words": 17, 
+            "start": 3895
+        }, 
+        {
+            "characters": {
+                "DANA": {
+                    "appearances": 9, 
+                    "dialog_percentage": 0.14102564102564102, 
+                    "dialog_words": 55
+                }, 
+                "LOUIS": {
+                    "appearances": 14, 
+                    "dialog_percentage": 0.6025641025641025, 
+                    "dialog_words": 235
+                }, 
+                "STANTZ": {
+                    "appearances": 2, 
+                    "dialog_percentage": 0.13846153846153847, 
+                    "dialog_words": 54
+                }
+            }, 
+            "chars": [
+                4, 
+                1, 
+                3
+            ], 
+            "duration": 615, 
+            "id": 25, 
+            "location": "THIRTY FIFTH FLOOR", 
+            "location_number": 23, 
+            "scene_dialog_words": 390, 
+            "scene_number": 26, 
+            "scene_percentage": 0.02512973480979038, 
+            "scene_start_percentage": 0.1849793650145058, 
+            "scene_total_words": 615, 
+            "start": 3912
+        }, 
+        {
+            "characters": {
+                "SPENGLER": {
+                    "appearances": 3, 
+                    "dialog_percentage": 1.0, 
+                    "dialog_words": 22
+                }, 
+                "STANTZ": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }, 
+                "VENKMAN": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }
+            }, 
+            "chars": [
+                1, 
+                2, 
+                0
+            ], 
+            "duration": 39, 
+            "id": 26, 
+            "location": "FIREHALL", 
+            "location_number": 19, 
+            "scene_dialog_words": 22, 
+            "scene_number": 27, 
+            "scene_percentage": 0.001593592939157439, 
+            "scene_start_percentage": 0.18657295795366322, 
+            "scene_total_words": 39, 
+            "start": 4527
+        }, 
+        {
+            "characters": {
+                "JANINE": {
+                    "appearances": 1, 
+                    "dialog_percentage": 1.0, 
+                    "dialog_words": 7
+                }
+            }, 
+            "chars": [
+                8
+            ], 
+            "duration": 24, 
+            "id": 27, 
+            "location": "RECEPTION AREA", 
+            "location_number": 24, 
+            "scene_dialog_words": 7, 
+            "scene_number": 28, 
+            "scene_percentage": 0.0009806725779430393, 
+            "scene_start_percentage": 0.18755363053160626, 
+            "scene_total_words": 24, 
+            "start": 4566
+        }, 
+        {
+            "characters": {
+                "SPENGLER": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }, 
+                "STANTZ": {
+                    "appearances": 2, 
+                    "dialog_percentage": 0.3076923076923077, 
+                    "dialog_words": 16
+                }, 
+                "VENKMAN": {
+                    "appearances": 3, 
+                    "dialog_percentage": 0.38461538461538464, 
+                    "dialog_words": 20
+                }
+            }, 
+            "chars": [
+                2, 
+                0, 
+                1
+            ], 
+            "duration": 88, 
+            "id": 28, 
+            "location": "CHILDREN'S BEDROOM", 
+            "location_number": 25, 
+            "scene_dialog_words": 52, 
+            "scene_number": 29, 
+            "scene_percentage": 0.0035957994524578106, 
+            "scene_start_percentage": 0.19114942998406406, 
+            "scene_total_words": 88, 
+            "start": 4590
+        }, 
+        {
+            "characters": {
+                "DANA": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }, 
+                "GHOSTBUSTERS": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.21621621621621623, 
+                    "dialog_words": 8
+                }, 
+                "SPENGLER": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }, 
+                "STANTZ": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }, 
+                "VENKMAN": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }
+            }, 
+            "chars": [
+                2, 
+                0, 
+                5, 
+                1, 
+                3
+            ], 
+            "duration": 78, 
+            "id": 29, 
+            "location": "FRONT DOOR", 
+            "location_number": 26, 
+            "scene_dialog_words": 37, 
+            "scene_number": 30, 
+            "scene_percentage": 0.003187185878314878, 
+            "scene_start_percentage": 0.19433661586237894, 
+            "scene_total_words": 78, 
+            "start": 4678
+        }, 
+        {
+            "characters": {
+                "DANA": {
+                    "appearances": 8, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }
+            }, 
+            "chars": [
+                3
+            ], 
+            "duration": 390, 
+            "id": 30, 
+            "location": "KITCHEN", 
+            "location_number": 27, 
+            "scene_dialog_words": 7, 
+            "scene_number": 31, 
+            "scene_percentage": 0.01593592939157439, 
+            "scene_start_percentage": 0.21027254525395334, 
+            "scene_total_words": 390, 
+            "start": 4756
+        }, 
+        {
+            "characters": {
+                "GHOSTBUSTERS": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }, 
+                "STANTZ": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }
+            }, 
+            "chars": [
+                1, 
+                5
+            ], 
+            "duration": 79, 
+            "id": 31, 
+            "location": "FIREHALL", 
+            "location_number": 19, 
+            "scene_dialog_words": 0, 
+            "scene_number": 32, 
+            "scene_percentage": 0.003228047235729171, 
+            "scene_start_percentage": 0.2135005924896825, 
+            "scene_total_words": 79, 
+            "start": 5146
+        }, 
+        {
+            "characters": {
+                "DANA": {
+                    "appearances": 7, 
+                    "dialog_percentage": 0.1532567049808429, 
+                    "dialog_words": 40
+                }, 
+                "JANINE": {
+                    "appearances": 9, 
+                    "dialog_percentage": 0.39846743295019155, 
+                    "dialog_words": 104
+                }, 
+                "SPENGLER": {
+                    "appearances": 5, 
+                    "dialog_percentage": 0.10344827586206896, 
+                    "dialog_words": 27
+                }, 
+                "STANTZ": {
+                    "appearances": 5, 
+                    "dialog_percentage": 0.11877394636015326, 
+                    "dialog_words": 31
+                }, 
+                "VENKMAN": {
+                    "appearances": 10, 
+                    "dialog_percentage": 0.2260536398467433, 
+                    "dialog_words": 59
+                }
+            }, 
+            "chars": [
+                2, 
+                0, 
+                8, 
+                1, 
+                3
+            ], 
+            "duration": 392, 
+            "id": 32, 
+            "location": "GARAGE BAY", 
+            "location_number": 20, 
+            "scene_dialog_words": 261, 
+            "scene_number": 33, 
+            "scene_percentage": 0.016017652106402974, 
+            "scene_start_percentage": 0.22951824459608547, 
+            "scene_total_words": 392, 
+            "start": 5225
+        }, 
+        {
+            "characters": {
+                "DANA": {
+                    "appearances": 11, 
+                    "dialog_percentage": 0.3183673469387755, 
+                    "dialog_words": 78
+                }, 
+                "SPENGLER": {
+                    "appearances": 5, 
+                    "dialog_percentage": 0.21224489795918366, 
+                    "dialog_words": 52
+                }, 
+                "STANTZ": {
+                    "appearances": 3, 
+                    "dialog_percentage": 0.1306122448979592, 
+                    "dialog_words": 32
+                }, 
+                "VENKMAN": {
+                    "appearances": 9, 
+                    "dialog_percentage": 0.33877551020408164, 
+                    "dialog_words": 83
+                }
+            }, 
+            "chars": [
+                1, 
+                2, 
+                3, 
+                0
+            ], 
+            "duration": 317, 
+            "id": 33, 
+            "location": "OFFICE", 
+            "location_number": 28, 
+            "scene_dialog_words": 245, 
+            "scene_number": 34, 
+            "scene_percentage": 0.012953050300330978, 
+            "scene_start_percentage": 0.24247129489641647, 
+            "scene_total_words": 317, 
+            "start": 5617
+        }, 
+        {
+            "characters": {
+                "DANA": {
+                    "appearances": 11, 
+                    "dialog_percentage": 0.4551282051282051, 
+                    "dialog_words": 71
+                }, 
+                "VENKMAN": {
+                    "appearances": 11, 
+                    "dialog_percentage": 0.5448717948717948, 
+                    "dialog_words": 85
+                }
+            }, 
+            "chars": [
+                0, 
+                3
+            ], 
+            "duration": 242, 
+            "id": 34, 
+            "location": "DANA'S APARTMENT", 
+            "location_number": 29, 
+            "scene_dialog_words": 156, 
+            "scene_number": 35, 
+            "scene_percentage": 0.009888448494258979, 
+            "scene_start_percentage": 0.25235974339067546, 
+            "scene_total_words": 242, 
+            "start": 5934
+        }, 
+        {
+            "characters": {
+                "DANA": {
+                    "appearances": 2, 
+                    "dialog_percentage": 0.3611111111111111, 
+                    "dialog_words": 13
+                }, 
+                "VENKMAN": {
+                    "appearances": 5, 
+                    "dialog_percentage": 0.6388888888888888, 
+                    "dialog_words": 23
+                }
+            }, 
+            "chars": [
+                0, 
+                3
+            ], 
+            "duration": 113, 
+            "id": 35, 
+            "location": "KITCHEN", 
+            "location_number": 27, 
+            "scene_dialog_words": 36, 
+            "scene_number": 36, 
+            "scene_percentage": 0.004617333387815143, 
+            "scene_start_percentage": 0.2569770767784906, 
+            "scene_total_words": 113, 
+            "start": 6176
+        }, 
+        {
+            "characters": {
+                "DANA": {
+                    "appearances": 10, 
+                    "dialog_percentage": 0.4036144578313253, 
+                    "dialog_words": 67
+                }, 
+                "VENKMAN": {
+                    "appearances": 11, 
+                    "dialog_percentage": 0.5963855421686747, 
+                    "dialog_words": 99
+                }
+            }, 
+            "chars": [
+                0, 
+                3
+            ], 
+            "duration": 200, 
+            "id": 36, 
+            "location": "LIVING ROOM", 
+            "location_number": 30, 
+            "scene_dialog_words": 166, 
+            "scene_number": 37, 
+            "scene_percentage": 0.008172271482858661, 
+            "scene_start_percentage": 0.2651493482613492, 
+            "scene_total_words": 200, 
+            "start": 6289
+        }, 
+        {
+            "characters": {
+                "DANA": {
+                    "appearances": 2, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }, 
+                "LOUIS": {
+                    "appearances": 3, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }, 
+                "VENKMAN": {
+                    "appearances": 3, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }
+            }, 
+            "chars": [
+                0, 
+                3, 
+                4
+            ], 
+            "duration": 103, 
+            "id": 37, 
+            "location": "HALLWAY", 
+            "location_number": 31, 
+            "scene_dialog_words": 0, 
+            "scene_number": 38, 
+            "scene_percentage": 0.00420871981367221, 
+            "scene_start_percentage": 0.26935806807502144, 
+            "scene_total_words": 103, 
+            "start": 6489
+        }, 
+        {
+            "characters": {
+                "SPENGLER": {
+                    "appearances": 2, 
+                    "dialog_percentage": 0.06756756756756757, 
+                    "dialog_words": 5
+                }, 
+                "STANTZ": {
+                    "appearances": 3, 
+                    "dialog_percentage": 0.10810810810810811, 
+                    "dialog_words": 8
+                }, 
+                "VENKMAN": {
+                    "appearances": 4, 
+                    "dialog_percentage": 0.8243243243243243, 
+                    "dialog_words": 61
+                }
+            }, 
+            "chars": [
+                1, 
+                2, 
+                0
+            ], 
+            "duration": 108, 
+            "id": 38, 
+            "location": "FIREHALL KITCHEN", 
+            "location_number": 32, 
+            "scene_dialog_words": 74, 
+            "scene_number": 39, 
+            "scene_percentage": 0.004413026600743677, 
+            "scene_start_percentage": 0.2737710946757651, 
+            "scene_total_words": 108, 
+            "start": 6592
+        }, 
+        {
+            "characters": {}, 
+            "chars": [], 
+            "duration": 22, 
+            "id": 39, 
+            "location": "HOTEL SEDGEWICK", 
+            "location_number": 33, 
+            "scene_dialog_words": 0, 
+            "scene_number": 40, 
+            "scene_percentage": 0.0008989498631144526, 
+            "scene_start_percentage": 0.27467004453887955, 
+            "scene_total_words": 22, 
+            "start": 6700
+        }, 
+        {
+            "characters": {}, 
+            "chars": [], 
+            "duration": 24, 
+            "id": 40, 
+            "location": "HOTEL", 
+            "location_number": 34, 
+            "scene_dialog_words": 0, 
+            "scene_number": 41, 
+            "scene_percentage": 0.0009806725779430393, 
+            "scene_start_percentage": 0.2756507171168226, 
+            "scene_total_words": 24, 
+            "start": 6722
+        }, 
+        {
+            "characters": {
+                "BRIDE": {
+                    "appearances": 15, 
+                    "dialog_percentage": 0.6358381502890174, 
+                    "dialog_words": 110
+                }
+            }, 
+            "chars": [
+                11
+            ], 
+            "duration": 437, 
+            "id": 41, 
+            "location": "ROOM 1210", 
+            "location_number": 35, 
+            "scene_dialog_words": 173, 
+            "scene_number": 42, 
+            "scene_percentage": 0.017856413190046175, 
+            "scene_start_percentage": 0.2935071303068688, 
+            "scene_total_words": 437, 
+            "start": 6746
+        }, 
+        {
+            "characters": {
+                "GHOSTBUSTERS": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }, 
+                "JANINE": {
+                    "appearances": 3, 
+                    "dialog_percentage": 1.0, 
+                    "dialog_words": 39
+                }
+            }, 
+            "chars": [
+                8, 
+                5
+            ], 
+            "duration": 81, 
+            "id": 42, 
+            "location": "FIREHALL OFFICE", 
+            "location_number": 36, 
+            "scene_dialog_words": 39, 
+            "scene_number": 43, 
+            "scene_percentage": 0.0033097699505577577, 
+            "scene_start_percentage": 0.2968169002574266, 
+            "scene_total_words": 81, 
+            "start": 7183
+        }, 
+        {
+            "characters": {}, 
+            "chars": [], 
+            "duration": 14, 
+            "id": 43, 
+            "location": "KITCHEN", 
+            "location_number": 27, 
+            "scene_dialog_words": 0, 
+            "scene_number": 44, 
+            "scene_percentage": 0.0005720590038001063, 
+            "scene_start_percentage": 0.29738895926122666, 
+            "scene_total_words": 14, 
+            "start": 7264
+        }, 
+        {
+            "characters": {
+                "SPENGLER": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }, 
+                "STANTZ": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }, 
+                "VENKMAN": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }
+            }, 
+            "chars": [
+                1, 
+                2, 
+                0
+            ], 
+            "duration": 67, 
+            "id": 44, 
+            "location": "DORM", 
+            "location_number": 37, 
+            "scene_dialog_words": 0, 
+            "scene_number": 45, 
+            "scene_percentage": 0.0027377109467576514, 
+            "scene_start_percentage": 0.30012667020798434, 
+            "scene_total_words": 67, 
+            "start": 7278
+        }, 
+        {
+            "characters": {}, 
+            "chars": [], 
+            "duration": 18, 
+            "id": 45, 
+            "location": "GARAGE BAY -- EQUIPMENT RACKS", 
+            "location_number": 38, 
+            "scene_dialog_words": 0, 
+            "scene_number": 46, 
+            "scene_percentage": 0.0007355044334572794, 
+            "scene_start_percentage": 0.3008621746414416, 
+            "scene_total_words": 18, 
+            "start": 7345
+        }, 
+        {
+            "characters": {}, 
+            "chars": [], 
+            "duration": 91, 
+            "id": 46, 
+            "location": "FIREHALL", 
+            "location_number": 19, 
+            "scene_dialog_words": 0, 
+            "scene_number": 47, 
+            "scene_percentage": 0.0037183835247006905, 
+            "scene_start_percentage": 0.30458055816614227, 
+            "scene_total_words": 91, 
+            "start": 7363
+        }, 
+        {
+            "characters": {
+                "GHOSTBUSTERS": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }, 
+                "SPENGLER": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }, 
+                "STANTZ": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }, 
+                "VENKMAN": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }
+            }, 
+            "chars": [
+                2, 
+                0, 
+                5, 
+                1
+            ], 
+            "duration": 75, 
+            "id": 47, 
+            "location": "HOTEL -- FRONT DOOR", 
+            "location_number": 39, 
+            "scene_dialog_words": 0, 
+            "scene_number": 48, 
+            "scene_percentage": 0.003064601806071998, 
+            "scene_start_percentage": 0.30764515997221425, 
+            "scene_total_words": 75, 
+            "start": 7454
+        }, 
+        {
+            "characters": {
+                "GHOSTBUSTERS": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }, 
+                "STANTZ": {
+                    "appearances": 3, 
+                    "dialog_percentage": 0.18791946308724833, 
+                    "dialog_words": 28
+                }, 
+                "VENKMAN": {
+                    "appearances": 5, 
+                    "dialog_percentage": 0.174496644295302, 
+                    "dialog_words": 26
+                }
+            }, 
+            "chars": [
+                0, 
+                5, 
+                1
+            ], 
+            "duration": 287, 
+            "id": 48, 
+            "location": "HOTEL LOBBY", 
+            "location_number": 40, 
+            "scene_dialog_words": 149, 
+            "scene_number": 49, 
+            "scene_percentage": 0.011727209577902178, 
+            "scene_start_percentage": 0.31937236955011644, 
+            "scene_total_words": 287, 
+            "start": 7529
+        }, 
+        {
+            "characters": {
+                "GHOSTBUSTERS": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }, 
+                "SPENGLER": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.08163265306122448, 
+                    "dialog_words": 4
+                }, 
+                "STANTZ": {
+                    "appearances": 2, 
+                    "dialog_percentage": 0.4897959183673469, 
+                    "dialog_words": 24
+                }, 
+                "VENKMAN": {
+                    "appearances": 2, 
+                    "dialog_percentage": 0.42857142857142855, 
+                    "dialog_words": 21
+                }
+            }, 
+            "chars": [
+                1, 
+                2, 
+                5, 
+                0
+            ], 
+            "duration": 71, 
+            "id": 49, 
+            "location": "ELEVATOR", 
+            "location_number": 41, 
+            "scene_dialog_words": 49, 
+            "scene_number": 50, 
+            "scene_percentage": 0.0029011563764148244, 
+            "scene_start_percentage": 0.3222735259265313, 
+            "scene_total_words": 71, 
+            "start": 7816
+        }, 
+        {
+            "characters": {
+                "GHOSTBUSTERS": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }, 
+                "SPENGLER": {
+                    "appearances": 2, 
+                    "dialog_percentage": 0.375, 
+                    "dialog_words": 6
+                }, 
+                "STANTZ": {
+                    "appearances": 2, 
+                    "dialog_percentage": 0.375, 
+                    "dialog_words": 6
+                }, 
+                "VENKMAN": {
+                    "appearances": 2, 
+                    "dialog_percentage": 0.25, 
+                    "dialog_words": 4
+                }
+            }, 
+            "chars": [
+                1, 
+                2, 
+                0, 
+                5
+            ], 
+            "duration": 141, 
+            "id": 50, 
+            "location": "TWELFTH FLOOR CORRIDOR", 
+            "location_number": 42, 
+            "scene_dialog_words": 16, 
+            "scene_number": 51, 
+            "scene_percentage": 0.005761451395415356, 
+            "scene_start_percentage": 0.32803497732194664, 
+            "scene_total_words": 141, 
+            "start": 7887
+        }, 
+        {
+            "characters": {
+                "GHOSTBUSTERS": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }, 
+                "SPENGLER": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.11842105263157894, 
+                    "dialog_words": 9
+                }, 
+                "STANTZ": {
+                    "appearances": 2, 
+                    "dialog_percentage": 0.5131578947368421, 
+                    "dialog_words": 39
+                }, 
+                "VENKMAN": {
+                    "appearances": 2, 
+                    "dialog_percentage": 0.3684210526315789, 
+                    "dialog_words": 28
+                }
+            }, 
+            "chars": [
+                2, 
+                0, 
+                5, 
+                1
+            ], 
+            "duration": 93, 
+            "id": 51, 
+            "location": "ROOM 1210", 
+            "location_number": 35, 
+            "scene_dialog_words": 76, 
+            "scene_number": 52, 
+            "scene_percentage": 0.003800106239529277, 
+            "scene_start_percentage": 0.3318350835614759, 
+            "scene_total_words": 93, 
+            "start": 8028
+        }, 
+        {
+            "characters": {
+                "SPENGLER": {
+                    "appearances": 5, 
+                    "dialog_percentage": 0.6133333333333333, 
+                    "dialog_words": 46
+                }, 
+                "WOMAN": {
+                    "appearances": 3, 
+                    "dialog_percentage": 0.38666666666666666, 
+                    "dialog_words": 29
+                }
+            }, 
+            "chars": [
+                15, 
+                2
+            ], 
+            "duration": 172, 
+            "id": 52, 
+            "location": "A CORRIDOR", 
+            "location_number": 43, 
+            "scene_dialog_words": 75, 
+            "scene_number": 53, 
+            "scene_percentage": 0.007028153475258448, 
+            "scene_start_percentage": 0.3388632370367344, 
+            "scene_total_words": 172, 
+            "start": 8121
+        }, 
+        {
+            "characters": {
+                "SPENGLER": {
+                    "appearances": 2, 
+                    "dialog_percentage": 0.18461538461538463, 
+                    "dialog_words": 12
+                }, 
+                "STANTZ": {
+                    "appearances": 13, 
+                    "dialog_percentage": 0.8153846153846154, 
+                    "dialog_words": 53
+                }
+            }, 
+            "chars": [
+                2, 
+                1
+            ], 
+            "duration": 332, 
+            "id": 53, 
+            "location": "ANOTHER CORRIDOR", 
+            "location_number": 44, 
+            "scene_dialog_words": 65, 
+            "scene_number": 54, 
+            "scene_percentage": 0.013565970661545376, 
+            "scene_start_percentage": 0.35242920769827973, 
+            "scene_total_words": 332, 
+            "start": 8293
+        }, 
+        {
+            "characters": {}, 
+            "chars": [], 
+            "duration": 72, 
+            "id": 54, 
+            "location": "A HOTEL ROOM", 
+            "location_number": 45, 
+            "scene_dialog_words": 0, 
+            "scene_number": 55, 
+            "scene_percentage": 0.0029420177338291176, 
+            "scene_start_percentage": 0.35537122543210886, 
+            "scene_total_words": 72, 
+            "start": 8625
+        }, 
+        {
+            "characters": {
+                "GHOSTBUSTERS": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }, 
+                "STANTZ": {
+                    "appearances": 4, 
+                    "dialog_percentage": 0.3333333333333333, 
+                    "dialog_words": 34
+                }, 
+                "VENKMAN": {
+                    "appearances": 14, 
+                    "dialog_percentage": 0.6666666666666666, 
+                    "dialog_words": 68
+                }
+            }, 
+            "chars": [
+                1, 
+                5, 
+                0
+            ], 
+            "duration": 239, 
+            "id": 55, 
+            "location": "A CORRIDOR", 
+            "location_number": 43, 
+            "scene_dialog_words": 102, 
+            "scene_number": 56, 
+            "scene_percentage": 0.0097658644220161, 
+            "scene_start_percentage": 0.36513708985412496, 
+            "scene_total_words": 239, 
+            "start": 8697
+        }, 
+        {
+            "characters": {
+                "STANTZ": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }, 
+                "VENKMAN": {
+                    "appearances": 2, 
+                    "dialog_percentage": 1.0, 
+                    "dialog_words": 3
+                }
+            }, 
+            "chars": [
+                0, 
+                1
+            ], 
+            "duration": 25, 
+            "id": 56, 
+            "location": "STAIRWELL", 
+            "location_number": 46, 
+            "scene_dialog_words": 3, 
+            "scene_number": 57, 
+            "scene_percentage": 0.0010215339353573326, 
+            "scene_start_percentage": 0.3661586237894823, 
+            "scene_total_words": 25, 
+            "start": 8936
+        }, 
+        {
+            "characters": {
+                "SPENGLER": {
+                    "appearances": 2, 
+                    "dialog_percentage": 0.5161290322580645, 
+                    "dialog_words": 16
+                }, 
+                "STANTZ": {
+                    "appearances": 2, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }, 
+                "VENKMAN": {
+                    "appearances": 3, 
+                    "dialog_percentage": 0.4838709677419355, 
+                    "dialog_words": 15
+                }
+            }, 
+            "chars": [
+                1, 
+                2, 
+                0
+            ], 
+            "duration": 78, 
+            "id": 57, 
+            "location": "THIRD FLOOR", 
+            "location_number": 47, 
+            "scene_dialog_words": 31, 
+            "scene_number": 58, 
+            "scene_percentage": 0.003187185878314878, 
+            "scene_start_percentage": 0.3693458096677972, 
+            "scene_total_words": 78, 
+            "start": 8961
+        }, 
+        {
+            "characters": {
+                "GHOSTBUSTERS": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }, 
+                "SPENGLER": {
+                    "appearances": 10, 
+                    "dialog_percentage": 0.3010752688172043, 
+                    "dialog_words": 56
+                }, 
+                "STANTZ": {
+                    "appearances": 9, 
+                    "dialog_percentage": 0.10215053763440861, 
+                    "dialog_words": 19
+                }, 
+                "VENKMAN": {
+                    "appearances": 16, 
+                    "dialog_percentage": 0.5967741935483871, 
+                    "dialog_words": 111
+                }
+            }, 
+            "chars": [
+                1, 
+                0, 
+                2, 
+                5
+            ], 
+            "duration": 468, 
+            "id": 58, 
+            "location": "BANQUET ROOM", 
+            "location_number": 48, 
+            "scene_dialog_words": 186, 
+            "scene_number": 59, 
+            "scene_percentage": 0.019123115269889267, 
+            "scene_start_percentage": 0.3884689249376864, 
+            "scene_total_words": 468, 
+            "start": 9039
+        }, 
+        {
+            "characters": {}, 
+            "chars": [], 
+            "duration": 31, 
+            "id": 59, 
+            "location": "CORRIDOR", 
+            "location_number": 49, 
+            "scene_dialog_words": 0, 
+            "scene_number": 60, 
+            "scene_percentage": 0.0012667020798430924, 
+            "scene_start_percentage": 0.3897356270175295, 
+            "scene_total_words": 31, 
+            "start": 9507
+        }, 
+        {
+            "characters": {
+                "GHOSTBUSTERS": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }, 
+                "SPENGLER": {
+                    "appearances": 8, 
+                    "dialog_percentage": 0.15966386554621848, 
+                    "dialog_words": 19
+                }, 
+                "STANTZ": {
+                    "appearances": 12, 
+                    "dialog_percentage": 0.3445378151260504, 
+                    "dialog_words": 41
+                }, 
+                "VENKMAN": {
+                    "appearances": 9, 
+                    "dialog_percentage": 0.4957983193277311, 
+                    "dialog_words": 59
+                }
+            }, 
+            "chars": [
+                1, 
+                0, 
+                2, 
+                5
+            ], 
+            "duration": 386, 
+            "id": 60, 
+            "location": "BANQUET ROOM", 
+            "location_number": 48, 
+            "scene_dialog_words": 119, 
+            "scene_number": 61, 
+            "scene_percentage": 0.015772483961917216, 
+            "scene_start_percentage": 0.4055081109794467, 
+            "scene_total_words": 386, 
+            "start": 9538
+        }, 
+        {
+            "characters": {
+                "GHOSTBUSTERS": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }, 
+                "STANTZ": {
+                    "appearances": 4, 
+                    "dialog_percentage": 0.3008849557522124, 
+                    "dialog_words": 34
+                }, 
+                "VENKMAN": {
+                    "appearances": 2, 
+                    "dialog_percentage": 0.2743362831858407, 
+                    "dialog_words": 31
+                }
+            }, 
+            "chars": [
+                0, 
+                5, 
+                1
+            ], 
+            "duration": 170, 
+            "id": 61, 
+            "location": "LOBBY", 
+            "location_number": 50, 
+            "scene_dialog_words": 113, 
+            "scene_number": 62, 
+            "scene_percentage": 0.006946430760429861, 
+            "scene_start_percentage": 0.4124545417398766, 
+            "scene_total_words": 170, 
+            "start": 9924
+        }, 
+        {
+            "characters": {
+                "GHOSTBUSTERS": {
+                    "appearances": 10, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }, 
+                "SPENGLER": {
+                    "appearances": 6, 
+                    "dialog_percentage": 0.09020618556701031, 
+                    "dialog_words": 35
+                }, 
+                "STANTZ": {
+                    "appearances": 7, 
+                    "dialog_percentage": 0.17783505154639176, 
+                    "dialog_words": 69
+                }, 
+                "VENKMAN": {
+                    "appearances": 5, 
+                    "dialog_percentage": 0.19329896907216496, 
+                    "dialog_words": 75
+                }
+            }, 
+            "chars": [
+                0, 
+                2, 
+                5, 
+                1
+            ], 
+            "duration": 632, 
+            "id": 62, 
+            "location": "HOTEL SEDGEWICK", 
+            "location_number": 33, 
+            "scene_dialog_words": 388, 
+            "scene_number": 63, 
+            "scene_percentage": 0.025824377885833368, 
+            "scene_start_percentage": 0.43827891962571, 
+            "scene_total_words": 632, 
+            "start": 10094
+        }, 
+        {
+            "characters": {}, 
+            "chars": [], 
+            "duration": 52, 
+            "id": 63, 
+            "location": "FIREHALL", 
+            "location_number": 19, 
+            "scene_dialog_words": 34, 
+            "scene_number": 64, 
+            "scene_percentage": 0.0021247905855432516, 
+            "scene_start_percentage": 0.44040371021125324, 
+            "scene_total_words": 52, 
+            "start": 10726
+        }, 
+        {
+            "characters": {
+                "GHOSTBUSTERS": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }
+            }, 
+            "chars": [
+                5
+            ], 
+            "duration": 24, 
+            "id": 64, 
+            "location": "YANKEE STADIUM", 
+            "location_number": 51, 
+            "scene_dialog_words": 0, 
+            "scene_number": 65, 
+            "scene_percentage": 0.0009806725779430393, 
+            "scene_start_percentage": 0.4413843827891963, 
+            "scene_total_words": 24, 
+            "start": 10778
+        }, 
+        {
+            "characters": {
+                "GHOSTBUSTERS": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }
+            }, 
+            "chars": [
+                5
+            ], 
+            "duration": 82, 
+            "id": 65, 
+            "location": "TIMES SQUARE", 
+            "location_number": 52, 
+            "scene_dialog_words": 56, 
+            "scene_number": 66, 
+            "scene_percentage": 0.003350631307972051, 
+            "scene_start_percentage": 0.4447350140971683, 
+            "scene_total_words": 82, 
+            "start": 10802
+        }, 
+        {
+            "characters": {}, 
+            "chars": [], 
+            "duration": 73, 
+            "id": 66, 
+            "location": "IN FRONT OF FIREHALL", 
+            "location_number": 53, 
+            "scene_dialog_words": 59, 
+            "scene_number": 67, 
+            "scene_percentage": 0.002982879091243411, 
+            "scene_start_percentage": 0.4477178931884117, 
+            "scene_total_words": 73, 
+            "start": 10884
+        }, 
+        {
+            "characters": {
+                "GHOSTBUSTERS": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }
+            }, 
+            "chars": [
+                5
+            ], 
+            "duration": 152, 
+            "id": 67, 
+            "location": "TUDOR CITY", 
+            "location_number": 54, 
+            "scene_dialog_words": 0, 
+            "scene_number": 68, 
+            "scene_percentage": 0.006210926326972582, 
+            "scene_start_percentage": 0.4539288195153843, 
+            "scene_total_words": 152, 
+            "start": 10957
+        }, 
+        {
+            "characters": {
+                "SPENGLER": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }, 
+                "STANTZ": {
+                    "appearances": 2, 
+                    "dialog_percentage": 0.4065934065934066, 
+                    "dialog_words": 37
+                }, 
+                "VENKMAN": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }
+            }, 
+            "chars": [
+                1, 
+                0, 
+                2
+            ], 
+            "duration": 115, 
+            "id": 68, 
+            "location": "ECTOMOBILE", 
+            "location_number": 55, 
+            "scene_dialog_words": 91, 
+            "scene_number": 69, 
+            "scene_percentage": 0.0046990561026437295, 
+            "scene_start_percentage": 0.45862787561802804, 
+            "scene_total_words": 115, 
+            "start": 11109
+        }, 
+        {
+            "characters": {}, 
+            "chars": [], 
+            "duration": 56, 
+            "id": 69, 
+            "location": "RADIO STUDIO", 
+            "location_number": 56, 
+            "scene_dialog_words": 45, 
+            "scene_number": 70, 
+            "scene_percentage": 0.002288236015200425, 
+            "scene_start_percentage": 0.46091611163322843, 
+            "scene_total_words": 56, 
+            "start": 11224
+        }, 
+        {
+            "characters": {
+                "DANA": {
+                    "appearances": 19, 
+                    "dialog_percentage": 0.3333333333333333, 
+                    "dialog_words": 149
+                }, 
+                "SPENGLER": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }, 
+                "VENKMAN": {
+                    "appearances": 19, 
+                    "dialog_percentage": 0.4899328859060403, 
+                    "dialog_words": 219
+                }
+            }, 
+            "chars": [
+                2, 
+                0, 
+                3
+            ], 
+            "duration": 581, 
+            "id": 70, 
+            "location": "LINCOLN CENTER", 
+            "location_number": 57, 
+            "scene_dialog_words": 447, 
+            "scene_number": 71, 
+            "scene_percentage": 0.02374044865770441, 
+            "scene_start_percentage": 0.48465656029093285, 
+            "scene_total_words": 581, 
+            "start": 11280
+        }, 
+        {
+            "characters": {
+                "GHOSTBUSTERS": {
+                    "appearances": 2, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }, 
+                "JANINE": {
+                    "appearances": 3, 
+                    "dialog_percentage": 0.8238341968911918, 
+                    "dialog_words": 159
+                }, 
+                "WINSTON": {
+                    "appearances": 2, 
+                    "dialog_percentage": 0.17616580310880828, 
+                    "dialog_words": 34
+                }
+            }, 
+            "chars": [
+                8, 
+                7, 
+                5
+            ], 
+            "duration": 233, 
+            "id": 71, 
+            "location": "RECEPTION AREA", 
+            "location_number": 24, 
+            "scene_dialog_words": 193, 
+            "scene_number": 72, 
+            "scene_percentage": 0.00952069627753034, 
+            "scene_start_percentage": 0.49417725656846323, 
+            "scene_total_words": 233, 
+            "start": 11861
+        }, 
+        {
+            "characters": {
+                "GHOSTBUSTERS": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }
+            }, 
+            "chars": [
+                5
+            ], 
+            "duration": 37, 
+            "id": 72, 
+            "location": "FIREHALL", 
+            "location_number": 19, 
+            "scene_dialog_words": 0, 
+            "scene_number": 73, 
+            "scene_percentage": 0.0015118702243288522, 
+            "scene_start_percentage": 0.49568912679279203, 
+            "scene_total_words": 37, 
+            "start": 12094
+        }, 
+        {
+            "characters": {
+                "JANINE": {
+                    "appearances": 8, 
+                    "dialog_percentage": 0.3409090909090909, 
+                    "dialog_words": 75
+                }, 
+                "STANTZ": {
+                    "appearances": 9, 
+                    "dialog_percentage": 0.33636363636363636, 
+                    "dialog_words": 74
+                }, 
+                "VENKMAN": {
+                    "appearances": 9, 
+                    "dialog_percentage": 0.2681818181818182, 
+                    "dialog_words": 59
+                }, 
+                "WINSTON": {
+                    "appearances": 3, 
+                    "dialog_percentage": 0.05454545454545454, 
+                    "dialog_words": 12
+                }, 
+                "WOMAN": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }
+            }, 
+            "chars": [
+                15, 
+                7, 
+                0, 
+                8, 
+                1
+            ], 
+            "duration": 295, 
+            "id": 73, 
+            "location": "GARAGE BAY", 
+            "location_number": 20, 
+            "scene_dialog_words": 220, 
+            "scene_number": 74, 
+            "scene_percentage": 0.012054100437216525, 
+            "scene_start_percentage": 0.5077432272300085, 
+            "scene_total_words": 295, 
+            "start": 12131
+        }, 
+        {
+            "characters": {
+                "GHOSTBUSTERS": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }, 
+                "PECK": {
+                    "appearances": 16, 
+                    "dialog_percentage": 0.6302816901408451, 
+                    "dialog_words": 179
+                }, 
+                "VENKMAN": {
+                    "appearances": 23, 
+                    "dialog_percentage": 0.36971830985915494, 
+                    "dialog_words": 105
+                }
+            }, 
+            "chars": [
+                0, 
+                6, 
+                5
+            ], 
+            "duration": 325, 
+            "id": 74, 
+            "location": "OFFICE", 
+            "location_number": 28, 
+            "scene_dialog_words": 284, 
+            "scene_number": 75, 
+            "scene_percentage": 0.013279941159645323, 
+            "scene_start_percentage": 0.5210231683896539, 
+            "scene_total_words": 325, 
+            "start": 12426
+        }, 
+        {
+            "characters": {
+                "SPENGLER": {
+                    "appearances": 8, 
+                    "dialog_percentage": 0.437125748502994, 
+                    "dialog_words": 73
+                }, 
+                "STANTZ": {
+                    "appearances": 6, 
+                    "dialog_percentage": 0.33532934131736525, 
+                    "dialog_words": 56
+                }, 
+                "VENKMAN": {
+                    "appearances": 4, 
+                    "dialog_percentage": 0.11976047904191617, 
+                    "dialog_words": 20
+                }, 
+                "WINSTON": {
+                    "appearances": 4, 
+                    "dialog_percentage": 0.10778443113772455, 
+                    "dialog_words": 18
+                }
+            }, 
+            "chars": [
+                1, 
+                7, 
+                2, 
+                0
+            ], 
+            "duration": 403, 
+            "id": 75, 
+            "location": "FIREHALL BASEMENT", 
+            "location_number": 58, 
+            "scene_dialog_words": 167, 
+            "scene_number": 76, 
+            "scene_percentage": 0.016467127037960202, 
+            "scene_start_percentage": 0.5374902954276141, 
+            "scene_total_words": 403, 
+            "start": 12751
+        }, 
+        {
+            "characters": {
+                "DANA": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }
+            }, 
+            "chars": [
+                3
+            ], 
+            "duration": 30, 
+            "id": 76, 
+            "location": "MANHATTAN SKYLINE", 
+            "location_number": 59, 
+            "scene_dialog_words": 0, 
+            "scene_number": 77, 
+            "scene_percentage": 0.001225840722428799, 
+            "scene_start_percentage": 0.5387161361500429, 
+            "scene_total_words": 30, 
+            "start": 13154
+        }, 
+        {
+            "characters": {}, 
+            "chars": [], 
+            "duration": 91, 
+            "id": 77, 
+            "location": "TEMPLE", 
+            "location_number": 60, 
+            "scene_dialog_words": 0, 
+            "scene_number": 78, 
+            "scene_percentage": 0.0037183835247006905, 
+            "scene_start_percentage": 0.5424345196747435, 
+            "scene_total_words": 91, 
+            "start": 13184
+        }, 
+        {
+            "characters": {
+                "DANA": {
+                    "appearances": 6, 
+                    "dialog_percentage": 0.2976190476190476, 
+                    "dialog_words": 25
+                }, 
+                "LOUIS": {
+                    "appearances": 11, 
+                    "dialog_percentage": 0.7023809523809523, 
+                    "dialog_words": 59
+                }
+            }, 
+            "chars": [
+                3, 
+                4
+            ], 
+            "duration": 150, 
+            "id": 78, 
+            "location": "HALLWAY", 
+            "location_number": 31, 
+            "scene_dialog_words": 84, 
+            "scene_number": 79, 
+            "scene_percentage": 0.006129203612143996, 
+            "scene_start_percentage": 0.5485637232868876, 
+            "scene_total_words": 150, 
+            "start": 13275
+        }, 
+        {
+            "characters": {
+                "DANA": {
+                    "appearances": 2, 
+                    "dialog_percentage": 1.0, 
+                    "dialog_words": 49
+                }
+            }, 
+            "chars": [
+                3
+            ], 
+            "duration": 139, 
+            "id": 79, 
+            "location": "DANA'S APARTMENT", 
+            "location_number": 29, 
+            "scene_dialog_words": 49, 
+            "scene_number": 80, 
+            "scene_percentage": 0.0056797286805867694, 
+            "scene_start_percentage": 0.5542434519674744, 
+            "scene_total_words": 139, 
+            "start": 13425
+        }, 
+        {
+            "characters": {
+                "DANA": {
+                    "appearances": 6, 
+                    "dialog_percentage": 1.0, 
+                    "dialog_words": 3
+                }
+            }, 
+            "chars": [
+                3
+            ], 
+            "duration": 184, 
+            "id": 80, 
+            "location": "KITCHEN DOOR   NIGHT", 
+            "location_number": 61, 
+            "scene_dialog_words": 3, 
+            "scene_number": 81, 
+            "scene_percentage": 0.007518489764229968, 
+            "scene_start_percentage": 0.5617619417317044, 
+            "scene_total_words": 184, 
+            "start": 13564
+        }, 
+        {
+            "characters": {
+                "DANA": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }
+            }, 
+            "chars": [
+                3
+            ], 
+            "duration": 41, 
+            "id": 81, 
+            "location": "DANA'S ROOFTOP", 
+            "location_number": 62, 
+            "scene_dialog_words": 0, 
+            "scene_number": 82, 
+            "scene_percentage": 0.0016753156539860254, 
+            "scene_start_percentage": 0.5634372573856904, 
+            "scene_total_words": 41, 
+            "start": 13748
+        }, 
+        {
+            "characters": {
+                "DANA": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }, 
+                "LOUIS": {
+                    "appearances": 11, 
+                    "dialog_percentage": 0.84, 
+                    "dialog_words": 126
+                }, 
+                "WOMAN": {
+                    "appearances": 3, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }
+            }, 
+            "chars": [
+                15, 
+                4, 
+                3
+            ], 
+            "duration": 278, 
+            "id": 82, 
+            "location": "LOUIS' APARTMENT", 
+            "location_number": 63, 
+            "scene_dialog_words": 150, 
+            "scene_number": 83, 
+            "scene_percentage": 0.011359457361173539, 
+            "scene_start_percentage": 0.5747967147468639, 
+            "scene_total_words": 278, 
+            "start": 13789
+        }, 
+        {
+            "characters": {
+                "LOUIS": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }
+            }, 
+            "chars": [
+                4
+            ], 
+            "duration": 41, 
+            "id": 83, 
+            "location": "BEDROOM", 
+            "location_number": 64, 
+            "scene_dialog_words": 0, 
+            "scene_number": 84, 
+            "scene_percentage": 0.0016753156539860254, 
+            "scene_start_percentage": 0.5764720304008499, 
+            "scene_total_words": 41, 
+            "start": 14067
+        }, 
+        {
+            "characters": {
+                "LOUIS": {
+                    "appearances": 6, 
+                    "dialog_percentage": 1.0, 
+                    "dialog_words": 6
+                }
+            }, 
+            "chars": [
+                4
+            ], 
+            "duration": 110, 
+            "id": 84, 
+            "location": "LIVING ROOM", 
+            "location_number": 30, 
+            "scene_dialog_words": 6, 
+            "scene_number": 85, 
+            "scene_percentage": 0.004494749315572263, 
+            "scene_start_percentage": 0.5809667797164222, 
+            "scene_total_words": 110, 
+            "start": 14108
+        }, 
+        {
+            "characters": {
+                "DANA": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }, 
+                "LOUIS": {
+                    "appearances": 4, 
+                    "dialog_percentage": 0.5555555555555556, 
+                    "dialog_words": 10
+                }
+            }, 
+            "chars": [
+                3, 
+                4
+            ], 
+            "duration": 122, 
+            "id": 85, 
+            "location": "HALLWAY", 
+            "location_number": 31, 
+            "scene_dialog_words": 18, 
+            "scene_number": 86, 
+            "scene_percentage": 0.004985085604543783, 
+            "scene_start_percentage": 0.585951865320966, 
+            "scene_total_words": 122, 
+            "start": 14218
+        }, 
+        {
+            "characters": {
+                "LOUIS": {
+                    "appearances": 3, 
+                    "dialog_percentage": 0.0547945205479452, 
+                    "dialog_words": 4
+                }
+            }, 
+            "chars": [
+                4
+            ], 
+            "duration": 124, 
+            "id": 86, 
+            "location": "CENTRAL PARK", 
+            "location_number": 65, 
+            "scene_dialog_words": 73, 
+            "scene_number": 87, 
+            "scene_percentage": 0.00506680831937237, 
+            "scene_start_percentage": 0.5910186736403383, 
+            "scene_total_words": 124, 
+            "start": 14340
+        }, 
+        {
+            "characters": {
+                "LOUIS": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }
+            }, 
+            "chars": [
+                4
+            ], 
+            "duration": 36, 
+            "id": 87, 
+            "location": "CENTRAL PARK", 
+            "location_number": 65, 
+            "scene_dialog_words": 0, 
+            "scene_number": 88, 
+            "scene_percentage": 0.0014710088669145588, 
+            "scene_start_percentage": 0.5924896825072529, 
+            "scene_total_words": 36, 
+            "start": 14464
+        }, 
+        {
+            "characters": {
+                "LOUIS": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }
+            }, 
+            "chars": [
+                4
+            ], 
+            "duration": 73, 
+            "id": 88, 
+            "location": "TAVERN ON THE GREEN", 
+            "location_number": 66, 
+            "scene_dialog_words": 0, 
+            "scene_number": 89, 
+            "scene_percentage": 0.002982879091243411, 
+            "scene_start_percentage": 0.5954725615984963, 
+            "scene_total_words": 73, 
+            "start": 14500
+        }, 
+        {
+            "characters": {
+                "LOUIS": {
+                    "appearances": 2, 
+                    "dialog_percentage": 1.0, 
+                    "dialog_words": 4
+                }
+            }, 
+            "chars": [
+                4
+            ], 
+            "duration": 36, 
+            "id": 89, 
+            "location": "TAVERN ON THE GREEN", 
+            "location_number": 66, 
+            "scene_dialog_words": 4, 
+            "scene_number": 90, 
+            "scene_percentage": 0.0014710088669145588, 
+            "scene_start_percentage": 0.5969435704654109, 
+            "scene_total_words": 36, 
+            "start": 14573
+        }, 
+        {
+            "characters": {
+                "LOUIS": {
+                    "appearances": 4, 
+                    "dialog_percentage": 1.0, 
+                    "dialog_words": 5
+                }
+            }, 
+            "chars": [
+                4
+            ], 
+            "duration": 65, 
+            "id": 90, 
+            "location": "COURTYARD", 
+            "location_number": 67, 
+            "scene_dialog_words": 5, 
+            "scene_number": 91, 
+            "scene_percentage": 0.0026559882319290647, 
+            "scene_start_percentage": 0.5995995586973399, 
+            "scene_total_words": 65, 
+            "start": 14609
+        }, 
+        {
+            "characters": {
+                "LOUIS": {
+                    "appearances": 7, 
+                    "dialog_percentage": 0.7023809523809523, 
+                    "dialog_words": 59
+                }
+            }, 
+            "chars": [
+                4
+            ], 
+            "duration": 207, 
+            "id": 91, 
+            "location": "TAVERN ON THE GREEN", 
+            "location_number": 66, 
+            "scene_dialog_words": 84, 
+            "scene_number": 92, 
+            "scene_percentage": 0.008458300984758714, 
+            "scene_start_percentage": 0.6080578596820987, 
+            "scene_total_words": 207, 
+            "start": 14674
+        }, 
+        {
+            "characters": {
+                "DANA": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }, 
+                "VENKMAN": {
+                    "appearances": 3, 
+                    "dialog_percentage": 0.3, 
+                    "dialog_words": 6
+                }
+            }, 
+            "chars": [
+                0, 
+                3
+            ], 
+            "duration": 62, 
+            "id": 92, 
+            "location": "DANA'S APARTMENT BUILDING", 
+            "location_number": 68, 
+            "scene_dialog_words": 20, 
+            "scene_number": 93, 
+            "scene_percentage": 0.002533404159686185, 
+            "scene_start_percentage": 0.6105912638417849, 
+            "scene_total_words": 62, 
+            "start": 14881
+        }, 
+        {
+            "characters": {
+                "DANA": {
+                    "appearances": 9, 
+                    "dialog_percentage": 0.20610687022900764, 
+                    "dialog_words": 27
+                }, 
+                "LOUIS": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }, 
+                "VENKMAN": {
+                    "appearances": 11, 
+                    "dialog_percentage": 0.7938931297709924, 
+                    "dialog_words": 104
+                }, 
+                "WOMAN": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }
+            }, 
+            "chars": [
+                15, 
+                4, 
+                0, 
+                3
+            ], 
+            "duration": 298, 
+            "id": 93, 
+            "location": "HALLWAY", 
+            "location_number": 31, 
+            "scene_dialog_words": 131, 
+            "scene_number": 94, 
+            "scene_percentage": 0.012176684509459404, 
+            "scene_start_percentage": 0.6227679483512443, 
+            "scene_total_words": 298, 
+            "start": 14943
+        }, 
+        {
+            "characters": {
+                "DANA": {
+                    "appearances": 12, 
+                    "dialog_percentage": 0.18433179723502305, 
+                    "dialog_words": 40
+                }, 
+                "VENKMAN": {
+                    "appearances": 9, 
+                    "dialog_percentage": 0.815668202764977, 
+                    "dialog_words": 177
+                }
+            }, 
+            "chars": [
+                0, 
+                3
+            ], 
+            "duration": 330, 
+            "id": 94, 
+            "location": "DANA'S BEDROOM", 
+            "location_number": 69, 
+            "scene_dialog_words": 217, 
+            "scene_number": 95, 
+            "scene_percentage": 0.01348424794671679, 
+            "scene_start_percentage": 0.636252196297961, 
+            "scene_total_words": 330, 
+            "start": 15241
+        }, 
+        {
+            "characters": {}, 
+            "chars": [], 
+            "duration": 12, 
+            "id": 95, 
+            "location": "HUDSON PARKWAY", 
+            "location_number": 70, 
+            "scene_dialog_words": 0, 
+            "scene_number": 96, 
+            "scene_percentage": 0.0004903362889715196, 
+            "scene_start_percentage": 0.6367425325869326, 
+            "scene_total_words": 12, 
+            "start": 15571
+        }, 
+        {
+            "characters": {
+                "DANA": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }, 
+                "STANTZ": {
+                    "appearances": 10, 
+                    "dialog_percentage": 0.478494623655914, 
+                    "dialog_words": 89
+                }, 
+                "WINSTON": {
+                    "appearances": 10, 
+                    "dialog_percentage": 0.521505376344086, 
+                    "dialog_words": 97
+                }
+            }, 
+            "chars": [
+                7, 
+                1, 
+                3
+            ], 
+            "duration": 223, 
+            "id": 96, 
+            "location": "ECTOMOBILE", 
+            "location_number": 55, 
+            "scene_dialog_words": 186, 
+            "scene_number": 97, 
+            "scene_percentage": 0.009112082703387406, 
+            "scene_start_percentage": 0.64585461529032, 
+            "scene_total_words": 223, 
+            "start": 15583
+        }, 
+        {
+            "characters": {
+                "STANTZ": {
+                    "appearances": 2, 
+                    "dialog_percentage": 0.20754716981132076, 
+                    "dialog_words": 11
+                }, 
+                "WINSTON": {
+                    "appearances": 3, 
+                    "dialog_percentage": 0.18867924528301888, 
+                    "dialog_words": 10
+                }
+            }, 
+            "chars": [
+                1, 
+                7
+            ], 
+            "duration": 108, 
+            "id": 97, 
+            "location": ". FORT DETMERRING -- NIGHT", 
+            "location_number": 71, 
+            "scene_dialog_words": 53, 
+            "scene_number": 98, 
+            "scene_percentage": 0.004413026600743677, 
+            "scene_start_percentage": 0.6502676418910637, 
+            "scene_total_words": 108, 
+            "start": 15806
+        }, 
+        {
+            "characters": {
+                "STANTZ": {
+                    "appearances": 3, 
+                    "dialog_percentage": 1.0, 
+                    "dialog_words": 12
+                }, 
+                "WINSTON": {
+                    "appearances": 2, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }
+            }, 
+            "chars": [
+                7, 
+                1
+            ], 
+            "duration": 66, 
+            "id": 98, 
+            "location": "FORT -- GUNNER'S CORRIDOR", 
+            "location_number": 72, 
+            "scene_dialog_words": 12, 
+            "scene_number": 99, 
+            "scene_percentage": 0.002696849589343358, 
+            "scene_start_percentage": 0.652964491480407, 
+            "scene_total_words": 66, 
+            "start": 15914
+        }, 
+        {
+            "characters": {
+                "SPENGLER": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }
+            }, 
+            "chars": [
+                2
+            ], 
+            "duration": 100, 
+            "id": 99, 
+            "location": "FIREHALL -- NIGHT", 
+            "location_number": 73, 
+            "scene_dialog_words": 53, 
+            "scene_number": 100, 
+            "scene_percentage": 0.0040861357414293305, 
+            "scene_start_percentage": 0.6570506272218363, 
+            "scene_total_words": 100, 
+            "start": 15980
+        }, 
+        {
+            "characters": {
+                "LOUIS": {
+                    "appearances": 3, 
+                    "dialog_percentage": 0.5454545454545454, 
+                    "dialog_words": 6
+                }, 
+                "SPENGLER": {
+                    "appearances": 2, 
+                    "dialog_percentage": 0.45454545454545453, 
+                    "dialog_words": 5
+                }
+            }, 
+            "chars": [
+                4, 
+                2
+            ], 
+            "duration": 47, 
+            "id": 100, 
+            "location": "POLICE VAN", 
+            "location_number": 74, 
+            "scene_dialog_words": 11, 
+            "scene_number": 101, 
+            "scene_percentage": 0.0019204837984717852, 
+            "scene_start_percentage": 0.6589711110203081, 
+            "scene_total_words": 47, 
+            "start": 16080
+        }, 
+        {
+            "characters": {
+                "JANINE": {
+                    "appearances": 6, 
+                    "dialog_percentage": 0.12790697674418605, 
+                    "dialog_words": 22
+                }, 
+                "LOUIS": {
+                    "appearances": 9, 
+                    "dialog_percentage": 0.6162790697674418, 
+                    "dialog_words": 106
+                }, 
+                "SPENGLER": {
+                    "appearances": 9, 
+                    "dialog_percentage": 0.2558139534883721, 
+                    "dialog_words": 44
+                }
+            }, 
+            "chars": [
+                8, 
+                2, 
+                4
+            ], 
+            "duration": 260, 
+            "id": 101, 
+            "location": "BASEMENT", 
+            "location_number": 14, 
+            "scene_dialog_words": 172, 
+            "scene_number": 102, 
+            "scene_percentage": 0.010623952927716259, 
+            "scene_start_percentage": 0.6695950639480244, 
+            "scene_total_words": 260, 
+            "start": 16127
+        }, 
+        {
+            "characters": {
+                "DANA": {
+                    "appearances": 2, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }, 
+                "JANINE": {
+                    "appearances": 4, 
+                    "dialog_percentage": 0.19140625, 
+                    "dialog_words": 49
+                }, 
+                "LOUIS": {
+                    "appearances": 3, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }, 
+                "SPENGLER": {
+                    "appearances": 13, 
+                    "dialog_percentage": 0.41015625, 
+                    "dialog_words": 105
+                }, 
+                "STANTZ": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }, 
+                "VENKMAN": {
+                    "appearances": 9, 
+                    "dialog_percentage": 0.3984375, 
+                    "dialog_words": 102
+                }
+            }, 
+            "chars": [
+                4, 
+                2, 
+                0, 
+                8, 
+                1, 
+                3
+            ], 
+            "duration": 349, 
+            "id": 102, 
+            "location": "DANA'S BEDROOM", 
+            "location_number": 69, 
+            "scene_dialog_words": 256, 
+            "scene_number": 103, 
+            "scene_percentage": 0.014260613737588362, 
+            "scene_start_percentage": 0.6838556776856127, 
+            "scene_total_words": 349, 
+            "start": 16387
+        }, 
+        {
+            "characters": {
+                "STANTZ": {
+                    "appearances": 2, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }
+            }, 
+            "chars": [
+                1
+            ], 
+            "duration": 115, 
+            "id": 103, 
+            "location": "FORT DETMERRING -- SINGLE OFFICERS' QUARTERS", 
+            "location_number": 75, 
+            "scene_dialog_words": 0, 
+            "scene_number": 104, 
+            "scene_percentage": 0.0046990561026437295, 
+            "scene_start_percentage": 0.6885547337882565, 
+            "scene_total_words": 115, 
+            "start": 16736
+        }, 
+        {
+            "characters": {
+                "STANTZ": {
+                    "appearances": 8, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }
+            }, 
+            "chars": [
+                1
+            ], 
+            "duration": 256, 
+            "id": 104, 
+            "location": "WARDROBE", 
+            "location_number": 76, 
+            "scene_dialog_words": 0, 
+            "scene_number": 105, 
+            "scene_percentage": 0.010460507498059086, 
+            "scene_start_percentage": 0.6990152412863155, 
+            "scene_total_words": 256, 
+            "start": 16851
+        }, 
+        {
+            "characters": {
+                "STANTZ": {
+                    "appearances": 2, 
+                    "dialog_percentage": 0.45454545454545453, 
+                    "dialog_words": 5
+                }, 
+                "WINSTON": {
+                    "appearances": 3, 
+                    "dialog_percentage": 0.5454545454545454, 
+                    "dialog_words": 6
+                }
+            }, 
+            "chars": [
+                7, 
+                1
+            ], 
+            "duration": 42, 
+            "id": 105, 
+            "location": "BARRACKS CORRIDOR", 
+            "location_number": 77, 
+            "scene_dialog_words": 11, 
+            "scene_number": 106, 
+            "scene_percentage": 0.0017161770114003188, 
+            "scene_start_percentage": 0.7007314182977159, 
+            "scene_total_words": 42, 
+            "start": 17107
+        }, 
+        {
+            "characters": {
+                "PECK": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }
+            }, 
+            "chars": [
+                6
+            ], 
+            "duration": 64, 
+            "id": 106, 
+            "location": "FIREHALL", 
+            "location_number": 19, 
+            "scene_dialog_words": 0, 
+            "scene_number": 107, 
+            "scene_percentage": 0.0026151268745147715, 
+            "scene_start_percentage": 0.7033465451722306, 
+            "scene_total_words": 64, 
+            "start": 17149
+        }, 
+        {
+            "characters": {
+                "JANINE": {
+                    "appearances": 4, 
+                    "dialog_percentage": 0.5089285714285714, 
+                    "dialog_words": 57
+                }, 
+                "PECK": {
+                    "appearances": 5, 
+                    "dialog_percentage": 0.49107142857142855, 
+                    "dialog_words": 55
+                }
+            }, 
+            "chars": [
+                8, 
+                6
+            ], 
+            "duration": 148, 
+            "id": 107, 
+            "location": "FIREHALL", 
+            "location_number": 19, 
+            "scene_dialog_words": 112, 
+            "scene_number": 108, 
+            "scene_percentage": 0.006047480897315409, 
+            "scene_start_percentage": 0.709394026069546, 
+            "scene_total_words": 148, 
+            "start": 17213
+        }, 
+        {
+            "characters": {
+                "LOUIS": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }, 
+                "PECK": {
+                    "appearances": 3, 
+                    "dialog_percentage": 0.717391304347826, 
+                    "dialog_words": 33
+                }, 
+                "SPENGLER": {
+                    "appearances": 2, 
+                    "dialog_percentage": 0.2826086956521739, 
+                    "dialog_words": 13
+                }
+            }, 
+            "chars": [
+                4, 
+                6, 
+                2
+            ], 
+            "duration": 71, 
+            "id": 108, 
+            "location": "BASEMENT", 
+            "location_number": 14, 
+            "scene_dialog_words": 46, 
+            "scene_number": 109, 
+            "scene_percentage": 0.0029011563764148244, 
+            "scene_start_percentage": 0.7122951824459609, 
+            "scene_total_words": 71, 
+            "start": 17361
+        }, 
+        {
+            "characters": {
+                "VENKMAN": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }
+            }, 
+            "chars": [
+                0
+            ], 
+            "duration": 16, 
+            "id": 109, 
+            "location": "FIREHALL", 
+            "location_number": 19, 
+            "scene_dialog_words": 0, 
+            "scene_number": 110, 
+            "scene_percentage": 0.0006537817186286929, 
+            "scene_start_percentage": 0.7129489641645895, 
+            "scene_total_words": 16, 
+            "start": 17432
+        }, 
+        {
+            "characters": {
+                "JANINE": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }, 
+                "LOUIS": {
+                    "appearances": 2, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }, 
+                "PECK": {
+                    "appearances": 8, 
+                    "dialog_percentage": 0.4124293785310734, 
+                    "dialog_words": 73
+                }, 
+                "SPENGLER": {
+                    "appearances": 7, 
+                    "dialog_percentage": 0.05649717514124294, 
+                    "dialog_words": 10
+                }, 
+                "VENKMAN": {
+                    "appearances": 13, 
+                    "dialog_percentage": 0.3728813559322034, 
+                    "dialog_words": 66
+                }
+            }, 
+            "chars": [
+                4, 
+                0, 
+                8, 
+                6, 
+                2
+            ], 
+            "duration": 372, 
+            "id": 110, 
+            "location": "BASEMENT", 
+            "location_number": 14, 
+            "scene_dialog_words": 177, 
+            "scene_number": 111, 
+            "scene_percentage": 0.015200424958117109, 
+            "scene_start_percentage": 0.7281493891227067, 
+            "scene_total_words": 372, 
+            "start": 17448
+        }, 
+        {
+            "characters": {}, 
+            "chars": [], 
+            "duration": 37, 
+            "id": 111, 
+            "location": "FIREHALL", 
+            "location_number": 19, 
+            "scene_dialog_words": 0, 
+            "scene_number": 112, 
+            "scene_percentage": 0.0015118702243288522, 
+            "scene_start_percentage": 0.7296612593470355, 
+            "scene_total_words": 37, 
+            "start": 17820
+        }, 
+        {
+            "characters": {
+                "DANA": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }
+            }, 
+            "chars": [
+                3
+            ], 
+            "duration": 23, 
+            "id": 112, 
+            "location": "DANA'S BEDROOM", 
+            "location_number": 69, 
+            "scene_dialog_words": 0, 
+            "scene_number": 113, 
+            "scene_percentage": 0.000939811220528746, 
+            "scene_start_percentage": 0.7306010705675643, 
+            "scene_total_words": 23, 
+            "start": 17857
+        }, 
+        {
+            "characters": {
+                "JANINE": {
+                    "appearances": 2, 
+                    "dialog_percentage": 0.5789473684210527, 
+                    "dialog_words": 11
+                }, 
+                "LOUIS": {
+                    "appearances": 3, 
+                    "dialog_percentage": 0.42105263157894735, 
+                    "dialog_words": 8
+                }, 
+                "SPENGLER": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }, 
+                "VENKMAN": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }
+            }, 
+            "chars": [
+                8, 
+                0, 
+                2, 
+                4
+            ], 
+            "duration": 82, 
+            "id": 113, 
+            "location": "FIREHALL", 
+            "location_number": 19, 
+            "scene_dialog_words": 19, 
+            "scene_number": 114, 
+            "scene_percentage": 0.003350631307972051, 
+            "scene_start_percentage": 0.7339517018755363, 
+            "scene_total_words": 82, 
+            "start": 17880
+        }, 
+        {
+            "characters": {
+                "DANA": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }
+            }, 
+            "chars": [
+                3
+            ], 
+            "duration": 50, 
+            "id": 114, 
+            "location": "LOWER MANHATTAN", 
+            "location_number": 78, 
+            "scene_dialog_words": 0, 
+            "scene_number": 115, 
+            "scene_percentage": 0.0020430678707146653, 
+            "scene_start_percentage": 0.735994769746251, 
+            "scene_total_words": 50, 
+            "start": 17962
+        }, 
+        {
+            "characters": {
+                "LOUIS": {
+                    "appearances": 2, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }, 
+                "PECK": {
+                    "appearances": 7, 
+                    "dialog_percentage": 0.17699115044247787, 
+                    "dialog_words": 40
+                }, 
+                "SPENGLER": {
+                    "appearances": 10, 
+                    "dialog_percentage": 0.19911504424778761, 
+                    "dialog_words": 45
+                }, 
+                "STANTZ": {
+                    "appearances": 4, 
+                    "dialog_percentage": 0.04424778761061947, 
+                    "dialog_words": 10
+                }, 
+                "VENKMAN": {
+                    "appearances": 6, 
+                    "dialog_percentage": 0.19469026548672566, 
+                    "dialog_words": 44
+                }, 
+                "WINSTON": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }
+            }, 
+            "chars": [
+                4, 
+                7, 
+                2, 
+                0, 
+                6, 
+                1
+            ], 
+            "duration": 349, 
+            "id": 115, 
+            "location": "FIREHALL", 
+            "location_number": 19, 
+            "scene_dialog_words": 226, 
+            "scene_number": 116, 
+            "scene_percentage": 0.014260613737588362, 
+            "scene_start_percentage": 0.7502553834838394, 
+            "scene_total_words": 349, 
+            "start": 18012
+        }, 
+        {
+            "characters": {
+                "LOUIS": {
+                    "appearances": 2, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }
+            }, 
+            "chars": [
+                4
+            ], 
+            "duration": 62, 
+            "id": 116, 
+            "location": "BOWERY", 
+            "location_number": 79, 
+            "scene_dialog_words": 0, 
+            "scene_number": 117, 
+            "scene_percentage": 0.002533404159686185, 
+            "scene_start_percentage": 0.7527887876435255, 
+            "scene_total_words": 62, 
+            "start": 18361
+        }, 
+        {
+            "characters": {}, 
+            "chars": [], 
+            "duration": 17, 
+            "id": 117, 
+            "location": "DANA'S APARTMENT", 
+            "location_number": 29, 
+            "scene_dialog_words": 0, 
+            "scene_number": 118, 
+            "scene_percentage": 0.0006946430760429861, 
+            "scene_start_percentage": 0.7534834307195685, 
+            "scene_total_words": 17, 
+            "start": 18423
+        }, 
+        {
+            "characters": {}, 
+            "chars": [], 
+            "duration": 103, 
+            "id": 118, 
+            "location": "SEDGEWICK HOTEL", 
+            "location_number": 80, 
+            "scene_dialog_words": 0, 
+            "scene_number": 119, 
+            "scene_percentage": 0.00420871981367221, 
+            "scene_start_percentage": 0.7576921505332407, 
+            "scene_total_words": 103, 
+            "start": 18440
+        }, 
+        {
+            "characters": {}, 
+            "chars": [], 
+            "duration": 21, 
+            "id": 119, 
+            "location": "EXXON BUILDING", 
+            "location_number": 81, 
+            "scene_dialog_words": 0, 
+            "scene_number": 120, 
+            "scene_percentage": 0.0008580885057001594, 
+            "scene_start_percentage": 0.7585502390389409, 
+            "scene_total_words": 21, 
+            "start": 18543
+        }, 
+        {
+            "characters": {}, 
+            "chars": [], 
+            "duration": 69, 
+            "id": 120, 
+            "location": ". THE BACK SEAT", 
+            "location_number": 82, 
+            "scene_dialog_words": 14, 
+            "scene_number": 121, 
+            "scene_percentage": 0.0028194336615862377, 
+            "scene_start_percentage": 0.7613696727005271, 
+            "scene_total_words": 69, 
+            "start": 18564
+        }, 
+        {
+            "characters": {}, 
+            "chars": [], 
+            "duration": 22, 
+            "id": 121, 
+            "location": "STREET", 
+            "location_number": 83, 
+            "scene_dialog_words": 0, 
+            "scene_number": 122, 
+            "scene_percentage": 0.0008989498631144526, 
+            "scene_start_percentage": 0.7622686225636416, 
+            "scene_total_words": 22, 
+            "start": 18633
+        }, 
+        {
+            "characters": {}, 
+            "chars": [], 
+            "duration": 151, 
+            "id": 122, 
+            "location": "AN OFFICE", 
+            "location_number": 9, 
+            "scene_dialog_words": 0, 
+            "scene_number": 123, 
+            "scene_percentage": 0.006170064969558289, 
+            "scene_start_percentage": 0.7684386875331999, 
+            "scene_total_words": 151, 
+            "start": 18655
+        }, 
+        {
+            "characters": {
+                "LOUIS": {
+                    "appearances": 9, 
+                    "dialog_percentage": 0.17647058823529413, 
+                    "dialog_words": 12
+                }
+            }, 
+            "chars": [
+                4
+            ], 
+            "duration": 189, 
+            "id": 123, 
+            "location": "CENTRAL PARK", 
+            "location_number": 65, 
+            "scene_dialog_words": 68, 
+            "scene_number": 124, 
+            "scene_percentage": 0.007722796551301434, 
+            "scene_start_percentage": 0.7761614840845013, 
+            "scene_total_words": 189, 
+            "start": 18806
+        }, 
+        {
+            "characters": {}, 
+            "chars": [], 
+            "duration": 25, 
+            "id": 124, 
+            "location": "STREET", 
+            "location_number": 83, 
+            "scene_dialog_words": 0, 
+            "scene_number": 125, 
+            "scene_percentage": 0.0010215339353573326, 
+            "scene_start_percentage": 0.7771830180198587, 
+            "scene_total_words": 25, 
+            "start": 18995
+        }, 
+        {
+            "characters": {}, 
+            "chars": [], 
+            "duration": 17, 
+            "id": 125, 
+            "location": "BACK SEAT", 
+            "location_number": 84, 
+            "scene_dialog_words": 0, 
+            "scene_number": 126, 
+            "scene_percentage": 0.0006946430760429861, 
+            "scene_start_percentage": 0.7778776610959016, 
+            "scene_total_words": 17, 
+            "start": 19020
+        }, 
+        {
+            "characters": {}, 
+            "chars": [], 
+            "duration": 33, 
+            "id": 126, 
+            "location": "ST. MARKS PLAYHOUSE", 
+            "location_number": 85, 
+            "scene_dialog_words": 8, 
+            "scene_number": 127, 
+            "scene_percentage": 0.001348424794671679, 
+            "scene_start_percentage": 0.7792260858905733, 
+            "scene_total_words": 33, 
+            "start": 19037
+        }, 
+        {
+            "characters": {}, 
+            "chars": [], 
+            "duration": 292, 
+            "id": 127, 
+            "location": "THEATER", 
+            "location_number": 86, 
+            "scene_dialog_words": 0, 
+            "scene_number": 128, 
+            "scene_percentage": 0.011931516364973645, 
+            "scene_start_percentage": 0.7911576022555469, 
+            "scene_total_words": 292, 
+            "start": 19070
+        }, 
+        {
+            "characters": {
+                "DANA": {
+                    "appearances": 3, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }, 
+                "GHOSTBUSTERS": {
+                    "appearances": 2, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }, 
+                "SPENGLER": {
+                    "appearances": 7, 
+                    "dialog_percentage": 0.28133704735376047, 
+                    "dialog_words": 101
+                }, 
+                "STANTZ": {
+                    "appearances": 6, 
+                    "dialog_percentage": 0.2841225626740947, 
+                    "dialog_words": 102
+                }, 
+                "VENKMAN": {
+                    "appearances": 11, 
+                    "dialog_percentage": 0.2116991643454039, 
+                    "dialog_words": 76
+                }, 
+                "WINSTON": {
+                    "appearances": 5, 
+                    "dialog_percentage": 0.1532033426183844, 
+                    "dialog_words": 55
+                }
+            }, 
+            "chars": [
+                0, 
+                7, 
+                2, 
+                3, 
+                1, 
+                5
+            ], 
+            "duration": 480, 
+            "id": 128, 
+            "location": "NYPD LOCK", 
+            "location_number": 87, 
+            "scene_dialog_words": 359, 
+            "scene_number": 129, 
+            "scene_percentage": 0.019613451558860785, 
+            "scene_start_percentage": 0.8107710538144077, 
+            "scene_total_words": 480, 
+            "start": 19362
+        }, 
+        {
+            "characters": {
+                "GHOSTBUSTERS": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }
+            }, 
+            "chars": [
+                5
+            ], 
+            "duration": 48, 
+            "id": 129, 
+            "location": "CITY HALL", 
+            "location_number": 88, 
+            "scene_dialog_words": 26, 
+            "scene_number": 130, 
+            "scene_percentage": 0.0019613451558860785, 
+            "scene_start_percentage": 0.8127323989702938, 
+            "scene_total_words": 48, 
+            "start": 19842
+        }, 
+        {
+            "characters": {
+                "GHOSTBUSTERS": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }
+            }, 
+            "chars": [
+                5
+            ], 
+            "duration": 35, 
+            "id": 130, 
+            "location": "MAYOR'S OFFICE", 
+            "location_number": 89, 
+            "scene_dialog_words": 0, 
+            "scene_number": 131, 
+            "scene_percentage": 0.0014301475095002656, 
+            "scene_start_percentage": 0.814162546479794, 
+            "scene_total_words": 35, 
+            "start": 19890
+        }, 
+        {
+            "characters": {
+                "GHOSTBUSTERS": {
+                    "appearances": 4, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }, 
+                "MAYOR": {
+                    "appearances": 13, 
+                    "dialog_percentage": 0.1656441717791411, 
+                    "dialog_words": 81
+                }, 
+                "PECK": {
+                    "appearances": 11, 
+                    "dialog_percentage": 0.2249488752556237, 
+                    "dialog_words": 110
+                }, 
+                "STANTZ": {
+                    "appearances": 2, 
+                    "dialog_percentage": 0.032719836400818, 
+                    "dialog_words": 16
+                }, 
+                "VENKMAN": {
+                    "appearances": 9, 
+                    "dialog_percentage": 0.22085889570552147, 
+                    "dialog_words": 108
+                }, 
+                "WINSTON": {
+                    "appearances": 3, 
+                    "dialog_percentage": 0.08384458077709611, 
+                    "dialog_words": 41
+                }
+            }, 
+            "chars": [
+                7, 
+                0, 
+                5, 
+                6, 
+                1, 
+                9
+            ], 
+            "duration": 642, 
+            "id": 131, 
+            "location": "OFFICE OF THE MAYOR OF NEW YORK CITY", 
+            "location_number": 90, 
+            "scene_dialog_words": 489, 
+            "scene_number": 132, 
+            "scene_percentage": 0.0262329914599763, 
+            "scene_start_percentage": 0.8403955379397704, 
+            "scene_total_words": 642, 
+            "start": 19925
+        }, 
+        {
+            "characters": {
+                "LOUIS": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }
+            }, 
+            "chars": [
+                4
+            ], 
+            "duration": 40, 
+            "id": 132, 
+            "location": "DANA'S APARTMENT BUILDING", 
+            "location_number": 68, 
+            "scene_dialog_words": 0, 
+            "scene_number": 133, 
+            "scene_percentage": 0.001634454296571732, 
+            "scene_start_percentage": 0.8420299922363421, 
+            "scene_total_words": 40, 
+            "start": 20567
+        }, 
+        {
+            "characters": {
+                "DANA": {
+                    "appearances": 4, 
+                    "dialog_percentage": 0.08064516129032258, 
+                    "dialog_words": 5
+                }, 
+                "LOUIS": {
+                    "appearances": 7, 
+                    "dialog_percentage": 0.22580645161290322, 
+                    "dialog_words": 14
+                }
+            }, 
+            "chars": [
+                3, 
+                4
+            ], 
+            "duration": 194, 
+            "id": 133, 
+            "location": "DANA'S FLOOR", 
+            "location_number": 91, 
+            "scene_dialog_words": 62, 
+            "scene_number": 134, 
+            "scene_percentage": 0.0079271033383729, 
+            "scene_start_percentage": 0.849957095574715, 
+            "scene_total_words": 194, 
+            "start": 20607
+        }, 
+        {
+            "characters": {
+                "MAYOR": {
+                    "appearances": 4, 
+                    "dialog_percentage": 0.3, 
+                    "dialog_words": 21
+                }, 
+                "STANTZ": {
+                    "appearances": 2, 
+                    "dialog_percentage": 0.3142857142857143, 
+                    "dialog_words": 22
+                }, 
+                "VENKMAN": {
+                    "appearances": 2, 
+                    "dialog_percentage": 0.38571428571428573, 
+                    "dialog_words": 27
+                }
+            }, 
+            "chars": [
+                0, 
+                1, 
+                9
+            ], 
+            "duration": 105, 
+            "id": 134, 
+            "location": "CITY HALL CORRIDOR", 
+            "location_number": 92, 
+            "scene_dialog_words": 70, 
+            "scene_number": 135, 
+            "scene_percentage": 0.004290442528500797, 
+            "scene_start_percentage": 0.8542475381032157, 
+            "scene_total_words": 105, 
+            "start": 20801
+        }, 
+        {
+            "characters": {
+                "JANINE": {
+                    "appearances": 4, 
+                    "dialog_percentage": 0.47126436781609193, 
+                    "dialog_words": 41
+                }, 
+                "SPENGLER": {
+                    "appearances": 6, 
+                    "dialog_percentage": 0.14942528735632185, 
+                    "dialog_words": 13
+                }, 
+                "STANTZ": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }, 
+                "VENKMAN": {
+                    "appearances": 2, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }, 
+                "WINSTON": {
+                    "appearances": 2, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }
+            }, 
+            "chars": [
+                7, 
+                2, 
+                0, 
+                8, 
+                1
+            ], 
+            "duration": 156, 
+            "id": 135, 
+            "location": "LOADING DOCK", 
+            "location_number": 93, 
+            "scene_dialog_words": 87, 
+            "scene_number": 136, 
+            "scene_percentage": 0.006374371756629756, 
+            "scene_start_percentage": 0.8606219098598455, 
+            "scene_total_words": 156, 
+            "start": 20906
+        }, 
+        {
+            "characters": {
+                "GHOSTBUSTERS": {
+                    "appearances": 2, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }, 
+                "VENKMAN": {
+                    "appearances": 4, 
+                    "dialog_percentage": 1.0, 
+                    "dialog_words": 35
+                }
+            }, 
+            "chars": [
+                0, 
+                5
+            ], 
+            "duration": 63, 
+            "id": 136, 
+            "location": "ECTOMOBILE", 
+            "location_number": 55, 
+            "scene_dialog_words": 35, 
+            "scene_number": 137, 
+            "scene_percentage": 0.002574265517100478, 
+            "scene_start_percentage": 0.863196175376946, 
+            "scene_total_words": 63, 
+            "start": 21062
+        }, 
+        {
+            "characters": {}, 
+            "chars": [], 
+            "duration": 43, 
+            "id": 137, 
+            "location": "REAR OF CITY HALL", 
+            "location_number": 94, 
+            "scene_dialog_words": 0, 
+            "scene_number": 138, 
+            "scene_percentage": 0.001757038368814612, 
+            "scene_start_percentage": 0.8649532137457606, 
+            "scene_total_words": 43, 
+            "start": 21125
+        }, 
+        {
+            "characters": {
+                "GHOSTBUSTERS": {
+                    "appearances": 8, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }, 
+                "VENKMAN": {
+                    "appearances": 5, 
+                    "dialog_percentage": 0.5955056179775281, 
+                    "dialog_words": 53
+                }, 
+                "WINSTON": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.25842696629213485, 
+                    "dialog_words": 23
+                }
+            }, 
+            "chars": [
+                7, 
+                0, 
+                5
+            ], 
+            "duration": 429, 
+            "id": 138, 
+            "location": "DANA'S APARTMENT BUILDING", 
+            "location_number": 68, 
+            "scene_dialog_words": 89, 
+            "scene_number": 139, 
+            "scene_percentage": 0.017529522330731826, 
+            "scene_start_percentage": 0.8824827360764924, 
+            "scene_total_words": 429, 
+            "start": 21168
+        }, 
+        {
+            "characters": {
+                "DANA": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }, 
+                "LOUIS": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }
+            }, 
+            "chars": [
+                4, 
+                3
+            ], 
+            "duration": 35, 
+            "id": 139, 
+            "location": "ROOFTOP", 
+            "location_number": 95, 
+            "scene_dialog_words": 0, 
+            "scene_number": 140, 
+            "scene_percentage": 0.0014301475095002656, 
+            "scene_start_percentage": 0.8839128835859927, 
+            "scene_total_words": 35, 
+            "start": 21597
+        }, 
+        {
+            "characters": {}, 
+            "chars": [], 
+            "duration": 13, 
+            "id": 140, 
+            "location": "STREET BELOW", 
+            "location_number": 96, 
+            "scene_dialog_words": 0, 
+            "scene_number": 141, 
+            "scene_percentage": 0.0005311976463858129, 
+            "scene_start_percentage": 0.8844440812323785, 
+            "scene_total_words": 13, 
+            "start": 21632
+        }, 
+        {
+            "characters": {
+                "GHOSTBUSTERS": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }
+            }, 
+            "chars": [
+                5
+            ], 
+            "duration": 10, 
+            "id": 141, 
+            "location": "STAIRWELL", 
+            "location_number": 46, 
+            "scene_dialog_words": 0, 
+            "scene_number": 142, 
+            "scene_percentage": 0.000408613574142933, 
+            "scene_start_percentage": 0.8848526948065215, 
+            "scene_total_words": 10, 
+            "start": 21645
+        }, 
+        {
+            "characters": {
+                "GHOSTBUSTERS": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }, 
+                "VENKMAN": {
+                    "appearances": 1, 
+                    "dialog_percentage": 1.0, 
+                    "dialog_words": 10
+                }
+            }, 
+            "chars": [
+                5, 
+                0
+            ], 
+            "duration": 27, 
+            "id": 142, 
+            "location": "THIRTY", 
+            "location_number": 97, 
+            "scene_dialog_words": 10, 
+            "scene_number": 143, 
+            "scene_percentage": 0.0011032566501859192, 
+            "scene_start_percentage": 0.8859559514567074, 
+            "scene_total_words": 27, 
+            "start": 21655
+        }, 
+        {
+            "characters": {
+                "DANA": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }, 
+                "GHOSTBUSTERS": {
+                    "appearances": 2, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }, 
+                "VENKMAN": {
+                    "appearances": 3, 
+                    "dialog_percentage": 0.18181818181818182, 
+                    "dialog_words": 2
+                }, 
+                "WINSTON": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.8181818181818182, 
+                    "dialog_words": 9
+                }
+            }, 
+            "chars": [
+                0, 
+                7, 
+                5, 
+                3
+            ], 
+            "duration": 58, 
+            "id": 143, 
+            "location": "DANA'S DOOR", 
+            "location_number": 98, 
+            "scene_dialog_words": 11, 
+            "scene_number": 144, 
+            "scene_percentage": 0.0023699587300290118, 
+            "scene_start_percentage": 0.8883259101867365, 
+            "scene_total_words": 58, 
+            "start": 21682
+        }, 
+        {
+            "characters": {
+                "VENKMAN": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.2857142857142857, 
+                    "dialog_words": 4
+                }, 
+                "WINSTON": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.7142857142857143, 
+                    "dialog_words": 10
+                }
+            }, 
+            "chars": [
+                0, 
+                7
+            ], 
+            "duration": 56, 
+            "id": 144, 
+            "location": "DANA'S APARTMENT", 
+            "location_number": 29, 
+            "scene_dialog_words": 14, 
+            "scene_number": 145, 
+            "scene_percentage": 0.002288236015200425, 
+            "scene_start_percentage": 0.8906141462019368, 
+            "scene_total_words": 56, 
+            "start": 21740
+        }, 
+        {
+            "characters": {
+                "STANTZ": {
+                    "appearances": 2, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }, 
+                "VENKMAN": {
+                    "appearances": 3, 
+                    "dialog_percentage": 1.0, 
+                    "dialog_words": 5
+                }
+            }, 
+            "chars": [
+                0, 
+                1
+            ], 
+            "duration": 62, 
+            "id": 145, 
+            "location": "KITCHEN", 
+            "location_number": 27, 
+            "scene_dialog_words": 5, 
+            "scene_number": 146, 
+            "scene_percentage": 0.002533404159686185, 
+            "scene_start_percentage": 0.893147550361623, 
+            "scene_total_words": 62, 
+            "start": 21796
+        }, 
+        {
+            "characters": {
+                "DANA": {
+                    "appearances": 2, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }, 
+                "GHOSTBUSTERS": {
+                    "appearances": 10, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }, 
+                "GOZER": {
+                    "appearances": 8, 
+                    "dialog_percentage": 0.043010752688172046, 
+                    "dialog_words": 8
+                }, 
+                "LOUIS": {
+                    "appearances": 2, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }, 
+                "SPENGLER": {
+                    "appearances": 5, 
+                    "dialog_percentage": 0.07526881720430108, 
+                    "dialog_words": 14
+                }, 
+                "STANTZ": {
+                    "appearances": 11, 
+                    "dialog_percentage": 0.5, 
+                    "dialog_words": 93
+                }, 
+                "VENKMAN": {
+                    "appearances": 9, 
+                    "dialog_percentage": 0.27956989247311825, 
+                    "dialog_words": 52
+                }, 
+                "WINSTON": {
+                    "appearances": 3, 
+                    "dialog_percentage": 0.10215053763440861, 
+                    "dialog_words": 19
+                }
+            }, 
+            "chars": [
+                1, 
+                4, 
+                7, 
+                2, 
+                0, 
+                5, 
+                12, 
+                3
+            ], 
+            "duration": 671, 
+            "id": 146, 
+            "location": "ROOF", 
+            "location_number": 99, 
+            "scene_dialog_words": 186, 
+            "scene_number": 147, 
+            "scene_percentage": 0.027417970824990805, 
+            "scene_start_percentage": 0.9205655211866138, 
+            "scene_total_words": 671, 
+            "start": 21858
+        }, 
+        {
+            "characters": {}, 
+            "chars": [], 
+            "duration": 17, 
+            "id": 147, 
+            "location": "EAVES", 
+            "location_number": 100, 
+            "scene_dialog_words": 0, 
+            "scene_number": 148, 
+            "scene_percentage": 0.0006946430760429861, 
+            "scene_start_percentage": 0.9212601642626568, 
+            "scene_total_words": 17, 
+            "start": 22529
+        }, 
+        {
+            "characters": {
+                "GHOSTBUSTERS": {
+                    "appearances": 6, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }, 
+                "GOZER": {
+                    "appearances": 7, 
+                    "dialog_percentage": 0.09364548494983277, 
+                    "dialog_words": 28
+                }, 
+                "SPENGLER": {
+                    "appearances": 5, 
+                    "dialog_percentage": 0.13712374581939799, 
+                    "dialog_words": 41
+                }, 
+                "STANTZ": {
+                    "appearances": 13, 
+                    "dialog_percentage": 0.4180602006688963, 
+                    "dialog_words": 125
+                }, 
+                "VENKMAN": {
+                    "appearances": 12, 
+                    "dialog_percentage": 0.3076923076923077, 
+                    "dialog_words": 92
+                }, 
+                "WINSTON": {
+                    "appearances": 4, 
+                    "dialog_percentage": 0.043478260869565216, 
+                    "dialog_words": 13
+                }
+            }, 
+            "chars": [
+                1, 
+                7, 
+                2, 
+                0, 
+                5, 
+                12
+            ], 
+            "duration": 708, 
+            "id": 148, 
+            "location": "STREET", 
+            "location_number": 83, 
+            "scene_dialog_words": 299, 
+            "scene_number": 149, 
+            "scene_percentage": 0.028929841049319657, 
+            "scene_start_percentage": 0.9501900053119765, 
+            "scene_total_words": 708, 
+            "start": 22546
+        }, 
+        {
+            "characters": {
+                "DANA": {
+                    "appearances": 9, 
+                    "dialog_percentage": 0.1716171617161716, 
+                    "dialog_words": 52
+                }, 
+                "GHOSTBUSTERS": {
+                    "appearances": 9, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }, 
+                "LOUIS": {
+                    "appearances": 6, 
+                    "dialog_percentage": 0.1551155115511551, 
+                    "dialog_words": 47
+                }, 
+                "PECK": {
+                    "appearances": 8, 
+                    "dialog_percentage": 0.0924092409240924, 
+                    "dialog_words": 28
+                }, 
+                "SPENGLER": {
+                    "appearances": 3, 
+                    "dialog_percentage": 0.09900990099009901, 
+                    "dialog_words": 30
+                }, 
+                "STANTZ": {
+                    "appearances": 4, 
+                    "dialog_percentage": 0.0462046204620462, 
+                    "dialog_words": 14
+                }, 
+                "VENKMAN": {
+                    "appearances": 17, 
+                    "dialog_percentage": 0.3432343234323432, 
+                    "dialog_words": 104
+                }, 
+                "WINSTON": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0231023102310231, 
+                    "dialog_words": 7
+                }
+            }, 
+            "chars": [
+                4, 
+                7, 
+                2, 
+                0, 
+                5, 
+                6, 
+                1, 
+                3
+            ], 
+            "duration": 1031, 
+            "id": 149, 
+            "location": "STREET", 
+            "location_number": 83, 
+            "scene_dialog_words": 303, 
+            "scene_number": 150, 
+            "scene_percentage": 0.042128059494136394, 
+            "scene_start_percentage": 0.9923180648061128, 
+            "scene_total_words": 1031, 
+            "start": 23254
+        }, 
+        {
+            "characters": {}, 
+            "chars": [], 
+            "duration": 101, 
+            "id": 150, 
+            "location": "STREET - NEAR THE APARTMENT", 
+            "location_number": 101, 
+            "scene_dialog_words": 73, 
+            "scene_number": 151, 
+            "scene_percentage": 0.004126997098843624, 
+            "scene_start_percentage": 0.9964450619049565, 
+            "scene_total_words": 101, 
+            "start": 24285
+        }, 
+        {
+            "characters": {
+                "DANA": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }, 
+                "GHOSTBUSTERS": {
+                    "appearances": 3, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }, 
+                "JANINE": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }, 
+                "SPENGLER": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }, 
+                "VENKMAN": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }
+            }, 
+            "chars": [
+                2, 
+                0, 
+                5, 
+                8, 
+                3
+            ], 
+            "duration": 87, 
+            "id": 151, 
+            "location": "STREET   NIGHT", 
+            "location_number": 102, 
+            "scene_dialog_words": 2, 
+            "scene_number": 152, 
+            "scene_percentage": 0.0035549380950435174, 
+            "scene_start_percentage": 1.0, 
+            "scene_total_words": 87, 
+            "start": 24386
+        }
+    ], 
+    "total_dialog_words": 10950, 
+    "total_words": 24473
+}

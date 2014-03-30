@@ -1,10 +1,17 @@
 #!/usr/bin/python
 
 import json
+import matplotlib.pyplot as plt
+import networkx as nx
 import nltk
 import numpy
 import re
+import scipy
+import sklearn
+from sklearn.cluster import DBSCAN
+from sklearn.preprocessing import normalize
 import sys
+import uuid
 
 import tsl.script.Presences
 import tsl.script.Interactions
@@ -72,57 +79,129 @@ def character_lines( script ):
     total_dialog_words = structure['dialog_words']
     total_words = structure['total_words']
 
-    scene_data = []
+    top_ns = [ 1, 2, 4, 8, 16, 1024 ]
+    top_ns = [ 16 ] 
 
-    locations = {}
-    location_count = 0
+    for top_n in top_ns:
+        scene_data = []
 
-    for scene_key in sorted( structure['scenes'].keys(), 
-                         key=lambda x: structure['scenes'][x]['scene_number'] ):
-        scene = structure['scenes'][scene_key]
+        locations = {}
+        location_count = 0
+        running_words = 0
 
-        scene_dialog_words = scene['dialog_words']
-        scene_total_words = scene['total_words']
+        viz = nx.Graph()
+        viz_positions = {}
+        viz_labels = {}
+        viz_pending_edges = {}
+
+        top_characters = top_presences( Presences, noun_types=[CHARACTER], top_n=top_n )
+        top_character_names = {}
+        character_names_to_number = {}
+        character_number = 0
         
-        scene_location = None
-        scene_characters = {}
+        co_occurences = numpy.zeros( shape=( top_n, top_n ) )
 
-        for ( name, presence_list ) in presence_sn[scene_key].items():
-            for presence in presence_list:
-                if presence['presence_type'] == SETTING:
-                    scene_location = name
-                    if scene_location not in locations:
-                        location_count += 1
-                        locations[scene_location] = location_count
-                elif presence['noun_type'] == CHARACTER:
-                    if name in scene_characters:
-                        scene_characters[name]['appearances'] += 1
-                    else:
-                        scene_characters[name] = { 'dialog_words' : 0,
-                                                   'dialog_percentage' : 0.0,
-                                                   'appearances' : 1 }
+        for character in top_characters:
+            top_character_names[character[0]] = True
+            character_names_to_number[character[0]] = character_number
+            co_occurences[character_number][character_number] = 1
+            character_number += 1
 
-                    if presence['presence_type'] == DISCUSS:
-                        scene_characters[name]['dialog_words'] += presence['dialog_words']
-                        scene_characters[name]['dialog_percentage'] = float( scene_characters[name]['dialog_words'] ) / scene_dialog_words
+        for scene_key in sorted( structure['scenes'].keys(), 
+                                 key=lambda x: structure['scenes'][x]['scene_number'] ):
+            scene = structure['scenes'][scene_key]
 
-        scene_data.append( { 'location' : scene_location,
-                             'location_number' : locations[scene_location],
-                             'characters' : scene_characters,
-                             'scene_dialog_words' : scene_dialog_words,
-                             'scene_total_words' : scene_total_words,
-                             'scene_number' : int( scene_key ),
-                             'scene_percentage' : float( scene_total_words ) / total_words } )
+            scene_dialog_words = scene['dialog_words']
+            scene_total_words = scene['total_words']
 
-    output = {
-        'total_dialog_words' : total_dialog_words,
-        'total_words' : total_words,
-        'scene_data' : scene_data
-        }
+            scene_location = None
+            scene_characters = {}
+            scene_character_list = []
 
-    f = open( file_dir + file_name + '/%s_character_lines.json' % ( file_name ), 'w' )
-    json.dump( output, f, sort_keys=True, indent=4 )
-    f.close()
+            scene_uuid = str( uuid.uuid4() )
+
+            for ( name, presence_list ) in presence_sn[scene_key].items():
+                for presence in presence_list:
+                    if presence['presence_type'] == SETTING:
+                        scene_location = name
+                        if scene_location not in locations:
+                            location_count += 1
+                            locations[scene_location] = location_count
+
+                        viz.add_node( scene_uuid )
+                        viz_positions[scene_uuid] = ( 100*float( running_words ) / total_words, locations[scene_location] )
+                        viz_labels[scene_uuid] = scene_location
+                    
+                    elif presence['noun_type'] == CHARACTER and name in top_character_names:
+                        if name in scene_characters:
+                            scene_characters[name]['appearances'] += 1
+                        else:
+                            scene_characters[name] = { 'dialog_words' : 0,
+                                                       'dialog_percentage' : 0.0,
+                                                       'appearances' : 1 }
+                            scene_character_list.append( character_names_to_number[name] )
+
+                        if presence['presence_type'] == DISCUSS:
+                            scene_characters[name]['dialog_words'] += presence['dialog_words']
+                            scene_characters[name]['dialog_percentage'] = float( scene_characters[name]['dialog_words'] ) / scene_dialog_words
+                        
+                        if name in viz_pending_edges.keys():
+                            viz.add_edge( scene_uuid, viz_pending_edges[name] )
+                            viz_pending_edges[name] = scene_uuid
+                        else:
+                            viz_pending_edges[name] = scene_uuid
+
+            running_words += scene_total_words
+
+            for i in scene_character_list:
+                for j in scene_character_list:
+                    co_occurences[i][j] += 1
+                    if i != j:
+                        co_occurences[j][i] += 1
+
+            scene_data.append( { 'duration' : scene_total_words,
+                                 'start' : running_words - scene_total_words,
+                                 'id' : int( scene_key ) - 1,
+                                 'chars' : scene_character_list,
+                                 'location' : scene_location,
+                                 'location_number' : locations[scene_location],
+                                 'characters' : scene_characters,
+                                 'scene_dialog_words' : scene_dialog_words,
+                                 'scene_total_words' : scene_total_words,
+                                 'scene_number' : int( scene_key ),
+                                 'scene_start_percentage' : float( running_words ) / total_words,
+                                 'scene_percentage' : float( scene_total_words ) / total_words } )
+
+        plt.figure( 1, figsize=( 60, 40 ) )
+        nx.draw( viz, pos=viz_positions, labels=viz_labels, font_size=8 ) #with_labels=False )
+        plt.axis( [ -1, 101, -1, 110 ] )
+        #plt.savefig( '/wintmp/movie/character_lines/%s_top_%s.png' % ( file_name, top_n ), dpi=100 )
+        plt.close()
+
+        output = {
+            'total_dialog_words' : total_dialog_words,
+            'total_words' : total_words,
+            'scenes' : scene_data,
+            'panels' : total_words
+            }
+
+        f = open( file_dir + file_name + '/%s_top_%s_character_lines.json' % ( file_name, top_n ), 'w' )
+        json.dump( output, f, sort_keys=True, indent=4 )
+        f.close()
+
+
+        normalized = normalize( co_occurences )
+        distances = sklearn.metrics.pairwise.pairwise_distances( normalized )
+        groups = DBSCAN( min_samples=1 ).fit_predict( distances )
+
+        char_file = open( file_dir + file_name + '/%s_top_%s_characters.xml' % ( file_name, top_n ), 'w' )
+        char_file.write( "<characters>\n" )
+
+        for ( idx, character ) in enumerate( top_characters ):
+            char_file.write( '<character group="%s" id="%s" name="%s" />\n' % ( int( groups[idx] ), idx, character[0].lower().capitalize() ) )
+
+        char_file.write( "</characters>\n" )
+        char_file.close()
 
     #print json.dumps( output, sort_keys=True, indent=4 )
             
