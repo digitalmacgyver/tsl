@@ -1,0 +1,18 @@
+<characters>
+<character group="10" id="0" name="Neo" />
+<character group="10" id="1" name="Morpheus" />
+<character group="10" id="2" name="Trinity" />
+<character group="4" id="3" name="Agent smith" />
+<character group="6" id="4" name="Tank" />
+<character group="9" id="5" name="Cypher" />
+<character group="5" id="6" name="Man" />
+<character group="2" id="7" name="Mouse" />
+<character group="8" id="8" name="Oracle" />
+<character group="3" id="9" name="Agent jones" />
+<character group="1" id="10" name="Apoc" />
+<character group="3" id="11" name="Agent brown" />
+<character group="7" id="12" name="Dozer" />
+<character group="11" id="13" name="Cop" />
+<character group="1" id="14" name="Switch" />
+<character group="0" id="15" name="Choi" />
+</characters>

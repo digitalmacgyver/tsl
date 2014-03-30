@@ -30,8 +30,16 @@
             "start": 54
         }, 
         {
-            "characters": {}, 
-            "chars": [], 
+            "characters": {
+                "LIBRARIAN": {
+                    "appearances": 5, 
+                    "dialog_percentage": 1.0, 
+                    "dialog_words": 16
+                }
+            }, 
+            "chars": [
+                13
+            ], 
             "duration": 288, 
             "id": 2, 
             "location": "WORK AREA", 
@@ -44,8 +52,16 @@
             "start": 168
         }, 
         {
-            "characters": {}, 
-            "chars": [], 
+            "characters": {
+                "LIBRARIAN": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }
+            }, 
+            "chars": [
+                13
+            ], 
             "duration": 41, 
             "id": 3, 
             "location": "NEXT AISLE", 
@@ -95,6 +111,21 @@
         }, 
         {
             "characters": {
+                "COED": {
+                    "appearances": 11, 
+                    "dialog_percentage": 0.08602150537634409, 
+                    "dialog_words": 40
+                }, 
+                "LIBRARIAN": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }, 
+                "SOPHOMORE": {
+                    "appearances": 16, 
+                    "dialog_percentage": 0.15268817204301074, 
+                    "dialog_words": 71
+                }, 
                 "STANTZ": {
                     "appearances": 6, 
                     "dialog_percentage": 0.1935483870967742, 
@@ -107,7 +138,10 @@
                 }
             }, 
             "chars": [
+                14, 
+                10, 
                 0, 
+                13, 
                 1
             ], 
             "duration": 840, 
@@ -151,6 +185,11 @@
         }, 
         {
             "characters": {
+                "LIBRARIAN": {
+                    "appearances": 2, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }, 
                 "SPENGLER": {
                     "appearances": 2, 
                     "dialog_percentage": 0.1565217391304348, 
@@ -170,6 +209,7 @@
             "chars": [
                 2, 
                 0, 
+                13, 
                 1
             ], 
             "duration": 243, 
@@ -185,6 +225,11 @@
         }, 
         {
             "characters": {
+                "LIBRARIAN": {
+                    "appearances": 4, 
+                    "dialog_percentage": 0.23140495867768596, 
+                    "dialog_words": 28
+                }, 
                 "SPENGLER": {
                     "appearances": 2, 
                     "dialog_percentage": 0.03305785123966942, 
@@ -204,6 +249,7 @@
             "chars": [
                 2, 
                 0, 
+                13, 
                 1
             ], 
             "duration": 164, 
@@ -287,6 +333,11 @@
         }, 
         {
             "characters": {
+                "LIBRARIAN": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }, 
                 "VENKMAN": {
                     "appearances": 1, 
                     "dialog_percentage": 0.35294117647058826, 
@@ -294,6 +345,7 @@
                 }
             }, 
             "chars": [
+                13, 
                 0
             ], 
             "duration": 61, 
@@ -694,8 +746,16 @@
             "start": 4527
         }, 
         {
-            "characters": {}, 
-            "chars": [], 
+            "characters": {
+                "JANINE": {
+                    "appearances": 1, 
+                    "dialog_percentage": 1.0, 
+                    "dialog_words": 7
+                }
+            }, 
+            "chars": [
+                8
+            ], 
             "duration": 24, 
             "id": 27, 
             "location": "RECEPTION AREA", 
@@ -844,6 +904,11 @@
                     "dialog_percentage": 0.1532567049808429, 
                     "dialog_words": 40
                 }, 
+                "JANINE": {
+                    "appearances": 9, 
+                    "dialog_percentage": 0.39846743295019155, 
+                    "dialog_words": 104
+                }, 
                 "SPENGLER": {
                     "appearances": 5, 
                     "dialog_percentage": 0.10344827586206896, 
@@ -863,6 +928,7 @@
             "chars": [
                 2, 
                 0, 
+                8, 
                 1, 
                 3
             ], 
@@ -1098,8 +1164,16 @@
             "start": 6722
         }, 
         {
-            "characters": {}, 
-            "chars": [], 
+            "characters": {
+                "BRIDE": {
+                    "appearances": 15, 
+                    "dialog_percentage": 0.6358381502890174, 
+                    "dialog_words": 110
+                }
+            }, 
+            "chars": [
+                11
+            ], 
             "duration": 437, 
             "id": 41, 
             "location": "ROOM 1210", 
@@ -1117,9 +1191,15 @@
                     "appearances": 1, 
                     "dialog_percentage": 0.0, 
                     "dialog_words": 0
+                }, 
+                "JANINE": {
+                    "appearances": 3, 
+                    "dialog_percentage": 1.0, 
+                    "dialog_words": 39
                 }
             }, 
             "chars": [
+                8, 
                 5
             ], 
             "duration": 81, 
@@ -1409,9 +1489,15 @@
                     "appearances": 5, 
                     "dialog_percentage": 0.6133333333333333, 
                     "dialog_words": 46
+                }, 
+                "WOMAN": {
+                    "appearances": 3, 
+                    "dialog_percentage": 0.38666666666666666, 
+                    "dialog_words": 29
                 }
             }, 
             "chars": [
+                15, 
                 2
             ], 
             "duration": 172, 
@@ -1914,6 +2000,11 @@
                     "dialog_percentage": 0.0, 
                     "dialog_words": 0
                 }, 
+                "JANINE": {
+                    "appearances": 3, 
+                    "dialog_percentage": 0.8238341968911918, 
+                    "dialog_words": 159
+                }, 
                 "WINSTON": {
                     "appearances": 2, 
                     "dialog_percentage": 0.17616580310880828, 
@@ -1921,6 +2012,7 @@
                 }
             }, 
             "chars": [
+                8, 
                 7, 
                 5
             ], 
@@ -1959,6 +2051,11 @@
         }, 
         {
             "characters": {
+                "JANINE": {
+                    "appearances": 8, 
+                    "dialog_percentage": 0.3409090909090909, 
+                    "dialog_words": 75
+                }, 
                 "STANTZ": {
                     "appearances": 9, 
                     "dialog_percentage": 0.33636363636363636, 
@@ -1973,11 +2070,18 @@
                     "appearances": 3, 
                     "dialog_percentage": 0.05454545454545454, 
                     "dialog_words": 12
+                }, 
+                "WOMAN": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
                 }
             }, 
             "chars": [
+                15, 
                 7, 
                 0, 
+                8, 
                 1
             ], 
             "duration": 295, 
@@ -2206,9 +2310,15 @@
                     "appearances": 11, 
                     "dialog_percentage": 0.84, 
                     "dialog_words": 126
+                }, 
+                "WOMAN": {
+                    "appearances": 3, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
                 }
             }, 
             "chars": [
+                15, 
                 4, 
                 3
             ], 
@@ -2471,9 +2581,15 @@
                     "appearances": 11, 
                     "dialog_percentage": 0.7938931297709924, 
                     "dialog_words": 104
+                }, 
+                "WOMAN": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
                 }
             }, 
             "chars": [
+                15, 
                 4, 
                 0, 
                 3
@@ -2673,6 +2789,11 @@
         }, 
         {
             "characters": {
+                "JANINE": {
+                    "appearances": 6, 
+                    "dialog_percentage": 0.12790697674418605, 
+                    "dialog_words": 22
+                }, 
                 "LOUIS": {
                     "appearances": 9, 
                     "dialog_percentage": 0.6162790697674418, 
@@ -2685,6 +2806,7 @@
                 }
             }, 
             "chars": [
+                8, 
                 2, 
                 4
             ], 
@@ -2705,6 +2827,11 @@
                     "appearances": 2, 
                     "dialog_percentage": 0.0, 
                     "dialog_words": 0
+                }, 
+                "JANINE": {
+                    "appearances": 4, 
+                    "dialog_percentage": 0.19140625, 
+                    "dialog_words": 49
                 }, 
                 "LOUIS": {
                     "appearances": 3, 
@@ -2731,6 +2858,7 @@
                 4, 
                 2, 
                 0, 
+                8, 
                 1, 
                 3
             ], 
@@ -2841,6 +2969,11 @@
         }, 
         {
             "characters": {
+                "JANINE": {
+                    "appearances": 4, 
+                    "dialog_percentage": 0.5089285714285714, 
+                    "dialog_words": 57
+                }, 
                 "PECK": {
                     "appearances": 5, 
                     "dialog_percentage": 0.49107142857142855, 
@@ -2848,6 +2981,7 @@
                 }
             }, 
             "chars": [
+                8, 
                 6
             ], 
             "duration": 148, 
@@ -2919,6 +3053,11 @@
         }, 
         {
             "characters": {
+                "JANINE": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }, 
                 "LOUIS": {
                     "appearances": 2, 
                     "dialog_percentage": 0.0, 
@@ -2943,6 +3082,7 @@
             "chars": [
                 4, 
                 0, 
+                8, 
                 6, 
                 2
             ], 
@@ -2995,6 +3135,11 @@
         }, 
         {
             "characters": {
+                "JANINE": {
+                    "appearances": 2, 
+                    "dialog_percentage": 0.5789473684210527, 
+                    "dialog_words": 11
+                }, 
                 "LOUIS": {
                     "appearances": 3, 
                     "dialog_percentage": 0.42105263157894735, 
@@ -3012,6 +3157,7 @@
                 }
             }, 
             "chars": [
+                8, 
                 0, 
                 2, 
                 4
@@ -3388,6 +3534,11 @@
                     "dialog_percentage": 0.0, 
                     "dialog_words": 0
                 }, 
+                "MAYOR": {
+                    "appearances": 13, 
+                    "dialog_percentage": 0.1656441717791411, 
+                    "dialog_words": 81
+                }, 
                 "PECK": {
                     "appearances": 11, 
                     "dialog_percentage": 0.2249488752556237, 
@@ -3414,7 +3565,8 @@
                 0, 
                 5, 
                 6, 
-                1
+                1, 
+                9
             ], 
             "duration": 642, 
             "id": 131, 
@@ -3479,6 +3631,11 @@
         }, 
         {
             "characters": {
+                "MAYOR": {
+                    "appearances": 4, 
+                    "dialog_percentage": 0.3, 
+                    "dialog_words": 21
+                }, 
                 "STANTZ": {
                     "appearances": 2, 
                     "dialog_percentage": 0.3142857142857143, 
@@ -3492,7 +3649,8 @@
             }, 
             "chars": [
                 0, 
-                1
+                1, 
+                9
             ], 
             "duration": 105, 
             "id": 134, 
@@ -3507,6 +3665,11 @@
         }, 
         {
             "characters": {
+                "JANINE": {
+                    "appearances": 4, 
+                    "dialog_percentage": 0.47126436781609193, 
+                    "dialog_words": 41
+                }, 
                 "SPENGLER": {
                     "appearances": 6, 
                     "dialog_percentage": 0.14942528735632185, 
@@ -3532,6 +3695,7 @@
                 7, 
                 2, 
                 0, 
+                8, 
                 1
             ], 
             "duration": 156, 
@@ -3821,6 +3985,11 @@
                     "dialog_percentage": 0.0, 
                     "dialog_words": 0
                 }, 
+                "GOZER": {
+                    "appearances": 8, 
+                    "dialog_percentage": 0.043010752688172046, 
+                    "dialog_words": 8
+                }, 
                 "LOUIS": {
                     "appearances": 2, 
                     "dialog_percentage": 0.0, 
@@ -3854,6 +4023,7 @@
                 2, 
                 0, 
                 5, 
+                12, 
                 3
             ], 
             "duration": 671, 
@@ -3888,6 +4058,11 @@
                     "dialog_percentage": 0.0, 
                     "dialog_words": 0
                 }, 
+                "GOZER": {
+                    "appearances": 7, 
+                    "dialog_percentage": 0.09364548494983277, 
+                    "dialog_words": 28
+                }, 
                 "SPENGLER": {
                     "appearances": 5, 
                     "dialog_percentage": 0.13712374581939799, 
@@ -3914,7 +4089,8 @@
                 7, 
                 2, 
                 0, 
-                5
+                5, 
+                12
             ], 
             "duration": 708, 
             "id": 148, 
@@ -4017,6 +4193,11 @@
                     "dialog_percentage": 0.0, 
                     "dialog_words": 0
                 }, 
+                "JANINE": {
+                    "appearances": 1, 
+                    "dialog_percentage": 0.0, 
+                    "dialog_words": 0
+                }, 
                 "SPENGLER": {
                     "appearances": 1, 
                     "dialog_percentage": 0.0, 
@@ -4032,6 +4213,7 @@
                 2, 
                 0, 
                 5, 
+                8, 
                 3
             ], 
             "duration": 87, 

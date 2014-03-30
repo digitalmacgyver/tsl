@@ -80,7 +80,7 @@ def character_lines( script ):
     total_words = structure['total_words']
 
     top_ns = [ 1, 2, 4, 8, 16, 1024 ]
-    top_ns = [ 16 ] 
+    top_ns = [ 8 ] 
 
     for top_n in top_ns:
         scene_data = []

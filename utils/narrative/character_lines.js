@@ -930,4 +930,6 @@ function draw_chart(name, safe_name, folder, tie_breaker, center_sort, collapse)
 }
 
 dir = "comics/narrative/";
-draw_chart("Lucky Luke #38, \"Ma Dalton\"", "luckyluke6", './', true, false, false);
+draw_chart("Ghosbusters", "ghostbusters", './ghostbusters', true, false, false);
+draw_chart("Star Wars", "starwars", './starwars', true, false, false);
+draw_chart("The Matrix", "the_matrix", './the_matrix', true, false, false);

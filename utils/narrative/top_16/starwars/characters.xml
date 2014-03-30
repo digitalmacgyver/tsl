@@ -1,0 +1,18 @@
+<characters>
+<character group="0" id="0" name="Luke" />
+<character group="1" id="1" name="Han" />
+<character group="2" id="2" name="Threepio" />
+<character group="0" id="3" name="Ben" />
+<character group="1" id="4" name="Leia" />
+<character group="3" id="5" name="Vader" />
+<character group="4" id="6" name="Biggs" />
+<character group="4" id="7" name="Red leader" />
+<character group="5" id="8" name="Tarkin" />
+<character group="6" id="9" name="Owen" />
+<character group="5" id="10" name="Trooper" />
+<character group="4" id="11" name="Wedge" />
+<character group="4" id="12" name="Gold leader" />
+<character group="5" id="13" name="Officer" />
+<character group="4" id="14" name="Red ten" />
+<character group="4" id="15" name="Dodonna" />
+</characters>
