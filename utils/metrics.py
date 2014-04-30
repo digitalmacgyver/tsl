@@ -397,7 +397,6 @@ def process_script( script ):
         character_scene_ids = [ x for x in Presences.presence_ns[name].keys() if x != 'noun_type' ]
         if len( character_scene_ids ) <= min_appearances:
             continue
-        print "%s appeared in %s" % ( name, character_scene_ids )
         for co_character in sorted( top_characters ):
             co_name = co_character[0]
             if co_name <= name:
@@ -405,13 +404,12 @@ def process_script( script ):
             co_character_scene_ids = [ x for x in Presences.presence_ns[co_name].keys() if x != 'noun_type' ]
             if len( co_character_scene_ids ) <= min_appearances:
                 continue
-            print "%s appeared in %s" % ( co_name, co_character_scene_ids )
             ratio_a = float( len( set( character_scene_ids ).intersection( set( co_character_scene_ids ) ) ) ) / len( character_scene_ids )
             ratio_b = float( len( set( character_scene_ids ).intersection( set( co_character_scene_ids ) ) ) ) / len( co_character_scene_ids )
-            print "Ratios are %s %s" % ( ratio_a, ratio_b )
             if ratio_a >= buddy_threshold and ratio_b >= buddy_threshold:
                 buddies.append( ( name, co_name, ratio_a, ratio_b ) )
-    output['buddies'] = buddies
+    output['buddies_list'] = buddies
+    output['buddies'] = len( buddies )
 
     # Write the output.
     f = open( file_dir + file_name + '/%s_metrics.json' % ( file_name ), 'w' )
