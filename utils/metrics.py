@@ -376,9 +376,10 @@ def process_script( script ):
     for scene in Structure.structure['scenes'].keys():
         scene_dialog = Structure.structure['scenes'][scene]['dialog_words']
         if scene_dialog > 0:
-            scene_presences = Presences.presence.sn[scene]
+            scene_presences = Presences.presence_sn[scene]
             speakers = 0
-            for presence_list in scene_presences:
+            for person in scene_presences.keys():
+                presence_list = scene_presences[person]
                 for presence in presence_list:
                     if presence['presence_type'] == DISCUSS:
                         speakers += 1
@@ -388,20 +389,28 @@ def process_script( script ):
 
     # Buddies - the number of characters pairs a, b such that whenever
     # a appears b is present at least 50% of the time.
-    charater_scenes = {}
-    co_characters = {}
     buddies = []
-    for character in top_characters:
+    buddy_threshold = 0.5
+    min_appearances = 3
+    for character in sorted( top_characters ):
         name = character[0]
-        character_scene_ids = Presences.presence_ns[name].keys()
-        character_scenes[name] = len( character_scene_ids )
-        co_characters[name] = {}
-        for co_character in top_characters:
+        character_scene_ids = [ x for x in Presences.presence_ns[name].keys() if x != 'noun_type' ]
+        if len( character_scene_ids ) <= min_appearances:
+            continue
+        print "%s appeared in %s" % ( name, character_scene_ids )
+        for co_character in sorted( top_characters ):
             co_name = co_character[0]
-            co_character_scene_ids = Presences.presence_ns[co_name].keys()
-            co_characters[name][co_name[0]] = len( set( character_scene_ids ).intersection( set( co_character_scene_ids ) ) )
-            if ( float( len( character_scene_ids ) ) / co_characters[name][co_name[0]] ) >= 0.5:
-                buddies.append( ( name, co_name ) )
+            if co_name <= name:
+                continue
+            co_character_scene_ids = [ x for x in Presences.presence_ns[co_name].keys() if x != 'noun_type' ]
+            if len( co_character_scene_ids ) <= min_appearances:
+                continue
+            print "%s appeared in %s" % ( co_name, co_character_scene_ids )
+            ratio_a = float( len( set( character_scene_ids ).intersection( set( co_character_scene_ids ) ) ) ) / len( character_scene_ids )
+            ratio_b = float( len( set( character_scene_ids ).intersection( set( co_character_scene_ids ) ) ) ) / len( co_character_scene_ids )
+            print "Ratios are %s %s" % ( ratio_a, ratio_b )
+            if ratio_a >= buddy_threshold and ratio_b >= buddy_threshold:
+                buddies.append( ( name, co_name, ratio_a, ratio_b ) )
     output['buddies'] = buddies
 
     # Write the output.
