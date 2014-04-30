@@ -17,29 +17,29 @@ from tsl.script.reports.reports import top_presences, top_interactions, get_pres
 from tsl.utils.partition import get_dramatic_unit_partitions
 
 scripts = [
-    ( 'Chinatown', '../example-scripts/chinatown.txt' ),
-    ( 'Dune', '../example-scripts/dune.txt' ),
+    #( 'Chinatown', '../example-scripts/chinatown.txt' ),
+    #( 'Dune', '../example-scripts/dune.txt' ),
     ( 'Ghostbusters', '../example-scripts/ghostbusters.txt' ),
-    ( 'The Matrix', '../example-scripts/the_matrix.txt' ),
-    ( 'Good Will Hunting', '../example-scripts/good_will_hunting.txt' ),
-    ( 'The Book of Eli', '../example-scripts/the_book_of_eli.txt' ),
-    ( 'Starwars', '../example-scripts/starwars.txt' ),
-    ( 'Alien', '../example-scripts/alien.txt' ),
-    ( 'Vertigo', '../example-scripts/vertigo.txt' ),
-    ( 'Terminator 2', '../example-scripts/terminator_2.txt' ),
-    ( 'Ratatouille', '../example-scripts/ratatouille.txt' ),
+    #( 'The Matrix', '../example-scripts/the_matrix.txt' ),
+    #( 'Good Will Hunting', '../example-scripts/good_will_hunting.txt' ),
+    #( 'The Book of Eli', '../example-scripts/the_book_of_eli.txt' ),
+    #( 'Starwars', '../example-scripts/starwars.txt' ),
+    #( 'Alien', '../example-scripts/alien.txt' ),
+    #( 'Vertigo', '../example-scripts/vertigo.txt' ),
+    #( 'Terminator 2', '../example-scripts/terminator_2.txt' ),
+    #( 'Ratatouille', '../example-scripts/ratatouille.txt' ),
     # Questionable formatting
-    ( 'Analyze That', '../example-scripts/analyze_that.txt' ),
-    ( 'Batman Begins', '../example-scripts/batman_begins.txt' ),
-    ( 'Death to Smoochy', '../example-scripts/death_to_smoochy.txt' ),
-    ( 'Get Carter', '../example-scripts/get_carter.txt' ),
-    ( 'Gothika', '../example-scripts/gothika.txt' ),
-    ( 'Groundhogs Day', '../example-scripts/groundhogs_day.txt' ),
-    ( 'Red Planet', '../example-scripts/red_planet.txt' ),
-    ( 'Smurfs', '../example-scripts/smurfs.txt' ),
-    ( 'Sweet November', '../example-scripts/sweet_november.txt' ),
-    ( 'Taking Lives', '../example-scripts/taking_lives.txt' ),
-    ( 'Thirteen Ghosts', '../example-scripts/thirteen_ghosts.txt' ),
+    #( 'Analyze That', '../example-scripts/analyze_that.txt' ),
+    #( 'Batman Begins', '../example-scripts/batman_begins.txt' ),
+    #( 'Death to Smoochy', '../example-scripts/death_to_smoochy.txt' ),
+    #( 'Get Carter', '../example-scripts/get_carter.txt' ),
+    #( 'Gothika', '../example-scripts/gothika.txt' ),
+    #( 'Groundhogs Day', '../example-scripts/groundhogs_day.txt' ),
+    #( 'Red Planet', '../example-scripts/red_planet.txt' ),
+    #( 'Smurfs', '../example-scripts/smurfs.txt' ),
+    #( 'Sweet November', '../example-scripts/sweet_november.txt' ),
+    #( 'Taking Lives', '../example-scripts/taking_lives.txt' ),
+    #( 'Thirteen Ghosts', '../example-scripts/thirteen_ghosts.txt' ),
     ]
 
 def process_script( script ):
@@ -73,6 +73,8 @@ def process_script( script ):
 
     output = {}
 
+    output['title'] = name
+
     top_characters = top_presences( Presences, noun_types=[CHARACTER] )
     top_locations = top_presences( Presences, noun_types=[LOCATION] )
 
@@ -92,12 +94,12 @@ def process_script( script ):
     english_words = set( w.lower() for w in nltk.corpus.words.words() )
     exotic_words = [ e for e in words if e not in english_words ]
     distinct_exotic_words = set( exotic_words )
-    output['exotic_words'] = len( exotic_words )
-    output['distinct_exotic_words'] = len( distinct_exotic_words )
+    #output['exotic_words'] = len( exotic_words )
+    #output['distinct_exotic_words'] = len( distinct_exotic_words )
     output['distinct_words'] = len( vocab )
 
     # Word categories
-    if False:
+    if True:
         tagged_words = nltk.pos_tag( text )
         porter = nltk.PorterStemmer()
         stemmed_tags = [ ( porter.stem( t[0].lower() ), t[1] ) for t in tagged_words ]
@@ -106,11 +108,13 @@ def process_script( script ):
         adj = [ word for ( word, tag ) in fd if ( tag.startswith('JJ') and len( word ) > 1 ) ]
         adv = [ word for ( word, tag ) in fd if ( tag.startswith('RB') and len( word ) > 1 ) ]
         nouns = [ word for ( word, tag ) in fd if ( tag in ('NN', 'NNS' ) and len( word ) > 1 ) ]
-                 
-        output['vocabulary'] = {}
-        output['vocabulary']['adjectives'] = adj[:10]
-        output['vocabulary']['non_proper_nouns'] = nouns[:10]
-        output['vocabulary']['verbs'] = verbs[:10]
+           
+        output['adj-adv_noun-verb_ratio'] = float( ( len( adj ) + len( adv ) ) ) / ( len( nouns ) + len( verbs ) )
+      
+        #output['vocabulary'] = {}
+        #output['vocabulary']['adjectives'] = adj[:10]
+        #output['vocabulary']['non_proper_nouns'] = nouns[:10]
+        #output['vocabulary']['verbs'] = verbs[:10]
 
     # Word categories
     #
@@ -188,9 +192,15 @@ def process_script( script ):
             num_15_pagegap = sum( [ 1 for gap in gap_lengths if gap >= lines_per_page*15 ] )
             num_30_pagegap = sum( [ 1 for gap in gap_lengths if gap >= lines_per_page*30 ] )
 
-    # Characters who speak to main character
-    speakers = top_interactions( Presences, Interactions, noun_types=[( CHARACTER, CHARACTER )], interaction_types=[DISCUSS], names=[top_characters[0][0]] )
-    output['main_character_interlocutor_count'] = len( speakers )
+    # Number of characters who speak to the N'th speaker.
+    character_x_speakers = []
+    for character in top_characters:
+        name = character[0]
+        speakers = top_interactions( Presences, Interactions, noun_types=[( CHARACTER, CHARACTER )], interaction_types=[DISCUSS], names=[name] ) 
+        character_x_speakers.append( { 'character' : name, 'speakers' : len( speakers ) } )
+    output['character_x_speakers'] = character_x_speakers
+        
+    #output['main_character_interlocutor_count'] = len( speakers )
     
     # Distinct locations
     output['distinct_locations'] = len( top_locations )
@@ -213,8 +223,8 @@ def process_script( script ):
     for scene in scenes:
         if top_characters[0][0] in Presences.presence_sn[scene]:
             main_character_appearances += 1
-    output['percentage_of_scenes_with_main_character'] = float( main_character_appearances ) / scene_count
-    output['main_character'] = top_characters[0][0]
+    #output['percentage_of_scenes_with_main_character'] = float( main_character_appearances ) / scene_count
+    #output['main_character'] = top_characters[0][0]
 
     # Characters speaking in scene.
     scene_talkers = {}
@@ -233,21 +243,51 @@ def process_script( script ):
     for scene_id in Presences.presence_sn.keys():
         if scene_id not in scene_talkers:
             scene_talker_data.append( ( scene_id, 0 ) )
-
     scene_talker_data = sorted( scene_talker_data, key=lambda a: int( a[0] ) )
     
-    output['title'] = name
     output['characters_speaking_in_scene_stats'] = get_stats( scene_talker_data )
     #output['characters_speaking_in_scene'] = scene_talker_data
 
     # Ratio of dialog to non-dialog words per scene.
     scenes = Structure.structure['scenes']
     scene_word_ratios = [ ( x[0], float( x[1]['dialog_words'] ) / x[1]['total_words'] ) for x in scenes.items() ]
-    output['dialog_to_total_word_ratio_in_scenes_stats'] = get_stats( scene_word_ratios )
+    #output['dialog_to_total_word_ratio_in_scenes_stats'] = get_stats( scene_word_ratios )
 
     # Global word counts
-    output['total_words'] = Structure.structure['total_words']
-    output['dialog_words'] = Structure.structure['dialog_words']
+    #output['total_words'] = Structure.structure['total_words']
+    #output['dialog_words'] = Structure.structure['dialog_words']
+    output['percent_dialog'] = float( Structure.structure['dialog_words'] ) / Structure.structure['total_words']
+
+    # Percentage of dialog in the 1st, 2nd, Nth portion of the text.
+    nths = 4;
+    nth_percent_of_dialog = []
+    percent_of_dialog_in_nth = []
+    for i in range( nths ):
+        nth_percent_of_dialog.append( 0 )
+        percent_of_dialog_in_nth.append( 0 )
+
+    # total_words, dialog_words
+    total_words = Structure.structure['total_words']
+    total_dialog = Structure.structure['dialog_words']
+    running_word_count = 0
+    current_nth = 0
+    nth_word_count = 0
+    nth_dialog_count = 0
+    for scene_id in sorted( Structure.structure['scenes'].keys(), key=int ):
+        scene = Structure.structure['scenes'][scene_id]
+        nth_word_count += scene['total_words']
+        nth_dialog_count += scene['dialog_words']
+        running_word_count += scene['total_words']
+        new_nth = int( nths * running_word_count / total_words )
+        if new_nth != current_nth:
+            nth_percent_of_dialog[current_nth] = float( nth_dialog_count ) / total_dialog
+            percent_of_dialog_in_nth[current_nth] = float( nth_dialog_count ) / nth_word_count
+            current_nth = new_nth
+            nth_word_count = 0
+            nth_dialog_count = 0
+
+    output['nth_percent_of_dialog'] = nth_percent_of_dialog
+    output['percent_of_dialog_in_nth'] = percent_of_dialog_in_nth
 
     # % of action words.
     total_action_words = 0
@@ -255,7 +295,7 @@ def process_script( script ):
         for block in Structure.structure['scenes'][scene]['scene_blocks']:
             if block['block_type'] == 'ACTION':
                 total_action_words += block['total_words']
-    output['total_action_words'] = total_action_words
+    #output['total_action_words'] = total_action_words
 
     # % of dialog by top-N speakers.
     dialog_by_top_chars = []
@@ -272,8 +312,21 @@ def process_script( script ):
                     dialog += presence['dialog_words']
         dialog_by_top_chars.append( { 'character' : name, 'appearances' : character[2], 'percent_dialog' : float( dialog ) / Structure.structure['dialog_words'] } )
 
-    output['percent_dialog_by_top_10_characters'] = dialog_by_top_chars[:10]
+    output['percent_dialog_by_character'] = dialog_by_top_chars
                 
+    # % of scenes that have the top-N characters.
+    scenes_with_top_chars = []
+    for character in top_characters:
+        name = character[0]
+        scenes = len( Presences.presence_sn.keys() )
+        count = 0
+        for scene in Presences.presence_sn.keys():
+            if name in Presences.presence_sn[scene]:
+                count += 1
+        scenes_with_top_chars.append( { 'character' : name, 'percentage_of_scenes' : float( count ) / scenes } )
+
+    output['scenes_percentage_for_characters'] = scenes_with_top_chars
+
     # % of words in the top-N locations
     words_at_top_locs = []
     for location in top_locations:
@@ -287,11 +340,11 @@ def process_script( script ):
 
         words_at_top_locs.append( { 'location' : name, 'appearances' : location[2], 'percent_words' : float( words ) / Structure.structure['total_words'] } )
 
-    output['percent_words_by_top_10_locations'] = words_at_top_locs[:10]
-
+    #output['percent_words_by_top_10_locations'] = words_at_top_locs[:10]
 
     # Number of characters in dialog per DU.
     dus = get_dramatic_unit_partitions( Presences.presence_sn, 0.5 )
+    output['dramatic_units'] = len( dus )
     speaker_count = []
     for du in dus:
         speakers = {}
@@ -307,7 +360,49 @@ def process_script( script ):
                     else:
                         break
         speaker_count.append( len( speakers.keys() ) )
-    output['du_speakers'] = speaker_count
+    #output['du_speakers'] = speaker_count
+
+    # Stats on number of words per unit of dialog.
+    dialog_stats = []
+    for scene in Structure.structure['scenes'].keys():
+        for block in Structure.structure['scenes'][scene]['scene_blocks']:
+            if block['block_type'] == 'DIALOG':
+                dialog_stats.append( ( scene, block['total_words'] ) )
+    output['dialog_block_word_count_stats'] = get_stats( dialog_stats )
+        
+    # Hearing - sum of number of characters speaking in a scene *
+    # words of dialog in a scene.
+    hearing = 0
+    for scene in Structure.structure['scenes'].keys():
+        scene_dialog = Structure.structure['scenes'][scene]['dialog_words']
+        if scene_dialog > 0:
+            scene_presences = Presences.presence.sn[scene]
+            speakers = 0
+            for presence_list in scene_presences:
+                for presence in presence_list:
+                    if presence['presence_type'] == DISCUSS:
+                        speakers += 1
+                        break
+            hearing += scene_dialog * speakers
+    output['hearing'] = hearing
+
+    # Buddies - the number of characters pairs a, b such that whenever
+    # a appears b is present at least 50% of the time.
+    charater_scenes = {}
+    co_characters = {}
+    buddies = []
+    for character in top_characters:
+        name = character[0]
+        character_scene_ids = Presences.presence_ns[name].keys()
+        character_scenes[name] = len( character_scene_ids )
+        co_characters[name] = {}
+        for co_character in top_characters:
+            co_name = co_character[0]
+            co_character_scene_ids = Presences.presence_ns[co_name].keys()
+            co_characters[name][co_name[0]] = len( set( character_scene_ids ).intersection( set( co_character_scene_ids ) ) )
+            if ( float( len( character_scene_ids ) ) / co_characters[name][co_name[0]] ) >= 0.5:
+                buddies.append( ( name, co_name ) )
+    output['buddies'] = buddies
 
     # Write the output.
     f = open( file_dir + file_name + '/%s_metrics.json' % ( file_name ), 'w' )

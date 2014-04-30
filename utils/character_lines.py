@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 import networkx as nx
 import nltk
 import numpy
+import operator
 import re
 import scipy
 import sklearn
@@ -27,10 +28,10 @@ scripts = [
 #    ( 'Chinatown', '../example-scripts/chinatown.txt' ),
 #    ( 'Dune', '../example-scripts/dune.txt' ),
     ( 'Ghostbusters', '../example-scripts/ghostbusters.txt' ),
-    ( 'The Matrix', '../example-scripts/the_matrix.txt' ),
+#    ( 'The Matrix', '../example-scripts/the_matrix.txt' ),
 #    ( 'Good Will Hunting', '../example-scripts/good_will_hunting.txt' ),
 #    ( 'The Book of Eli', '../example-scripts/the_book_of_eli.txt' ),
-    ( 'Starwars', '../example-scripts/starwars.txt' ),
+#    ( 'Starwars', '../example-scripts/starwars.txt' ),
 #    ( 'Alien', '../example-scripts/alien.txt' ),
 #    ( 'Vertigo', '../example-scripts/vertigo.txt' ),
 #    ( 'Terminator 2', '../example-scripts/terminator_2.txt' ),
@@ -64,6 +65,17 @@ def character_lines( script ):
     file_name = re.sub( r'\s+', '_', name.lower() )
     outdir = file_dir + file_name
 
+    # Nodes are a list of name:string pairs
+    #
+    # Links are a list of source, target, value triples where source
+    # and target are the indices of the nodes in the nodes array.
+    sankey = { 'nodes' : [],
+               'links' : [] }
+
+    # Integer character value with the integer location value where
+    # this character was last seen.
+    sankey_char_last_seen = {}
+
     #Script = tsl.script.Script.Script( name, outdir )
     #Script.load()
 
@@ -80,7 +92,7 @@ def character_lines( script ):
     total_words = structure['total_words']
 
     top_ns = [ 1, 2, 4, 8, 16, 1024 ]
-    top_ns = [ 8 ] 
+    top_ns = [ 2 ] 
 
     for top_n in top_ns:
         scene_data = []
@@ -93,6 +105,8 @@ def character_lines( script ):
         viz_positions = {}
         viz_labels = {}
         viz_pending_edges = {}
+        # Hash of [ total words, first half words, second half words ]
+        setting_appearances = {}
 
         top_characters = top_presences( Presences, noun_types=[CHARACTER], top_n=top_n )
         top_character_names = {}
@@ -105,6 +119,9 @@ def character_lines( script ):
             top_character_names[character[0]] = True
             character_names_to_number[character[0]] = character_number
             co_occurences[character_number][character_number] = 1
+            
+            sankey['nodes'].append( { 'name' : character[0] } )
+
             character_number += 1
 
         for scene_key in sorted( structure['scenes'].keys(), 
@@ -128,8 +145,10 @@ def character_lines( script ):
                             location_count += 1
                             locations[scene_location] = location_count
 
+                        sankey['nodes'].append( { 'name' : scene_location } )
+
                         viz.add_node( scene_uuid )
-                        viz_positions[scene_uuid] = ( 100*float( running_words ) / total_words, locations[scene_location] )
+                        viz_positions[scene_uuid] = [ 100*float( running_words ) / total_words, locations[scene_location] ]
                         viz_labels[scene_uuid] = scene_location
                     
                     elif presence['noun_type'] == CHARACTER and name in top_character_names:
@@ -151,6 +170,15 @@ def character_lines( script ):
                         else:
                             viz_pending_edges[name] = scene_uuid
 
+            if scene_location not in setting_appearances:
+                setting_appearances[scene_location] = [0,0,0]
+
+            setting_appearances[scene_location][0] += scene_total_words
+            if running_words < float( total_words ) / 2:
+                setting_appearances[scene_location][1] += scene_total_words
+            else:
+                setting_appearances[scene_location][2] += scene_total_words
+
             running_words += scene_total_words
 
             for i in scene_character_list:
@@ -158,6 +186,16 @@ def character_lines( script ):
                     co_occurences[i][j] += 1
                     if i != j:
                         co_occurences[j][i] += 1
+
+            # Sankey links.
+            for i in scene_character_list:
+                current_loc = len( scene_data )
+                if i not in sankey_char_last_seen:
+                    sankey['links'].append( { 'source' : i, 'target' : current_loc, 'value' : 1 } )
+                elif sankey_char_last_seen[i] != current_loc:
+                    sankey['links'].append( { 'source' : sankey_char_last_seen[i], 'target' : current_loc, 'value' : 1 } )
+
+                sankey_char_last_seen[i] = current_loc
 
             scene_data.append( { 'duration' : scene_total_words,
                                  'start' : running_words - scene_total_words,
@@ -172,10 +210,32 @@ def character_lines( script ):
                                  'scene_start_percentage' : float( running_words ) / total_words,
                                  'scene_percentage' : float( scene_total_words ) / total_words } )
 
+        # Refactor the y coordinates of settings.
+        # Extract the setting with the most words:
+        max_setting_key = max( setting_appearances.iteritems(), key=lambda x: x[1][0] )[0]
+        max_setting = setting_appearances[max_setting_key]
+        setting_appearances.pop( max_setting_key )
+        
+        first_half_settings = [ x for x in setting_appearances.iteritems() if x[1][1] > x[1][2] ]
+        second_half_settings = [ x for x in setting_appearances.iteritems() if x[1][1] <= x[1][2] ]
+
+        first_half_settings = sorted( first_half_settings, key=lambda x: x[1][0] )
+        second_half_settings = sorted( second_half_settings, key=lambda x: x[1][0] )
+        second_half_settings.reverse()
+
+        ordered_settings = first_half_settings + [ ( max_setting_key, max_setting ) ] + second_half_settings
+        setting_numbers = {}
+
+        for ( idx, setting ) in enumerate( ordered_settings ):
+            setting_numbers[setting[0]] = idx
+            
+        for key in viz_positions.keys():
+            viz_positions[key][1] = setting_numbers[viz_labels[key]]
+
         plt.figure( 1, figsize=( 60, 40 ) )
         nx.draw( viz, pos=viz_positions, labels=viz_labels, font_size=8 ) #with_labels=False )
         plt.axis( [ -1, 101, -1, 110 ] )
-        #plt.savefig( '/wintmp/movie/character_lines/%s_top_%s.png' % ( file_name, top_n ), dpi=100 )
+        plt.savefig( '/wintmp/movie/character_lines/%s_top_%s.png' % ( file_name, top_n ), dpi=100 )
         plt.close()
 
         output = {
@@ -203,173 +263,11 @@ def character_lines( script ):
         char_file.write( "</characters>\n" )
         char_file.close()
 
+        #sankey_file = open( "sankey.json", 'w' )
+        #json.dump( sankey, sankey_file, indent=4 )
+        #sankey_file.close()
     #print json.dumps( output, sort_keys=True, indent=4 )
             
-    '''
-    #Interactions = tsl.script.Interactions.Interactions( name, outdir )
-    #Interactions.load()
-
-    #output = {}
-
-    # DEBUG - do we want to limit things to the top N chars?
-    top_characters = top_presences( Presences, noun_types=[CHARACTER] )
-    top_locations = top_presences( Presences, noun_types=[LOCATION] )
-
-    # Distinct locations
-    output['distinct_locations'] = len( top_locations )
-
-    # Number of location changes.
-    location_changes = 0
-    current_location = None
-    for presence in Presences.presences:
-        if presence['presence_type'] == SETTING and presence['noun_type'] == LOCATION:
-            if presence['name'] != current_location:
-                location_changes += 1
-            current_location = presence['name']
-    output['location_changes'] = location_changes
-    
-
-    # Percentage of scenes with main character
-    scenes = Presences.presence_sn.keys()
-    scene_count = len( scenes )
-    main_character_appearances = 0
-    for scene in scenes:
-        if top_characters[0][0] in Presences.presence_sn[scene]:
-            main_character_appearances += 1
-    output['percentage_of_scenes_with_main_character'] = float( main_character_appearances ) / scene_count
-    output['main_character'] = top_characters[0][0]
-
-    # Characters speaking in scene.
-    scene_talkers = {}
-    for presence in Presences.presences:
-        if presence['presence_type'] == DISCUSS:
-            scene = presence['where']['scene_id']
-            character = presence['name']
-            if scene in scene_talkers:
-                scene_talkers[scene][character] = True
-            else:
-                scene_talkers[scene] = { character : True }
-    scene_talker_data = []
-    for scene in scene_talkers.keys():
-        scene_talker_data.append( ( scene, len( scene_talkers[scene].keys() ) ) )
-        
-    for scene_id in Presences.presence_sn.keys():
-        if scene_id not in scene_talkers:
-            scene_talker_data.append( ( scene_id, 0 ) )
-
-    scene_talker_data = sorted( scene_talker_data, key=lambda a: int( a[0] ) )
-    
-    output['title'] = name
-    output['characters_speaking_in_scene_stats'] = get_stats( scene_talker_data )
-    #output['characters_speaking_in_scene'] = scene_talker_data
-
-    # Ratio of dialog to non-dialog words per scene.
-    scenes = Structure.structure['scenes']
-    scene_word_ratios = [ ( x[0], float( x[1]['dialog_words'] ) / x[1]['total_words'] ) for x in scenes.items() ]
-    output['dialog_to_total_word_ratio_in_scenes_stats'] = get_stats( scene_word_ratios )
-
-    # Global word counts
-    output['total_words'] = Structure.structure['total_words']
-    output['dialog_words'] = Structure.structure['dialog_words']
-
-    # % of action words.
-    total_action_words = 0
-    for scene in Structure.structure['scenes'].keys():
-        for block in Structure.structure['scenes'][scene]['scene_blocks']:
-            if block['block_type'] == 'ACTION':
-                total_action_words += block['total_words']
-    output['total_action_words'] = total_action_words
-
-    # % of dialog by top-N speakers.
-    dialog_by_top_chars = []
-    for character in top_characters:
-
-        name = character[0]
-        
-        dialog = 0
-        for ( scene_id, presences ) in Presences.presence_ns[name].items():
-            if scene_id == 'noun_type':
-                continue
-            for presence in presences:
-                if presence['presence_type'] == DISCUSS:
-                    dialog += presence['dialog_words']
-        dialog_by_top_chars.append( { 'character' : name, 'appearances' : character[2], 'percent_dialog' : float( dialog ) / Structure.structure['dialog_words'] } )
-
-    output['percent_dialog_by_top_10_characters'] = dialog_by_top_chars[:10]
-                
-    # % of words in the top-N locations
-    words_at_top_locs = []
-    for location in top_locations:
-        name = location[0]
-
-        words = 0
-        for ( scene_id, presences ) in Presences.presence_ns[name].items():
-            if scene_id == 'noun_type':
-                continue
-            words += Structure.structure['scenes'][scene_id]['total_words']
-
-        words_at_top_locs.append( { 'location' : name, 'appearances' : location[2], 'percent_words' : float( words ) / Structure.structure['total_words'] } )
-
-    output['percent_words_by_top_10_locations'] = words_at_top_locs[:10]
-
-
-    # Number of characters in dialog per DU.
-    dus = get_dramatic_unit_partitions( Presences.presence_sn, 0.5 )
-    speaker_count = []
-    for du in dus:
-        speakers = {}
-        for scene_idx in du:
-            for name, presences in Presences.presence_sn["%s" % scene_idx].items():
-                if name in speakers:
-                    continue
-                for presence in presences:
-                    if presence['noun_type'] == CHARACTER:
-                        if presence['presence_type'] == DISCUSS:
-                            speakers[presence['name']] = True
-                            break
-                    else:
-                        break
-        speaker_count.append( len( speakers.keys() ) )
-    output['du_speakers'] = speaker_count
-
-    # Write the output.
-    f = open( file_dir + file_name + '/%s_metrics.json' % ( file_name ), 'w' )
-    json.dump( output, f, sort_keys=True, indent=4 )
-
-
-def get_stats( data ):
-#    Input is an unsorted array of ( 'scene_id', numerical quantity
-#    ) tuples.  We compute the average, min, max, median, and standard
-#    deviation of the numerical quantities.
-    
-    numbers = [ x[1] for x in data ]
-    return { 'average' : numpy.average( numbers ),
-             'min'     : min( numbers ),
-             'max'     : max( numbers ),
-             'median'  : numpy.median( numbers ),
-             'stdev'   : numpy.std( numbers ) }
-
-
-
-
-
-    # top_presences( Presences, top_n=8, noun_types=[CHARACTER] )
-    #output_top_presences( top_presences( Presences, top_n=5, noun_types=[CHARACTER] ), outdir+'/top5_characters.csv' )
-    #output_top_presences( top_presences( Presences, top_n=5, presence_types=[DISCUSS] ), outdir+'/top5_speakers.csv' )
-    #output_top_presences( top_presences( Presences, top_n=5, noun_types=[LOCATION] ), outdir+'/top5_locations.csv' )
-    #output_top_interactions( top_interactions( Presences, Interactions, top_n=5, interaction_types=[SETTING] ), outdir+'/top5_hangouts.csv' )
-    #output_top_interactions( top_interactions( Presences, Interactions, top_n=5, noun_types=[ ( CHARACTER, CHARACTER ) ] ), outdir+'/top5_bffs.csv' )
-    #output_top_interactions( top_interactions( Presences, Interactions, top_n=5, interaction_types=[DISCUSS] ), outdir+'/top5_speakers.csv' )
-
-def output_top_presences( presences, filename ):
-    f = open( filename, 'w' )
-    f.write("name,noun_type,appearances\n")
-    for p in presences:
-        f.write( ','.join( [ p[0], p[1], str( p[2] ) ] ) )
-        f.write( "\n" )
-    f.close()
-'''
-
 def output_top_interactions( interactions, filename ):
     f = open( filename, 'w' )
     f.write("name1,name2,interactions\n")

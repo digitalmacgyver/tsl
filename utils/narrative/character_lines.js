@@ -933,3 +933,4 @@ dir = "comics/narrative/";
 draw_chart("Ghosbusters", "ghostbusters", './ghostbusters', true, false, false);
 draw_chart("Star Wars", "starwars", './starwars', true, false, false);
 draw_chart("The Matrix", "the_matrix", './the_matrix', true, false, false);
+
