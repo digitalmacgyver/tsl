@@ -40,6 +40,8 @@ scripts = [
     #( 'Sweet November', '../example-scripts/sweet_november.txt' ),
     #( 'Taking Lives', '../example-scripts/taking_lives.txt' ),
     #( 'Thirteen Ghosts', '../example-scripts/thirteen_ghosts.txt' ),
+    # New
+    ( '42', '../example-scripts/42.txt' )
     ]
 
 def process_script( script ):
