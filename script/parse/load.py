@@ -59,5 +59,7 @@ def calculate_whitespace( lines ):
         leading_spaces = re.match( r'( +)(EXT|INT)', line )
         if leading_spaces:
             trim[len( leading_spaces.group( 1 ) )] += 1
+        else:
+            trim[0] += 1
 
     return max( trim, key=trim.get )
