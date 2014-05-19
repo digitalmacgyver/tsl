@@ -38,8 +38,15 @@ scripts = [
     # ( 'Thirteen Ghosts', '../example-scripts/thirteen_ghosts.txt' ),
     # ( '42', '../example-scripts/42.txt' ),
     #( 'Frozen', '../example-scripts/frozen.txt' ),
-    #( 'Fruitvale Station', '../example-scripts/fruitvale_station.txt' )
+    #( 'Fruitvale Station', '../example-scripts/fruitvale_station.txt' ),
+    #( 'Recursion', '../example-scripts/recursion-05-16-14.txt' ),
+    #( 'Starthur', '../example-scripts/starthur.txt' ),
+    #( 'All is Lost', '../example-scripts/all_is_lost.txt' ),
+    #( 'Amour', '../example-scripts/amour.txt' ),
+    #( 'Argo', '../example-scripts/argo.txt' ),
+    #( 'August Osage County', '../example-scripts/august_osage_county.txt' )
     ]
+
 
 def process_script( script, parse_mode=STRICT ):
 

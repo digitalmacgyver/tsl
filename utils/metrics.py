@@ -19,7 +19,7 @@ from tsl.utils.partition import get_dramatic_unit_partitions
 scripts = [
     #( 'Chinatown', '../example-scripts/chinatown.txt' ),
     #( 'Dune', '../example-scripts/dune.txt' ),
-    ( 'Ghostbusters', '../example-scripts/ghostbusters.txt' ),
+    #( 'Ghostbusters', '../example-scripts/ghostbusters.txt' ),
     #( 'The Matrix', '../example-scripts/the_matrix.txt' ),
     #( 'Good Will Hunting', '../example-scripts/good_will_hunting.txt' ),
     #( 'The Book of Eli', '../example-scripts/the_book_of_eli.txt' ),
@@ -41,9 +41,13 @@ scripts = [
     #( 'Taking Lives', '../example-scripts/taking_lives.txt' ),
     #( 'Thirteen Ghosts', '../example-scripts/thirteen_ghosts.txt' ),
     # New
-    #( '42', '../example-scripts/42.txt' )
-    #( 'Frozen', '../example-scripts/frozen.txt' )
-    ( 'Fruitvale Station', '../example-scripts/fruitvale_station.txt' )
+    #( '42', '../example-scripts/42.txt' ),
+    #( 'Frozen', '../example-scripts/frozen.txt' ),
+    #( 'Fruitvale Station', '../example-scripts/fruitvale_station.txt' ),
+    ( 'All is Lost', '../example-scripts/all_is_lost.txt' ),
+    ( 'Amour', '../example-scripts/amour.txt' ),
+    ( 'Argo', '../example-scripts/argo.txt' ),
+    ( 'August Osage County', '../example-scripts/august_osage_county.txt' )
     ]
 
 def process_script( script ):
