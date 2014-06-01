@@ -11,7 +11,7 @@ import sys
 # Read in movie JSON files.
 movies_dir = "../example-scripts/parsed"
 
-outdir = "/wintmp/movie/graph4/"
+outdir = "/wintmp/movie/graph5/"
 
 def get_movies( movies_dir ):
     '''Returns a hash keyed on movie title whose body is the Python
@@ -20,14 +20,27 @@ def get_movies( movies_dir ):
     movies = {}
     for dirpath, dirnames, filenames in os.walk( movies_dir):
         for directory in dirnames:
-            metrics_file = [ x for x in os.listdir( os.path.join( dirpath, directory ) ) if x.endswith( '_metrics.json' ) ][0]
-            metrics = json.load( open( os.path.join( dirpath, directory, metrics_file ) ) )
+            metrics_files = [ x for x in os.listdir( os.path.join( dirpath, directory ) ) if x.endswith( '_metrics.json' ) ]
+            if len( metrics_files ) == 0:
+                print "Skipping %s/%s" % ( dirpath, directory )
+                continue
+                
+            metrics = json.load( open( os.path.join( dirpath, directory, metrics_files[0] ) ) )
             movies[metrics['title']] = metrics
 
     return movies
 
+def default_dist( a, b ):
+    return abs( a-b )
+
 def register_dist_funcs( dist_funcs ):
-    
+    def log_dist( a, b ):
+        return abs( math.log( a ) - math.log( b ) )
+
+    dist_funcs[ dimensions[2] ] = log_dist
+    dist_funcs[ dimensions[7] ] = log_dist
+
+    '''
     def mcic( a, b ):
         return abs( a-b )
     dist_funcs[ dimensions[0] ] = mcic
@@ -35,6 +48,7 @@ def register_dist_funcs( dist_funcs ):
     def poswmc( a, b ):
         return 50*abs( a-b )
     dist_funcs[ dimensions[1] ] = poswmc
+    '''
 
 def cartesian_distance( dists ):
     '''Takes in an array of distances between coordinates, and
@@ -55,7 +69,10 @@ def compute_distances( movies, dist_funcs, distance_func ):
             m2 = movies[k2]
             dists = []
             for dim in dimensions:
-                dists.append( dist_funcs[dim]( m1[dim], m2[dim] ) )
+                if dim in dist_funcs:
+                    dists.append( dist_funcs[dim]( m1[dim], m2[dim] ) )
+                else:
+                    dists.append( default_dist( m1[dim], m2[dim] ) )
             distance = distance_func( dists )
             if k1 in distances:
                 distances[k1][k2] = distance
@@ -270,7 +287,24 @@ movies = get_movies( movies_dir )
 # Don't change the order of things here unless you also change the
 # dist_funcs key lookups in register_dist_funcs
 
-dimensions = [ 'main_character_interlocutor_count', 'percentage_of_scenes_with_main_character' ]
+#dimensions = [ 'main_character_interlocutor_count', 'percentage_of_scenes_with_main_character' ]
+
+dimensions = [
+    'named_characters',
+    'distinct_locations',
+    'location_changes',
+    'percent_dialog',
+    'distinct_words',
+    'dramatic_units',
+    'adj-adv_noun-verb_ratio',
+    'supporting_characters',
+    'hearing',
+    'interlocutor_score',
+    'presence_score',
+    'dialog_score',
+    'scene_dialog_score',
+    'dialog_words_score'
+]
 
 dist_funcs = {}
 
@@ -441,10 +475,10 @@ f.close()
 
 #epsilon = 10
 
-#for width in [4]:
-for width in [ 128, 64, 32, 16, 8, 4, 2, 1, .5, .25 ]:
-    make_graph( 0, 74, width, 2, epsilon )
-#    make_graph( 0, 74, width, 4, epsilon )
+for width in [65536, 32768, 16384, 8192, 4096, 2048, 1024, 512, 256, 128]:
+#for width in [ 128, 64, 32, 16, 8, 4, 2, 1, .5, .25 ]:
+#    make_graph( 0, 74, width, 2, epsilon )
+    make_graph( 13000, 33950, width, 4, epsilon )
 
 f = open( outdir+"graphs.html", 'a' )
 html_back = '''

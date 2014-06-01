@@ -44,7 +44,11 @@ scripts = [
     #( 'All is Lost', '../example-scripts/all_is_lost.txt' ),
     #( 'Amour', '../example-scripts/amour.txt' ),
     #( 'Argo', '../example-scripts/argo.txt' ),
-    #( 'August Osage County', '../example-scripts/august_osage_county.txt' )
+    #( 'August Osage County', '../example-scripts/august_osage_county.txt' ),
+    #( 'Celest and Jesse Forever', '../example-scripts/celeste_and_jesse_forever.txt' ),
+    #( 'Chronicle', '../example-scripts/chronicle.txt' ),
+    #( 'Dallas Buyers Club', '../example-scripts/dallas_buyers_club.txt' ),
+    #( 'Despicable Me 2', '../example-scripts/despicable_me_2.txt' ),
     ]
 
 

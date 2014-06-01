@@ -44,10 +44,14 @@ scripts = [
     #( '42', '../example-scripts/42.txt' ),
     #( 'Frozen', '../example-scripts/frozen.txt' ),
     #( 'Fruitvale Station', '../example-scripts/fruitvale_station.txt' ),
-    ( 'All is Lost', '../example-scripts/all_is_lost.txt' ),
-    ( 'Amour', '../example-scripts/amour.txt' ),
-    ( 'Argo', '../example-scripts/argo.txt' ),
-    ( 'August Osage County', '../example-scripts/august_osage_county.txt' )
+    #( 'All is Lost', '../example-scripts/all_is_lost.txt' ),
+    #( 'Amour', '../example-scripts/amour.txt' ),
+    #( 'Argo', '../example-scripts/argo.txt' ),
+    #( 'August Osage County', '../example-scripts/august_osage_county.txt' ),
+    #( 'Celest and Jesse Forever', '../example-scripts/celeste_and_jesse_forever.txt' ),
+    #( 'Chronicle', '../example-scripts/chronicle.txt' ),
+    #( 'Dallas Buyers Club', '../example-scripts/dallas_buyers_club.txt' ),
+    #( 'Despicable Me 2', '../example-scripts/despicable_me_2.txt' ),
     ]
 
 def process_script( script ):
@@ -84,6 +88,9 @@ def process_script( script ):
     output['title'] = name
 
     top_characters = top_presences( Presences, noun_types=[CHARACTER] )
+
+    output['named_characters'] = len( top_characters )
+
     top_locations = top_presences( Presences, noun_types=[LOCATION] )
 
     # Collocations
@@ -202,12 +209,18 @@ def process_script( script ):
 
     # Number of characters who speak to the N'th speaker.
     character_x_speakers = []
-    for character in top_characters:
+    interlocutor_score = 0
+    for character in top_characters[:5]:
         name = character[0]
         speakers = top_interactions( Presences, Interactions, noun_types=[( CHARACTER, CHARACTER )], interaction_types=[DISCUSS], names=[name] ) 
         character_x_speakers.append( { 'character' : name, 'speakers' : len( speakers ) } )
-    output['character_x_speakers'] = character_x_speakers
-        
+        if name == top_characters[0][0]:
+            interlocutor_score += 3* len( speakers )
+        else:
+            interlocutor_score += len( speakers )
+    #output['character_x_speakers'] = character_x_speakers
+    output['interlocutor_score'] = interlocutor_score
+
     #output['main_character_interlocutor_count'] = len( speakers )
     
     # Distinct locations
@@ -253,7 +266,10 @@ def process_script( script ):
             scene_talker_data.append( ( scene_id, 0 ) )
     scene_talker_data = sorted( scene_talker_data, key=lambda a: int( a[0] ) )
     
-    output['characters_speaking_in_scene_stats'] = get_stats( scene_talker_data )
+    #output['characters_speaking_in_scene_stats'] = get_stats( scene_talker_data )
+    scene_talker_stats = get_stats( scene_talker_data )
+    output['scene_dialog_score'] = scene_talker_stats['median']
+
     #output['characters_speaking_in_scene'] = scene_talker_data
 
     # Ratio of dialog to non-dialog words per scene.
@@ -294,8 +310,8 @@ def process_script( script ):
             nth_word_count = 0
             nth_dialog_count = 0
 
-    output['nth_percent_of_dialog'] = nth_percent_of_dialog
-    output['percent_of_dialog_in_nth'] = percent_of_dialog_in_nth
+    #output['nth_percent_of_dialog'] = nth_percent_of_dialog
+    #output['percent_of_dialog_in_nth'] = percent_of_dialog_in_nth
 
     # % of action words.
     total_action_words = 0
@@ -307,8 +323,8 @@ def process_script( script ):
 
     # % of dialog by top-N speakers.
     dialog_by_top_chars = []
-    for character in top_characters:
-
+    dialog_score = 0
+    for character in top_characters[:5]:
         name = character[0]
         
         dialog = 0
@@ -319,12 +335,36 @@ def process_script( script ):
                 if presence['presence_type'] == DISCUSS:
                     dialog += presence['dialog_words']
         dialog_by_top_chars.append( { 'character' : name, 'appearances' : character[2], 'percent_dialog' : float( dialog ) / Structure.structure['dialog_words'] } )
+        if name == top_characters[0][0]:
+            dialog_score += 3*dialog_by_top_chars[-1]['percent_dialog']
+        else:
+            dialog_score += dialog_by_top_chars[-1]['percent_dialog']
+            
+    #output['percent_dialog_by_character'] = dialog_by_top_chars
+    output['dialog_score'] = dialog_score
 
-    output['percent_dialog_by_character'] = dialog_by_top_chars
-                
+    # Number of non-main characters who have at least 15 words of
+    # dialog.
+    supporting_characters = 0
+    for character in top_characters[1:]:
+        name = character[0]
+        
+        dialog = 0
+        for ( scene_id, presences ) in Presences.presence_ns[name].items():
+            if scene_id == 'noun_type':
+                continue
+            for presence in presences:
+                if presence['presence_type'] == DISCUSS:
+                    dialog += presence['dialog_words']
+        if dialog >= 15:
+            supporting_characters += 1
+
+    output['supporting_characters'] = supporting_characters
+           
     # % of scenes that have the top-N characters.
     scenes_with_top_chars = []
-    for character in top_characters:
+    presence_score = 0
+    for character in top_characters[:5]:
         name = character[0]
         scenes = len( Presences.presence_sn.keys() )
         count = 0
@@ -332,8 +372,13 @@ def process_script( script ):
             if name in Presences.presence_sn[scene]:
                 count += 1
         scenes_with_top_chars.append( { 'character' : name, 'percentage_of_scenes' : float( count ) / scenes } )
+        if name == top_characters[0][0]:
+            presence_score += 3*scenes_with_top_chars[-1]['percentage_of_scenes']
+        else:
+            presence_score += scenes_with_top_chars[-1]['percentage_of_scenes']
 
-    output['scenes_percentage_for_characters'] = scenes_with_top_chars
+    output['presence_score'] = presence_score
+    #output['scenes_percentage_for_characters'] = scenes_with_top_chars
 
     # % of words in the top-N locations
     words_at_top_locs = []
@@ -376,8 +421,10 @@ def process_script( script ):
         for block in Structure.structure['scenes'][scene]['scene_blocks']:
             if block['block_type'] == 'DIALOG':
                 dialog_stats.append( ( scene, block['total_words'] ) )
-    output['dialog_block_word_count_stats'] = get_stats( dialog_stats )
-        
+    #output['dialog_block_word_count_stats'] = get_stats( dialog_stats )
+    dialog_score_stats = get_stats( dialog_stats )
+    output['dialog_words_score'] = dialog_score_stats['average'] + dialog_score_stats['max']
+   
     # Hearing - sum of number of characters speaking in a scene *
     # words of dialog in a scene.
     hearing = 0
@@ -416,8 +463,8 @@ def process_script( script ):
             ratio_b = float( len( set( character_scene_ids ).intersection( set( co_character_scene_ids ) ) ) ) / len( co_character_scene_ids )
             if ratio_a >= buddy_threshold and ratio_b >= buddy_threshold:
                 buddies.append( ( name, co_name, ratio_a, ratio_b ) )
-    output['buddies_list'] = buddies
-    output['buddies'] = len( buddies )
+    #output['buddies_list'] = buddies
+    #output['buddies'] = len( buddies )
 
     # Write the output.
     f = open( file_dir + file_name + '/%s_metrics.json' % ( file_name ), 'w' )
