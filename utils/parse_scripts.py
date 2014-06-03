@@ -49,6 +49,7 @@ scripts = [
     #( 'Chronicle', '../example-scripts/chronicle.txt' ),
     #( 'Dallas Buyers Club', '../example-scripts/dallas_buyers_club.txt' ),
     #( 'Despicable Me 2', '../example-scripts/despicable_me_2.txt' ),
+    ( 'The Wolf of Wall Street', '../example-scripts/the_wolf_of_wall_street.txt' ),
     ]
 
 

@@ -760,7 +760,7 @@ def get_name_offsets( Presences, text, offset=0, new_nouns=[] ):
     result = []
 
     for name in presence_ns:
-        for m in re.finditer( r'\b'+name+r'\b', text, re.I ):
+        for m in re.finditer( r'\b'+re.escape( name )+r'\b', text, re.I ):
             result.append( ( name, m.start() ) )
 
     for noun in new_nouns:

@@ -40,6 +40,46 @@ def register_dist_funcs( dist_funcs ):
     dist_funcs[ dimensions[2] ] = log_dist
     dist_funcs[ dimensions[7] ] = log_dist
 
+    def five_vect( a, b, lookup ):
+        result_dist = 0
+        for i in range( 0, 5 ):
+            a_val = None
+            if i >= len( a ):
+                a_val = 0
+            else:
+                if i == 0:
+                    a_val = 3*a[i][lookup]
+                else:
+                    a_val = a[i][lookup]
+            b_val = None
+            if i >= len( b ):
+                b_val = 0
+            else:
+                if i == 0:
+                    b_val = 3*b[i][lookup]
+                else:
+                    b_val = b[i][lookup]
+            result_dist += default_dist( a_val, b_val )**2
+        return result_dist**0.5
+
+    def character_x_speakers( a, b ):
+        return five_vect( a, b, 'speakers' )
+    dist_funcs[ dimensions[9] ] = character_x_speakers
+
+    def scenes_percentage_for_characters( a, b ):
+        return five_vect( a, b, 'percentage_of_scenes' )
+    dist_funcs[ dimensions[10] ] = scenes_percentage_for_characters
+
+    def percent_dialog_by_character( a, b ):
+        return five_vect( a, b, 'percent_dialog' )
+    dist_funcs[ dimensions[11] ] = percent_dialog_by_character
+
+    def dialog_words_score( a, b ):
+        return ( ( a[0] - b[0] )**2 + ( a[1] - b[1] )**2 )**0.5
+    dist_funcs[ dimensions[13] ] = dialog_words_score
+
+
+
     '''
     def mcic( a, b ):
         return abs( a-b )
@@ -299,9 +339,9 @@ dimensions = [
     'adj-adv_noun-verb_ratio',
     'supporting_characters',
     'hearing',
-    'interlocutor_score',
-    'presence_score',
-    'dialog_score',
+    'character_x_speakers',
+    'scenes_percentage_for_characters',
+    'percent_dialog_by_character',
     'scene_dialog_score',
     'dialog_words_score'
 ]
