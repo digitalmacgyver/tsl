@@ -20,8 +20,8 @@ scripts = [
     #( 'Chinatown', '../example-scripts/chinatown.txt' ),
     #( 'Dune', '../example-scripts/dune.txt' ),
     # ( 'Ghostbusters', '../example-scripts/ghostbusters.txt' ),
-    #( 'Recursion', '../example-scripts/recursion-05-16-14.txt' ),
-    ( 'Starthur', '../example-scripts/starthur.txt' ),
+    ( 'Recursion', '../example-scripts/recursion-06-10-14.txt' ),
+    #( 'Starthur', '../example-scripts/starthur.txt' ),
     #( 'The Matrix', '../example-scripts/the_matrix.txt' ),
     #( 'Good Will Hunting', '../example-scripts/good_will_hunting.txt' ),
     #( 'The Book of Eli', '../example-scripts/the_book_of_eli.txt' ),
@@ -82,8 +82,9 @@ def get_timestamp( page, line, lines_per_page, first_page ):
     lines = lines_per_page[page]['lines']
     return int( 60000 * ( page - first_page + float( line - lines_per_page[page]['first_line'] ) / lines ) )
     
+
 def handle_block_type( block_type, block, Script, Structure, lines_per_page, first_page ):
-    
+
     first_line = block['first_line']
     last_line = block['last_line']
     page = Script.script_lines[first_line - 1]['page_no']
@@ -92,13 +93,15 @@ def handle_block_type( block_type, block, Script, Structure, lines_per_page, fir
 
     content = "".join( [ x['content'] for x in Script.script_lines[first_line-1:last_line] ] )
 
-    return {
+    result = {
         "author"     : { "username" : email },
         "content"    : content,
         "happens_at" : timestamp,
         "rating"     : rating,
-        "type"       : block_type
+        "type"       : block_type,
         }
+    
+    return result
 
 def handle_action( block, Script, Structure, lines_per_page, first_page ):
     return handle_block_type( "PLOT", block, Script, Structure, lines_per_page, first_page )
@@ -132,7 +135,8 @@ def handle_dialog( block, Script, Structure, lines_per_page, first_page ):
     result = []
     
     for speaker_block in speaker_blocks:
-        result.append( handle_block_type( "CHARACTER", speaker_block, Script, Structure, lines_per_page, first_page ) )
+        #result.append( handle_block_type( "CHARACTER", speaker_block, Script, Structure, lines_per_page, first_page ) )
+        result.append( handle_block_type( "PLOT", speaker_block, Script, Structure, lines_per_page, first_page ) )
 
     return result
 
@@ -219,6 +223,11 @@ def process_script( script ):
                 
             if result is not None:
                 output += result
+
+    for i in range( 0, len( output )-1 ):
+        output[i]['duration'] = output[i+1]['happens_at'] - output[i]['happens_at']
+        
+    output[len( output ) - 1]['duration'] = 0
 
     print json.dumps( output, sort_keys=True, indent=2 )
 

@@ -40,6 +40,7 @@ scripts = [
     #( 'Frozen', '../example-scripts/frozen.txt' ),
     #( 'Fruitvale Station', '../example-scripts/fruitvale_station.txt' ),
     #( 'Recursion', '../example-scripts/recursion-05-16-14.txt' ),
+    ( 'Recursion', '../example-scripts/recursion-06-10-14.txt' ),
     #( 'Starthur', '../example-scripts/starthur.txt' ),
     #( 'All is Lost', '../example-scripts/all_is_lost.txt' ),
     #( 'Amour', '../example-scripts/amour.txt' ),
@@ -49,7 +50,15 @@ scripts = [
     #( 'Chronicle', '../example-scripts/chronicle.txt' ),
     #( 'Dallas Buyers Club', '../example-scripts/dallas_buyers_club.txt' ),
     #( 'Despicable Me 2', '../example-scripts/despicable_me_2.txt' ),
-    ( 'The Wolf of Wall Street', '../example-scripts/the_wolf_of_wall_street.txt' ),
+    #( 'The Wolf of Wall Street', '../example-scripts/the_wolf_of_wall_street.txt' ),
+    #( 'Prince of Persia', '../example-scripts/prince_of_persia.txt' ),
+    #( 'Oz the Great and Powerful', '../example-scripts/oz_the_great_and_powerful.txt' ),
+    #( 'Nebraska', '../example-scripts/nebraska.txt' ),
+    #( 'Monsters University', '../example-scripts/monsters_university.txt' ),
+    #( 'Magic Mike', '../example-scripts/magic_mike.txt' ),
+    #( 'Lone Survivor', '../example-scripts/lone_survivor.txt' ),
+    #( 'Kill Your Darlings', '../example-scripts/kill_your_darlings.txt' ),
+    #( 'Kick Ass 2', '../example-scripts/kick_ass_2.txt' ),
     ]
 
 

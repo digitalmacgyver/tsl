@@ -7,6 +7,87 @@ import networkx as nx
 import numpy
 import os
 import sys
+import types
+
+'''
+Logic: 
+
+4) Make:
+
+DONE h[movie] = cluster_id
+DONE h[cluster_id] = { movie1 : True, movie2: True, ... }
+
+DONE 5) Choose overlap step: 0-1, 0+e-1+e, ...
+
+6) Make data structure:
+
+h[region_key][point] = True
+
+for each movie:
+   determine what cells it is in (between 1 and 2^14).
+
+   Label each cell as [3, 4, 1, ... 19] of 14 elements, the i'th
+   element is the position of the i'th dimension, and the value is the
+   overlap region number.  This vector cal be a label consolidated as
+   n0-n1-n2...n14.
+
+   h[movie][region_key] = True
+
+   h[region_key][movie] = True
+
+7) Then do:
+
+for each movie:
+   movie_cluster = h[movie]
+   for each region the movie is in:
+      for each other_movie with a point in that region:
+          movie2_cluster = h[other_movie]
+          
+          graph.add_edge( movie_cluster, movie2_cluster )
+
+'''
+
+# Dimensions
+#
+# Don't change the order of things here unless you also change the
+# dist_funcs key lookups in register_dist_funcs
+
+#dimensions = [ 'main_character_interlocutor_count', 'percentage_of_scenes_with_main_character' ]
+
+dimensions = [
+    'named_characters',
+    'distinct_locations',
+    'location_changes',
+    'percent_dialog',
+    'distinct_words',
+    'dramatic_units',
+    'adj-adv_noun-verb_ratio',
+    'supporting_characters',
+    'hearing',
+    'character_x_speakers',
+    'scenes_percentage_for_characters',
+    'percent_dialog_by_character',
+    'scene_dialog_score',
+    'dialog_words_score'
+]
+
+zero = {
+    'named_characters' : 0,
+    'distinct_locations' : 0,
+    'location_changes' : 0,
+    'percent_dialog' : 0,
+    'distinct_words' : 0,
+    'dramatic_units' : 0,
+    'adj-adv_noun-verb_ratio' : 0,
+    'supporting_characters' : 0,
+    'hearing' : 0,
+    'character_x_speakers' :  [ { 'speakers' : 0 }, { 'speakers' : 0 }, { 'speakers' : 0 }, { 'speakers' : 0 }, { 'speakers' : 0 } ],
+    'scenes_percentage_for_characters' : [ { 'percentage_of_scenes' : 0 }, { 'percentage_of_scenes' : 0 }, { 'percentage_of_scenes' : 0 }, { 'percentage_of_scenes' : 0 }, { 'percentage_of_scenes' : 0 } ],
+    'percent_dialog_by_character' : [ { 'percent_dialog' : 0 }, { 'percent_dialog' : 0 }, { 'percent_dialog' : 0 }, { 'percent_dialog' : 0 }, { 'percent_dialog' : 0 } ],
+    'scene_dialog_score' : 0,
+    'dialog_words_score' : [0, 0]
+    }
+
 
 # Read in movie JSON files.
 movies_dir = "../example-scripts/parsed"
@@ -30,16 +111,77 @@ def get_movies( movies_dir ):
 
     return movies
 
+def normalize_movies( movies, dist_funcs ):
+    '''Takes in the movies data structure, and normalizes their
+    coordinates to fall in the 0-1 range. If the coordinate in
+    question is itself a vector, we normalize them such that the
+    longest is a vector of cartesian length 1.
+    '''
+
+    # Calculate the maximum value.
+    max_dimensions = {}
+
+    for k in sorted( movies.keys() ):
+        movie = movies[k]
+        for dim in dimensions:
+            coordinate = movie[dim]
+
+            value = -1
+
+            if dim in dist_funcs:
+                value = dist_funcs[dim]( zero[dim], coordinate )
+            else:
+                value = default_dist( zero[dim], coordinate )
+            
+            if value > max_dimensions.get( dim, -1 ):
+                max_dimensions[dim] = value
+
+    # Reduce things beyond perfect scaling to prevent floating point
+    # rounding errors from nailing us - we want points on [0, 1) not
+    # [0, 1]
+    fudge_factor = 0.99
+
+    # Normalize the values.
+    for k in sorted( movies.keys() ):
+        movie = movies[k]
+        for dim in dimensions:
+
+            value = movie[dim]
+
+            if dim == 'character_x_speakers':
+                movie[dim] = [ { 'speakers' : fudge_factor * float( x['speakers'] ) / max_dimensions[dim] } for x in movie[dim] ]
+            elif dim == 'scenes_percentage_for_characters':
+                movie[dim] = [ { 'percentage_of_scenes' : fudge_factor * float( x['percentage_of_scenes'] ) / max_dimensions[dim] } for x in movie[dim] ]
+            elif dim == 'percent_dialog_by_character':
+                movie[dim] = [ { 'percent_dialog' : fudge_factor * float( x['percent_dialog'] ) / max_dimensions[dim] } for x in movie[dim] ]
+            elif dim == 'dialog_words_score':
+                movie[dim] = [ fudge_factor * float( x ) / max_dimensions[dim] for x in movie[dim] ]
+            else:
+                movie[dim] = fudge_factor * float( value ) / max_dimensions[dim]
+
+            if dim in dist_funcs:
+                new_value = dist_funcs[dim]( zero[dim], movie[dim] )
+            else:
+                new_value = default_dist( zero[dim], movie[dim] )
+            
+            if new_value > 1:
+                print "ERROR - value over 1 post normalization."
+                print "movie, dim, value, new_value, max:", movie, dim, value, new_value, max_dimensions[dim]
+                sys.exit( 0 )
+            elif new_value == 1:
+                print "WARNING - value of 1 post normalization."
+
 def default_dist( a, b ):
     return abs( a-b )
 
 def register_dist_funcs( dist_funcs ):
+    '''
     def log_dist( a, b ):
         return abs( math.log( a ) - math.log( b ) )
 
     dist_funcs[ dimensions[2] ] = log_dist
     dist_funcs[ dimensions[7] ] = log_dist
-
+    '''
     def five_vect( a, b, lookup ):
         result_dist = 0
         for i in range( 0, 5 ):
@@ -77,16 +219,6 @@ def register_dist_funcs( dist_funcs ):
     def dialog_words_score( a, b ):
         return ( ( a[0] - b[0] )**2 + ( a[1] - b[1] )**2 )**0.5
     dist_funcs[ dimensions[13] ] = dialog_words_score
-
-    '''
-    def mcic( a, b ):
-        return abs( a-b )
-    dist_funcs[ dimensions[0] ] = mcic
-
-    def poswmc( a, b ):
-        return 50*abs( a-b )
-    dist_funcs[ dimensions[1] ] = poswmc
-    '''
 
 def cartesian_distance( dists ):
     '''Takes in an array of distances between coordinates, and
@@ -177,9 +309,9 @@ def get_inverse_covering( projection, covering ):
 def get_clusters( movies_input, distances, epsilon ):
     '''Given a hash of movie keys, the distances data structure, and
     epsilon threshold distance, returns an array of hashes of movie
-    keys where each hash is a cluster is a subset of the input movies
-    containing the points which are within a transitive closure of
-    episolon of one another.'''
+    keys where each hash is a subset of the input movies containing
+    the points which are within a transitive closure of epsilon of
+    one another.'''
 
     # Don't change the input value.
     movies = {}
@@ -318,52 +450,6 @@ def cluster_epsilon_finder( movies, distances ):
 
     return cluster_distances
 
-movies = get_movies( movies_dir )
-
-# Dimensions
-#
-# Don't change the order of things here unless you also change the
-# dist_funcs key lookups in register_dist_funcs
-
-#dimensions = [ 'main_character_interlocutor_count', 'percentage_of_scenes_with_main_character' ]
-
-dimensions = [
-    'named_characters',
-    'distinct_locations',
-    'location_changes',
-    'percent_dialog',
-    'distinct_words',
-    'dramatic_units',
-    'adj-adv_noun-verb_ratio',
-    'supporting_characters',
-    'hearing',
-    'character_x_speakers',
-    'scenes_percentage_for_characters',
-    'percent_dialog_by_character',
-    'scene_dialog_score',
-    'dialog_words_score'
-]
-
-dist_funcs = {}
-
-register_dist_funcs( dist_funcs )
-
-import pprint
-pp = pprint.PrettyPrinter( indent=4 )
-
-# We could in principle have difference means of calculating our
-# distance.
-distance_func = cartesian_distance
-distances = compute_distances( movies, dist_funcs, distance_func )
-print "Distances:"
-pp.pprint( distances )
-
-projection_func = eccentricity
-#projection_func = density
-projection = compute_projection( distances, projection_func )
-print "Eccentricities:"
-pp.pprint( projection )
-
 def make_covering( low, high, width, overlap ):
     step = float( width ) / overlap
     current = low
@@ -481,11 +567,56 @@ def make_graph( low, high, width, overlap, epsilon ):
     output_d3( filename, vertices, edges, "Cover width: %s, Overlap: %s, Epsilon: %0.02f" % ( width, overlap, epsilon ) )
 
 
+movies = get_movies( movies_dir )
+
+dist_funcs = {}
+
+register_dist_funcs( dist_funcs )
+
+normalize_movies( movies, dist_funcs )
+
+import pprint
+pp = pprint.PrettyPrinter( indent=4 )
+
+# We could in principle have difference means of calculating our
+# distance.
+distance_func = cartesian_distance
+distances = compute_distances( movies, dist_funcs, distance_func )
+print "Distances:"
+#pp.pprint( distances )
+
+#projection_func = eccentricity
+#projection_func = density
+#projection = compute_projection( distances, projection_func )
+#print "Eccentricities:"
+#pp.pprint( projection )
+
 epsilon_candidates = cluster_epsilon_finder( movies, distances )
 print "Cluster epsilon candidates", epsilon_candidates
 epsilon = numpy.median( epsilon_candidates )*1.01
 #epsilon = 10
 print "Epsilon selected as: (multiplied by 1.01 to handle rounding errors)", epsilon
+
+clusters = get_clusters( movies, distances, epsilon )
+#pp.pprint( clusters )
+
+movie_clusters = {}
+for movie in movies.keys():
+    done = False
+    for ( idx, cluster ) in enumerate( clusters ):
+        if movie in cluster:
+            movie_clusters[movie] = idx
+            done = True
+            break
+    if not done:
+        print "ERROR - no cluster idx found for:", movie
+        sys.exit( 1 )
+pp.pprint( movie_clusters )
+
+cluster_movies = {}
+for ( idx, cluster ) in enumerate( clusters ):
+    cluster_movies[idx] = cluster
+pp.pprint( cluster_movies )
 
 f = open( outdir+"graphs.html", 'w' )
 html_front = '''
@@ -511,12 +642,37 @@ html_front = '''
 f.write( html_front )
 f.close()
 
-#epsilon = 10
+#for width in [ .125, .25, float( 1 )/3, .5, float( 2 )/3, 0.75, 0.8]:
+#    for overlap in [ .125, .25, float( 1 )/3, .5, float( 2 )/3, 0.75, 0.8]:
 
-for width in [65536, 32768, 16384, 8192, 4096, 2048, 1024, 512, 256, 128]:
-#for width in [ 128, 64, 32, 16, 8, 4, 2, 1, .5, .25 ]:
+for width in [ .125, 0.8]:
+    for overlap in [ .5 ]:
+        
+        # We consider intervals of width that each overlap overlap
+        # percentage.  For example, for width 0.5 and overlap 0.25, we
+        # look at intervals:
+        #
+        # Start at -width*(1-overlap) and proceed until we start an
+        # interval >=1
+        #
+        # [-3/8,1/8),[-2/8,2/8),[-1/8,3/8),[0,4/8),[1/8,5/8),[2/8,6/8),
+        # [3/8,7/8),[4/8,1),[5/8,9/8),[6/8,10/8),[7/8,11/8),[8/8,12/8),
+
+        start = -width * ( 1 - overlap )
+        end = 1
+        
+        current = start
+
+        while current <= end:
+            interval = [current, current + width]
+            # Process stuff
+            print "Working on interval:", interval
+            current += overlap * width
+
+
+
 #    make_graph( 0, 74, width, 2, epsilon )
-    make_graph( 13000, 33950, width, 4, epsilon )
+#    make_graph( 13000, 33950, width, 4, epsilon )
 
 f = open( outdir+"graphs.html", 'a' )
 html_back = '''
