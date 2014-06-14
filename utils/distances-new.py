@@ -28,7 +28,7 @@ for each movie:
 
    Label each cell as [3, 4, 1, ... 19] of 14 elements, the i'th
    element is the position of the i'th dimension, and the value is the
-   overlap region number.  This vector cal be a label consolidated as
+   overlap region number.  This vector can be a label consolidated as
    n0-n1-n2...n14.
 
    h[movie][region_key] = True
@@ -92,7 +92,7 @@ zero = {
 # Read in movie JSON files.
 movies_dir = "../example-scripts/parsed"
 
-outdir = "/wintmp/movie/graph5/"
+outdir = "/wintmp/movie/graph6/"
 
 def get_movies( movies_dir ):
     '''Returns a hash keyed on movie title whose body is the Python
@@ -107,6 +107,11 @@ def get_movies( movies_dir ):
                 continue
                 
             metrics = json.load( open( os.path.join( dirpath, directory, metrics_files[0] ) ) )
+            
+            #if metrics['title'] not in ['Ghostbusters', 'Dune', 'Starwars', 'Vertigo', 'All is Lost']:
+            #if metrics['title'] not in ['Ghostbusters', 'Dune', 'Starwars' ]:
+            #    continue
+
             movies[metrics['title']] = metrics
 
     return movies
@@ -583,7 +588,9 @@ pp = pprint.PrettyPrinter( indent=4 )
 distance_func = cartesian_distance
 distances = compute_distances( movies, dist_funcs, distance_func )
 print "Distances:"
-#pp.pprint( distances )
+pp.pprint( distances )
+
+#sys.exit( 0 )
 
 #projection_func = eccentricity
 #projection_func = density
@@ -595,28 +602,8 @@ epsilon_candidates = cluster_epsilon_finder( movies, distances )
 print "Cluster epsilon candidates", epsilon_candidates
 epsilon = numpy.median( epsilon_candidates )*1.01
 #epsilon = 10
-print "Epsilon selected as: (multiplied by 1.01 to handle rounding errors)", epsilon
+#print "Epsilon selected as: (multiplied by 1.01 to handle rounding errors)", epsilon
 
-clusters = get_clusters( movies, distances, epsilon )
-#pp.pprint( clusters )
-
-movie_clusters = {}
-for movie in movies.keys():
-    done = False
-    for ( idx, cluster ) in enumerate( clusters ):
-        if movie in cluster:
-            movie_clusters[movie] = idx
-            done = True
-            break
-    if not done:
-        print "ERROR - no cluster idx found for:", movie
-        sys.exit( 1 )
-pp.pprint( movie_clusters )
-
-cluster_movies = {}
-for ( idx, cluster ) in enumerate( clusters ):
-    cluster_movies[idx] = cluster
-pp.pprint( cluster_movies )
 
 f = open( outdir+"graphs.html", 'w' )
 html_front = '''
@@ -642,33 +629,187 @@ html_front = '''
 f.write( html_front )
 f.close()
 
+'''
+Distances:
+Cluster epsilon candidates [0.2756963101398022, 0.2824180708397999, 0.2901535353885528, 0.29679948310496235, 0.29809243573819405, 0.3008430147727166, 0.30423158694739116, 0.3111932610996143, 0.3239575458355143, 0.32870830977624693, 0.3349296893257851, 0.339504392995318, 0.34043623376667126, 0.3407374970953071, 0.3456198701639495, 0.3470844154322659, 0.3615455863682823, 0.36873341302556073, 0.3855076149196018, 0.3913397549356695, 0.41500077453947964, 0.4261110496972837, 0.430798082232881, 0.4408081670379248, 0.4411177007877657, 0.4538260438991669, 0.49876468183302686, 0.5161105046270866, 0.5195546689996641, 0.5444156540919776, 0.5715710648582176, 0.5769720423637819, 0.5802541943852065, 0.6011932989376068, 0.6178081743165474, 0.7345168864500814, 0.7384074181643948, 0.8445109840039465, 0.8726441863295533, 0.9951102608430269, 1.016822650925611]
+'''
+
+#epsilons = [ 0.32870830977624693, 0.3913397549356695, 0.5444156540919776,  0.9951102608430269 ]
+
+#epsilons = [ 0.35, 0.55 ]
+
+epsilons = [ .4 ]
+
+#epsilons = epsilon_candidates
+
+for epsilon in epsilons:
+
+    clusters = get_clusters( movies, distances, epsilon )
+    #pp.pprint( clusters )
+
+    movie_clusters = {}
+    for movie in movies.keys():
+        done = False
+        for ( idx, cluster ) in enumerate( clusters ):
+            if movie in cluster:
+                movie_clusters[movie] = idx
+                done = True
+                break
+        if not done:
+            print "ERROR - no cluster idx found for:", movie
+            sys.exit( 1 )
+    #pp.pprint( movie_clusters )
+
+    cluster_movies = {}
+    for ( idx, cluster ) in enumerate( clusters ):
+        cluster_movies[idx] = cluster
+    pp.pprint( cluster_movies )
+
 #for width in [ .125, .25, float( 1 )/3, .5, float( 2 )/3, 0.75, 0.8]:
-#    for overlap in [ .125, .25, float( 1 )/3, .5, float( 2 )/3, 0.75, 0.8]:
+#    for slide in [ .5, .6, .7, .8, .9 ]:
 
-for width in [ .125, 0.8]:
-    for overlap in [ .5 ]:
-        
-        # We consider intervals of width that each overlap overlap
-        # percentage.  For example, for width 0.5 and overlap 0.25, we
-        # look at intervals:
-        #
-        # Start at -width*(1-overlap) and proceed until we start an
-        # interval >=1
-        #
-        # [-3/8,1/8),[-2/8,2/8),[-1/8,3/8),[0,4/8),[1/8,5/8),[2/8,6/8),
-        # [3/8,7/8),[4/8,1),[5/8,9/8),[6/8,10/8),[7/8,11/8),[8/8,12/8),
+#    for width in [ .75, .5, .3 ]:
+    for width in [ .45 ]:
+        # Slide is intended to be >= 0.5 - by design and conventional
+        # practice we don't want more than 2 regions overlapping in one
+        # dimension.
+        #for slide in [ .9, .7, .5 ]:
+        for slide in [ .75 ]:
+            # We consider intervals of width whose overlaps are made by
+            # sliding the initial point slide percentage of width along.
+            #
+            # Start at 0 and proceed until we start an
+            # interval >=1
+            start = 0
+            end = 1
+            step = width * slide
 
-        start = -width * ( 1 - overlap )
-        end = 1
-        
-        current = start
+            movie_cell_map = {}
+            cell_movie_map = {}
 
-        while current <= end:
-            interval = [current, current + width]
-            # Process stuff
-            print "Working on interval:", interval
-            current += overlap * width
+            #print "Step is:", step
 
+            for movie in sorted( movies.keys() ):
+                # We build an array of arrays, the i'th position of which
+                # is the array of cells this movie is in for dimension i.
+                movie_cells = []
+
+                for dim in dimensions:
+                    # Each movie is in 1 or 2 cells for each dimension.
+                    dimension_cells = []
+                    coordinate = movies[movie][dim]
+
+                    if dim in dist_funcs:
+                        value = dist_funcs[dim]( zero[dim], coordinate )
+                    else:
+                        value = default_dist( zero[dim], coordinate )
+
+                    #print "Coordinate is:", coordinate
+                    #print "Value is:", value
+
+                    # Get the latest cell who starts at or before value.
+                    first_cell = int( math.floor( float( value ) / step) )
+
+                    # See if this point is also in the prior cell.
+                    if first_cell > 0 and step*(first_cell - 1) + width > value:
+                        dimension_cells.append( first_cell - 1 )
+
+                    dimension_cells.append( first_cell )
+                
+                    movie_cells.append( dimension_cells )
+
+                #pp.pprint( movie_cells )
+
+                # Compose a list of cell keys where the cell key is of the
+                # form:
+                # a-b-c-d...-z where a, b, c are cells this movie is found in.
+                next_cell_keys = [ movie_cells[0] ]
+                for dim_cells in movie_cells[1:]:
+                    cell_keys = next_cell_keys
+                    next_cell_keys = []
+                    for dim_cell in dim_cells:
+                        for cell_key in cell_keys:
+                            next_cell_keys.append( cell_key + [dim_cell] )
+
+                cell_keys = next_cell_keys
+
+                #pp.pprint( cell_keys )
+                
+                for cell_key in cell_keys:
+                    cell_string = '_'.join( [ str( x ) for x in cell_key ] )
+
+                    #print "cell_key:", cell_key
+                    #print "cell_string:", cell_string
+
+                    if movie in movie_cell_map:
+                        movie_cell_map[movie][cell_string] = True
+                    else:
+                        movie_cell_map[movie] = { cell_string : True }
+                    if cell_string in cell_movie_map:
+                        cell_movie_map[cell_string][movie] = True
+                    else:
+                        cell_movie_map[cell_string] = { movie : True }
+
+                #pp.pprint( movie_cell_map )
+            
+            #pp.pprint( cell_movie_map )
+
+            node_map = {}
+            movie_node_map = {}
+            all_movie_clusters = []
+            nodes = []
+            edges = []
+
+            # If true only add nodes if they are not strict subsets of existing nodes.
+            eliminate_subsets = True
+
+            for cell_string in sorted( cell_movie_map ):
+                cell_movie_keys = cell_movie_map[cell_string].keys()
+                
+                cell_movies = { key : value for ( key, value ) in movies.items() if key in cell_movie_keys }
+
+                cell_movie_clusters = get_clusters( cell_movies, distances, epsilon )
+
+                for cell_movie_cluster in cell_movie_clusters:
+                    cluster_movies = cell_movie_cluster.keys()
+                    label = ', '.join( sorted( cluster_movies ) )
+                    
+                    if label not in node_map:
+                        add_node = True
+
+                        if eliminate_subsets:
+                            add_node = True
+                            for existing_cluster in all_movie_clusters:
+                                subset_of_current = True
+                                for cluster_movie in cluster_movies:
+                                    if cluster_movie not in existing_cluster:
+                                        subset_of_current = False
+                                        break
+                                if subset_of_current:
+                                    add_node = False
+                                    break
+
+                        if add_node:
+                            node_map[label] = len( nodes )
+                            nodes.append( { "name" : label, 
+                                            "group" : movie_clusters[cluster_movies[0]],
+                                            "elements" : len( cluster_movies ),
+                                            "shading" : 1 } )
+                            all_movie_clusters.append( cell_movie_cluster )
+
+                            for cluster_movie in cluster_movies:
+                                if cluster_movie not in movie_node_map:
+                                    movie_node_map[cluster_movie] = { label : True }
+                                elif label not in movie_node_map[cluster_movie]:
+                                    for dest_label in movie_node_map[cluster_movie].keys():
+                                        edges.append( { "source" : node_map[label],
+                                                        "target" : node_map[dest_label],
+                                                        "value" : 1 } )
+                                movie_node_map[cluster_movie][label] = True
+                        
+            filename = "cover_width_%s_overlap_%s_epsilon_%0.02f" % ( width, step, epsilon )
+
+            output_d3( filename, nodes, edges, "Width: %s, Step: %s, Epsilon: %0.02f" % ( width, step, epsilon ) )
 
 
 #    make_graph( 0, 74, width, 2, epsilon )
