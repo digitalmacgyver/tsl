@@ -40,7 +40,7 @@ scripts = [
     #( 'Frozen', '../example-scripts/frozen.txt' ),
     #( 'Fruitvale Station', '../example-scripts/fruitvale_station.txt' ),
     #( 'Recursion', '../example-scripts/recursion-05-16-14.txt' ),
-    ( 'Recursion', '../example-scripts/recursion-06-10-14.txt' ),
+    #( 'Recursion', '../example-scripts/recursion-06-10-14.txt' ),
     #( 'Starthur', '../example-scripts/starthur.txt' ),
     #( 'All is Lost', '../example-scripts/all_is_lost.txt' ),
     #( 'Amour', '../example-scripts/amour.txt' ),
@@ -59,6 +59,13 @@ scripts = [
     #( 'Lone Survivor', '../example-scripts/lone_survivor.txt' ),
     #( 'Kill Your Darlings', '../example-scripts/kill_your_darlings.txt' ),
     #( 'Kick Ass 2', '../example-scripts/kick_ass_2.txt' ),
+    #( '1969 A Space Odyssy', '../example-scripts/1969_a_space_odyssey.txt' ),
+    #( 'The Great Gatsby', '../example-scripts/the_great_gatsby.txt' ),
+    #( 'The Invisible Woman', '../example-scripts/the_invisible_woman.txt' ),
+    #( 'The Past', '../example-scripts/the_past.txt' ),
+    #( 'Twilight', '../example-scripts/twilight.txt' ),
+    #( 'Wadjda', '../example-scripts/wadjda.txt' ),
+    #( 'Woman in Black', '../example-scripts/woman_in_black.txt' ),
     ]
 
 

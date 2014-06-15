@@ -6,6 +6,8 @@ import matplotlib.pyplot as plt
 import networkx as nx
 import numpy
 import os
+import re
+import StringIO
 import sys
 import types
 
@@ -93,6 +95,49 @@ zero = {
 movies_dir = "../example-scripts/parsed"
 
 outdir = "/wintmp/movie/graph6/"
+
+def plot_dist( movie, dim ):
+    if dim in dist_funcs:
+        new_value = dist_funcs[dim]( zero[dim], movie[dim] )
+    else:
+        new_value = default_dist( zero[dim], movie[dim] )
+    return new_value
+
+def dispersion_plot( movies, title="Plot" ):
+
+    # Array of normalized movie values:
+    movie_y_data = [ movies[x] for x in movies.keys() ]
+    dim0 = [ x[dimensions[0]] for x in movie_y_data ]
+    dim1 = [ x[dimensions[1]] for x in movie_y_data ]
+    
+    xc = [ [x]*len( dim0 ) for x in range( 13 ) ]
+    yc = [ [ plot_dist( x, dimensions[d] ) for x in movie_y_data ] for d in range( 13 ) ]
+
+    print xc
+    print len( yc[0] )
+
+
+
+    #x = [ [0]*len( dim0 ), [1]*len( dim0 ) ]
+    #y = [ dim0, dim1 ]
+
+    filename = re.sub( r'\s+', '_', title )
+    if filename[-4:] != '.png':
+        filename += '.png'
+
+    plt.plot(xc, yc, "b_", scalex=.1)
+    #plt.yticks(range(len(yc)), yc, color="b")
+    plt.xticks( numpy.arange( 13 ), dimensions, rotation=90 )
+    plt.ylim( -0.1, 1.1 )
+    plt.xlim( -1, len( xc ) )
+    plt.title(title)
+    plt.tight_layout()
+
+    #plt.xlabel("Word Offset")
+
+    plt.savefig( "foo.png", format='png')
+
+    plt.clf()
 
 def get_movies( movies_dir ):
     '''Returns a hash keyed on movie title whose body is the Python
@@ -580,6 +625,11 @@ register_dist_funcs( dist_funcs )
 
 normalize_movies( movies, dist_funcs )
 
+#dispersion_plot( range( 0, len( movies.keys() ) ), dim0, 'movies' )
+dispersion_plot( movies )
+
+sys.exit( 0 )
+
 import pprint
 pp = pprint.PrettyPrinter( indent=4 )
 
@@ -638,7 +688,7 @@ Cluster epsilon candidates [0.2756963101398022, 0.2824180708397999, 0.2901535353
 
 #epsilons = [ 0.35, 0.55 ]
 
-epsilons = [ .4 ]
+epsilons = [ .4, .5, .6 ]
 
 #epsilons = epsilon_candidates
 
@@ -669,12 +719,12 @@ for epsilon in epsilons:
 #    for slide in [ .5, .6, .7, .8, .9 ]:
 
 #    for width in [ .75, .5, .3 ]:
-    for width in [ .45 ]:
+    for width in [ .45, .6, .75 ]:
         # Slide is intended to be >= 0.5 - by design and conventional
         # practice we don't want more than 2 regions overlapping in one
         # dimension.
         #for slide in [ .9, .7, .5 ]:
-        for slide in [ .75 ]:
+        for slide in [ .5, .75, .9 ]:
             # We consider intervals of width whose overlaps are made by
             # sliding the initial point slide percentage of width along.
             #
@@ -770,42 +820,61 @@ for epsilon in epsilons:
 
                 cell_movie_clusters = get_clusters( cell_movies, distances, epsilon )
 
-                for cell_movie_cluster in cell_movie_clusters:
-                    cluster_movies = cell_movie_cluster.keys()
-                    label = ', '.join( sorted( cluster_movies ) )
-                    
-                    if label not in node_map:
+                if eliminate_subsets:
+                    for cell_movie_cluster in cell_movie_clusters:
+                        cluster_movies = cell_movie_cluster.keys()
+
                         add_node = True
-
-                        if eliminate_subsets:
-                            add_node = True
-                            for existing_cluster in all_movie_clusters:
-                                subset_of_current = True
-                                for cluster_movie in cluster_movies:
-                                    if cluster_movie not in existing_cluster:
-                                        subset_of_current = False
-                                        break
-                                if subset_of_current:
-                                    add_node = False
-                                    break
-
-                        if add_node:
-                            node_map[label] = len( nodes )
-                            nodes.append( { "name" : label, 
-                                            "group" : movie_clusters[cluster_movies[0]],
-                                            "elements" : len( cluster_movies ),
-                                            "shading" : 1 } )
-                            all_movie_clusters.append( cell_movie_cluster )
-
+                        # Determine if this node is a subset of
+                        # any existing node.
+                        for existing_cluster in all_movie_clusters:
+                            subset_of_current = True
                             for cluster_movie in cluster_movies:
-                                if cluster_movie not in movie_node_map:
-                                    movie_node_map[cluster_movie] = { label : True }
-                                elif label not in movie_node_map[cluster_movie]:
-                                    for dest_label in movie_node_map[cluster_movie].keys():
-                                        edges.append( { "source" : node_map[label],
-                                                        "target" : node_map[dest_label],
-                                                        "value" : 1 } )
-                                movie_node_map[cluster_movie][label] = True
+                                if cluster_movie not in existing_cluster:
+                                    subset_of_current = False
+                                    break
+                            if subset_of_current:
+                                add_node = False
+                                break
+                        # Delete any existing nodes that are
+                        # subsets of this node.
+                        def is_subset( a, b ):
+                            for thing in a:
+                                if thing not in b:
+                                    return False
+                            return True
+                        if add_node:
+                            all_movie_clusters = [ x for x in all_movie_clusters if not is_subset( x, cluster_movies ) ]
+
+                            all_movie_clusters.append( cell_movie_cluster )
+                else:
+                    all_movie_clusters += cell_movie_clusters
+
+            for cell_movie_cluster in all_movie_clusters:
+                cluster_movies = cell_movie_cluster.keys()
+                label = ', '.join( sorted( cluster_movies ) )
+                    
+                add_node = False
+
+                if label not in node_map:
+                    add_node = True
+
+                if add_node:
+                    node_map[label] = len( nodes )
+                    nodes.append( { "name" : label, 
+                                    "group" : movie_clusters[cluster_movies[0]],
+                                    "elements" : len( cluster_movies ),
+                                    "shading" : 1 } )
+
+                    for cluster_movie in cluster_movies:
+                        if cluster_movie not in movie_node_map:
+                            movie_node_map[cluster_movie] = { label : True }
+                        elif label not in movie_node_map[cluster_movie]:
+                            for dest_label in movie_node_map[cluster_movie].keys():
+                                edges.append( { "source" : node_map[label],
+                                                "target" : node_map[dest_label],
+                                                "value" : 1 } )
+                        movie_node_map[cluster_movie][label] = True
                         
             filename = "cover_width_%s_overlap_%s_epsilon_%0.02f" % ( width, step, epsilon )
 
