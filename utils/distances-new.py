@@ -69,8 +69,8 @@ dimensions = [
     'character_x_speakers',
     'scenes_percentage_for_characters',
     'percent_dialog_by_character',
-    'scene_dialog_score',
-    'dialog_words_score'
+    'dialog_words_score',
+#    'scene_dialog_score',
 ]
 
 zero = {
@@ -107,19 +107,9 @@ def dispersion_plot( movies, title="Plot" ):
 
     # Array of normalized movie values:
     movie_y_data = [ movies[x] for x in movies.keys() ]
-    dim0 = [ x[dimensions[0]] for x in movie_y_data ]
-    dim1 = [ x[dimensions[1]] for x in movie_y_data ]
     
-    xc = [ [x]*len( dim0 ) for x in range( 13 ) ]
-    yc = [ [ plot_dist( x, dimensions[d] ) for x in movie_y_data ] for d in range( 13 ) ]
-
-    print xc
-    print len( yc[0] )
-
-
-
-    #x = [ [0]*len( dim0 ), [1]*len( dim0 ) ]
-    #y = [ dim0, dim1 ]
+    xc = [ [x]*len( movies ) for x in range( len( dimensions ) ) ]
+    yc = [ [ plot_dist( x, dimensions[d] ) for x in movie_y_data ] for d in range( len( dimensions ) ) ]
 
     filename = re.sub( r'\s+', '_', title )
     if filename[-4:] != '.png':
@@ -127,7 +117,7 @@ def dispersion_plot( movies, title="Plot" ):
 
     plt.plot(xc, yc, "b_", scalex=.1)
     #plt.yticks(range(len(yc)), yc, color="b")
-    plt.xticks( numpy.arange( 13 ), dimensions, rotation=90 )
+    plt.xticks( numpy.arange( len( dimensions ) ), dimensions, rotation=90 )
     plt.ylim( -0.1, 1.1 )
     plt.xlim( -1, len( xc ) )
     plt.title(title)
@@ -268,7 +258,7 @@ def register_dist_funcs( dist_funcs ):
 
     def dialog_words_score( a, b ):
         return ( ( a[0] - b[0] )**2 + ( a[1] - b[1] )**2 )**0.5
-    dist_funcs[ dimensions[13] ] = dialog_words_score
+    dist_funcs[ dimensions[12] ] = dialog_words_score
 
 def cartesian_distance( dists ):
     '''Takes in an array of distances between coordinates, and
@@ -628,8 +618,6 @@ normalize_movies( movies, dist_funcs )
 #dispersion_plot( range( 0, len( movies.keys() ) ), dim0, 'movies' )
 dispersion_plot( movies )
 
-sys.exit( 0 )
-
 import pprint
 pp = pprint.PrettyPrinter( indent=4 )
 
@@ -688,7 +676,10 @@ Cluster epsilon candidates [0.2756963101398022, 0.2824180708397999, 0.2901535353
 
 #epsilons = [ 0.35, 0.55 ]
 
-epsilons = [ .4, .5, .6 ]
+# Decent when including the last metric.
+#epsilons = [ .4, .5, .6 ]
+
+epsilons = [ .3, .4, .5 ]
 
 #epsilons = epsilon_candidates
 

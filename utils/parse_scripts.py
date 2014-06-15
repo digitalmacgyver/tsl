@@ -21,7 +21,7 @@ scripts = [
     # ( 'The Book of Eli', '../example-scripts/the_book_of_eli.txt' ),
     # ( 'Starwars', '../example-scripts/starwars.txt' ),
     # ( 'Alien', '../example-scripts/alien.txt' ),
-    # ( 'Vertigo', '../example-scripts/vertigo.txt' ),
+    #( 'Vertigo', '../example-scripts/vertigo.txt' ),
     # ( 'Terminator 2', '../example-scripts/terminator_2.txt' ),
     # ( 'Ratatouille', '../example-scripts/ratatouille.txt' ),
      # Questionable formatting
