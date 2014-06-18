@@ -94,7 +94,7 @@ zero = {
 # Read in movie JSON files.
 movies_dir = "../example-scripts/parsed"
 
-outdir = "/wintmp/movie/graph6/"
+outdir = "/wintmp/movie/graph7/"
 
 def plot_dist( movie, dim ):
     if dim in dist_funcs:
@@ -701,21 +701,21 @@ for epsilon in epsilons:
             sys.exit( 1 )
     #pp.pprint( movie_clusters )
 
-    cluster_movies = {}
+    cluster_movie_labels = {}
     for ( idx, cluster ) in enumerate( clusters ):
-        cluster_movies[idx] = cluster
-    pp.pprint( cluster_movies )
+        cluster_movie_labels[idx] = cluster
+    pp.pprint( cluster_movie_labels )
 
 #for width in [ .125, .25, float( 1 )/3, .5, float( 2 )/3, 0.75, 0.8]:
 #    for slide in [ .5, .6, .7, .8, .9 ]:
 
 #    for width in [ .75, .5, .3 ]:
-    for width in [ .45, .6, .75 ]:
+    for width in [ .125, .25, .5 ]:
         # Slide is intended to be >= 0.5 - by design and conventional
         # practice we don't want more than 2 regions overlapping in one
         # dimension.
         #for slide in [ .9, .7, .5 ]:
-        for slide in [ .5, .75, .9 ]:
+        for slide in [ .75, .9 ]:
             # We consider intervals of width whose overlaps are made by
             # sliding the initial point slide percentage of width along.
             #
@@ -764,7 +764,7 @@ for epsilon in epsilons:
                 # Compose a list of cell keys where the cell key is of the
                 # form:
                 # a-b-c-d...-z where a, b, c are cells this movie is found in.
-                next_cell_keys = [ movie_cells[0] ]
+                next_cell_keys = [ [x] for x in movie_cells[0] ]
                 for dim_cells in movie_cells[1:]:
                     cell_keys = next_cell_keys
                     next_cell_keys = []
