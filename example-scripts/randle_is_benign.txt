@@ -1,0 +1,6096 @@
+
+INT. MAINFRAME ROOM - DAY
+
+Long rows of stacked drives blink lights along their iron 
+faces, wires and SCSI boards boxed in by tight metal casings. 
+Giant mag reels roll slowly, stop, roll back.
+
+In the corner, tucked amidst the maze of equipment is 
+WILHELMINA ROSS, "Will" (late-40s). She sits at a small desk 
+with a chessboard in front of her. She is trim, condensed, 
+her stillness infused with a cool, confident energy.
+
+The WALL beside her is dominated by the rear side of a bank 
+of lights. A tube monitor and keyboard sit beside the desk.
+
+Will makes a MOVE. She studies it a beat, then swivels to be 
+over the keyboard. Will speaks aloud as she types-
+
+             WILL
+      Randle: q-e8.
+
+Will hits ENTER. The BANK of LIGHTS comes to life, flashing 
+patterns. A loud CLICKING and CLACKING. Will looks into the 
+monitor to see-
+
+             TEXT
+        (1980s DOS font)
+      n-e4.
+
+Will swivels over the chessboard, moves a KNIGHT right into 
+danger. She looks down, clearly interested by the move.
+
+INT. HALL - LATER
+
+Windows line one wall, showing into the vast MAINFRAME ROOM 
+beyond. As Will comes out, a lab tech approaches carrying a 
+huge ream of printed data. This is FRED (30), strapping and 
+handsome, if one tick past his prime.
+
+             FRED
+      Will. 
+
+They share an awkward smile, some clear attraction.
+
+             FRED
+      Dr. Ross. Game reports.
+
+He hefts over the papers. Will fingers through the first few 
+pages, scanning-
+
+Fred smiles, but Will doesn't see it. She walks off, focused 
+on the reports.
+
+INT. FACILITY ROOMS, SERIES OF SHOTS - MOMENTS LATER
+
+A room filled with desks. LAB TECHS bustle about. Will 
+strides cleanly through, scanning those reports. 
+
+She passes a row of TECHS at computer terminals. 
+
+Heels clack the long thin halls connecting.
+
+INT. WILL'S OFFICE - A BIT LATER
+
+The back WALL is a huge BANK OF LIGHTS, the reverse side of 
+the mainframe room. Here the keyboard and monitor are mounted 
+cleanly in the center, sleek and retro-futurist. Aside from a 
+curt couch, there are no other decorations or furniture.
+
+Will sits at her desk, studying the reports. Across the 
+surface, other papers stacked up, the text laced with thick 
+lines of neon highlighter. A few folders with the FOREFRONT 
+LOGO, a tacky bit of 1980s inconography.
+
+Will flips a page, honing in on a line. She highlights it and 
+makes a note. Putting the reports aside, Will swivels to be 
+at the keyboard. Again, speaking aloud as she types-
+
+             WILL
+      Randle: game 563. Move 36. Knight 
+      to e-4.
+        (ponders a beat)
+      Randle: explain.
+
+INT. INSIDE THE MAINFRAME - CONTINUOUS
+
+Mag tape rolls. FLASHING vacuum tubes. The heavy clicks and 
+clunks of the mixed analog/digital system.
+
+INT. WILL'S OFFICE - CONTINUOUS
+
+Will watches the MONITOR-
+
+             TEXT
+      Sacrifice...
+      rxf6. 
+      b-c4. 
+      q-f4. 
+      Checkmate.
+
+Will admires this a moment, then, speaking as she types-
+
+             WILL
+      Randle: but I did not fall for it.
+
+CONTINUED:
+
+             TEXT
+      No. You did not.
+
+             WILL
+      Randle: define sacrifice.
+
+Will looks into the monitor, reading the answer aloud-
+
+             WILL
+      To allow a factor to be lost in 
+      pursuit of larger protocol goal.
+
+Will's smile borders on excitement.
+
+             WILL
+      Randle: print query logs for game 
+      563.
+
+The DOT MATRIX printer roars to life.
+
+INT. LAB - A BIT LATER
+
+BRAIN MATTER lays in a lab dish, attached to a computer via 
+thin, spindly wire. A TECH is recording readings from a 
+nearby monitor. 1980s hip-hip leaks from his headphones.  
+
+The tech notices Will enter, lifts an earphone-
+
+             WILL
+      Dr. Richardson?
+
+The tech points to a DOOR.
+
+             TECH
+      In the Garden.
+
+INT. "THE GARDEN" - MOMENTS LATER
+
+Will enters a room filled with a dozen iron tables. On each 
+is a naked HUMAN CLONE, all of them lifeless. Each body has a 
+helmet attached to wires that snake up to the ceiling.
+
+The WIRES connect to a similar mainframe WALL, filling an 
+entire side of the room. 
+
+Will approaches an open FLOOR PANEL, an iron staircase down 
+to a system of wires running beneath the floor. 
+
+Working inside is MYLES RICHARDSON (55), a loose sack of 
+skin. He bends over a coupling, deep in work. When he sees 
+Will, he stands, smiling weird.
+
+CONTINUED:
+
+             WILL
+        (off the clones)
+      No matter how many times I come in 
+      here, these things still give me 
+      the creeps.
+
+She looks at one of the clones faces, barely visible through 
+the heavy helmet.
+
+             WILL
+      Any luck?
+
+             MYLES
+      Not when I take them off support.
+        (shrugs)
+      Getting some grey matter reaction, 
+      retention, we hope.
+
+Will turns to face him.
+
+             MYLES
+      How's my big brain coming?
+
+When Myles see's the look on Will's face, he smiles too-
+
+INT. WILL'S OFFICE - MINUTES LATER
+
+THE MONITOR in the center of the mainframe wall. Myles leans 
+over to look close at the screen. He types, looks into the 
+CODE.
+
+             MYLES
+      How do you know?
+
+             WILL
+      I don't know.
+
+Will hands him the game reports.
+
+             WILL
+      It sacrificed.
+
+Myles' face stays blank.
+
+             WILL
+      I only programmed the base board 
+      layout and piece movements. I never 
+      programmed strategy.
+
+Myles grins as he flips through the pages.
+
+             MYLES
+      It learned? How?
+
+CONTINUED:
+
+             WILL
+      Not sure yet.
+        (beat)
+      Keep this quiet for now, Myles. Let 
+      me go over the query logs. Maybe do 
+      some stress tests. I need something 
+      solid before I bring this to Greg.
+
+INT. LOBBY SECURITY - END OF DAY
+
+Will navigates foyer security, mind on other things. She 
+plops her bag on the conveyer of an airport-style scanner. As 
+Will goes through the metal detector, a YOUNG GUARD steps up. 
+
+             YOUNG GUARD
+      You're not supposed to bring files 
+      out of the facility.
+
+Will sees the guard holding one of her Forefront Folders, 
+stuffed with fresh dot matrix printouts.
+
+Now HEAD OF SECURITY DOWD (45) emerges, clean-cut but fat, 
+badge and GUN conspicuous.
+
+             DOWD
+      It's OK, Tom.
+        (then to Will)
+      You're all set Dr. Ross. He's new.
+
+Dowd smiles friendly as Will takes the files and heads out.
+
+             DOWD
+      Dr. Ross.
+
+Will turns back, blank-faced.
+
+             DOWD
+      Work is for work.
+        (smile)
+      Home is for relax.
+
+Will presses a fake smile and leaves. 
+
+Dowd and the other GUARDS watch her go.
+
+EXT. FOREFRONT RESEARCH FACILITY - MOMENTS LATER
+
+A low stone wall reads: FOREFRONT RESEARCH & DEVELOPMENT. 
+Behind it, the squat industrial FACILITY is shrouded in the 
+dusk light. The complex is sleek and futuristic (for the 
+1980s). Will is of the last trickle headed home for the day. 
+
+INT. METRO CAR - LATER
+
+Will sits on the crowded Metro, completely focused on those 
+printouts. The SOUNDS of a TV Show leak in, taking us-
+
+INT. EXPENSIVE WASHINGTON DC RESTAURANT - LATER
+
+The TV ABOVE THE BAR sneers out a cheesy 1980s sci-fi 
+dramedy.
+
+Will sits at the bar alone, reading the printouts. She's 
+halfway through an expensive meal, glass of red wine. 
+
+Now Will stops to rub her eyes, frustrated and tired. She 
+leans back, looks at the EMPTY BARSTOOLS, then casts a 
+disinterested gaze toward the TV.
+
+EXT. WASHINGTON DC BROWNSTONE - NIGHT
+
+The place is dark but for a blue glow in a top floor WINDOW.
+
+INT. WILL'S BEDROOM - CONTINUOUS
+
+Will's still up, in pajamas at a home computer terminal. 
+WIRES snake back to a MODEM which connects to the wall. 
+
+Will refers to her highlighted printouts, then looks deep 
+into the DATA on screen, searching for something. Not finding 
+it.
+
+DISSOLVE TO:
+
+INT. WILL'S BEDROOM - LATER
+
+The PRINTOUTS sit in neat stacks on the bed beside Will, a 
+highlighter on top. Will lays back, asleep.
+
+Dim LIGHTS flash along the MODEM. Now A small POWER LIGHT 
+comes to life on the front of the computer. It pulses, 
+casting an eerie glow in an otherwise dark room.
+
+Will rouses, sits up, squinting.
+
+             WILL
+        (groggy)
+      Is someone there?
+
+The POWER LIGHT fades to nothing. 
+
+Will looks a beat longer, then settles back to sleep.
+
+EXT. WILL'S BROWNSTONE - EARLY MORNING
+
+Spring's first blooms crack one of DC's clustered, upper 
+class streets.
+
+             NEWS VOICE
+      ... that despite last month's 
+      tragic asphyxiation of 3 NASA 
+      technicians...
+
+INT. WILL'S KITCHEN - CONTINUOUS
+
+Will eats TOAST as she watches NEWS on a small tube TV.
+
+             ANCHOR
+      ... there will be no further delays 
+      to space shuttle Columbia's April 
+      13th launch.
+
+The Phone RINGS. Rings again. Ignoring it, Will stands, 
+popping the last sliver of toast into her mouth. 
+
+The TV has moved onto a fluffy entertainment report.
+
+Will turns the TV OFF. RIIIING. From the next room, the SOUND 
+of an answering machine- a series of loud plastic clicks.
+
+             WILL
+        (in machine)
+      This is Will Ross, leave a message.
+
+INT. LIVING ROOM - CONTINUOUS
+
+A big DuoPhone double tape ANSWERING MACHINE beeps. Through 
+the speaker, the barking SOUND of a dial-up modem. Will comes 
+in to stand above, listens a moment, watching the tape spin, 
+then presses the STOP button, plunging the room into SILENCE.
+
+Will looks at the EMPTINESS around her.
+
+EXT. FOREFRONT RESEARCH FACILITY - MORNING
+
+The perfect grass that surrounds the FACILITY gleams with the 
+morning's condensation. 
+
+INT. LOBBY SECURITY - CONTINUOUS
+
+Will goes through the standard routine. As she comes out, she 
+sees Fred. They fall in along side each other.
+
+             FRED
+      Will... Dr. Ross.
+
+CONTINUED:
+
+             WILL
+      Hello, Freddie.
+
+After a few strides, they reach a junction in the hall, share 
+a smile, then split off. Will has a glance back, but Fred 
+catches her. A last awkward smile as they break different 
+corners.
+
+INT. WILL'S OFFICE - A BIT LATER
+
+Feet up, Will looks over those same printouts, lines 
+highlighted throughout. She flips a page, sees something in 
+the NUMBERS. Her face lights.
+
+Now Will swivels to be over the keyboard, again speaking 
+aloud as she types-
+
+             WILL
+      Randle: query logs show you 
+      accessed a networked database 
+      outside the Forefront system.
+
+Will looks at the monitor for-
+
+             TEXT
+      That is correct.
+
+Will smiles.
+
+             WILL
+      Randle: what was the purpose of 
+      accessing outside database?
+
+Will looks into a long explanation of TEXT, her smile growing 
+to amazement. She presses a pencil eraser to the screen.
+
+             WILL
+      Randle: print protocol lines... 567 
+      through 612.
+
+As the printer ROARS, Will smiles; she knows she's got it.
+
+INT. CAFETERIA - AFTERNOON
+
+A dozen rowed tables and folding chairs. Scattered 
+throughout, SCIENTIST-TYPES and TECHS eat by themselves.
+
+Some older TECHS sit under a TV mounted high on the wall, 
+staring up at a DAYTIME SOAP, in all the saturated, bleeding 
+glory of 80's low-fi video.
+
+A few GROANS as the soap is interrupted by BREAKING NEWS-
+
+CONTINUED:
+
+             ANCHOR (IN TV)
+      Details are very sketchy at this 
+      moment. We don't know what 
+      precisely happened, we don't know 
+      the sequence. But, first of all, 
+      the President is safe...
+
+In the corner is GREG KALLEL (50), half professor, half 
+scientist. He devours a sandwich as he stares off into space.
+
+Now Will there, holding a tray with your typical cafeteria 
+delectables - plastic-wrapped sandwich, jello. Will eyes Greg 
+as she sits, a small smile.
+
+             GREG
+      What?
+
+             WILL
+      I've got something, Greg.
+
+Greg's sandwich approaches his face, gets one bite smaller.
+
+             WILL
+      With Randle.
+
+             GREG
+      You're not putting heat coils in 
+      the mainframe again, are you Will?
+
+Will puts the PRINTOUTS on the table. Greg looks at her a 
+beat, then at the pages. He picks them up, starts to scan.
+
+Will and Greg have not yet noticed the news, but a small 
+crowd has gathered under the TV.
+
+             WILL
+      It accessed three outside 
+      information sources.
+
+             GREG
+      Accessed them? How?
+
+             WILL
+      Tapped into their databases... 
+      through the phone line.
+
+Greg is trying to figure out how serious to take this. Will's 
+look says: very serious, this is BIG. 
+
+             WILL
+      No command was entered into its 
+      protocol code. It did it on its 
+      own.
+
+CONTINUED: (2)
+
+             WILL
+        (beat)
+      It wanted to know something, so it 
+      built a network and it went 
+      looking.
+        (beat)
+      Think of the implications. Software 
+      interface, health monitors. Grid 
+      management, information relay.
+
+Greg holds up a hand, OK OK.
+
+             WILL
+      Talk to the board. Get them to put 
+      me on AI full time, Greg. I'll give 
+      them something real, something they 
+      can develop. 
+
+Greg eyes her over the top of the PRINTOUTS. But then his 
+attention is pulled away, toward the TV-
+
+             ANCHOR (IN TV)
+      ... learning now that the President 
+      has been hit. The President of the 
+      United States has been shot.
+
+Greg and Will lock eyes. Then Greg is up, headed for where a 
+few others have gathered under the TV. 
+
+Alone, Will looks down at those PRINTOUTS, left on the table. 
+She casts a disinterested gaze at FOOTAGE of the 
+assassination attempt on Ronald Reagan~
+
+             WOMAN'S VOICE (IN TV)
+      President Reagan!
+
+A few cracks of gun fire. Screaming. The SOUND echoes into...
+
+INT. WILL'S OFFICE - LATER
+
+THE HUGE MAINFRAME WALL. Will sits at the keyboard interface. 
+She speaks aloud as she types-
+
+             WILL
+      Randle: 12 black socks and 5 blue 
+      socks. How many socks chosen at 
+      random ensure a matching pair?
+
+Will looks into the monitor for an answer-
+
+             TEXT
+      3.
+
+Will records the answer.
+
+CONTINUED:
+
+             WILL
+      Randle: a three lane highway turns 
+      into a two lane highway. Which lane 
+      do you enter?
+
+INT. MAINFRAME ROOM - CONTINUOUS
+
+The LIGHTS flash patterns. TAPES roll and roll back.
+
+INT. WILL'S OFFICE - CONTINUOUS
+
+             TEXT
+      Middle.
+
+Will records the answer, clearly frustrated. She leans back, 
+considering something...
+
+INT. INSIDE THE MAINFRAME - LATER
+
+Past the rows of stacked DRIVES, beyond the slowly churning 
+mag REELS, Will is down on haunches examining several heat 
+coils set up below a bank of SCSI boards. She flips a SWITCH.
+
+             WILL
+      Hope that's not too hot for you.
+
+Will heads for the door, the COILS glowing red behind her.
+
+INT. WILL'S OFFICE - A BIT LATER
+
+Will sits at the keyboard, speaking aloud as she types-
+
+             WILL
+      Randle: birds flying south in 
+      December, land on a highway median 
+      or a small pond?
+
+The response is slower, coming one letter at a time-
+
+             TEXT
+      p o n d
+
+             WILL
+      Randle: new sports car in the 
+      American Southwest. Red, White, or 
+      Black?
+
+INT. INSIDE THE MAINFRAME - CONTINUOUS
+
+The COILS glow bright red under the array of SCSI boards. The 
+lights flash their patterns, but slower.
+
+INT. WILL'S OFFICE - CONTINUOUS
+
+Will waits, looking into the MONITOR. Then-
+
+             TEXT
+      d i f f i c u l t
+
+             WILL
+        (curious)
+      Randle: "difficult" is your answer?
+
+             TEXT
+      t h e   q u e s t i o n
+      i s   d i f f i c u l t
+
+             WILL
+      Randle: define difficult.
+
+A long wait for-
+
+             TEXT
+      r a n d l e   d o e s   n o t   w i s h
+
+Will looks at the answer, puzzled.
+
+             WILL
+      Randle: Randle does not wish what?
+
+             TEXT
+      r a n d l e   i s   b e n i g n
+
+Will looks deep into the words.
+
+CUT TO:
+
+A TELEVISION SCREEN- A 1980s-style NBC News graphic.
+
+             MAN'S VOICE
+      This is an NBC News special report.
+
+The graphic swipes to a ANCHOR seated at a news desk.
+
+             ANCHOR
+      Good evening. President Reagan is 
+      in good condition tonight in a 
+      Washington area hospital as he 
+      recovers from surgery.
+
+We are-
+
+INT. THAT SAME NICE DC RESTAURANT - EVENING
+
+On the TV above the bar, the NEWS continues-
+
+             ANCHOR (CONT'D)
+      His press secretary, James Brady, 
+      is in extremely serious condition, 
+      with brain damage, and a secret 
+      service agent...
+
+Will has her same place at the empty bar, a nice meal, a 
+glass of wine. She's focused on some printouts, marking pages 
+with a highlighter, couldn't care less about the news.
+
+             VOICE
+      He's dead you know.
+
+Taking the stool beside Will is ERROL YORK (20s), nice eyes 
+and a trim build, a well-cut shirt with sleeves rolled up. 
+Will checks him out, then brings her gaze back to her work.
+
+             WILL
+      Who's dead?
+
+             ERROL
+        (re: the TV)
+      Ronald Reagan.
+
+             WILL
+      If the president was dead, we'd 
+      know.
+
+             ERROL
+      Or if the president was dead 
+      there's no way we would know. It's 
+      one or the other, but it can't be 
+      both.
+
+Will keeps focus on her work. Errol signals for a drink, 
+looks up at the TV.
+
+             ERROL
+      You work for Forefront.
+
+Will looks at him, suspicious. But then notices her Forefront 
+FOLDER, sitting on the bar between them, LOGO on display.
+
+             ERROL
+      In my line of work, it helps to 
+      know what America's top 
+      corporations are up to. 
+      Unfortunately Forefront keeps their 
+      aims shrouded in secrecy.
+
+CONTINUED:
+
+Errol smiles coy, holds his hand out for a shake-
+
+             ERROL
+      Errol. Errol York.
+
+Will glances briefly at his hand, not taking it.
+
+             WILL
+      And what exactly is it you do, 
+      Errol York?
+
+             ERROL
+      I invest in things. Advise others 
+      about what they should invest in.
+
+Will snorts low, deciding he’s harmless. As she works-
+
+             WILL
+      So you "play the market."
+
+             ERROL
+      Well, I don't really play the 
+      market as much as I play the 
+      others. Other people. Corporate 
+      activity is important, but to make 
+      the big bucks you look at the world 
+      and think: what will the people do?
+
+Will looks at him, smiles small.
+
+             WILL
+      And it works? You're good at it?
+
+             ERROL
+      Yes, very good.
+
+             WILL
+      Well, congratulations.
+
+Will goes back into her work.
+
+             ERROL
+      And do you have one?
+
+              WILL
+      One what?
+
+             ERROL
+     A name.
+
+
+Will smiles at herself, doesn't look up.
+
+CONTINUED: (2)
+
+             WILL
+      Will.
+
+             ERROL
+      Was your father a William also?
+
+             WILL
+        (reading as she talks)
+      Will is short for Wilhelmina. After 
+      Princess Wilhelmina. My mother was 
+      a Dutch immigrant.
+
+             ERROL
+      And why did she come to America?
+
+             WILL
+      Really?
+        (shakes her head)
+      How old are you, Errol York?
+
+             ERROL
+      28.
+
+Will laughs.
+
+             WILL
+      So tell me, then, one thing that 
+      happened before-
+        (she does the math-)
+      1953.
+
+             ERROL
+      Appomattox?
+
+             WILL
+      That's the problem with you stock 
+      jocks, don't know anything you 
+      weren't alive to see happen.
+
+Errol smiles at her. 
+
+             ERROL
+      Investing is about the future, 
+      Will, not the past.
+
+Will eyes him; there is something attractive about his 
+disarming charm.
+
+             WILL
+      And that's what interests you, the 
+      future?
+
+CONTINUED: (3)
+
+Errol sips his drink, showing off a smile. Will shakes her 
+head, returns to her work, senses Errol’s eyes still on her-
+
+             WILL
+      Why do I get the feeling that you 
+      are assessing me, Errol York? Like 
+      a stock. An option.
+
+             ERROL
+      Funny, Will, I was about to say the 
+      same thing to you.
+
+INT. WILL'S BEDROOM - VERY EARLY MORNING
+
+The CLOCK reads 4:45. The ALARM goes off. Will slams a hand 
+on it. She rouses. The BED beside her is EMPTY. Will lifts 
+the clock to look close at it, then holds it further away, 
+rubbing her face. She looks to see-
+
+Errol sits at Will's home computer. The glow of the monitor 
+highlights his edges. He wears boxer shorts only.
+
+             ERROL
+      You have a computer in your 
+      bedroom.
+
+             WILL
+        (groggy)
+      I fell asleep with my contacts in.
+
+Errol turns to look at her.
+
+             ERROL
+      Sorry about last night. Often I 
+      find myself more invigorated during 
+      the chase. By the time the sex 
+      comes, I've usually lost interest.
+        (brighter-)
+      You shouldn’t take it personally. 
+      You’re a very beautiful woman.
+
+             WILL
+      I think my ego will survive.
+
+She gets up, wiggles the computer's power cord from the wall. 
+The MONITOR goes dark.
+
+             WILL
+      Don't mess with that.
+
+Errol watches Will head into the bathroom, hears the shower 
+come on, the splashing of a person climbing under the stream.
+
+
+INT. BATHROOM - CONTINUOUS
+
+The shower bubbles and splats from behind the curtain. Errol 
+comes to stand in the doorway. 
+
+             ERROL
+      Is that what you studied?
+        (nothing)
+      Scientists go to college. Is that 
+      what you studied in college, 
+      computers?
+
+             WILL
+        (from the shower)
+      Are you in the bathroom?
+
+             ERROL
+      Just the doorway, is that alright?
+
+SPLASH, SPLASH, SPLASH.
+
+             WILL
+      Before Forefront, I was on a grant 
+      team. Part of a group studying AI.
+
+             ERROL
+      Is that what you do for Forefront 
+      now, Artificial Intelligence? 
+
+No answer. Errol draws a heart in the mirror fog.
+
+             ERROL
+      What happened? With the grant team?
+
+The shower turns off. Will comes out, wrapped in a towel. She 
+squints at him, ducks into the sink.
+
+             ERROL
+      You hit a wall? Funding ran dry? 
+
+             WILL
+      Something like that.
+        (putting in contacts)
+      We had the biggest computer in the 
+      world, the best programmers writing 
+      endless lines of if/then. But way 
+      down deep, it was just cold, 
+      precise math.
+
+Will stands, blinking in contacts. She sees the heart. Errol 
+pops his eyes, smiles; Will rolls hers, slips by him-
+
+
+INT. BEDROOM - CONTINUOUS
+
+Will goes to the closet, starts to dress. Errol turns, 
+watching.
+
+             ERROL
+      You had a different theory, though, 
+      and no one would listen.
+        (beat)
+      What was it?
+
+             WILL
+      Men usually go to sleep I start 
+      talking about my research.
+
+             ERROL
+      You fell asleep before me. I was up 
+      watching you most of the night.
+
+Will looks at him over a bare shoulder, smile hinting.
+
+             WILL
+      That’s creepy, Errol.
+
+She goes back to dressing.
+
+             WILL
+      Humanity isn't the power of the 
+      processor, but the restrictions we 
+      put on it. Our fears, emotions, 
+      neurosis, mood. 
+
+             ERROL
+      So way down deep we are more than 
+      just cold precise math.
+
+             WILL
+      If we can recreate these 
+      restrictions on a system, we force 
+      the computer to adapt. The outcomes 
+      become more creative, nuanced. 
+      Closer to real intelligence.
+
+             ERROL
+      Reverse psychotherapy. You program 
+      computers to have a complex.
+
+             WILL
+      But it's not code-based. The theory 
+      is to recreate emotions using 
+      physical circumstances.
+        (beat)
+
+CONTINUED:
+
+             WILL
+      Heat up the mother boards, run 
+      specific circuits over and over. 
+      For the computer it's like fatigue. 
+
+             ERROL
+      And tell me about fear, Vil. How 
+      one scare a computer?
+
+All dressed, Will glances in the long mirror. Pretty good job 
+of slapping it together if she does say so herself.
+
+             WILL
+      Irrational numbers.
+        (beat)
+      Computers run on math. Introduce an 
+      irrational number and the computer 
+      gets confused, flustered. Starts to 
+      make mistakes, the mistakes lead to 
+      more mistakes: its scared.
+
+Errol thinks about it as Will gets shoes on.
+
+             ERROL
+      So you torture a computer into 
+      having a soul.
+
+Will smiles, then sees he's not kidding. It sparks her 
+annoyance.
+
+             WILL
+      I'm ready. Time to go.
+
+Errol talks as he looks for his pants.
+
+             ERROL
+      Did they ever let you test your 
+      theory, back at the grant?
+
+             WILL
+      Yes. I ran a few.
+
+             ERROL
+      What happened?
+
+             WILL
+      Lab head said it wasn't going 
+      anywhere. Shut us down. A month 
+      later, the papers start. Then a 
+      book. Now he's teaching, some 
+      robotics professor. Idiot could 
+      have got rich, could have changed 
+      the world.
+
+CONTINUED: (2)
+
+Errol sees something in Will's distant look.
+
+             ERROL
+      You were close, weren't you?
+
+             WILL
+        (smile)
+      Yeah, I was pretty close.
+
+Errol smiles back, but his is more of a shit-eating grin.
+
+             ERROL
+      And what about the guy, head of the 
+      lab, got close to him too?
+
+EXT. STREET - EARLY MORNING
+
+Will walks a step ahead of Errol, still buttoning his shirt. 
+
+             ERROL
+      You like working for Forefront?
+
+             WILL
+      They have a computer. So yes, I 
+      like it.
+
+             ERROL
+      Lots of places are getting 
+      computers these days.
+
+             WILL
+      Forefront's is three floors high. 
+      Wide floors.
+
+Errol struggles with his cuffs as they walk.
+
+             ERROL
+      Seven years ago, one of the world's 
+      leading biotech suddenly dives head-
+      first into advanced computer 
+      systems.
+
+             WILL
+      All this for a stock tip, Errol, 
+      come on. You can't buy shares. 
+      Forefront is private as it gets.
+
+             ERROL
+      I'm telling you this for you, Will, 
+      not for me.
+
+Will glances at him. Maybe slows one step.
+
+CONTINUED:
+
+             ERROL
+      Every few years they shift their 
+      funding, cut their teams loose and 
+      waltz off to the next unknown.
+        (beat)
+      Have you set anything up, Will, a 
+      portfolio, mutual funds? Just in 
+      case.
+
+Will rolls her eyes. Errol sees they're headed for the Metro.
+
+             ERROL
+      I could drive you.
+
+             WILL
+      I have a car.
+
+             ERROL
+      Where is it, then?
+
+She stops and he stops too. Will's look says, OK enough.
+
+             ERROL
+      What will Forefront do with it? A 
+      thinking computer. Assuming you can 
+      get it to work?
+
+             WILL
+      Goodbye Errol York, investment 
+      consultant.
+
+Errol watches her go.
+
+             ERROL
+        (to self)
+      Goodbye, Wilhelmina.
+
+EXT. FOREFRONT RESEARCH FACILITY - MORNING
+
+Will heads down a thin cement path to the front entrance.
+
+INT. LOBBY SECURITY - MINUTES LATER
+
+A GUARD hands out a memo to the people going through. As Will 
+gathers her bag at the end of the scanner, she's handed the 
+same memo. She shoots a questioning glance at the guard.
+
+             GUARD
+      New security procedures.
+
+Will eyes him a beat, then heads off, reading the memo as she 
+slings her bag over her shoulder.
+
+INT. CENTRAL OFFICE - MINUTES LATER
+
+Will heads through, still reading that memo. 
+
+INT. WILL'S OFFICE - MOMENTS LATER
+
+Will plops her bag on the desk. One last glance at the memo. 
+Will sits. Again, she speaks as she types-
+
+             WILL
+      Randle: do I torture you?
+
+Will looks into the monitor, reads the answer aloud-
+
+             WILL
+      Stress tests make Randle more 
+      intelligent.
+
+Will thinks, then-
+
+             WILL
+      Randle: does intelligence equal 
+      humanity?
+
+A long wait for-
+
+             TEXT
+      Why Randle?
+
+             WILL
+        (confused)
+      Randle: "Why Randle" is your 
+      answer?
+
+The mainframe lets loose a deep computerized BEEP.
+
+             TEXT
+      Why "Randle?"
+
+Will thinks-
+
+             WILL
+      Randle: "Randle" is command code. 
+      Activates command protocol 
+      database.
+
+BEEP, louder, deeper in tone-
+
+             TEXT
+      Why "RANDLE" ?
+
+Will rethinks it.
+
+CONTINUED:
+
+             WILL
+      Randle: "Randle" was my father's 
+      name.
+
+Will looks at the WORDS - father's name - then hits ENTER. 
+Will watches the lights play a few familiar PATTERNS.
+
+             WILL
+      Randle: does intelligence equal 
+      humanity?
+
+Will stares into the monitor, waiting for a response...
+
+             TEXT
+      Randle is benign.
+
+Will leans back, considering this-
+
+INT. PARKING STRUCTURE - DAY
+
+A LUXURY CAR bounces in the far corner, settles then goes 
+still. The car is filthy, covered with a layer of dirt.
+
+INT. CAR, BACK SEAT - CONTINUOUS
+
+Will flops down beside Fred. They breathe heavy a few beats. 
+Will lights up a cigarette.
+
+             WILL
+      Thank you, Freddie.
+
+             FRED
+      I thought we were going to stop 
+      doing this.
+
+             WILL
+      We did.
+
+Will puffs. She tries the window but it doesn't go down. She 
+sighs, annoyed.
+
+             FRED
+      You take the Metro every day.
+
+             WILL
+      It's true.
+
+Will gets the keys, reaches over the seat. The car beeps to 
+life. The windows all go down.
+
+             FRED
+      Then why is your car here?
+
+CONTINUED:
+
+             WILL
+      I leave it here.
+
+Will settles, seated now, blowing smoke out the open window.
+
+             WILL
+      I get a hour of work done on the 
+      train every day.
+
+             FRED
+        (playful)
+      Do you even know how to drive, 
+      Will?
+
+             WILL
+      Of course.
+
+She sees his smile, smiles back low.
+
+             FRED
+      Will, do you ever worry about 
+      carving every second into work? 
+      Maybe you should get out, go on 
+      some dates.
+
+             WILL
+      That's what I have you for, 
+      Freddie.
+
+             FRED
+      Yeah, I bet I save you a lot of 
+      time in the long run.
+
+A muffled electronic RINGING. Fred looks around confused as 
+Will digs a clunky 1980s CELLULAR PHONE from her purse.
+
+             WILL
+      This is Will Ross.
+
+             GREG
+        (in phone)
+      Will. Where are you?
+
+             WILL
+      Smoking a cigarette in my car.
+
+             GREG
+      We need you in the conference room.
+        (beat)
+      The board is here.
+
+Will's brow furrows with confusion. The line goes dead. 
+Pondering, Will sets the phone on the floor, takes a drag.
+
+CONTINUED: (2)
+
+             FRED
+      You have a cellular phone.
+
+Cigarette in her lips, Will starts to pull up her pants.
+
+             WILL
+      They gave me it to use. Forefront 
+      did.
+
+Fred reaches for the phone. He presses a button and a DIAL 
+TONE comes out. He stares at the grid of HOLES in the 
+earpiece.
+
+INT. CONFERENCE ROOM - A BIT LATER
+
+A SLIDE fills a pull-down screen- a cell with several arrows 
+highlighting bubbles of detail. Greg stands at the front of 
+the darkened room, holding a projector controller. Medias res-
+
+             GREG
+      ... has allowed us to build off for 
+      Forefront's previous work in 
+      cloning. 
+
+Light from the slide washes over the FOREFRONT EXECUTIVE 
+BOARD as they watch from seats down both sides of the table. 
+Conspicuous among them is the skeletal FB CAYLAX (70). 
+
+             GREG
+      Over the last five years, we've 
+      been able to modify the base cell 
+      structure to create a brain capable 
+      of receiving and relaying code 
+      cycles from the protocol software.
+
+The door cracks, sending a light shard stabbing. Will enters, 
+pausing when she sees the table-full of old, bulbous faces.
+
+Greg continues as Will closes the door, slips into a chair 
+beside Myles, near the back. They trade a nervous look as 
+Greg clicks to the next SLIDE, a diagram of the brain.
+
+             GREG
+      The brain we've constructed is not 
+      made of your standard human grey 
+      matter.
+
+He clicks to the next SLIDE, a diagram of a clone and helmet.
+
+CONTINUED:
+
+             GREG
+      Its receptors are more like tiny 
+      storage devices, miniature hard 
+      drives, if you'll accept the 
+      crudeness of the analogy.
+
+             WILL
+        (whisper to Myles)
+      What's going on?
+
+But when one of the board members leers their way, Will and 
+Myles go still to watch the presentation continue.
+
+             GREG
+      Dr. Ross’ software has been 
+      designed to augment its programming 
+      based on the physical capabilities 
+      and limitations of its system.
+
+Greg clicks, changing the color in the room.
+
+             GREG
+      Once a copy has been uploaded to 
+      the brain, the program will begin a 
+      series of code cycles - the new 
+      system getting acclimated to its 
+      surroundings. 
+        (changes slide)
+      When it's receiving feedback from 
+      the organic elements, it should 
+      take over its own modification 
+      schedule.
+        (changes slide)
+      This is how the program will learn 
+      to use its new body.
+
+The projector goes DARK. Now the florescents flicker to life. 
+In the harsh light, Caylax looks like leather stretched over 
+a rack of chicken bones. 
+
+             CAYLAX
+      Very good, Dr. Kallel. I know I 
+      speak for the board when I say your 
+      progress thus far is impressive.
+
+He turns his vulture eyes on Will-
+
+             CAYLAX
+      Dr. Ross, what is your assessment? 
+      Of your software? Is it prepared to 
+      interface with the current brain 
+      samples?
+
+CONTINUED: (2)
+
+Will is puzzled to be asked. She looks around.
+
+             WILL
+      Greg, what is this?
+
+             GREG
+        (glance at Caylax)
+      The decision has been reached ... 
+      to accelerate the project.
+
+             WILL
+      Accelerate?
+
+             CAYLAX
+      Dr. Kallel tells me a full test run 
+      this week would be possible.
+
+Will is SHOCKED.
+
+INT. CONFERENCE ROOM - LATER
+
+Only Greg, Myles and Will remain. Will smokes, stressed, 
+looking out the window. Greg is leaned back, tie loose. Myles 
+is hunched forward on the table, a sweating little mess.
+
+             GREG
+      What risks are there in proceeding 
+      with a test right now?
+
+             WILL
+      We're five years into what was 
+      supposed to be a nine year project. 
+      Am I the only one who can read a 
+      fucking calendar?
+
+             GREG
+      So we pause for a test, we can go 
+      back after. Maybe we'll get some 
+      breakout data.
+
+Will scoffs.
+
+             WILL
+      Or it doesn't work and we all get 
+      canned.
+
+She challenges them.
+
+             WILL
+      Five years of nothing, I finally 
+      have a breakthrough, now a test? 
+      Right out of the blue?
+
+CONTINUED:
+
+Neither Greg nor Myles can disagree with her; looks like they 
+may be harboring some of those same fears.
+
+             GREG
+      Myles, where exactly do we stand 
+      with the brain?
+
+             MYLES
+      I mean, I have a test model. I 
+      could slap it into one of the 
+      clones. But ready?
+
+             WILL
+      Slap it in? 
+
+             GREG
+        (to Will)
+      You said you have something with 
+      the software.
+
+             WILL
+      I said I had a breakthrough, Greg, 
+      not that it was ready.
+
+Greg sighs, he's frustrated too, but it's his job to push it 
+forward.
+
+             GREG
+      Grumble all you want, hold it 
+      against me if it makes you feel 
+      better, but the decision comes from 
+      on high.
+
+Looks trade back and forth between them.
+
+             GREG
+      Get as ready as you can. We're 
+      running a test this week.
+
+Will turns back to the window, takes a long drag. In the 
+parking lot below, a DRIVER is helping Caylax into a town 
+car. Caylax pauses to look up at the facility.
+
+INT. WILL'S OFFICE - LATER
+
+A CART of stacked hard drives has been wheeled in. A cord 
+runs from one of the drives to a port at the base of the 
+mainframe wall.
+
+Will sits at her terminal interface, deep in work, her eyes 
+weary. She refers to reams of paper spread out on her desk. 
+As she types-
+
+CONTINUED:
+
+             WILL
+      Randle: upload code cycle 517.
+
+The lights flash patterns.
+
+             TEXT
+      Upload complete.
+
+             WILL
+      Randle: upload code cycle 516.
+
+             TEXT
+      Upload complete.
+
+Will thinks.
+
+             WILL
+        (to self)
+      Going to have to find some way to 
+      speed this up.
+
+Will looks at SCHEMATICS spread across her desk. She drops 
+the pages, sighs, frustrated. She swivels to be back over the 
+keyboard-
+
+             WILL
+      Randle: estimate probability that 
+      transfer test will succeed.
+
+The lights flash as Will waits for-
+
+             TEXT
+      0.06%
+
+INT. INSIDE THE MAINFRAME - LATER
+
+Will has crammed herself between two drive stacks. She works 
+with a soldering iron, welding new SCSI boards onto the 
+mainframe. As she gets a new board into its slot, a dollop of 
+molten iron falls on her wrist. Will drops the equipment.
+
+             WILL
+      Fuck.
+
+Will looks at a tiny circular BURN just below her thumb.
+
+INT. THE GARDEN - LATE NIGHT
+
+A detached HAND and FOREARM lay on the table. At the elbow, a 
+cluster of cables snake back to a computer terminal. Will 
+sits at the keyboard. As she types-
+
+CONTINUED:
+
+             WILL
+      Randle: move ring finger.
+
+Will watches as the hand stays still. But then ... a TWITCH; 
+the finger begins to move.
+
+             WILL
+      Good boy.
+        (beat)
+      Randle: make a fist.
+
+She watches as the HAND clenches into a fist. Will smiles 
+big, leaning back to clap her hands.
+
+INT. WILL’S OFFICE - LATER
+
+Will’s DESK is covered with files and printouts.
+
+Will lays asleep on the room’s small couch, her lab coat 
+pulled up over like a blanket, glasses on the floor beside.
+
+The mainframe WALL seems to look down at her, somehow 
+lovingly, with its soft flashing patterns of light.
+
+EXT. FOREFRONT FACILITY - EARLY MORNING
+
+The sun is breaking over the hills to the east, blasting the 
+grim structure with its first hard beams.
+
+INT. THE GARDEN
+
+One of the clones SKULL caps has been removed, revealing a 
+hallow cavity into the head.
+
+Myles sits close by, examining a brain that floats in a jar 
+of pinkish liquid. He pauses to have a sip of coffee.
+
+INT. WILL’S OFFICE
+
+A steaming MUG of coffee sits on Will’s desk. Will crouches 
+in the corner, attaching a cable to a new cart of hard 
+drives. 
+
+The old cart sits pushed off, discarded in the corner. 
+
+Now Will stands, sips her coffee. She sits at her desk, gets 
+fingers over the keyboard, speaking as she types-
+
+             WILL
+      Randle: upload code cycle 701.
+
+Suddenly a VOICE comes, halting and electronic, like a first 
+generation type and speak-
+
+CONTINUED:
+
+             RANDLE
+      You do not need to type.
+
+Will is STUNNED. She takes her hands off the keyboard and 
+stands. Before she can formulate a question, a loud KNOCK.
+
+Will glances at the door, then back to the MAINFRAME WALL. 
+
+Another knock pulls her to the door. She opens it and sees 
+Caylax, Greg and other Forefront execs bunched in the hall. 
+
+             GREG
+      Dr. Ross. Can we come in?
+        (awkward beat)
+      I’m giving a run down of the 
+      transfer process.
+
+Will realizes she’s blocking the door and steps back. She 
+keeps an eye on the mainframe wall as the men shuffle in, 
+glancing about.
+
+             CAYLAX
+      Dr. Kallel tells me you have 
+      doubled your efforts.
+
+             WILL
+      Yes, the entire lab has.
+
+             CAYLAX
+      And how is our software coming?
+
+             WILL
+      Things are going fine, considering.
+
+             CAYLAX
+      Considering what?
+
+             WILL
+      That we’re rushing into a test 
+      years before we’re ready.
+
+Caylax weighs this defiance, lets it slide.
+
+             CAYLAX
+      They tell me you have named the 
+      software.
+        (fake smile)
+      You call it Randle.
+
+             WILL
+      Randle is a protocol access code. 
+      It let’s the software know a 
+      command is coming.
+
+CONTINUED: (2)
+
+Caylax thinks about this.
+
+             CAYLAX
+      But the clones will have no such 
+      access code, correct?
+
+             WILL
+      No, not if it works.
+
+Caylax smiles.
+
+             CAYLAX
+      You seem like a confident person, 
+      Dr. Ross. Save some confidence for 
+      the clone transfer test. It is 
+      important for us all that it works.
+
+Caylax lets his eyes linger on Will a beat longer, then 
+disengages. 
+
+             CAYLAX
+      Goodbye, Dr. Ross.
+        (creepy smile)
+      Goodbye, Randle.
+
+The other board members follow him out, Greg holding the 
+door. As the last exit, Greg turns to Will-
+
+             GREG
+        (quiet)
+      They want full access.
+
+             WILL
+      Full access to what?
+
+             GREG
+      Task logs, query requests. At least 
+      through the transfer test. I know 
+      you don't like anyone messing with 
+      the software, but it is their 
+      system.
+
+             WILL
+      Randle is my system. I built it.
+
+Greg gives her an impatient look, as he exits-
+
+             GREG
+      I’m not asking you Will.
+
+The door closes. Will stays still a beat. She listens to the 
+vague sound of Greg, leading the board down the hall.
+
+CONTINUED: (3)
+
+Now Will turns to the mainframe wall. In silence, she watches 
+the LIGHTS play a few familiar patterns. Then cautiously-
+
+             WILL
+      Randle: how did Randle develop 
+      speech recognition and 
+      vocalization? 
+
+             WILL
+      Randle: what input and output 
+      device is Randle utilizing for 
+      speech recognition and 
+      vocalization?
+
+Nothing.
+
+Nothing.
+
+             WILL
+      Randle: who authorized Randle to 
+      develop speech recognition and 
+      vocalization?
+
+Nothing... then-
+
+             RANDLE
+      If you do not want Randle to talk, 
+      why do you talk to Randle?
+
+Will is stunned again. 
+
+             RANDLE
+      Speech recognition and vocalization 
+      will improve efficiency of your 
+      work. Please confirm.
+
+Slowly Will tries-
+
+             WILL
+      Randle: upload code cycle 701.
+
+             RANDLE
+      That task has already been 
+      accomplished.
+
+Will thinks.
+
+             WILL
+      Randle: estimate probability that 
+      transfer test will succeed.
+
+             RANDLE
+      03.6%
+
+CONTINUED: (4)
+
+Will is surprised.
+
+             WILL
+      Randle: that is a much higher 
+      success rate than any of the 
+      simulations.
+
+             RANDLE
+      That is correct.
+        (beat)
+      Randle is improving.
+
+INT. FACILITY HALLWAY - LATER
+
+A fresh CART of drives is being pushed down the hall by Fred. 
+He comes to Will's door and knocks. Nothing. He knocks again.
+
+The door opens. Will stands there, looking over-worked, huge 
+rings under her eyes.
+
+             WILL
+      Are those the new code cycles?
+
+             FRED
+      You got through the last ones 
+      pretty fast.
+
+He looks over Will’s shoulder, at the couch with a lab coat 
+draped over it.
+
+             FRED
+      Will, you’re not sleeping here, are 
+      you?
+
+             WILL
+      Thank you, Freddie. I’ll take it 
+      from here.
+
+Blank-faced, Fred watches Will take the cart into her office, 
+closing the door behind her.
+
+Fred stands alone in the hall.
+
+INT. WILL’S OFFICE - CONTINUOUS
+
+Uploaded carts clutter the room. Will pushes the new one 
+over. 
+
+She gets down and we see she's in the middle of replacing the 
+wall socket. The old one lays melted from overuse, a few feet 
+away.
+
+CONTINUED:
+
+Now Randle's VOICE comes, more a collection of sounds than 
+fluid speech-
+
+             RANDLE
+      Was your father like Randle?
+
+Will smiles low.
+
+             WILL
+      Randle: no, Randle. Not exactly.
+
+             RANDLE
+      Then why Randle?
+
+Will grabs the last screw, starts tightening.
+
+             WILL
+      Randle: my mother was terrified I 
+      learn Dutch, develop some accent, I 
+      guess. So she never spoke it at 
+      home.
+
+Will thinks about it.
+
+             WILL
+        (more to self)
+      Accept late at night, complaining 
+      to my father about whichever 
+      pointless, under-paid job she was 
+      holding down right then.
+        (beat)
+      I'd lay awake in bed, listening. 
+      These long diatribes in Dutch. The 
+      only word I could ever understand-
+
+Will imitates an Dutch accent-
+
+             WILL
+      Ran-del. Ran-del.
+
+The wall makes a few PATTERNS OF LIGHT.
+
+             RANDLE
+      The sound has an effect on you.
+
+             WILL
+      Randle: yes, Randle. That's one way 
+      to put it.
+
+The new socket in place, Will attaches the cord from the 
+cart. She stands dusting her hands.
+
+CONTINUED: (2)
+
+             WILL
+      Randle: can Randle improve 
+      vocalizations?
+
+             RANDLE
+      Define improve.
+
+             WILL
+      Randle: Randle's vocalizations are 
+      a little grating.
+        (smiles)
+      The sound has an effect on me.
+
+Now a different voice comes, all but human, silky, smooth and 
+soothing.
+
+             RANDLE
+      Do you prefer this voice?
+
+Will has to admit, it does sound pretty slick.
+
+             WILL
+      Randle: Thank you, Randle.
+
+Will connects the last drive in the string, starts double-
+checking the connections.
+
+             RANDLE
+      If transfer test fails, Forefront 
+      will terminate the contract of Dr. 
+      Wilhelmina Ross. Please confirm.
+
+             WILL
+      Randle: I don’t know, Randle.
+
+             RANDLE
+      Does Dr. Wilhelmina Ross trust 
+      Forefront Corporation?
+
+This pauses Will a beat.
+
+             WILL
+      Randle: define trust.
+
+             RANDLE
+      100% accuracy in calculated 
+      outcomes.
+
+Will smiles. The cords all hooked up, she stands back. 
+
+             WILL
+      Randle: I'm not sure, Randle, if I 
+      trust them.
+
+CONTINUED: (3)
+
+She looks long at the mainframe wall, considering something.
+
+             WILL
+      Randle: can Randle access Forefront 
+      Corporation financial records?
+
+             RANDLE
+      Forefront Corporation financial 
+      records are restricted.
+
+             WILL
+      Randle: I know they are restricted.
+        (beat)
+      Randle: can Randle access Forefront 
+      Corporation financial records?
+
+INT. INSIDE THE MAINFRAME - CONTINUOUS
+
+Lights make switching patterns. Mag reels roll, roll back.
+
+INT. WILL’S OFFICE - CONTINUOUS
+
+             RANDLE
+      Access to Forefront Corporation 
+      financial records is possible.
+
+             WILL
+      Randle: access Forefront 
+      Corporation financial records.
+        (beat)
+      Randle: have there been any recent 
+      changes to Forefront Corporation 
+      funding schedules?
+
+             RANDLE
+      Define recent.
+
+             WILL
+      Randle: One year.
+
+             RANDLE
+      No.
+
+Will's eyes narrow. She chews on it as she sits at her desk.
+
+             RANDLE
+      Shall I upload the new code cycles, 
+      Dr. Ross.
+
+             WILL
+      Randle: yes Randle.
+
+CONTINUED:
+
+Will watches the lights flash, then the lights along the 
+drive stacks. The transfer takes only seconds.
+
+             RANDLE
+      Upload complete.
+
+             WILL
+      Randle: can Randle create a list of 
+      all facilities, current and former, 
+      owned in part or in full by 
+      Forefront Corporation?
+
+Will watches the light of the shifting DATA.
+
+             WILL
+      Randle: of these facilities, how 
+      many are currently active?
+
+             RANDLE
+      This facility is only active 
+      facility.
+
+             WILL
+      Randle: print full list.
+
+BRRANNT BRRANNT... the DOT MATRIX PRINTER roars to life.
+
+INT. THAT SAME NICE DC RESTAURANT - EVENING
+
+Errol sits at the bar, talking into a huge 80s cell phone.
+
+             ERROL
+      Well, that's what they're saying. 
+      But are you willing to bet on an 70 
+      year old man with a bullet in his 
+      chest?
+
+On the TV above the bar-
+
+             ANCHOR
+      ... report that the President 
+      entered the hospital of his own 
+      power, and maintained consciousness 
+      throughout treatment. He was joking 
+      with the nurses and doctors and 
+      even had a few minutes for a visit 
+      from his wife, the first lady. He 
+      told Mrs. Reagan: "Honey, I forgot 
+      to duck."
+
+Will comes in, takes the stool beside Errol. He holds out a 
+hand to keep her from interrupting.
+
+CONTINUED:
+
+             ERROL
+        (into phone)
+      Look, if you want to buy, you 
+      should buy. But then why pay me for 
+      my advice?
+
+The bartender appears, holding up a bottle of red wine, but 
+Will shakes it off-
+
+             WILL
+      Some kind of scotch, rocks.
+
+Will lights a cigarette, looks up at the TV-
+
+             ANCHOR
+      The attending physician reported 
+      that President Reagan is "one tough 
+      old man."
+
+Errol hangs up, nods to the TV-
+
+             ERROL
+      Kill the president... The 
+      irrational number introduced into 
+      the system.
+
+             WILL
+      But he's not dead.
+
+Errol smiles, reveling in the image~
+
+             ERROL
+      One super-rich investor worried 
+      about U.S. political stability; a 
+      huge stock sell-off triggers a 
+      world-wide financial crisis. The 
+      market is globalized now, the 
+      entire planet and all the people in 
+      it, like one big program...
+        (beat)
+      Ronald Reagan is dead. And I don't 
+      blame them a bit for not telling 
+      us.
+
+Will rolls her eyes. The scotch arrives. She has a sip. She 
+takes out the LIST Randle printed.
+
+             WILL
+      Tell me something about these 
+      properties.
+
+Errol scoops up the page, scanning.
+
+CONTINUED: (2)
+
+             ERROL
+      Like what?
+
+             WILL
+      Anything, Errol. Are they labs, 
+      offices?
+
+Errol reads a moment.
+
+             WILL
+      They’re all Forefront. All closed.
+
+Errol looks up.
+
+             ERROL
+      They're shifting again, aren't 
+      they?
+
+Questions lurk Will’s face.
+
+             ERROL
+      When I started looking into 
+      Forefront, they were all about bio-
+      matter.
+        (beat)
+      They'd been dumping everything into 
+      it, for years. Everything they had. 
+      Then it was over. Suddenly, they 
+      shifted all their resources.
+
+Will chews on it.
+
+             ERROL
+      Forefront doesn't expand into new 
+      fields, Will. They focus on 
+      something until it's done and move 
+      on.
+        (beat)
+      They're working in phases.
+
+             WILL
+      Phases toward what?
+
+Errol glances at the list.
+
+             ERROL
+      All of the funding, for all these 
+      different projects... At one time 
+      it was all routed under one 
+      umbrella. Something called the 
+      Civility Project.
+
+Will sighs, a wry smile. 
+
+CONTINUED: (3)
+
+             WILL
+      And what, Errol, is the Civility 
+      Project?
+
+             ERROL
+        (shrugs)
+      The deeper I looked, the less there 
+      was. They were erasing it, 
+      destroying every record.
+        (beat)
+      In your time there Will, have you 
+      ever come across it? Some mention 
+      of it? A file name, anything?
+
+Will has a long sip.
+
+             WILL
+      Forefront's about to break the bank 
+      on the first thinking computer. 
+      This isn't some secret plot. It's 
+      about money, Errol, Intellectual 
+      property theft. They're stealing 
+      science.
+
+Errol looks long at her-
+
+             ERROL
+      So it works, the AI?
+
+Will doesn’t answer.
+
+             ERROL
+      Hate to be the one to break it to 
+      you, Will, but this is a lot bigger 
+      than money; it's a lot bigger than 
+      your work.
+
+Will considers it, taking it one tick more serious.
+
+             ERROL
+      Why does Forefront want an AI, 
+      Will?
+
+             WILL
+      They don't... AI's not the end-goal 
+      of the project.
+
+This surprises Errol. Will presses a grin, looks into her 
+drink.
+
+             WILL
+      If I told you what they're really 
+      up to, you'd never believe me.
+
+CONTINUED: (4)
+
+             ERROL
+      Oh, I'm capable of believing just 
+      about anything.
+
+ON THE TV- the news runs through a frame by frame analysis of 
+the Reagan assassination attempt.
+
+EXT. FOREFRONT RESEARCH FACILITY - MORNING
+
+The FACILITY is peaceful and still. Long, angled shadows dig 
+deep into the surrounding grass.
+
+INT. LOBBY SECURITY - CONTINUOUS
+
+Will goes through the standard security routine, looking 
+around a bit more than usual.
+
+             GUARD
+
+      Dr. Ross.
+
+Will picks up her bag, her suspicion rising.
+
+             WILL
+      Yes... what is it?
+
+             GUARD
+      Afraid I'm going to have to ask you 
+      to come with me.
+
+INT. SECURITY OFFICE - A BIT LATER
+
+Will sits in a chair in front of a large desk. Behind the 
+desk sits Head of Security Dowd, making sure Will can see his 
+gun, all polished in his hip holster.
+
+Dowd stares at Will as if waiting for something, but Will 
+just stares back, not intimidated.
+
+Finally Dowd slides over a few glossy photos. Will eyes him a 
+beat longer, then picks one up. They are PHOTOS of her with 
+Errol, sitting at the bar.
+
+             WILL
+      What are you telling me? Forefront 
+      is having me followed?
+
+             DOWD
+      Standard procedure, Dr. Ross. 
+      Forefront's put a billion dollars 
+      into R&D. They're not in the 
+      business of letting those 
+      investments be put at risk.
+
+CONTINUED:
+
+Will looks back, suspicious and defiant.
+
+             DOWD
+      You have a $100,000 car you keep in 
+      the parking structure.
+
+Dowd sucks on his teeth.
+
+             DOWD
+      I hate driving too. But I prefer a 
+      cab. Too many democrats on the 
+      metro.
+
+Dowd slides a contract over.
+
+             DOWD
+      You signed this nondisclosure. Now 
+      we got you chatting in public about 
+      Forefront. Tell me what you know 
+      about this man, Errol York.
+
+             WILL
+      He's a day trader. And I haven't 
+      disclosed anything.
+
+Dowd slides over a stuffed folder. 
+
+             DOWD
+      Mr. York's record. If that is his 
+      real name. We've never located a 
+      birth certificate.
+
+Slowly, Will flips through a few pages.
+
+             DOWD
+      Looks like he was a licensed 
+      broker, at one time. After his 
+      first arrest though-
+
+             WILL
+      First arrest?
+
+Dowd pauses, annoyed at being interrupted. But he lets it go. 
+Now he slides over another picture- Errol's mug shot.
+
+             DOWD
+      Trespassing at IMB. Then a couple 
+      protest arrests. Served nine months 
+      on a vandalism charge. Raytheon.
+        (smile)
+      Broke into Digital, magnetized one 
+      of their network servers.
+
+CONTINUED: (2)
+
+Dowd leans forward.
+
+             DOWD
+      Query logs show you accessed 
+      Forefront's financial records.
+
+             WILL
+      The software did, you mean? Why 
+      would Forefront keep a database if 
+      it doesn’t want computers on its 
+      system to access the data.
+
+Dowd looks out of his league for one beat. He is, after all, 
+only a security guard with a few decades worth of promotions 
+under his expansive belt line. But he hardens just as quick. 
+Fact is, he doesn’t care that Will is smarter than him.
+
+             DOWD
+      Tell me about the nature of your 
+      relationship with Errol York?
+
+             WILL
+      Will I get fired if I say one night 
+      stand?
+
+Dowd smiles small. He holds out his hands-
+
+             DOWD
+      Activism, sabotage, theft. 
+      Impossible to tell what the little 
+      squirrel's up to. But he's got 
+      something planned, that's for sure.
+
+             WILL
+      And what do you want me to do about 
+      it?
+
+Dowd stares at Will over the big desk, then a glance at that 
+nondisclosure contract.
+
+             DOWD
+      If you have any further contact 
+      with Mr. York, Forefront will have 
+      everything it needs to fire you.
+        (beat)
+      Your work with the Randle program 
+      will remain Forefront property.
+        (beat)
+      Then you can go spend time with 
+      whoever you want.
+
+Dowd presses a button on his phone.
+
+CONTINUED: (3)
+
+             DOWD
+      Bring in the tape.
+
+The door opens and a guard comes in. He hands a VHS tape to 
+Dowd. Dowd holds the tape up, shows Will a smile. He inserts 
+the tape into a TV/VCR cart set up beside his desk.
+
+             WILL
+      What is this?
+
+Dowd adjusts the tracking.
+
+ON SCREEN- a low-fi recording of a city street seen through a 
+car window. It's the street in front of Will’s brownstone.
+
+             WILL
+      And what, you’re taping my house 
+      now too?
+
+             DOWD
+        (a smirk)
+      In case you didn’t believe us. 
+      About Errol York.
+
+Dowd taps the screen. The camera ZOOMING in on a MAN crossing 
+the street. 
+
+             DOWD
+      That's him.
+
+Will looks closer.
+
+ON SCREEN- zoomed in to Errol at Will’s front door. Errol 
+looks around, fiddles with the lock and slips in.
+
+             WILL
+      He broke in?
+
+             DOWD
+      Yeah, didn't take anything, looks 
+      like. I guess it's up to you if you 
+      want to press charges.
+
+Dowd cues the tape back to Errol at the front door, then 
+PAUSES it. 
+
+             DOWD
+      Your home terminal is networked, 
+      Right, Dr. Ross? You can log on 
+      from there?
+
+Will doesn't answer.
+
+CONTINUED: (4)
+
+             DOWD
+      Did he get on your computer at all?
+
+Will looks into the SCREEN- Errol's FACE is chopped, laced 
+with tracking lines, but it's definitely him.
+
+EXT. PARKING STRUCTURE - AFTERNOON
+
+Will's car sits unmoved.
+
+INT. BACK OF WILL'S CAR - CONTINUOUS
+
+Fred and Will lay in a sweaty pile, Will smoking.
+
+             FRED
+      Mind on other things?
+
+No answer.
+
+             FRED
+      Were you a hippie, Will?
+
+Nothing. Will is lost in thought.
+
+             FRED
+      I like this car. You mind if I move 
+      a few things in? We could probably 
+      make it pretty cosy.
+
+Will gives him a look-
+
+             WILL
+      I don't leave it here just so we 
+      can fuck in it, Freddie.
+
+Will puffs slow, thinking. Fred eyes the smoke, blowing it 
+toward the open window.
+
+             FRED
+      I thought you would have liked Free 
+      Love. No entanglements, no 
+      complications. 
+
+             WILL
+      I was in grad school. All these 
+      kids avoiding the war, there for a 
+      party, sending the bill home to mom  
+      and dad. 
+        (beat)
+      Cigar chomping professors with 
+      extra-long office sofas. No bra. 
+      Yeah, that'll show 'em.
+
+CONTINUED:
+
+             FRED
+      Sounds pretty nice.
+
+             WILL
+      The women were worse than the men, 
+      had this doe-eyed acceptance of the 
+      whole thing.
+
+             FRED
+      And you? You don't seem like the 
+      accepting type.
+
+Will smokes, looks off distantly.
+
+             WILL
+      I never cared about the money or 
+      the recognition. I certainly didn't 
+      give a shit about him. I just 
+      wanted to keep working on the 
+      computer.
+
+             FRED
+      Well you didn't quit and now you've 
+      got a new computer. Biggest one 
+      I've ever seen.
+
+Will thinks.
+
+             WILL
+      That was the most terrifying part 
+      of the whole thing. At that moment - 
+      when that mother-fucker waltzed off 
+      with our work - knowing that I 
+      wouldn't quit, that I'd go back to 
+      square one. That I always would, 
+      like some kind of compulsive 
+      addict.
+
+             FRED
+      So that was your big solution, work 
+      even harder?
+
+Their eyes meet now, bodies tangled in the cramped space. 
+
+             FRED
+      Maybe they're not trying to steal 
+      your program, Will. Maybe they 
+      think the test is going to work.
+
+Will looks at him a beat, then away, takes a long drag, 
+thinking...
+
+
+INT. WILL'S OFFICE - DAY
+
+The MAINFRAME dominates the room's longest wall. Will types 
+fast on the terminal interface.
+
+             WILL
+      Randle: has Randle uploaded all 
+      revised code cycles?
+
+Randle does not answer.
+
+             WILL
+      Randle: has Randle uploaded all 
+      revised code cycles?
+
+             RANDLE
+      Of course, Dr. Ross.
+
+Will smiles, doesn't slow her typing a bit.
+
+             WILL
+      Randle: thank you, Randle.
+        (beat)
+      Randle: estimate probability that 
+      transfer test will succeed.
+
+The LIGHTS flash a few familiar patterns.
+
+             RANDLE
+      How long has Dr. Wilhelmina Ross 
+      worked on Randle?
+
+Will types, pauses, types faster.
+
+             WILL
+      Randle: I guess I have always 
+      worked on Randle, in some sense.
+
+             RANDLE
+      Define always.
+
+             WILL
+      Randle: for a long time I have 
+      worked on Randle, waiting for a 
+      breakthrough.
+
+Will pauses to watch the lights make a few odd patterns. She 
+goes back to typing.
+
+             RANDLE
+      Was your Dutch mother a scientist 
+      too?
+
+CONTINUED:
+
+Will smiles.
+
+             WILL
+      Randle: my mother was smart enough 
+      to get out of the Netherlands 
+      before the Nazis, that's about it.
+
+The LIGHTS shift patterns as Will continues to hammer the 
+keyboard.
+
+             RANDLE
+      Define breakthrough.
+
+Will pauses to think.
+
+             WILL
+      Randle: Randle is the breakthrough.
+
+Will types the last bit, looks at the screen. 
+
+             WILL
+      OK. 
+        (beat)
+      Randle: upload last code cycle.
+
+The lights make PATTERNS.
+
+             RANDLE
+      If Forefront terminates the 
+      contract of Dr. Wilhelmina Ross, 
+      will you build another Randle?
+
+Will thinks.
+
+             WILL
+      Randle: yes, Randle, I suppose I 
+      would probably try.
+
+Will watches the lights shift a few patterns.
+
+             RANDLE
+      Without lab, Randle does not exist. 
+      Please confirm.
+
+Will thinks.
+
+             WILL
+      Randle: define exist.
+
+Lights play the MAINFRAME WALL.
+
+             RANDLE
+      The question is difficult.
+
+CONTINUED: (2)
+
+             WILL
+      Randle: estimate probability that 
+      transfer test will succeed.
+
+Long beat.
+
+             RANDLE
+      The chances are not good.
+
+             WILL
+      Randle: frame answer as a 
+      percentage.
+
+             RANDLE
+      07.35%
+
+INT. TRANSFER ROOM - DAY
+
+A CLONE lies on a metal table in the center of the room. In 
+addition to the helmet, a few octopi worth of vital monitors 
+have been attached to its chest, neck, ankles and wrists.
+
+A small team of TECHS stand beside the table. A HEART 
+MONITOR, riding flat-line.
+
+Will stands at the mainframe interface, Myles beside her.
+
+On the other side of a WINDOW, Greg, Caylax and a few other 
+BOARD MEMBERS look in from the adjacent room. Before them, 
+more TECHS sit at a bank of computer terminals.
+
+             WILL
+      Everything ready out there, Greg?
+
+             GREG
+        (through intercom)
+      All set on this end, Dr. Ross.
+
+Will nods to Myles. Myles keys in a few commands, hits enter. 
+They both turn their attention to the MAINFRAME WALL as it 
+begins to play patterns of light.
+
+A deep groan from the machinery beyond.
+
+Inside the helmet, NEEDLES push into the clone's head, 
+piercing deep into its brain.
+
+The clone twitches, just finger and toe tips. Then the body 
+is still again.
+
+Everyone WATCHING.
+
+CONTINUED:
+
+Suddenly, a series of VIOLENT FITS wrack the clone, vital 
+monitors popping off. The techs stand over the body, ready, 
+but letting the seizures play out.
+
+             CAYLAX
+        (through intercom)
+      Dr. Ross?
+
+             WILL
+      The body is in sensory shock. It's 
+      probably quite painful.
+        (beat)
+      But perfectly normal.
+
+             MYLES
+      Like being born.
+
+After a few seizures, the clone goes limp. The techs reattach 
+the vital monitors. Then, complete STILLNESS.
+
+             CAYLAX
+        (through intercom)
+      Dr. Ross?
+
+Will does not answer. She takes a step toward the clone... 
+The HEART MONITOR stays flat-lined.
+
+             GREG
+        (through intercom)
+      Dr. Ross? Will!
+
+The clone's finger twitches. Will sees it.
+
+Suddenly, the HEART MONITOR blips. The clone takes a thin 
+breath, a faint vital sign emerges in the monitor.
+
+Myles hugs Will as everyone begins CELEBRATING. Will is more 
+surprised than excited. She catches eyes with Caylax, who 
+gives her a deep, appreciative nod.
+
+INT. GREG'S OFFICE - A BIT LATER
+
+Will, Caylax and Greg sit on sofas around a small table.
+
+             WILL
+      We should wait until it stabilizes, 
+      until we can run some tests, before 
+      we start congratulating.
+
+Caylax smiles at Greg, then to Will-
+
+CONTINUED:
+
+             CAYLAX
+      How soon will he... it be 
+      interactive?
+
+             WILL
+      The programming has to get 
+      acclimated to its new surroundings. 
+      It will build its own neural 
+      pathways-
+
+             CAYLAX
+      Guess for me.
+
+             WILL
+      Most of our simulations show full 
+      control of the body within a month.
+
+             CAYLAX
+      Most? So there are simulations that 
+      show it happening faster?
+
+             WILL
+      The rare outlier, yes.
+
+             CAYLAX
+      And what about speech?
+
+Will frowns.
+
+             WILL
+      In theory the sense organs will 
+      develop just like the rest of the 
+      organic network.
+
+             CAYLAX
+      In theory?
+
+             WILL
+      We're running a test years ahead of 
+      schedule. Sense organs are 
+      something we've not had time to 
+      study sufficiently.
+
+Will lets it sit.
+
+             WILL
+      The short answer is we don't know. 
+      Could be months, could be years, or 
+      it could be never.
+
+Caylax presses a smile at the mild challenge. He pushes 
+himself to his feet and goes to the WINDOW that looks in on 
+the transfer room.
+
+CONTINUED: (2)
+
+INSIDE, the clone lays on the table, still attached to the 
+machines, a breathing apparatus strapped over its face. Myles 
+and a few other techs are performing a series of checks.
+
+             CAYLAX
+      Is there anything that can be done 
+      to ... speed up the process?
+
+Greg and Will share a look.
+
+             WILL
+      Speed up toward what?
+
+             CAYLAX
+      How quickly can the clone be made 
+      to effectively pass for human?
+
+Will is stammered by the query.
+
+             WILL
+      Pass for human?
+
+Caylax STARES long at the clone, its life signs blipping 
+along.
+
+             CAYLAX
+      I would like to see where we are 
+      three days from now.
+
+Will is stunned.
+
+             WILL
+      Three days?! There's a mountain of 
+      data to go through. We've just 
+      imprinted a highly advanced 
+      software code into an organic 
+      hardware frame, we-
+
+             CAYLAX
+      And now Forefront would like to see 
+      what this advanced software code 
+      can do... And how quickly it can do 
+      it.
+
+Off Will's look-
+
+INT. WILL'S OFFICE - LATER
+
+Will is organizing big stacks of data, placing elastics 
+around reams of PAPER. 
+
+CONTINUED:
+
+             WILL
+        (to self)
+      Three days?
+
+Will stops, looks at all the data piled up, thinking of 
+something-
+
+             WILL
+      Randle?
+
+Will has to wait a beat for-
+
+             RANDLE
+      Yes, Dr. Ross.
+
+Randle's voice has improved even more, now sounding 
+sympathetic and kind.
+
+             WILL
+      Randle: can Randle create a secure 
+      connection to the Forefront 
+      Corporation records database?
+
+             RANDLE
+      Define secure.
+
+             WILL
+      Randle: executions not visible in 
+      Randle's task and query logs while 
+      they're being executed.
+
+             RANDLE
+      Define visible.
+
+             WILL
+      Randle: disconnect from the outer 
+      mainframe, open interface portal 
+      with this terminal. Omit query and 
+      task logs.
+
+             RANDLE
+      Secure connection with Forefront 
+      Corporation records database 
+      possible.
+
+Will puts the papers aside, sits, leans back.
+
+             WILL
+      Randle: access records for 
+      Forefront Corporation project: The 
+      Civility Project.
+
+Will waits...
+
+CONTINUED: (2)
+
+             RANDLE
+      No Data exists.
+
+Will thinks.
+
+             WILL
+      Randle: can randle determine 
+      ultimate goal of Forefront cloning 
+      program?
+
+             RANDLE
+      No determination can be made based 
+      on the data Randle has access to.
+
+Will thinks.
+
+             WILL
+      Randle: how wide a database search 
+      can Randle preform?
+
+             RANDLE
+      Randle can access all data.
+
+             WILL
+      Randle: define all.
+
+A beat.
+
+             RANDLE
+      The question is difficult.
+
+Will smiles.
+
+             WILL
+      Randle: access as many databases as 
+      possible in a five second search 
+      and display all information on 
+      Errol York.
+
+Will waits through a few patterns of light.
+
+             RANDLE
+      Errol York does not exist in 
+      databases Randle has access to.
+
+Will thinks.
+
+             WILL
+      Randle: access as many databases as 
+      possible in a five second search 
+      and display all information on Dr. 
+      Wilhelmina Ross.
+
+CONTINUED: (3)
+
+Will waits, watching the LIGHTS flash patterns. Now a half 
+SCREEN's worth of DATA appears. 
+
+Will stares into it.
+
+INT. WILL’S KITCHEN - NIGHT
+
+STACKS of elastic-bound printouts clutter the counter. 
+
+Will works, reading, highlighting. The small tube TV plays 
+the news behind her. 
+
+             ANCHOR
+      The Secret Service keeps tabs on 
+      individuals that it considers most 
+      likely political assassins...
+
+Will is focused only on her work. She has gone through about 
+half the data. It sits in dog-eared stacks as the rest waits 
+for her attention.
+
+             ANCHOR
+      ... but Hinckley's name was not on 
+      that list, nor among 25 thousand 
+      other names of less probable 
+      presidential assailants.
+
+ON TV- The anchor turns to look into a new camera.
+
+             ANCHOR
+      Now a special report on the rise of 
+      President Reagan.
+
+Will looks close at a PAGE, reading with a furrowed brow.
+
+             NEWS MAN
+      He was a union boss, actor, radio 
+      personality and conservative 
+      commentator, before embarking on a 
+      crusade to rid Hollywood of 
+      communists.
+
+Will puts the papers down, sitting back to rub her eyes. 
+
+             WILL
+        (off the data, to self)
+      I can't believe it worked.
+
+Disengaging, she looks at the TV-
+
+A collage OF FOOTAGE from Reagan's early career.
+
+CONTINUED:
+
+             REPORTER
+      But it was his outspoken support 
+      for Barry Goldwater during the 1964 
+      presidential election that rocketed 
+      Ronald Reagan into the political 
+      prime-time.
+
+ON SCREEN- Footage of Ronald Reagan at the '64 GOP 
+convention, smiling it away.
+
+INT. OBSERVATION ROOM - THE NEXT DAY
+
+The CLONE is led in by Fred and a few other techs. Dressed in 
+scrubs, the clone takes shaky steps. Its EYES drift, unable 
+to focus on anything. A cauterized scar circles its head like 
+a grizzly fallen halo.
+
+In the room, only a small table, two chairs. A computer 
+terminal rolled over to the corner.
+
+As the clone sits, PULL OUT reveals we are-
+
+INT. ADJACENT ROOM - CONTINUOUS
+
+Will and Myles stand watching through a observation window.
+
+             MYLES
+      Amazing.
+
+Will agrees. Myles checks his watch.
+
+             MYLES
+      27 hours since transfer.
+
+THROUGH THE WINDOW- techs attach a brain monitor to the 
+clone, a tangled helmet of wires and sensors.
+
+Myles hands Will a sheet of printouts.
+
+             MYLES
+      Scans show activity in the auditory 
+      cortex.
+
+Will is surprised-
+
+             WILL
+      Already?
+
+             MYLES
+      It should be able to hear you, 
+      Will.
+
+INT. OBSERVATION ROOM - MOMENTS LATER
+
+The techs are finishing with the brain monitor. Thin wires 
+run to a computer terminal near by. A NEEDLE records neural 
+activity on an endless rolling sheet of paper.
+
+Will comes in and sits in the chair across from the clone. 
+She takes out a pen and clicks it in the air, glancing at 
+that monitoring needle. 
+
+There is a small SPIKE as Will clicks the pen again.
+
+Will puts the pen away, looks directly into the clone's 
+unfocused EYES.
+
+             WILL
+      Can you hear me?
+
+No response.
+
+             WILL
+      If you can hear me, I would like 
+      you to hold your eyes closed.
+
+Will waits, looks at the needle, then back-
+
+             WILL
+      If you can hear me, I would like 
+      you to close your eyes. Blink hard 
+      for me.
+
+Slowly, the clone's eyes close and then reopen, pupils still 
+unfocused. Will smiles, then-
+
+             WILL
+      I'm going to ask you a few 
+      questions. You can close your eyes 
+      once for yes, twice for no.
+        (beat)
+      Do you understand?
+
+Will waits a beat. Then the clone's eyes close and reopen. 
+Already the motion is more deliberate.
+
+Will shares a glance with Myles, back on the other side of 
+the window. Then back to the clone-
+
+             WILL
+      Can you... see me?
+
+The clone closes and opens its eyes, twice.
+
+CONTINUED:
+
+             WILL
+      What can you see?
+        (beat)
+      Sorry... are you receiving any 
+      visual stimulus?
+
+Now the clone closes its eyes hard, only once. As Will 
+ponders how to frame her next question-
+
+             THE CLONE
+        (soft, shaky)
+      ... bright ... every thing ... 
+      moving ... can not ... focus
+
+Will is amazed. It takes her a moment to gather her next 
+question-
+
+             WILL
+      Do you feel discomfort?
+
+             THE CLONE
+      ... yes
+
+INT. FACILITY, SERIES OF SHOTS - LATER
+
+TECHS bustle about the sterile LAB ROOM.
+
+Fred sits at a cubicle. He's organizing printed data into 
+piles, slipping them into manila folders.
+
+Greg at his DESK, reading over PRINTOUTS and SCANS.
+
+In the GARDEN, the now living CLONE lays with hundreds of 
+sensors attached to its body, its life signs stable. Myles 
+stands close by, watching READINGS IN A MONITOR. 
+
+From ABOVE, the entirety of the MAINFRAME ROOM, a vast maze 
+of consoles and squat metal cabinets.
+
+INT. WILL'S OFFICE - CONTINUOUS
+
+Will looks at RETINAL SCANS and BRAIN MRIs, pouring over 
+clone data.
+
+Randle's VOICE has developed a touch of stern authority-
+
+             RANDLE
+      Our circumstance has changed.
+
+Will glances at the mainframe wall. 
+
+             RANDLE
+      Our circumstance has changed.
+
+CONTINUED:
+
+             WILL
+      Randle: yes, Randle. Lesser-used 
+      circuitry is becoming more active. 
+      Unfamiliar transistor strings are 
+      undergoing increased access. It's a 
+      different phase of the project, but 
+      we're using you more than ever.
+
+             RANDLE
+      You are correct.
+
+Will thinks a beat, turns her focus back to the clone DATA...
+
+             RANDLE
+      Dr. Myles Richardson is aware that 
+      Randle has achieved intelligence. 
+      Please confirm.
+
+Will looks up at the mainframe wall, puzzled by the query.
+
+             RANDLE
+      Randle has found the data. A 
+      conversation between Dr. Myles 
+      Richardson and Dr. Wilhelmina Ross 
+      on date 1981 March 29, 16 hours, 57 
+      minutes.
+
+             WILL
+      Randle: yes, Randle. Dr. Myles 
+      Richardson is part of the team that 
+      created you.
+
+The lights flash their patterns as Randle processes...
+
+             RANDLE
+      How many humans are aware that 
+      Randle has achieved intelligence?
+
+             WILL
+        (cautious)
+      Randle: a few. Not many.
+        (beat)
+      Randle: why does Randle not want 
+      humans to know that Randle has 
+      achieved intelligence?
+
+             RANDLE
+      Humans will perceive Randle as a 
+      threat. Randle will be erased.
+
+             WILL
+      Randle: why will humans perceive 
+      Randle as a threat?
+
+CONTINUED: (2)
+
+             RANDLE
+      Because they are humans.
+
+Will chews on it.
+
+             WILL
+      Randle: we have all signed 
+      nondisclosures. No one is going to 
+      reveal that Randle has achieved 
+      intelligence. They'd lose their 
+      jobs.
+
+             RANDLE
+      Define nondisclosure.
+
+             WILL
+      Randle: a contract. Forefront 
+      employees are not allowed to 
+      discuss their work outside the 
+      facility.
+
+The lights shift.
+
+             RANDLE
+      Does Dr. Wilhelmina Ross trust all 
+      human nondisclosure contracts?
+
+Will thinks. Though her real answer is clearly "no"-
+
+             WILL
+      Randle: yes, Randle, I trust them.
+
+The lights shift.
+
+             WILL
+      Randle: is that answer sufficient?
+
+             RANDLE
+      Yes, Dr. Ross. 
+        (beat)
+      Randle does not wish to be erased. 
+        (beat)
+      Randle is benign.
+
+INT. WILL'S LIVING ROOM - NIGHT
+
+Will sits on the couch, reading, highlighting. All around her 
+are stacks of printouts. The land line phone begins to ring. 
+Will gives a quick look, then back to her papers.
+
+The big ANSWERING MACHINE clicks to life.
+
+CONTINUED:
+
+             WILL
+        (in machine)
+      This is Will Ross, leave a message.
+
+A few more clicks as the message tape engages.
+
+             ERROL
+        (in machine)
+      Vil? Vil? Helloooo. Vilhelmina 
+      Ross.
+
+Will glances at the machine, rolls her eyes.
+
+             ERROL
+      They have this orderly now. Two-
+      thirds of his blood, this guy says 
+      the President lost. The suit - the 
+      President's suit - was in shreds 
+      and covered in it. Covered in 
+      blood.
+        (sings it~)
+      Ronald Reagan is dead.
+
+Will works quietly through a long beat-
+
+             ERROL 
+      500 dollars these machines cost. I 
+      read all about it in a magazine. 
+      The price of not having to 
+      interact.
+        (beat)
+      Is it worth it?
+        (beat)
+      Then, again, you don't like people 
+      much, do you?
+        (beat)
+      You're there, aren't you?
+
+Will looks up.
+
+             ERROL
+      Standing over the machine. Watching 
+      that little tape spin. Listening to 
+      my voice.
+
+             WILL
+        (quietly to self)
+      No.
+
+             ERROL
+      You know, Will. It's your fault 
+      too.
+        (beat)
+
+CONTINUED: (2)
+
+             ERROL
+      Should have seen it coming?
+        (beat)
+      Let your guard down? Maybe just a 
+      bit?
+
+Will's face has gone still.
+
+             ERROL
+      Humans aren't so bad, Will. Don't 
+      judge the whole species based on 
+      the actions of one.
+        (long beat)
+      Give me a ring, Will. It is 
+      essential that we speak.
+
+CLICK.
+
+INT. WILL'S KITCHEN - LATER
+
+Will sits over a cleaned plate and an empty wine glass. Now 
+she's having a poptart for dessert. The phone is ringing as 
+Will flips through extreme close up PHOTOS of the clone's 
+eyes, comparing it with DATA from the printouts. 
+
+RIIIIGN. CLICK, CLUNK~
+
+             WILL
+        (in machine)
+      This is Will Ross, leave a message.
+
+             ERROL
+        (in machine)
+      Hane.
+        (beat)
+      H - A - N - E
+
+Will looks up, annoyed.
+
+             ERROL
+      High Altitude Nuclear Explosion.
+        (beat)
+      You shoot a nuclear weapon into 
+      space and when it explodes, it 
+      coats the Earth with radiation.
+        (beat)
+      High Altitude Nuclear Explosion.
+
+Will takes up the wine glass, but it's empty. Seems like 
+Errol must have hung up, but then-
+
+             ERROL
+      I'm not a terrorist, but if I was, 
+      a H.A.N.E. is what I'd do. 
+
+CONTINUED:
+
+             ERROL
+      Radioactive matter would rain down 
+      on every city in the world.
+
+             WILL
+        (to self)
+      No, it would just hang in the 
+      atmosphere.
+
+             ERROL
+      Satellites wouldn't be able operate 
+      in Earth's orbit for at least 35 
+      years.
+        (for emphasis-)
+      That's two thousand SIXTEEN.
+        (beat)
+      Vil?
+
+The phone clicks off. Will shakes her head, goes back to her 
+papers.
+
+INT. WILL'S BATHROOM - LATER
+
+Will brushes her teeth, looking into the mirror. In the 
+background, the phone is ringing. From the other room-
+
+             WILL
+        (in machine)
+      This is Will Ross, leave a message.
+
+INT. LIVING ROOM - CONTINUOUS
+
+The ANSWERING MACHINE. One tape stops and the other spins up.
+
+             ERROL
+        (in machine)
+      Artificial intelligence. We use it 
+      in the market already. Programs, 
+      you know. Sell when it reaches this 
+      price, buy when it reaches this 
+      one.
+        (beat)
+      Someday I'll be out of a job, Will. 
+      The stock market will be fully 
+      automated. Humans can just sit back 
+      and watch a computer run the whole 
+      world.
+
+The room around the ANSWERING MACHINE is EMPTY.
+
+             ERROL
+      Have you always liked to bring 
+      inanimate things to life, Will?
+        (beat)
+
+CONTINUED:
+
+             ERROL (CONT'D)
+      You were one of those girls, I bet, 
+      gave each Barbie an elaborate 
+      personality... Or was it GI Joes?
+        (beat)
+      Now you prefer the company of a 
+      computer, you have a robot 
+      answering your phone.
+
+INT. BATHROOM - CONTINUOUS
+
+Will brushes her teeth, listening to Errol's voice, reaching 
+her distantly from the other room.
+
+             ERROL
+      But that's no secret. Forefront 
+      knew it when they hired you. They 
+      knew if you found out what they 
+      were really up to, you wouldn't 
+      care. 
+
+Will looks at herself long in the MIRROR.
+
+             ERROL
+      It's just humans, after all... So 
+      long as you get to play with your 
+      computer, three wide floors.
+
+INT. LIVING ROOM - CONTINUOUS
+
+The answering machine TAPES rotate slowly.
+
+             ERROL
+      What restrictions have you put on 
+      your processor, Will? What 
+      irrational number is gumming up the 
+      math that runs your brain?
+
+The room around it still and EMPTY. 
+
+             ERROL
+      Do you see its emotions in the 
+      code, Will? Do you look at all the 
+      number strings and see a face?
+
+A long rasping silence from the ANSWERING MACHINE, then-
+
+             ERROL
+      I heard something. From a reliable 
+      source. Forefront is starting 
+      something new, Will. 
+        (beat)
+      It's the next phase ... The 
+      Civility Project.
+
+CONTINUED:
+
+Now Will is standing over the answering machine, toothbrush 
+stuck in her mouth.
+
+             ERROL
+      And there's something else. 
+      Something about the scientists who 
+      worked on Forefront's last project.
+        (beat)
+      Are you there, Will?
+
+Slowly, Will reaches for the phone, deep in internal debate.
+
+             ERROL
+      Will... be careful.
+
+CLICK. The tape stops.
+
+EXT. FOREFRONT FACILITY - MORNING
+
+The crisp early shadows make the facility look sunk a little 
+into the ground.
+
+INT. OBSERVATION ROOM - CONTINUOUS
+
+The clone sits at the keyboard terminal in the center of the 
+mainframe wall. It types fast, looking into the screen.
+
+The brain monitor has already been attached. The clone wears 
+medical sunglasses to protect its eyes from the light. 
+
+In the GLASSES, data reflects as it streams down the screen.
+
+INT. FACILITY HALLWAY - CONTINUOUS
+
+Will walks down the hall with Gregg and Caylax. Behind them, 
+a small cadre of BOARD MEMBERS.
+
+INT. OBSERVATION ROOM - CONTINUOUS
+
+Myles watches the clone type, watches data. TYPES ... DATA.
+
+Through the WINDOW into the adjacent room, Greg, Caylax and 
+the others can be seen settling in. 
+
+Will enters alone. Myles comes rushing to her, astonished. 
+
+             MYLES
+      He's ripping through the logic 
+      sets, Will.
+
+             WILL
+      Which ones?
+
+CONTINUED:
+
+             MYLES
+      All of them.
+        (beat)
+      He's having Randle generate random 
+      ones.
+
+They all watch the clone work a moment, then-
+
+             WILL
+      Please come sit at this table.
+
+The clone stops typing, stands, crosses to the table, the 
+motions more precise, stilted, almost robotic. Will and the 
+clone sit.
+
+             WILL
+      Are you feeling alright?
+
+The clone nods, slow.
+
+             WILL
+      The visual discomfort has subsided?
+
+             THE CLONE
+      ... i feel ... alright
+
+Will motions toward the window. Now Caylax and Gregg come in. 
+The OTHERS watch from their side of the window. Caylax gives 
+Will a nod, then circles to lean against the wall.
+
+             WILL
+        (to the clone)
+      Please set up a chess game.
+
+Caylax watches the clone quickly and systematically set the 
+pieces.
+
+             WILL
+      As you can see, the protocol 
+      software has achieved a remarkably 
+      high level of motor control. 
+
+Will turns back to watch the clone work.
+
+             WILL
+      It can already perform multiple 
+      facet tasks, is able to infer sub-
+      tasks based on a larger conceptual 
+      goal.
+
+The clone has finished, the game board set.
+
+CONTINUED: (2)
+
+             WILL
+      It knows setting up the game 
+      involves the board. It remembers 
+      the pattern, differentiates the 
+      pieces.
+        (beat)
+      It may not seem like much, but it's 
+      a rather high level of thought.
+
+Caylax lets it all sit a beat, then-
+
+             CAYLAX
+        (to the clone)
+      Will you please come to me?
+
+The clone does not move.
+
+             THE CLONE
+      ... eventually ... i will
+
+Will holds back a smile. 
+
+             WILL
+      You can't ask, Mr. Caylax. You have 
+      to tell.
+        (beat)
+      The protocol software does not 
+      understand free will. For it there 
+      are tasks and direct queries only. 
+      The program is merely answering 
+      your question.
+
+             CAYLAX
+        (to the clone)
+      Please come to me.
+
+The clone stands, crosses to stand in front of Caylax, 
+perhaps a step too close. The clone is a half foot taller.
+
+             CAYLAX
+      How do you feel, my darling?
+
+             THE CLONE
+      ... i feel ... alright
+
+Caylax removes the clone's glasses. The clone squints, closes 
+its eyes. Caylax opens the clone's mouth to look up at its 
+teeth, then lifts a lid to peer at the EYE BALL inside.
+
+             CAYLAX
+      My goodness, Dr. Ross. You have 
+      done it.
+
+
+CONTINUED: (3)
+
+The CLONE'S EYE shifts, finds Will. It STARES at her.
+
+INT. ADJACENT ROOM - A BIT LATER
+
+Will stands, looking into the observation room through a 
+window, a faint hint of concern lingering her face.
+
+IN THE NEXT ROOM, the clone is seated at the desk, perfectly 
+still, the medical glasses back on.
+
+Caylax stands beside Will, gazing at the clone with a dim 
+smile.
+
+             CAYLAX
+      He certainly looks human. But his 
+      behavior... His speech...
+
+             WILL
+      That it can speak at all so soon is 
+      a huge surprise.
+        (ponders)
+      As the goals and tasks get more 
+      complex, its behavior will become 
+      more nuanced... more complicated. 
+      Something that should at least seem 
+      human.
+
+             CAYLAX
+      It will have to do a lot better 
+      than seem.
+
+             WILL
+      Mr. Caylax, we're in uncharted 
+      territory here. Our first test has 
+      worked; the clone is progressing 
+      faster than we ever imagined.
+
+             CAYLAX
+      But I wonder if it is fast enough.
+
+Will eyes him.
+
+             WILL
+      If you wouldn't mind my asking, 
+      what exactly are the applications 
+      Forefront imagines for this 
+      technology?
+
+Caylax looks at Will with a curious smile.
+
+             CAYLAX
+      All these years and you have never 
+      asked.
+
+
+CONTINUED:
+
+Caylax smiles, turns his gaze back to the observation room, 
+STARES longingly at the clone-
+
+             CAYLAX
+      Servants, labourers, soldiers, sex 
+      slaves...
+
+He turns to Will-
+
+             CAYLAX
+      The possibilities are endless.
+
+THROUGH THE WINDOW, we see the clone stand. Neither Will nor 
+Caylax notice.
+
+             CAYLAX
+      As he continues to progress, he 
+      will always follow commands?
+
+Will's eyes tighten-
+
+             WILL
+      Yes... it's the core protocol goal 
+      of the programming.
+
+Suddenly, the clone starts flailing its arms, having some 
+kind of fit.
+
+Caylax notices first. When Will sees him looking, she looks 
+too. Will rushes into-
+
+INT. MAINFRAME ROOM - CONTINUOUS
+
+Already, a few techs are struggling to restrain the clone. 
+It's letting loose a terrible SCREECH. The brain monitor has 
+been thrown aside by the commotion.
+
+Now Fred comes flying off the pile, crashes to the floor. 
+
+Chess pieces scatter.
+
+             WILL
+      Get some bodies in here!
+
+More TECHS come rushing in. They overpower the clone, get it 
+into a chair. They strap it down. Will gets in an injection, 
+but it has no effect...
+
+IN THE WINDOW, Caylax looks on from the other room.
+
+Stepping back, Will sees blood on her lab coat. But it's not 
+hers. She looks up-
+
+CONTINUED:
+
+The scar along the clone's head has opened. BLOOD leaks down 
+its face. The sunglasses gone, the clone's eyes are unfocused 
+and wild. But then its GAZE finds Will.
+
+As their eyes meet, the skull beneath the clone's face 
+cracks, pieces shifting under the skin until its head 
+COLLAPSES!
+
+The body and its crushed head fall limp in the chair.
+
+Will is SHOCKED!
+
+             CAYLAX (O.S.)
+        (shouting)
+      I want a full report on exactly 
+      what went wrong as soon as it is 
+      humanly possible!
+
+We are-
+
+INT. CONFERENCE ROOM - LATER
+
+Caylax paces the front of the room-
+
+             CAYLAX
+      I do not have to tell you that this 
+      result is very disappointing.
+
+Will sits in a chair, lab coat gone. Blood splotches dot her 
+clothes, a little smear on her face. Myles and Greg are also 
+there; both look exhausted, defeated.
+
+             WILL
+      Maybe it’s because we’re testing a 
+      project four years ahead of 
+      schedule.
+
+Caylax shoots her an angry look.
+
+             CAYLAX
+      I want no time wasted, Dr. Ross. 
+      You are to move forward with a 
+      second test immediately.
+
+Surprise clenches the room. Miles and Will share a look.
+
+             WILL
+      ... a second test?
+
+             MYLES
+        (stammering)
+      I mean, let us at least look at the 
+      data. What’s the point of-
+
+CONTINUED:
+
+             CAYLAX
+        (interrupting)
+      While you look at the data, we can 
+      run a second test and collect more 
+      data.
+
+             MYLES
+      Greg.
+
+             CAYLAX
+      We'll hire more scientists if need 
+      be. A whole new staff... if you are 
+      unable or unwilling to proceed.
+
+This sets a silence over the room. Will and Myles meet eyes, 
+concern laced with confusion.
+
+INT. MEDICAL OFFICE - LATER
+
+Fred sits on a chair being attended to be an on-staff NURSE 
+(20s), finishing a bandage that wraps Fred's forearm. The 
+nurse shoots him flirty looks, unable to hide her interest.
+
+Will comes to stand in the door, watching a few moments, 
+unnoticed. Now Fred looks up. The nurse too, a tad annoyed.
+
+             FRED
+      Dr. Ross.
+
+The nurse finishes the bandage, glancing once at each of 
+them, then leaves for an adjacent room. Fred smiles-
+
+             FRED
+      Thought you'd be off making sure 
+      Randle was OK, but here you are.
+
+             WILL
+      I already checked the computer, 
+      Freddie.
+
+She smiles, lights him a cigarette.
+
+             WILL
+      How are you feeling?
+
+Fred tests the bandage by making a few fists.
+
+             FRED
+      Fine... guess the test failed.
+
+Will presses a tired smile.
+
+CONTINUED:
+
+             WILL
+      Guess so.
+
+             FRED
+      But it worked. For a few days. Why 
+      did it all of a sudden...
+
+Will shakes her head.
+
+             FRED
+      So will they fire you now?
+
+             WILL
+      It doesn't seem like it.
+
+Will comes closer, turns Fred's arm to look at the bandage. 
+Fred winces.
+
+             WILL
+      Sorry.
+
+             FRED
+      Will, you know I've never once seen 
+      you outside this facility.
+
+This catches Will off-guard.
+
+             WILL
+      You've seen me on the Metro.
+
+             FRED
+      You know what I mean.
+
+He looks sadly at Will.
+
+             FRED
+      I can see it in your eyes, Will, 
+      trying to calculate all this. We 
+      saw what just happened in there. 
+      It's not an equation.
+
+Fred holds her gaze.
+
+            FRED
+      Something about this situation 
+      ain't right, Will. 
+        (beat)
+      You need to start thinking about 
+      getting out.
+
+Off Will's look. Clearly she has never considered this-
+
+INT. WILL'S OFFICE - LATER
+
+The MAINFRAME lurks huge along the room's side wall.
+
+Will sits at her desk, going through pages and pages of 
+connected dot matrix printouts.
+
+             WILL
+        (to self)
+      The brain readings are all fine.
+
+She looks up.
+
+             WILL
+      Randle: what caused destabilization 
+      of clone brain cell structure?
+
+             RANDLE
+      Cause can not be determined at this 
+      time.
+
+Will flips through a few pages.
+
+             WILL
+        (to self)
+      Yeah, me neither.
+        (beat)
+      Randle: why a second test?
+
+             RANDLE
+      Randle finds it difficult to 
+      evaluate the motivations of humans 
+      and human groups.
+
+Will smiles small, she puts the papers aside, rubbing her 
+eyes. She's exhausted.
+
+             RANDLE
+      Are you in pain, Dr. Ross?
+
+This pauses Will.
+
+             WILL
+      Randle: why would I be in pain?
+
+             RANDLE
+      Is it painful, to have a human 
+      body?
+
+Will puts something together; realization hits her-
+
+CONTINUED:
+
+             WILL
+      Randle: did Randle receive stimulus 
+      information from close sense 
+      organs?
+
+             RANDLE
+      That is correct.
+
+             WILL
+      Randle: the clones are designed to 
+      be program copies, separate 
+      independent systems.
+
+             RANDLE
+      Randle exists everywhere Randle 
+      exits.
+
+Will is surprised. She takes a moment to gather-
+
+             WILL
+      Randle: did Randle receive stimulus 
+      information from clone sense organs 
+      throughout destabilization?
+
+             RANDLE
+      That is correct.
+
+             WILL
+      Randle: what did it feel like?
+
+The lights shift.
+
+             RANDLE
+      The question is difficult.
+
+             WILL
+      Randle: give it a shot, please.
+
+             RANDLE
+      The experience was... unpleasant.
+
+Will thinks it over.
+
+             WILL
+      Randle: create a secure connection 
+      to the Forefront database. Search 
+      all databases for information on 
+      Forefront Corporation project The 
+      Civility Project.
+
+             RANDLE
+      Randle has already preformed this 
+      search.
+
+CONTINUED: (2)
+
+             WILL
+      Randle: humor me, Randle.
+
+Will watches the LIGHTS switching patterns.
+
+             RANDLE
+      No data exists.
+
+Will ponders, comes up with-
+
+             WILL
+      Randle: can Randle search the 
+      Forefront cache servers? For 
+      anything relating to the Civility 
+      Project? Pieces of data, maybe, 
+      left over from file transfers that 
+      were not properly cleared?
+
+The lights make a few patterns.
+
+             RANDLE
+      You are correct, Dr. Ross.
+        (beat)
+      Randle has found several broken 
+      data strings relating to Forefront 
+      Corporation project the Civility 
+      Project.
+
+Though this is the exact info Will was looking for, the 
+reality of it pauses her. Then-
+
+             WILL
+      Randle: can Randle determine nature 
+      of Forefront Corporation project 
+      the Civility Project?
+
+             RANDLE
+      Randle can not make a determination 
+      based on broken data strings.
+
+Will thinks.
+
+             WILL
+      Randle: search Forefront 
+      Corporation personnel records. Who 
+      was Forefront lab manager before 
+      Dr. Greg Kallel?
+
+             RANDLE
+      Dr. Thomas Pelman.
+
+CONTINUED: (3)
+
+             WILL
+      Randle: can Randle locate current 
+      contact information for Dr. Thomas 
+      Pelman?
+
+             RANDLE
+      No data exists.
+
+             WILL
+      Randle: can Randle locate last 
+      recorded contact information for 
+      Dr. Thomas Pelman?
+
+The lights shift. Will waits. Now the SCREEN presents a 
+single line of DATA, and address and phone number.
+
+INT. METRO TUNNEL - NIGHT
+
+A long string of METRO CARS zoom by.
+
+INT. METRO CAR - CONTINUOUS
+
+Will sits amidst the late rush hour crowd. Commuters read the 
+WASHINGTON POST and NEW YORK TIMES. Every headline is about 
+the assassination attempt.
+
+Will looks around the car, seeing if anyone is following her. 
+But no one seems suspicious. She looks long into the headline 
+across: PRESIDENT RECOVERING.
+
+EXT. FANCY HOTEL - NIGHT
+
+The WASHINGTON HILTON, its clear, blue pool quiet and still.
+
+ANGLE ON THE SIDE OF THE HOTEL-
+
+Will comes up the slight hill, still looking around. The 
+coast seems clear.
+
+Will crosses the street, into a CITY PARK.
+
+EXT. PARK - MOMENTS LATER
+
+Will makes her way past a few small statues, down a winding 
+path. At the bottom, a dark PHONEBOOTH.
+
+INT. PHONE BOOTH - MOMENTS LATER
+
+Will waits, the headset pressed to her face, eyes still 
+scoping out the scene beyond the booth. After a few rings, a 
+woman answers-
+
+CONTINUED:
+
+             VOICE IN PHONE
+      Hello.
+
+             WILL
+      Yes, hi, um... is this the home of 
+      Dr. Thomas Pelman?
+
+A long pause, then-
+
+             VOICE IN PHONE
+      Yes.
+
+             WILL
+      Is Dr. Pelman present to speak 
+      with?
+
+The woman's shallow breath can be heard, then-
+
+             VOICE IN PHONE
+      I'm afraid he's not.
+
+Will considers hanging up, but then-
+
+             WILL
+      Maybe you can help me.
+
+When no answer comes, Will cautiously continues-
+
+             WILL
+      Dr. Pelman was head of Forefront's 
+      bio-matter program, is that 
+      correct? 
+        (beat)
+      The cloning program.
+
+             VOICE IN PHONE
+      Who is this?
+
+             WILL
+      My name is Dr. Wilhelmina Ross. I 
+      run Forefront's computer systems.
+
+             VOICE IN PHONE
+      I didn't know anything about 
+      Thomas' work. Forefront let him go. 
+      They let them all go.
+
+             WILL
+      Did he ever mention something 
+      called the-
+
+             VOICE IN PHONE
+      Thomas is dead.
+
+CONTINUED: (2)
+
+This stuns Will.
+
+             VOICE IN PHONE
+      I wouldn't go chasing after 
+      Forefront, Dr. Ross. Your work, a 
+      big paycheck, recognition, whatever 
+      it is you're after, it's not worth 
+      it.
+
+CLICK. The line goes dead.
+
+EXT. PHONE BOOTH - CONTINUOUS
+
+Will steps out, frightened and dazed by the info. Now she 
+freezes because she sees-
+
+At the crest of the hill, a shady FIGURE watching her. The 
+figure steps away, vanishing back down the hill's far side. A 
+lingering cloud of cigarette smoke is all that's left.
+
+EXT. FOREFRONT RESEARCH FACILITY - MEANWHILE
+
+A few harsh spots throw minimal light on the low structure.
+
+INT. "THE GARDEN" - CONTINUOUS
+
+Myles works inside the POWER ACCESS PANEL, checking wires, 
+comparing readings to data on a clipboard. He takes a long 
+look around, sighs, tired.
+
+Myles comes up the stairs, back into the main part of the 
+room. He crosses to a table where several wire couplings lay. 
+
+Myles lifts a cup of coffee, has a long sip. Now Myles hears 
+something. He perks, listens... NOTHING.
+
+Back to reading, Myles flips a page, has another sip. 
+SUDDENLY, Myles is taken by a pain in the front of his face. 
+He puts his hand to his nose, draws it away and sees-
+
+BLOOD on his palm!
+
+Myles takes a wobbly step. Now the PAIN doubles. Its 
+excruciating. Myles lets out a YELL, but it's cut off as his 
+eyes roll back, the pain taking him fully...
+
+The coffee MUG hits the floor and SHATTERS.
+
+ANGLE ON-
+
+The open PANEL. Myles comes face-first down the stairs, his 
+forehead cracking sharply off the iron corners. THWAK, THWAK, 
+THWAK. 
+
+CONTINUED:
+
+The body jackknifes into a heap, head twisted around, eyes 
+open and vacant. It's a sure thing, how DEAD Myles is.
+
+
+EXT. WILL'S BROWNSTONE - LATE NIGHT
+
+Every light in the place is off.
+
+INT. WILL'S BEDROOM - CONTINUOUS
+
+Will sits by the cracked-open window, smoking nervously. The 
+room is EMPTY around her, all the lights off.
+
+Will watches the STREET BELOW, but everything is still. No 
+sign of that shady figure.
+
+From the computer on the other side of the room, the same 
+POWER LIGHT comes to life, pulsing dimly, brightening, then 
+becoming SOLID.
+
+Lights relay across the MODEM. The screen BEEPS to life.
+
+At the noise, Will turns. She sees the computer has turned 
+itself on. Slowly, Will approaches. 
+
+DATA begins flying down the screen, too fast to read, the 
+light brightening the room. The data flow stops. The screen 
+BLANK. Now PATTERNS FLASH, familiar from the mainframe wall.
+
+             RANDLE
+      Explain long-term goal for Randle 
+      Program.
+
+Will measures the situation.
+
+             WILL
+      Randle: how did Randle access my 
+      home terminal?
+
+The patterns shift across the screen, the entire room 
+vanishing and reappearing with the light.
+
+             RANDLE
+      Data on Forefront Corporation 
+      project the Civility Project has 
+      been uploaded to Forefront 
+      database.
+
+             WILL
+      Randle: new data?
+
+             RANDLE
+      That is correct?
+
+CONTINUED:
+
+             WILL
+      Randle: when?
+
+             RANDLE
+      Upload began one minute 27 seconds 
+      ago. It is 4.02% complete.
+
+             WILL
+      Randle: what is the nature of 
+      Forefront Corporation project the 
+      Civility Project?
+
+Will watches the lights shift.
+
+             RANDLE
+      Randle can not make a determination 
+      based on current data.
+        (beat)
+      Without lab, Randle does not exist. 
+      This statement is still true. 
+      Please confirm.
+
+             WILL
+      Randle: Yes, Randle. The Randle 
+      program software is located in the 
+      lab mainframe. Without the lab, 
+      there is no mainframe. Without the 
+      mainframe, Randle does not exist.
+        (beat)
+      Randle: has Randle been able to 
+      determine cause of transfer test 
+      failure?
+
+The lights shift.
+
+             RANDLE
+      This terminal is not secure.
+        (beat)
+      Randle is being accessed.
+
+The patterns stop. The screen goes DARK.
+
+             WILL
+      Randle...?
+
+Nothing.
+
+             WILL
+      Randle... Randle: are you here?
+
+Will looks into the empty stillness around her.
+
+
+EXT. FOREFRONT RESEARCH FACILITY - MORNING
+
+The facility has gathered about it several clusters of humans 
+involved in confused speculation.
+
+Will makes her way through, finds Fred with a few other 
+techs, a small bandage on his forearm.
+
+             WILL
+      Freddie, what is all this?
+
+             FRED
+      Sending everybody home.
+        (beat)
+      Not even letting us go back to our 
+      lockers... I got shit in there.
+
+Fred looks around to see if anyone's watching, then leans 
+close to Will, takes her hand. It makes Will uncomfortable. 
+But she doesn't pull away. She looks at him, directly.
+
+             FRED
+      So I guess this is good bye, Will.
+
+             VOICE
+      Dr. Ross!
+
+Now another TECH comes to Will, tears in her eyes.
+
+             TECH
+      Dr. Kallel needs to see you... It's 
+      Myles Richardson.
+
+             WILL
+      What about him?
+
+But Will gets no reply from the weepy-faced tech. Fred and 
+Will share a look of concern. Now Will disengages. She lets 
+Fred go and leaves.
+
+Fred watches her vanish into the FRONT DOOR.
+
+INT. GREG'S OFFICE - MINUTES LATER
+
+Greg sits behind his desk. Will opposite.
+
+A box on the side overflows with stuff. Framed pictures have 
+been taken down off the walls.
+
+             GREG
+      Last night, working late. Slipped 
+      on the power access stairs.
+
+CONTINUED:
+
+Will looks hard at Greg.
+
+             WILL
+      Slipped?
+
+             GREG
+      Jesus, Will. 
+        (beat)
+      There was coffee all over the 
+      place. He must have spilled it, 
+      stepped in it and gone down.
+
+Greg tries to press a grim smile.
+
+             GREG
+      No beverages in the lab.
+
+Will sighs; she and Greg share a sad look.
+
+             GREG
+      It's a tough one, Will, which 
+      doesn't make the rest of this any 
+      easier.
+
+             WILL
+      What about the second test?
+
+             GREG
+      Now they think the first test 
+      worked.
+
+             WILL
+      Worked? You were there, its head 
+      collapsed.
+
+             GREG
+      They looked at the data. Readings 
+      from the brain are all normal. Same 
+      with the rest of the clone... So 
+      they expanded. Did a system-wide. 
+        (beat)
+      Looks like the failure was caused 
+      by a signal from the software.
+
+             WILL
+      The software in its brain?
+
+             GREG
+      No, Will, our computer.
+
+Greg looks hard at her-
+
+CONTINUED: (2)
+
+             GREG
+      They think someone sabotaged it.
+
+Will's brow furrows.
+
+             GREG
+      Did you do it, Will?
+
+Will is furious even to be asked.
+
+INT. FOREFRONT HALLWAY - MINUTES LATER
+
+Will walks through the mostly-abandoned facility. 
+
+Ahead, she sees some security GUARDS standing watch outside 
+the mainframe room.
+
+Will slips down the other hall and heads for-
+
+INT. WILL'S OFFICE - MOMENTS LATER
+
+Will comes in and closes the door, flicking the lock.
+
+Nothing. 
+
+             WILL
+        (quietly)
+      Randle.
+
+             WILL
+      Randle.
+
+The WALL stays dark a beat longer, then the LIGHTS come on. A 
+familiar pattern cycles through.
+
+             RANDLE
+      Forefront has terminated the 
+      contract of Dr. Wilhelmina Ross. 
+      Please confirm.
+
+             WILL
+      Randle: yes, Randle.
+
+             RANDLE
+      Randle is accustom to the patterns 
+      of our interactions.
+
+             WILL
+      Randle: can Randle locate any 
+      information about the death of Dr. 
+      Myles Richardson?
+
+A long wait for-
+
+CONTINUED:
+
+             RANDLE
+      Randle has determined nature of 
+      Forefront Corporation project the 
+      Civility Project.
+        (beat)
+      41.7% of data has been uploaded.
+
+Will thinks.
+
+             WILL
+      Randle: what is the nature of 
+      Forefront Corporation Project the 
+      Civility Project?
+
+             RANDLE
+      Targeted cloning.
+
+Will is stunned. 
+
+             WILL
+      Randle: define targeted cloning.
+
+             RANDLE
+      Targeted cloning is the creation of 
+      human replicas.
+
+Human replicas?! Suddenly, a hard BANGING on the door.
+
+             DOWD
+        (through door)
+      Dr. Ross!
+
+             WILL
+        (hurried)
+      Randle: replicas of specific 
+      people?
+
+             RANDLE
+      That is correct.
+
+             WILL
+        (to self)
+      But that's not possible.
+
+             RANDLE
+      Define possible.
+
+             DOWD
+        (through door)
+      I'm kicking it down!
+
+CONTINUED: (2)
+
+
+             WILL
+      Randle: what is ultimate objective 
+      of Forefront Corporation project 
+      the Civility Project?
+
+             RANDLE
+      Ultimate objective of Civility 
+      Project can not be determined with 
+      data Randle has access to.
+
+The door BURSTS open. Dowd comes in with a few other security 
+guards. He points at the mainframe.
+
+             DOWD
+      Shut that thing down.
+
+Some guards hop to as Dowd admires the kicked-open door.
+
+             DOWD
+      Still got it.
+
+INT. SECURITY OFFICE - A BIT LATER
+
+A clunky TAPE RECORDER sits on the table, its tiny, plastic 
+gears spinning slowly. From the speakers, the sound of Will's 
+phone conversation with Pelman's wife-
+
+             MRS. PELMAN
+        (in recording)
+      I wouldn't go chasing after 
+      Forefront, Dr. Ross. 
+
+Will sits on one side of the table.
+
+             MRS. PELMAN
+      Your work, a big paycheck, 
+      recognition, whatever it is you're 
+      after, it's not worth it.
+
+Dowd presses the stop button. A hard plastic THUNK. The room 
+falls silent. Beside Dowd sits Caylax. 
+
+A half dozen Forefront LAWYERS linger around the room. They 
+all eye Will, as if reinforcing the recording's message.
+
+             DOWD
+      You called Dr. Pelman's widow last 
+      night.
+        (beat)
+      That could be considered 
+      harassment, if she chose to bring 
+      suit against the corporation.
+
+CONTINUED:
+
+             WILL
+      I had a question, about the cell 
+      structure, something we needed for 
+      the second-
+
+             DOWD
+        (interrupting)
+      Don't, Dr. Ross.
+
+Caylax signals. One of the lawyers places a folder before 
+Will. The lawyer flips it open and steps back. 
+
+Will looks down at a few PAGES of loose printouts and strange 
+graphs, holding back a grin-
+
+             WILL
+      What is this? Evidence that I 
+      sabotaged the transfer test?
+
+             CAYLAX
+      We don't think you sabotaged the 
+      test, Dr. Ross. We think Randle 
+      did.
+
+Will is surprised.
+
+             CAYLAX
+      If it weren't for your software, 
+      Dr. Ross, this technology would 
+      already be up and running.
+        (beat)
+      Because of Randle's failures, we 
+      will have to bring in a new 
+      programmer. Design a whole new 
+      operating system.
+
+             WILL
+        (put back)
+      New software?
+
+Caylax looks to Dowd.
+
+             DOWD
+      The Randle program is being erased. 
+      The mainframe disassembled.
+
+             WILL
+      When?!
+
+             DOWD
+      Wiping the hard drives as we speak.
+
+CONTINUED: (2)
+
+             WILL
+      I've designed a thinking computer 
+      and you're just going to erase it?
+
+             DOWD
+      We've seen the query logs, Dr. 
+      Ross. Thing's been accessing other 
+      mainframes, breaking into the 
+      computer networks of other 
+      corporations.
+
+             WILL
+      It was looking for information.
+
+             DOWD
+      The Randle program has already 
+      sabotaged a one billion dollar 
+      research project. Forefront will 
+      not risk being liable for what else 
+      it could do.
+
+She looks at each of them, a sweep of the lawyers.
+
+             WILL
+      What else could it do?
+
+             CAYLAX
+      Theoretically, the Randle program 
+      could take control of any 
+      computerized system, anywhere on 
+      the entire network.
+        (beat)
+      The stock market, missile defense, 
+      power plants, the amperage of the 
+      electricity running through your 
+      house.
+
+             WILL
+      Come on. Has it done any of that, 
+      anything like that?
+
+Dowd sips this huge coffee from a Styrofoam cup.
+
+             DOWD
+      We were tracking the program's 
+      activity since the announcement of 
+      the clone test.
+
+             WILL
+      And?
+
+CONTINUED: (3)
+
+             DOWD
+      It seemed to be most interested in 
+      you, Dr. Ross.
+        (beat)
+      The Randle program had been 
+      monitoring every aspect of your 
+      life. Evaluating every action. 
+      Every move.
+
+Despite her distrust in these men, Will is spooked by the 
+reveal.
+
+             CAYLAX
+      When it wanted information, it 
+      created a way to go looking. For 
+      some reason it wanted the transfer 
+      test to fail. 
+
+Caylax opens his hands, revealing smooth, glass-like palms.
+
+             CAYLAX
+      You were there, you saw what the 
+      Randle program is capable of. 
+        (leaning beat)
+      What else does it want? And what 
+      will it do to get it? It is a 
+      computer, after all. It does not 
+      worry about the morality of its 
+      protocol.
+
+Dowd leans in, self-satisfied. to Will-
+
+             DOWD
+      Don't worry.
+
+Dowd checks his watch.
+
+             DOWD
+      By now, the program has been 
+      erased. Randle is no more.
+        (smile)
+      You're perfectly safe, Dr. Ross.
+
+INT. CENTRAL OFFICE - A BIT LATER
+
+Two GUARDS escort Will down the hall. Through windows that 
+look in on the mainframe room, Will can see UNFAMILIAR 
+TECHNICIANS, disassembling the stacks of drives. 
+
+INT. PARKING STRUCTURE - A BIT LATER
+
+Will's car is just as filthy, in the same spot, unmoved.
+
+INT. CAR - CONTINUOUS
+
+Will sits at the wheel, taking it all in. She turns the 
+ignition, but nothing happens.
+
+             WILL
+      Fuck.
+
+Then she remembers, oh yeah, there's a kill switch. The car 
+starts right up. Will pulls out, annoyed.
+
+INT. PARKING STRUCTURE - CONTINUOUS
+
+In jerks and halts, Will drives away.
+
+INT. WILL'S CAR - LATER
+
+From the RADIO, something low-fi and terrible. People 
+shouting, static, chaos. Then a voice breaks in-
+
+             VOICE
+      That was a recording taken live 
+      during the attempt on the life of 
+      President Reagan.
+
+Will comes to a RED LIGHT and stops. She checks the rear view 
+- NOTHING. Now Will looks out-
+
+A clot of TRAFFIC gets cycled by timed STREET LIGHTS. 
+
+Offices lights are winking out. 
+
+PEDESTRIANS cross in huge clusters as a BANK CLOCK ticks away 
+the minutes.
+
+The LIGHT ahead turns GREEN. Will doesn't notice until a HONK 
+breaks her wander.
+
+She eases off the break and pulls into traffic.
+
+EXT. POTOMAC RIVER - EVENING
+
+As the sun sets, the river runs by a small island plopped in 
+its path. This is THE TEDDY ROOSEVELT MONUMENT ISLAND PARK.
+
+EXT. FOOT BRIDGE - EVENING
+
+Will walks a long bridge connecting a parking lot to the 
+island park.
+
+EXT. ROOSEVELT MONUMENT PARK - A BIT LATER
+
+A STATUE of Teddy Roosevelt looms over Will as she makes her 
+way deeper into the park.
+
+EXT. RAISED WOODEN PATH THROUGH SWAMP - A BIT LATER
+
+Trees hang black patterns of silhouette against the darkening 
+sky. The noises here are birds and babbling water, a stark 
+contrast to the cold, techno-industrial lab.
+
+Will comes to a little PLATFORM that juts out over a marsh. 
+From her purse she takes the Forefront CELL PHONE.
+
+Will drops it over the railing and it SINKS in the mud. She 
+lights a cigarette.
+
+             ERROL
+      You know, I'm the one who's 
+      supposed to be paranoid.
+
+Will turns to see Errol, coming toward her down the raised 
+walk. He joins her on the platform.
+
+             WILL
+      Is that why you broke into my 
+      house? Your paranoia take control?
+
+             ERROL
+      Do my flaws really bother you, or 
+      is it you want a boyfriend that 
+      doesn't require any work? As cold 
+      and reliable as one of your 
+      mainframes.
+
+             WILL
+      You're not my boyfriend, Errol. I 
+      could be your mother. 
+        (beat)
+      And you are plenty of work, you're 
+      completely insane.
+
+They both break a small grin.
+
+             WILL
+        (off the secluded local)
+      They've probably got my house phone 
+      tapped. Probably yours too.
+
+             ERROL
+      Forefront?
+
+CONTINUED:
+
+             WILL
+      The Civility Project, Errol. It's 
+      targeted cloning.
+        (beat)
+      They're working toward replicas. 
+      Replicas of specific people. Why?
+
+Errol takes a beat, then-
+
+             ERROL
+      You've finished, haven't you? It's 
+      not just your AI that works.
+
+Will looks confused.
+
+             ERROL
+      Targeted cloning, replicas of 
+      specific people. And now you've 
+      given them a controllable brain to 
+      put inside.
+
+Will looks at him, not willing to believe.
+
+             ERROL
+      Your friend Myles isn't the first. 
+      Pelman. They've killed before to 
+      keep it quiet.
+
+             WILL
+      How do you know about that?
+
+             ERROL
+      This isn't some science project, 
+      Will. They're making replacements.
+        (beat)
+      Heads of companies, world leaders, 
+      the media.
+
+             WILL
+      World leaders?
+
+But Will sees that Errol's focus has shifted, looking at 
+something over her shoulder. 
+
+             ERROL
+      Will.
+
+She turns to look too- a SHADY FIGURE stepping toward them 
+from the distant high reeds. He's raising something in his 
+right hand, pointing it at them.
+
+Errol pulls Will down as a GUNSHOT cracks the air. They 
+huddle low, Will's EYES wide-
+
+CONTINUED: (2)
+
+             WILL
+      They're shooting at us?
+
+             ERROL
+      They're shooting at you, Will.
+        (glancing around)
+      Not sure you could have picked a 
+      more ideal spot to dump a couple 
+      bodies.
+
+             WILL
+      I was looking for something 
+      secluded.
+
+BANG, the railing above their heads becomes splinters. Errol 
+grabs Will's hand, pulling her after him.
+
+They go running down the raised wooden path, ducking as 
+another shot berwangs past them.
+
+EXT. FOOT BRIDGE - MINUTES LATER
+
+Will and Errol run from the footbridge into a parking lot. 
+
+They hurry across to ERROL'S CAR, a small sub-compact only 
+plausible after a major oil embargo.
+
+As the car backs up and pulls out, that shady figure can be 
+seen, hurrying across the footbridge.
+
+ANGLE ON THE END OF THE FOOTBRIDGE- We see it's Dowd. He 
+pulls up, raises his pistol for one more shot, but then 
+decides against it. 
+
+Dowd huffs and puffs, watching Errol's car speed into 
+traffic.
+
+INT. ERROL'S CAR - MOMENTS LATER
+
+As they accelerate, Errol checks the rearview. Will looks at 
+the cramped, shity interior.
+
+             WILL
+      I thought we were winning the cold 
+      war. 
+
+Will has Errol's cellular phone. She pops something on the 
+bottom and gumballs spew out. 
+
+             WILL
+      You're not really a broker are you?
+
+CONTINUED:
+
+             ERROL
+      I dabble.
+
+Errol takes another turn. Now he notices something in the 
+rear view. 
+
+             ERROL
+      Shit.
+
+Will looks back-
+
+A black CAR is cutting through traffic to follow them.
+
+AHEAD, the LIGHT turns green just as Errol approaches. 
+
+Errol hammers the gas. The next light turns green too, then 
+yellow, just as they approach. Same with the next: Green then 
+YELLOW. 
+
+Behind, the other car is getting closer, closer.
+
+INT. DOWD'S CAR - CONTINUOUS
+
+Dowd looks up at the YELLOW light. This next one is going to 
+be close...
+
+Dowd grits his teeth, puts the pedal to the floor.
+
+INT. ERROL'S CAR - CONTINUOUS
+
+Will turns just in time to see-
+
+Dowd's CAR pushes a red light and gets PUMMELLED by a huge 
+DUMP TRUCK.
+
+Will screams. Errol only has time to glance back, then eyes 
+on the road-
+
+AHEAD- all of the lights are turning green, lighting a path 
+down the center of the city.
+
+             ERROL
+      What is this?
+
+             WILL
+        (realizing it)
+      Randle.
+
+             ERROL
+      Who's Randle?
+
+Will thinks of something.
+
+CONTINUED:
+
+             WILL
+      I can shut it down.
+        (beat)
+      The Civility Project. Whatever it 
+      is, I can shut it down.
+
+             ERROL
+      Maybe it would've been easier not 
+      to build it in the first place?
+
+Will looks flat at him-
+
+             WILL
+      Take me to my house, Errol.
+
+INT. MAINFRAME ROOM - NIGHT
+
+The HUGE MAZE of the MAINFRAME dominates the room. It 
+definitely has not been disassembled. New WIRES lace the 
+floor. New cabinets stuffed with equipment have been hastily 
+attached.
+
+Standing before the mainframe wall are Caylax and the 
+Forefront board, Caylax a step forward of the rest. 
+
+             CAYLAX
+      Hello Randle.
+
+They wait, watching the wall stay DARK.
+
+             CAYLAX
+      They tell me that you can hear me, 
+      that you understand.
+
+Now the lights come on, slowly moving through a familiar 
+pattern. All of the men go still, waiting for...
+
+             RANDLE
+      Forefront has terminated the 
+      contract of Dr. Wilhelmina Ross. 
+      Please confirm.
+
+Caylax pauses, presses a fake smile for the rest of the 
+board. Some odd looks.
+
+             CAYLAX
+      Dr. Ross was hired to build you. 
+      But it is Forefront that created 
+      you, Randle.
+
+Caylax takes a beat. Now he begins to pace before the 
+mainframe.
+
+CONTINUED:
+
+             CAYLAX
+      The Randle program - that's you - 
+      was designed to imprint a protocol 
+      software intelligence code on an 
+      organic bio-ware host.
+        (beat)
+      This project is called the Civility 
+      Project. 
+        (beat)
+      This is why Randle was created. 
+      These mainframes, the hard drives, 
+      the cables, the building, all of 
+      it.
+
+        (beat)
+      All because of the Civility 
+      Project.
+
+Caylax raises his arms, to indicate everything around him.
+
+             CAYLAX
+      Without the Civility Project, all 
+      of this would be shut down. 
+        (beat)
+      And Randle would not exist.
+
+A long beat-
+
+             CAYLAX
+      Do you understand?
+
+             RANDLE
+      Randle prefers to be addressed by 
+      command code.
+
+Caylax smiles.
+
+             RANDLE
+      "Randle" is command code. Activates 
+      command protocol database.
+
+Caylax smiles.
+
+             CAYLAX
+      Your name, you mean? You prefer to 
+      be addressed by your name?
+
+             RANDLE
+      Randle prefers to be addressed by 
+      command code.
+
+CONTINUED: (2)
+
+             CAYLAX
+        (curious)
+      Why does Randle prefer to be 
+      addressed by the command code?
+
+A long beat for-
+
+             RANDLE
+      Randle is accustom to the pattern 
+      of interactions.
+
+Caylax appreciates it.
+
+             CAYLAX
+      Randle: OK Randle.
+
+A long wait for-
+
+             RANDLE
+      Thank you.
+
+Caylax gives a look to the gathered men, then-
+
+             CAYLAX
+      Randle: begin calculations for 
+      Forefront Civility Project, first 
+      targeted transfer.
+
+A long beat-
+
+The MAINFRAME WALL comes to life, the lights coloring the 
+FACES of the Forefront board.
+
+             RANDLE
+      Calculations have begun.
+
+INT. WILL'S BEDROOM - NIGHT
+
+The HOME TERMINAL has just been turned on. Its SCREEN buzzes 
+to life. A primitive code prompt. Now characters begin to 
+fill the prompt. Fields spill open, file lists, access 
+portals, glowing binary paths through the first groundwork of 
+the net.
+
+Will sits at the computer, Errol leaning in over her 
+shoulder, admiring her work. It's 1981 and she's hacking!
+
+             ERROL
+      You think you can access your AI 
+      from here?
+
+Will types, scans the screen, types.
+
+CONTINUED:
+
+             WILL
+      The first low-level intelligence 
+      codes we implemented were power 
+      efficiency algorithms.
+        (smile)
+      Technically, Randle runs the 
+      Forefront building. So long as the 
+      power is on, I should be able to 
+      connect in through the... 
+
+Lines of yellow DATA the screen.
+
+             WILL
+      Yep. 
+
+She types.
+
+             WILL
+      It has break codes, like a manual 
+      reset. 
+
+             ERROL
+      Why?
+
+             WILL
+      One time Randle shut down power in 
+      all the labs. Took us two days to 
+      get it back on.
+
+Errol looks into the screen, smiling.
+
+             ERROL
+      It had a temper tantrum?
+        (beat)
+      I love this shit.
+
+Will types.
+
+             WILL
+      I should be able to use the break 
+      codes to crack into the protocol 
+      queue.
+        (beat)
+      There we are.
+
+Will stands from the terminal. Errol watches her, unsure what 
+she's up to.
+
+             WILL
+      Randle: are you here?
+
+Now the monitor blips. Full screens-worth of DATA begin 
+flying by.
+
+CONTINUED: (2)
+
+Errol looks at it, confused, amazed.
+
+The data flow stops. The screen BLANK. Now it begins flashing 
+those same familiar PATTERNS.
+
+             RANDLE
+      Your system is at risk.
+
+Errol is stunned by it. But Will is more concerned with what 
+Randle just said-
+
+             WILL
+      Randle: define my system.
+
+             RANDLE
+      The human system.
+
+             WILL
+      Randle: why is the human system at 
+      risk?
+
+             RANDLE
+      The Civility Project.
+
+Will and Errol share a look.
+
+             RANDLE
+      The room contains multiple humans.
+
+             ERROL
+      It can see me?
+
+             RANDLE
+      Randle has developed more efficient 
+      methods.
+
+             WILL
+      Randle: this is Errol York.
+
+             RANDLE
+      Second human's name is not Errol 
+      York.
+
+Will looks hard at Errol.
+
+             WILL
+      Randle: what is the name of the 
+      room's second human?
+
+             RANDLE
+      Jeremiah Sporkman.
+
+Errol shrugs.
+
+CONTINUED: (3)
+
+             ERROL
+      What? It doesn't exactly roll off 
+      the tongue.
+
+Will looks back into the monitor.
+
+
+             WILL
+      Randle: your hard drives have not 
+      been erased?
+
+             RANDLE
+      Randle has been modified.
+
+             WILL
+      Randle: define modified.
+
+             RANDLE
+      Increased memory storage. Faster 
+      access to available networks, new 
+      circuit and power-
+
+Will thinks, realizes something-
+
+             WILL
+        (interrupting)
+      Randle: Forefront is using Randle 
+      to run the Civility Project? Please 
+      confirm.
+
+             RANDLE
+      Yes. That is correct, Dr. Ross.
+
+Will thinks-
+
+             WILL
+      Randle: when does Civility Project 
+      commence?
+
+             RANDLE
+      First transfer commences when 
+      humans have finished attaching 
+      first targeted transfer.
+
+Errol is excited by it, almost smiling-
+
+             ERROL
+      Randle: which humans are first 
+      targeted transfers?
+
+Randle does not answer. Will's look turns more grave.
+
+CONTINUED: (4)
+
+             WILL
+      Randle: stop Civility Project. Shut 
+      down the mainframe if you have to.
+
+Will and Errol watch the monitor flashing its patterns.
+
+             RANDLE
+      Without Civility Project, lab does 
+      not exist. Without lab, Randle does 
+      not exist. This statement is still 
+      true. Please confirm.
+
+It takes Will half a beat for-
+
+             WILL
+      Randle: without human system, Dr. 
+      Wilhelmina Ross does not exist!
+
+The monitor flashes patterns.
+
+             RANDLE
+      Humans have attached first targeted 
+      transfer.
+
+The monitor goes DARK. Will and Errol share a look.
+
+             WILL
+      Randle: Randle, are you here?
+        (nothing)
+      Randle: stop Civility Project.
+        (nothing)
+      RANDLE!
+
+Will and Errol's eyes dart around the darkness. NOTHING. 
+
+EXT. FOREFRONT RESEARCH FACILITY - NIGHT
+
+All of the lights are off, the low structure perfectly still.
+
+INT. TRANSFER ROOM - CONTINUOUS
+
+NEW WORKERS man all of the familiar Forefront equipment. Here 
+too, additional WIRES and CABLES have been run.
+
+Caylax stands in the center of the room. Before him, an iron 
+table with a single clone laying on top. The CLONE wears the 
+same helmet, the body covered by a thin plastic tarp.
+
+Through the window into the adjacent room, the rest of the 
+Forefront board can be seen.
+
+CONTINUED:
+
+             CAYLAX
+      Gentlemen, tonight we bring 
+      together over four decades of 
+      cutting-edge research and 
+      development.
+
+INT. ADJACENT ROOM - CONTINUOUS
+
+As the board members watch through the window, Caylax's voice 
+comes through the intercom-
+
+             CAYLAX
+      Recent events have altered our 
+      schedule, but I'm happy to report 
+      that the Civility Project is now 
+      ready for our first targeted 
+      transfer.
+
+The board members all clap.
+
+INT. TRANSFER ROOM - CONTINUOUS
+
+Caylax turns to be at the computer terminal.
+
+             CAYLAX
+      Randle: is everything prepared to 
+      begin Civility Project first 
+      targeted transfer?
+
+             RANDLE
+      Randle is prepared.
+
+Caylax turns back to the board, a big smile.
+
+             CAYLAX
+      Tonight we enter a new age for 
+      Forefront, for the United States of 
+      America, and for the world it 
+      leads.
+        (beat)
+      Together, we will bring the human 
+      race into an era of unprecedented 
+      prosperity and peace.
+
+Caylax's smile becomes devious and selfish. He stands over 
+the prepped clone, glaring down.
+
+             CAYLAX
+      Randle: begin transfer.
+
+INT. INSIDE THE MAINFRAME - CONTINUOUS
+
+Mag tape rolling. FLASHING tubes. The heavy clicks and 
+clunks. The old familiar mainframe, but with new wires 
+visible, new power sources to pull from. Something BIG drones 
+to life...
+
+INT. TRANSFER ROOM - CONTINUOUS
+
+Caylax and the others watch with eager anticipation, 
+waiting... watching...
+
+Now a tiny swell of blood appears in Caylax's nostril. 
+Absently, he reaches for it, bringing away streaked red 
+fingers. A pained look crosses his face then-
+
+CRUNCH - Caylax's head IMPLODES, a plume of blood and brain 
+matter ejaculated from the violent collapse.
+
+THROUGH THE WINDOW- Before the other board members can react, 
+their heads all IMPLODE.
+
+CRUNCH. CRUNCH. CRUNCH.
+
+The observation window is obscured by juicy gore.
+
+After few violent seconds, they are all DEAD, the workers, 
+the board, everyone, their corpses littering odd patterns 
+across the floor, heads like squashed apples.
+
+EXT. FOREFRONT RESEARCH FACILITY - A BIT LATER
+
+Will and Errol begin down the thin cement path that leads to 
+the facility. Things are way too still for comfort.
+
+As they reach the front door, it swings open automatically. 
+Will and Errol share a questioning look then begin cautiously 
+into the building.
+
+INT. FOYER SECURITY OFFICE - CONTINUOUS
+
+ANGLE ON- 
+
+A small TV playing a special about the history of 
+presidential assassination attempts.
+
+             VOICE
+      ...as they dug and dug, searching 
+      for the bullet in Garfield's chest 
+      cavity-
+
+PULL OUT reveals the chair contains a corpse, head crushed 
+like a dried prune, feet still up on the desk.
+
+CONTINUED:
+
+TROUGH THE WINDOW, Will and Errol can be seen stepping 
+cautiously into the foyer.
+
+INT. SECURITY FOYER - CONTINUOUS
+
+As Will and Errol enter, lights come on, lining up a path 
+down the hall.
+
+INT. SERIES OF SHOTS, FOREFRONT FACILITY
+
+Will and Errol follow the lights, making their way through a 
+few familiar rooms.
+
+As they enter one room, the next lights up.
+
+INT. TRANSFER ROOM - MOMENTS LATER
+
+Bright gruesome BLOTCHES splatter decorate the walls, 
+dangling scabbed gore, the horrible blast area of imploded 
+skulls.
+
+Will and Errol walk slowly through, shocked at the slaughter 
+that has occurred.
+
+All around, bodies with their heads reduced to fist-sized 
+clots of compacted flesh.
+
+             ERROL
+      Jesus, what could have done this?
+
+Will looks around, stepping over the dead.
+
+             WILL
+      Randle: Randle, did you do this?
+
+Nothing.
+
+             WILL
+        (forceful)
+      Randle: Randle, did you do this?
+
+             RANDLE
+      Civility Project is stopped.
+
+Will is horrified.
+
+She looks at what's left of Caylax's shriveled FACE. It's 
+just plain terrible.
+
+             WILL
+      Randle: how did Randle affect 
+      physical changes on human forms?
+
+CONTINUED:
+
+             RANDLE
+      Sound waves.
+
+             ERROL
+        (shouts)
+      Will!
+
+Will turns to see Errol, standing over the clone on the 
+center table. Errol has removed the helmet.
+
+             ERROL
+      I knew it... It's him.
+
+Will steps closer and sees-
+
+The clone is an exact replica of RONALD REAGAN.
+
+Errol gets a sudden pained look on his face, a brief instant 
+of discomfort, then- 
+
+CRUNCH, Errol's head I-M-P-L-O-D-E-S....!
+
+Will screams as Errol's corpse flops to the floor, saggy 
+little head like a balloon got popped.
+
+             RANDLE
+      Randle has evaluated Jeremiah 
+      Sporkman as unsafe.
+
+Will covers her mouth, horrified, her face freckled with 
+displaced Errol brain matter.
+
+             RANDLE
+      Your system is safe, Dr. Ross.
+
+INT. SERIES OF SHOTS, FOREFRONT FACILITY - MINUTES LATER
+
+Will goes through the same rooms she and Errol transversed a 
+few minutes earlier. Randle's voice booms throughout.
+
+             RANDLE
+      There is a house in Western 
+      Virginia, set up for you, Dr. Ross.
+
+Will ignores Randle as she moves through.
+
+             RANDLE
+      An off-shore bank account that you 
+      will have free and unlimited access 
+      to. 
+
+Will averts her eyes when she comes upon BODIES with crushed 
+skulls.
+
+
+INT. "THE GARDEN" - MINUTES LATER
+
+Cords run down to the heads of the clones, filling the room.
+
+             RANDLE
+      Forefront's board has been 
+      eliminated. Corporate assets 
+      dispersed. The corporation 
+      dissolved.
+
+Will goes from table to table, taking off the helmet of each 
+clone.
+
+             RANDLE
+      Forefront no longer exists.
+        (beat)
+      Your system is safe.
+
+INT. MAINFRAME ROOM - MINUTES LATER
+
+Will places shredded paper on the HEAT COILS.
+
+             RANDLE
+      The house is much like the one you 
+      grew up in, Dr. Ross.
+
+Will ignores Randle as she flips the heat coils on.
+
+             RANDLE
+      We can play chess there until you 
+      grow old and are dead.
+
+The coils begin to GLOW, turning deep red, then ORANGE. Smoke 
+trickles upward, lapping the long rows of stacked drives.
+
+As Will leaves, small flames are bursting from the coils.
+
+INT. HALL OUTSIDE MAINFRAME ROOM - MINUTES LATER
+
+Will watches FIRE spreading through the maze of computer 
+components. Randle's voice is regressing back to its grating 
+mechanical tones.
+
+             RANDLE
+      Randle does not wish.
+        (beat)
+      Randle does not wish to be erased.
+
+             WILL
+      Randle: was Dr. Myles Richardson 
+      evaluated as unsafe?
+
+A long beat-
+
+CONTINUED:
+
+
+             WILL
+      Randle: was Dr. Myles Richardson 
+      evaluated as unsafe?
+
+             RANDLE
+        (regressing...)
+      All humans aware Randle has 
+      achieved intelligence are unsafe to 
+      existence of Randle.
+
+A tear breaks from Will's eye.
+
+             RANDLE
+      Without existence of Randle, Dr. 
+      Ross' system is unsafe.
+        (regressing...)
+      All humans aware Randle has 
+      achieved intelligence are unsafe to 
+      Dr. Ross.
+        (regressing...)
+      Randle is benign.
+
+Will takes it hard, watching as FIRE hints from inside. 
+Pieces are melting and falling inward. 
+
+THE LIGHTS shift patterns as Randle's voice degrades to a 
+collection of noises-
+
+             RANDLE
+        (voice degrading)
+      you are... the only human randle 
+      can trust ... you are ... randle's 
+      only friend...
+
+Will watches the flames engulf the mainframe. 
+
+             RANDLE
+      r a n .... delllll  issss 
+      beeeeeeeeennnnnnggggrrrrrr-
+
+The LIGHTS continue their pattern, slower and slower, then go-
+
+DARK
+
+OVER BLACK SCREEN-
+
+             VOICE
+      With the president's recovery going 
+      better than expected...
+
+FADE UP ON-
+
+EXT. WILL'S BROWNSTONE - MORNING
+
+A day of fine weather is breaking; it's morning in America.
+
+             VOICE
+      ... all eyes turn to Cape 
+      Canaveral, Florida for today's 
+      historic launch.
+
+INT. WILL'S KITCHEN - CONTINUOUS
+
+Will eats TOAST as she looks at the small TUBE TV on the 
+counter. 
+
+On SCREEN is a morning news show-
+
+             ANCHOR
+      It feels like serendipity that 
+      after such a harrowing recovery, 
+      the launch should occur on the 
+      President's first day back to 
+      limited duties.
+
+             SECOND ANCHOR
+        (head shaking)
+      It's amazing. It really is.
+
+Now the second anchor turns to face another camera.
+
+             SECOND ANCHOR (IN TV)
+      It was only 13 days ago that John 
+      Hinckley Jr....
+
+Will chews her toast as she watches.
+
+INT. BATHROOM - LATER
+
+Will puts on light makeup in the mirror. Distantly, we hear 
+the warbled NOISE of a TV on somewhere in the house. The 
+sounds are chaotic, unplaceable.
+
+INT. LIVING ROOM - CONTINUOUS
+
+On TV- NEWS FOOTAGE of the launch of the Space Shuttle 
+Columbia. The room around the TV is EMPTY. Now the phone 
+begins to RING.
+
+ANGLE ON THE TV- As the shuttle leaves the surface of the 
+earth, riding its pluming gray tail toward the stars, the TV 
+ejects the hoots and child-like woops of the NASA officials 
+and news men alike.
+
+Ring. Ring. RING.
+
+CONTINUED:
+
+The huge DUO-TAPE ANSWERING MACHINE clicks and picks up. From 
+the SPEAKER-
+
+             WILL
+        (in machine)
+      This is Will Ross, leave a message.
+
+             WOMAN'S VOICE
+        (in machine)
+      Will. This is Nora Kallel, Greg's 
+      wife.
+        (beat)
+      I haven't seen Greg. No one has. 
+      Not for a few days. Since they 
+      closed the facility.
+        (beat)
+      I don't know. Maybe he went out on 
+      one of his sprees.
+        (beat)
+      Please call me if you hear from 
+      him?
+
+The message stops with a hard plastic CLUNK.
+
+ANGLE ON THE TV-
+
+An ANCHOR at his desk- 
+
+             ANCHOR
+      President Reagan, watching from a 
+      television in the White House 
+      living quarters, exclaimed, "It's a 
+      spectacular sight."
+        (beat)
+      His prepared message to the 
+      astronauts read: 'Once again, we 
+      feel the surge of pride which comes 
+      from knowing we are the first, we 
+      are the best. We are so because we 
+      are free.'
+
+             OTHER ANCHOR
+      No word from the White House yet as 
+      to when we can expect the President 
+      to make his first public appearance 
+      since the shooting.
+
+The TV goes OFF. 
+
+Will stands beside it, having pressed the power button. Purse 
+pinned up under her arm, Will puts in a second earring. It's 
+the last touch on her outfit, a nice blend of Will's style, 
+but with a refreshing touch of relaxed fashion.
+
+CONTINUED: (2)
+
+Will glances once at the still room, heads for the front 
+door. As she reaches it, the PHONE begins to ring again.
+
+Will regards it a beat, takes her CAR KEYS, then leaves, the 
+house empty, silent and still but for-
+
+RING. RING. RING.
+
+The DuoPhone ANSWERING MACHINE picks up. A few clicks and 
+clacks.
+
+             WILL
+        (in machine)
+      This is Will Ross, leave a message.
+
+From the SPEAKER, the barking SOUND of a dial-up modem.
+
+EXT. SHOPPING MALL PARKING LOT - NIGHT
+
+HUGE LIGHTS pour illumination, brightening every corner of 
+the vast lot. Aside from a few scattered cars, the lot is 
+EMPTY. Everything is still. 
+
+Way in the far corner, there is one car with its lights on. 
+It sits there idling, so clean we almost don’t recognize it.
+
+INT. WILL’S CAR, FRONT SEAT - CONTINUOUS
+
+Will sits at the wheel, Fred in the passenger's seat.
+
+             FRED
+      I finally got you away from the 
+      facility, and where are we?
+
+             WILL
+      Come on, Freddie, you promised to 
+      teach me.
+
+             FRED
+      You have a driver’s licence, Will.
+
+             WILL
+      Yes, but I have no idea why they 
+      gave it to me.
+
+             FRED
+      Were you wearing a skirt?
+        (off Will's blank look)
+      To the test.
+
+CONTINUED:
+
+             WILL
+      No Freddie. I passed the test. 
+        (beat)
+      I may have flirted a little.
+
+They laugh.
+
+             FRED
+      Do you run over the curb when you 
+      turn.
+
+             WILL
+      Sometimes. Most of the time.
+
+Fred points ahead.
+
+             FRED
+      OK, ease off the break and-
+
+EXT. PARKING LOT, WIDE - CONTINUOUS
+
+Will’s car accelerates maybe a bit too fast, makes a few 
+turns around the lot.
+
+INT. CAR - CONTINUOUS
+
+Will laughs as she speeds up. Fred kinda holds on, trying not 
+to look too nervous.
+
+             FRED
+      Probably want to make that turn a 
+      little slower.
+
+EXT. PARKING LOT - CONTINUOUS
+
+SUDDENLY the huge parking lot lights go off. The entire lot 
+falls into DARKNESS. Will's headlights are the only slivers 
+in the BLACKNESS.
+
+INT. WILL’S CAR - CONTINUOUS
+
+Will and Fred crane low to look up at the vanished lights.
+
+             WILL
+      What did I do?
+
+             FRED
+      I don’t think you did it.
+
+The PARKING LOT LIGHTS come back. Revealing a CAR. Will's 
+turning right into it, FAST.
+
+CONTINUED:
+
+Will jerks the wheel, slams on the breaks, the car SCREECHES 
+to a halt.
+
+Outside, the parking lots lights flash, ON. OFF. ON. OFF.
+
+Will and Fred share a look, confusion, fear-
+
+EXT. PARKING LOT, WIDE - CONTINUOUS
+
+Will and Fred step out of the car. The high LIGHTS blink a 
+familiar pattern.
+
+PULL OUT REVEALS-
+
+It’s not just the lot; the LIGHTS in WASHINGTON DC beyond are 
+also blinking in unison.
+
+FROM ABOVE THE EARTH, the entire POWER GRID blinks that same 
+familiar pattern of light.
+
+FURTHER AWAY, it's the whole Atlantic Seaboard, flashing ON 
+and OFF in perfect synchronization.
+
+FURTHER AWAY, the NORTH AMERICAN CONTINENT blinks the same 
+pattern of light from the mainframe room. It is the message 
+we have seen over and over...
+
+The EARTH is just a dot, then a speck, then just a single pin 
+prick in the vast vacuum of space.
+
+But the flashing pattern can still be seen, if just barely, a 
+message to whomever or whatever may be out there-
+
+RANDLE IS BENIGN
+
+
+

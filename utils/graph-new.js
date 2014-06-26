@@ -1,6 +1,8 @@
-function script_graph( filename, width=724, height=408, show_labels=false ) {
+function script_graph( filename, width, height  ) {
     var color = d3.scale.category20();
     var clique_color = d3.scale.category10();
+
+    var show_labels = false;
 
     var force = d3.layout.force()
 	.charge(-60)
@@ -22,29 +24,12 @@ function script_graph( filename, width=724, height=408, show_labels=false ) {
 	// SVG drawing.
 	var clique_nodes = graph.cliques.map( function ( d ) { return d.map( function ( e ) { return graph.nodes[e]; } ) } );
 
-	var lineFunction = d3.svg.line()
-	  .x(function(d) { return d.x; })
-	  .y(function(d) { return d.y; })
-	  .interpolate("linear");
+	var clique_path = function( d ) {
+	  return "M" + d3.geom.hull( d.map( function ( i ) { return [ i.x, i.y ]; } ) ).join( "L" ) + "Z";
+	};
 
-	var cliques = svg.selectAll( ".clique" )
-	  .data( clique_nodes )
-	  .enter().append( "path" )
-	  .attr( "class", "clique" )
-	  .attr("d", function( d ) { return lineFunction( d ) + "Z" } )
-	    //.attr("stroke", "blue")
-	    //.attr("stroke-width", 2)
-	  .attr("fill", function( d ) { 
-	      if ( d.length == 4 ) {
-		  return "#8856a7";
-	      }
-	      if ( d.length == 3 ) {
-		  return "#e0ecf4";
-	      }
-	      return clique_color( d.length );
-	   } )
-	  .style( "fill-opacity", 0.5 );
-
+	var clique_fill = function ( d, i ) { return color( i ); };
+	
 	var link = svg.selectAll(".link")
 	    .data(graph.links)
 	    .enter().append("line")
@@ -91,10 +76,17 @@ function script_graph( filename, width=724, height=408, show_labels=false ) {
 	    
 	    var clique_nodes = graph.cliques.map( function ( d ) { return d.map( function ( e ) { return graph.nodes[e]; } ) } );
 
-	    svg.selectAll( ".clique" )
+	    svg.selectAll( "path" )
 	      .data( clique_nodes )
-	      .attr("d", function( d ) { return lineFunction( d ) + "Z" } );
-	    
+	      .attr( "d", clique_path )
+	      .enter().insert( "path", "circle" )
+	      .style( "fill", clique_fill )
+	      .style( "stroke", clique_fill )
+	      .style( "stroke-width", 15 )
+	      .style( "stroke-linejoin", "miter" )
+	      .style( "opacity", .2 )
+	      .attr( "d", clique_path );
+
 	    if ( show_labels ) {
 		gnodes.attr( "transform", function( d ) {
 		    return 'translate(' + [d.x, d.y] + ')';
