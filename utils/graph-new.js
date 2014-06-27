@@ -28,7 +28,17 @@ function script_graph( filename, width, height  ) {
 	  return "M" + d3.geom.hull( d.map( function ( i ) { return [ i.x, i.y ]; } ) ).join( "L" ) + "Z";
 	};
 
-	var clique_fill = function ( d, i ) { return color( i ); };
+
+	var clique_fill = function( d ) { 
+	      if ( d.length == 4 ) {
+		  return "#8856a7";
+	      }
+	      if ( d.length == 3 ) {
+		  return "#9ebcda";
+	      }
+	};
+
+	//var clique_fill = function ( d, i ) { return color( i ); };
 	
 	var link = svg.selectAll(".link")
 	    .data(graph.links)
@@ -84,7 +94,7 @@ function script_graph( filename, width, height  ) {
 	      .style( "stroke", clique_fill )
 	      .style( "stroke-width", 15 )
 	      .style( "stroke-linejoin", "miter" )
-	      .style( "opacity", .2 )
+	      .style( "opacity", .4 )
 	      .attr( "d", clique_path );
 
 	    if ( show_labels ) {
