@@ -264,8 +264,8 @@ def parse_script_lines( Script ):
             continue
 
         if ( types[0] == ERROR ):
-            print "Error - Page, Line, Content:\n", page_no, line_no, line
-            print "Prior block_type, line types were: ", prior_types[0], prior_types[1]
+            print "Error - Page: %s, Line: %s, Content:\n'%s'" % ( page_no, line_no, line )
+            print "Prior block_type: %s prior line type: %s\n\n" % (prior_types[0], prior_types[1] )
 
             current_block['block_type'] = prior_types[0]
             current_scene['scene_blocks'].append( current_block )

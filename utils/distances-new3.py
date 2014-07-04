@@ -62,7 +62,7 @@ zero = {
 movies_dir = "../example-scripts/parsed"
 
 #outdir = "/wintmp/movie/graph10/"
-outdir = "/home/mhayward/movie/RackStatic/public/graph3/"
+outdir = "/home/mhayward/movie/RackStatic/public/graph-blacklist/"
 
 def plot_dist( movie, dim ):
     if dim in dist_funcs:
@@ -114,8 +114,71 @@ def get_movies( movies_dir ):
             #if metrics['title'] not in ['Ghostbusters', 'Dune', 'Starwars', 'Vertigo', 'All is Lost']:
             #if metrics['title'] not in ['Ghostbusters', 'Dune', 'Starwars' ]:
             #    continue
+            
+            released = [
+                'Chinatown', 
+                'Dune', 
+                'Ghostbusters', 
+                'The Matrix', 
+                'Good Will Hunting', 
+                'The Book of Eli', 
+                'Starwars', 
+                'Alien', 
+                'Vertigo', 
+                'Terminator 2', 
+                'Ratatouille', 
+                'Analyze That', 
+                'Batman Begins', 
+                'Death to Smoochy', 
+                'Get Carter', 
+                'Gothika', 
+                'Groundhogs Day', 
+                'Red Planet', 
+                'Smurfs', 
+                'Sweet November', 
+                'Taking Lives', 
+                'Thirteen Ghosts', 
+                '42', 
+                'Frozen', 
+                'Fruitvale Station', 
+                'All is Lost', 
+                'Amour', 
+                'Argo', 
+                'August Osage County', 
+                'Celest and Jesse Forever', 
+                'Chronicle', 
+                'Dallas Buyers Club', 
+                'Despicable Me 2', 
+                'The Wolf of Wall Street', 
+                'Prince of Persia', 
+                'Oz the Great and Powerful', 
+                'Nebraska', 
+                'Monsters University', 
+                'Magic Mike', 
+                'Lone Survivor', 
+                'Kill Your Darlings', 
+                'Kick Ass 2', 
+                'The Great Gatsby', 
+                'The Invisible Woman', 
+                'The Past', 
+                'Twilight', 
+                'Wadjda', 
+                'Woman in Black', 
+                'Prisoners', 
+                'Real Steel', 
+                'Rush', 
+                'Rust and Bone', 
+                'Skyfall', 
+                'Smashed', 
+                'Snow White and the Huntsman', 
+                'The Croods', 
+                ]
 
-            movies[metrics['title']] = metrics
+            #if metrics['title'] in released:
+            if metrics['title'] not in released:
+                movies[metrics['title']] = metrics
+            else:
+                print "Skipping blacklist script: %s" % ( metrics['title'] )
 
     return movies
 

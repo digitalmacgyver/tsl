@@ -1,8 +1,6 @@
-function script_graph( filename, width, height  ) {
+function script_graph( filename, width, height, show_labels  ) {
     var color = d3.scale.category20();
     var clique_color = d3.scale.category10();
-
-    var show_labels = false;
 
     var force = d3.layout.force()
 	.charge(-60)

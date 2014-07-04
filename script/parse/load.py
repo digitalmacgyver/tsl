@@ -3,8 +3,8 @@ returning an array of lines.  Each line is represented as a dictionary
 with three items: line_no, page_no, and content.  Content retains the
 line separator.'''
 
-import re
 from collections import Counter
+import re
 
 def load_txt( body, lines_per_page=56 ):
     '''Returns an array of {line_no, page_no, content} hashes.  If the

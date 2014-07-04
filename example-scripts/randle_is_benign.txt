@@ -714,7 +714,7 @@ Will glances briefly at his hand, not taking it.
       I invest in things. Advise others 
       about what they should invest in.
 
-Will snorts low, deciding he’s harmless. As she works-
+Will snorts low, deciding hes harmless. As she works-
 
              WILL
       So you "play the market."
@@ -809,7 +809,7 @@ disarming charm.
 CONTINUED: (3)
 
 Errol sips his drink, showing off a smile. Will shakes her 
-head, returns to her work, senses Errol’s eyes still on her-
+head, returns to her work, senses Errols eyes still on her-
 
              WILL
       Why do I get the feeling that you 
@@ -846,8 +846,8 @@ Errol turns to look at her.
       the chase. By the time the sex 
       comes, I've usually lost interest.
         (brighter-)
-      You shouldn’t take it personally. 
-      You’re a very beautiful woman.
+      You shouldnt take it personally. 
+      Youre a very beautiful woman.
 
              WILL
       I think my ego will survive.
@@ -937,7 +937,7 @@ watching.
 Will looks at him over a bare shoulder, smile hinting.
 
              WILL
-      That’s creepy, Errol.
+      Thats creepy, Errol.
 
 She goes back to dressing.
 
@@ -1365,7 +1365,7 @@ But when one of the board members leers their way, Will and
 Myles go still to watch the presentation continue.
 
              GREG
-      Dr. Ross’ software has been 
+      Dr. Ross software has been 
       designed to augment its programming 
       based on the physical capabilities 
       and limitations of its system.
@@ -1584,11 +1584,11 @@ the finger begins to move.
 She watches as the HAND clenches into a fist. Will smiles 
 big, leaning back to clap her hands.
 
-INT. WILL’S OFFICE - LATER
+INT. WILLS OFFICE - LATER
 
-Will’s DESK is covered with files and printouts.
+Wills DESK is covered with files and printouts.
 
-Will lays asleep on the room’s small couch, her lab coat 
+Will lays asleep on the rooms small couch, her lab coat 
 pulled up over like a blanket, glasses on the floor beside.
 
 The mainframe WALL seems to look down at her, somehow 
@@ -1607,9 +1607,9 @@ hallow cavity into the head.
 Myles sits close by, examining a brain that floats in a jar 
 of pinkish liquid. He pauses to have a sip of coffee.
 
-INT. WILL’S OFFICE
+INT. WILLS OFFICE
 
-A steaming MUG of coffee sits on Will’s desk. Will crouches 
+A steaming MUG of coffee sits on Wills desk. Will crouches 
 in the corner, attaching a cable to a new cart of hard 
 drives. 
 
@@ -1640,10 +1640,10 @@ Caylax, Greg and other Forefront execs bunched in the hall.
              GREG
       Dr. Ross. Can we come in?
         (awkward beat)
-      I’m giving a run down of the 
+      Im giving a run down of the 
       transfer process.
 
-Will realizes she’s blocking the door and steps back. She 
+Will realizes shes blocking the door and steps back. She 
 keeps an eye on the mainframe wall as the men shuffle in, 
 glancing about.
 
@@ -1664,8 +1664,8 @@ glancing about.
       Considering what?
 
              WILL
-      That we’re rushing into a test 
-      years before we’re ready.
+      That were rushing into a test 
+      years before were ready.
 
 Caylax weighs this defiance, lets it slide.
 
@@ -1677,7 +1677,7 @@ Caylax weighs this defiance, lets it slide.
 
              WILL
       Randle is a protocol access code. 
-      It let’s the software know a 
+      It lets the software know a 
       command is coming.
 
 CONTINUED: (2)
@@ -1730,7 +1730,7 @@ door. As the last exit, Greg turns to Will-
 Greg gives her an impatient look, as he exits-
 
              GREG
-      I’m not asking you Will.
+      Im not asking you Will.
 
 The door closes. Will stays still a beat. She listens to the 
 vague sound of Greg, leading the board down the hall.
@@ -1820,15 +1820,15 @@ rings under her eyes.
       You got through the last ones 
       pretty fast.
 
-He looks over Will’s shoulder, at the couch with a lab coat 
+He looks over Wills shoulder, at the couch with a lab coat 
 draped over it.
 
              FRED
-      Will, you’re not sleeping here, are 
+      Will, youre not sleeping here, are 
       you?
 
              WILL
-      Thank you, Freddie. I’ll take it 
+      Thank you, Freddie. Ill take it 
       from here.
 
 Blank-faced, Fred watches Will take the cart into her office, 
@@ -1836,7 +1836,7 @@ closing the door behind her.
 
 Fred stands alone in the hall.
 
-INT. WILL’S OFFICE - CONTINUOUS
+INT. WILLS OFFICE - CONTINUOUS
 
 Uploaded carts clutter the room. Will pushes the new one 
 over. 
@@ -1934,7 +1934,7 @@ checking the connections.
       Wilhelmina Ross. Please confirm.
 
              WILL
-      Randle: I don’t know, Randle.
+      Randle: I dont know, Randle.
 
              RANDLE
       Does Dr. Wilhelmina Ross trust 
@@ -1977,7 +1977,7 @@ INT. INSIDE THE MAINFRAME - CONTINUOUS
 
 Lights make switching patterns. Mag reels roll, roll back.
 
-INT. WILL’S OFFICE - CONTINUOUS
+INT. WILLS OFFICE - CONTINUOUS
 
              RANDLE
       Access to Forefront Corporation 
@@ -2131,7 +2131,7 @@ CONTINUED: (2)
 Errol reads a moment.
 
              WILL
-      They’re all Forefront. All closed.
+      Theyre all Forefront. All closed.
 
 Errol looks up.
 
@@ -2139,7 +2139,7 @@ Errol looks up.
       They're shifting again, aren't 
       they?
 
-Questions lurk Will’s face.
+Questions lurk Wills face.
 
              ERROL
       When I started looking into 
@@ -2206,7 +2206,7 @@ Errol looks long at her-
              ERROL
       So it works, the AI?
 
-Will doesn’t answer.
+Will doesnt answer.
 
              ERROL
       Hate to be the one to break it to 
@@ -2353,13 +2353,13 @@ Dowd leans forward.
              WILL
       The software did, you mean? Why 
       would Forefront keep a database if 
-      it doesn’t want computers on its 
+      it doesnt want computers on its 
       system to access the data.
 
 Dowd looks out of his league for one beat. He is, after all, 
 only a security guard with a few decades worth of promotions 
 under his expansive belt line. But he hardens just as quick. 
-Fact is, he doesn’t care that Will is smarter than him.
+Fact is, he doesnt care that Will is smarter than him.
 
              DOWD
       Tell me about the nature of your 
@@ -2412,15 +2412,15 @@ the tape into a TV/VCR cart set up beside his desk.
 Dowd adjusts the tracking.
 
 ON SCREEN- a low-fi recording of a city street seen through a 
-car window. It's the street in front of Will’s brownstone.
+car window. It's the street in front of Wills brownstone.
 
              WILL
-      And what, you’re taping my house 
+      And what, youre taping my house 
       now too?
 
              DOWD
         (a smirk)
-      In case you didn’t believe us. 
+      In case you didnt believe us. 
       About Errol York.
 
 Dowd taps the screen. The camera ZOOMING in on a MAN crossing 
@@ -2431,7 +2431,7 @@ the street.
 
 Will looks closer.
 
-ON SCREEN- zoomed in to Errol at Will’s front door. Errol 
+ON SCREEN- zoomed in to Errol at Wills front door. Errol 
 looks around, fiddles with the lock and slips in.
 
              WILL
@@ -3005,7 +3005,7 @@ SCREEN's worth of DATA appears.
 
 Will stares into it.
 
-INT. WILL’S KITCHEN - NIGHT
+INT. WILLS KITCHEN - NIGHT
 
 STACKS of elastic-bound printouts clutter the counter. 
 
@@ -3863,7 +3863,7 @@ clothes, a little smear on her face. Myles and Greg are also
 there; both look exhausted, defeated.
 
              WILL
-      Maybe it’s because we’re testing a 
+      Maybe its because were testing a 
       project four years ahead of 
       schedule.
 
@@ -3882,7 +3882,7 @@ Surprise clenches the room. Miles and Will share a look.
              MYLES
         (stammering)
       I mean, let us at least look at the 
-      data. What’s the point of-
+      data. Whats the point of-
 
 CONTINUED:
 
@@ -5975,9 +5975,9 @@ the vast lot. Aside from a few scattered cars, the lot is
 EMPTY. Everything is still. 
 
 Way in the far corner, there is one car with its lights on. 
-It sits there idling, so clean we almost don’t recognize it.
+It sits there idling, so clean we almost dont recognize it.
 
-INT. WILL’S CAR, FRONT SEAT - CONTINUOUS
+INT. WILLS CAR, FRONT SEAT - CONTINUOUS
 
 Will sits at the wheel, Fred in the passenger's seat.
 
@@ -5990,7 +5990,7 @@ Will sits at the wheel, Fred in the passenger's seat.
       teach me.
 
              FRED
-      You have a driver’s licence, Will.
+      You have a drivers licence, Will.
 
              WILL
       Yes, but I have no idea why they 
@@ -6024,7 +6024,7 @@ Fred points ahead.
 
 EXT. PARKING LOT, WIDE - CONTINUOUS
 
-Will’s car accelerates maybe a bit too fast, makes a few 
+Wills car accelerates maybe a bit too fast, makes a few 
 turns around the lot.
 
 INT. CAR - CONTINUOUS
@@ -6042,7 +6042,7 @@ SUDDENLY the huge parking lot lights go off. The entire lot
 falls into DARKNESS. Will's headlights are the only slivers 
 in the BLACKNESS.
 
-INT. WILL’S CAR - CONTINUOUS
+INT. WILLS CAR - CONTINUOUS
 
 Will and Fred crane low to look up at the vanished lights.
 
@@ -6050,7 +6050,7 @@ Will and Fred crane low to look up at the vanished lights.
       What did I do?
 
              FRED
-      I don’t think you did it.
+      I dont think you did it.
 
 The PARKING LOT LIGHTS come back. Revealing a CAR. Will's 
 turning right into it, FAST.
@@ -6071,7 +6071,7 @@ familiar pattern.
 
 PULL OUT REVEALS-
 
-It’s not just the lot; the LIGHTS in WASHINGTON DC beyond are 
+Its not just the lot; the LIGHTS in WASHINGTON DC beyond are 
 also blinking in unison.
 
 FROM ABOVE THE EARTH, the entire POWER GRID blinks that same 
