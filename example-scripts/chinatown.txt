@@ -5035,7 +5035,7 @@ A.C.
 		Give us things -- not just some
 		old flag like this, but --
 
-				GITTES-
+				GITTES
 			(kneeling)
 		But what?
 
@@ -6593,7 +6593,7 @@ She nods.
 		want her to know... I don't want 
 		her to know...
 
-				GITTES.
+				GITTES
 		... so that's why you hate him...
 
 Evelyn looks slowly up at Gittes.

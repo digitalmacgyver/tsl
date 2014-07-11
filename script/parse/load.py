@@ -23,6 +23,9 @@ def load_txt( body, lines_per_page=56 ):
 
     leading_whitespace = calculate_whitespace( body )
 
+    #import pdb
+    #pdb.set_trace()
+
     for line in body:
         # Handle various goofy newline scenarios.
         line = line.replace("\r\r\n", "\n")
@@ -60,6 +63,8 @@ def calculate_whitespace( lines ):
         if leading_spaces:
             trim[len( leading_spaces.group( 1 ) )] += 1
         else:
-            trim[0] += 1
+            no_leading_spaces = re.search( r'(EXT|INT)', line )
+            if no_leading_spaces:
+                trim[0] += 1
 
     return max( trim, key=trim.get )

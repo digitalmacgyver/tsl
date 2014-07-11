@@ -367,6 +367,14 @@ An interaction === a : presence, b : presence, where : where, interaction_type: 
 '''
 
 def compute_presence_and_interactions( Script, Structure, parse_mode=STRICT ):
+    '''
+    NOTE: Characters and scenes are only detected in the script after
+    their first appearance or dialog - so if at the begining of a
+    script there is lots of action text which refers to characters or
+    locations not yet mentioned in dialog or a scene heading, these
+    will be missed.
+    '''
+
     script_lines = Script.script_lines
     script = Structure.structure
 
@@ -403,13 +411,6 @@ def compute_presence_and_interactions( Script, Structure, parse_mode=STRICT ):
                 else:
                     update_presence( Presences, scene_location )
 
-            elif block['block_type'] in [ACTION, DIRECTION]:
-                update_presence_and_interactions_for_lines( Presences, Interactions,
-                                                            script_lines=script_lines, 
-                                                            first_line=block['first_line'], 
-                                                            last_line=block['last_line'], 
-                                                            scene_id=scene_id, scene_location=scene_location )
-                
             elif block['block_type'] == DIALOG:
                 update_presence_and_interactions_for_dialog( Presences, Interactions,
                                                              script_lines=script_lines, 
@@ -418,9 +419,35 @@ def compute_presence_and_interactions( Script, Structure, parse_mode=STRICT ):
                                                              scene_id=scene_id, scene_location=scene_location,
                                                              block=block )
                 
-            elif not block['block_type'] in [ERROR, EMPTY, PAGE_NUM]:
-                print "ERROR: Unknown block type, skipping block with type:", block['block_type']
+    # We have to process action and direction after scenes and dialog
+    # because we only learn about nouns from scenes and dialog in
+    # strict mode - if we did action and direction above locations
+    # would not have presences until the first time a scene is set in
+    # them, and characters would not have presences until they speak.
+    prior_scene_location = {}
+    for scene_id in sorted( script['scenes'], key=int ):
+        scene_location = {}
+        for block in script['scenes'][scene_id]['scene_blocks']:
+            if block['block_type'] == SCENE_HEADING:
+                line = script_lines[block['first_line'] - 1]
+                name = get_scene_location( line['content'] )
+                if name in presence_ns and presence_ns[name]['noun_type'] == CHARACTER:
+                    print "ERROR: Encountered", name, "in the context of a scene heading - ignoring."
+                    # In this case we just revert to using the last established scene location.
+                    scene_location = prior_scene_location
+                else:
+                    scene_location = presence_sn[scene_id][name][0]
+                    prior_scene_location = scene_location
+                    break
 
+        for block in script['scenes'][scene_id]['scene_blocks']:
+            if block['block_type'] in [ACTION, DIRECTION]:
+                update_presence_and_interactions_for_lines( Presences, Interactions,
+                                                            script_lines=script_lines, 
+                                                            first_line=block['first_line'], 
+                                                            last_line=block['last_line'], 
+                                                            scene_id=scene_id, scene_location=scene_location )
+                
     # Augment dialog presence with the words of dialog spoken.
     for presence in Presences.presences:
         presence_type = presence['presence_type']
@@ -567,6 +594,7 @@ def update_presence_and_interactions_for_lines( Presences, Interactions, script_
     # Tuple of ( total_offset, line_no ) pairs that assume a line only
     # has one \n in it.
     line_offsets = get_line_offsets( text, first_line )
+    
     # Update text to have no newlines either.  Now text is our text of
     # interest with only single spaces separating tokens, but
     # line_offsets can be used to tell us which line a given offset is on.
@@ -607,7 +635,7 @@ def update_presence_and_interactions_for_lines( Presences, Interactions, script_
         for ( p1, p2 ) in itertools.combinations( sent_presences, 2 ):
             update_interaction( Interactions, p1, p2, p1['where'], APPEAR )
 
-        prior_offset += len( sent )
+        prior_offset += len( sent ) + 1
 
     return result
 
@@ -691,7 +719,7 @@ def get_line_offsets( text, first_line=0 ):
 
     total_offset = 0
     for line_no, line in enumerate( text.split( '\n' ) ):
-        total_offset += len( line )
+        total_offset += len( line ) + 1
         result.append( ( total_offset, first_line + line_no ) )
 
     # Handle the duplication of the last line due to '' after terminal \n.

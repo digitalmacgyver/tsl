@@ -1,4 +1,4 @@
-function script_graph( filename, width, height, show_labels  ) {
+function script_graph( filename, element, width, height, show_labels  ) {
     var color = d3.scale.category20();
     var clique_color = d3.scale.category10();
 
@@ -7,7 +7,7 @@ function script_graph( filename, width, height, show_labels  ) {
 	.linkDistance(60)
 	.size([width, height]);
 
-    var svg = d3.select("body").append("svg")
+    var svg = d3.select( element ).append("svg")
 	.attr("width", width)
 	.attr("height", height);
 
@@ -26,7 +26,6 @@ function script_graph( filename, width, height, show_labels  ) {
 	  return "M" + d3.geom.hull( d.map( function ( i ) { return [ i.x, i.y ]; } ) ).join( "L" ) + "Z";
 	};
 
-
 	var clique_fill = function( d ) { 
 	      if ( d.length == 4 ) {
 		  return "#8856a7";
@@ -35,7 +34,6 @@ function script_graph( filename, width, height, show_labels  ) {
 		  return "#9ebcda";
 	      }
 	};
-
 	//var clique_fill = function ( d, i ) { return color( i ); };
 	
 	var link = svg.selectAll(".link")

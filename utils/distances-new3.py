@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 
+import hcluster
 import json
 import math
 import matplotlib.pyplot as plt
@@ -7,15 +8,16 @@ import networkx as nx
 import numpy
 import os
 import re
-import StringIO
+import shutil
 import sys
-import types
+
+import pprint
+pp = pprint.PrettyPrinter( indent=4 )
 
 # Dimensions
 #
 # Don't change the order of things here unless you also change the
 # dist_funcs key lookups in register_dist_funcs
-
 dimensions = [
     'named_characters',
     'distinct_locations',
@@ -58,49 +60,83 @@ zero = {
     }
 
 
-# Read in movie JSON files.
-movies_dir = "../example-scripts/parsed"
-
-#outdir = "/wintmp/movie/graph10/"
-outdir = "/home/mhayward/movie/RackStatic/public/graph-blacklist/"
-
-def plot_dist( movie, dim ):
+def r_dist( movie, dim ):
+    '''Measures the distacnce for movie along dimension from zero.'''
     if dim in dist_funcs:
         new_value = dist_funcs[dim]( zero[dim], movie[dim] )
     else:
         new_value = default_dist( zero[dim], movie[dim] )
     return new_value
 
-def dispersion_plot( movies, dimensions, title="Plot" ):
+def dispersion_plot( movies, dimensions, title="", outdir="", filename="" ):
+    # DEBUG - leave this alone for now - it was modified to make N
+    # graphs one for each movie.
+
+    return 
+
+    movie_by_ecc = sorted( [ movies[x] for x in movies.keys() ], key=lambda k : k['eccentricity'] )
+
+    movie_y_data = movie_by_ecc
+
+    for i in [ 0 ] + range( len( movie_y_data ) ):
+
+        xc = [ range( len( dimensions ) ) ] * len( movie_y_data )
+        yc = [ [ r_dist( x, dimensions[d] ) for d in range( len( dimensions ) ) ] for x in movie_y_data ]
+
+        marker = [ 'b_' ] * len( movie_y_data )
+        marker[i] = 'ro'
+        
+        for j in range( len( movie_y_data ) ):
+            plt.plot( xc[j], yc[j], marker[j], scalex=.1)
+        plt.xticks( numpy.arange( len( dimensions ) ), dimensions, rotation=90 )
+        plt.ylim( -0.2, 1.2 )
+        plt.xlim( -1, len( dimensions ) )
+        plt.title( title + "%s" % ( movie_y_data[i]['title'] ) )
+        plt.tight_layout()
+
+        # DEBUG - I broke this -it's half working.
+        #movie_title = re.sub( r'\s+', '_', name.lower() )
+
+        plt.savefig( "%s/%s" % ( outdir, filename ), format='png')
+
+        plt.clf()
+
+def projection_plot( movies, dimensions, title="Density versus Eccentricity", outdir="" ):
+    if len( dimensions ) < 2:
+        return
 
     # Array of normalized movie values:
-    movie_y_data = [ movies[x] for x in movies.keys() ]
+    movie_data = [ movies[x] for x in movies.keys() ]
     
-    xc = [ [x]*len( movies ) for x in range( len( dimensions ) ) ]
-    yc = [ [ plot_dist( x, dimensions[d] ) for x in movie_y_data ] for d in range( len( dimensions ) ) ]
+    yc = [ r_dist( y, dimensions[0] ) for y in movie_data ]
+    xc = [ r_dist( x, dimensions[1] ) for x in movie_data ]
 
     filename = re.sub( r'\s+', '_', title )
     if filename[-4:] != '.png':
         filename += '.png'
 
-    plt.plot(xc, yc, "b_", scalex=.1)
-    #plt.yticks(range(len(yc)), yc, color="b")
-    plt.xticks( numpy.arange( len( dimensions ) ), dimensions, rotation=90 )
+    plt.plot( xc, yc, "bo", scalex=.1 )
+    plt.xlim( -0.1, 1.1 )
     plt.ylim( -0.1, 1.1 )
-    plt.xlim( -1, len( xc ) )
-    plt.title(title)
+    plt.title( title )
     plt.tight_layout()
 
-    #plt.xlabel("Word Offset")
+    proj_title = re.sub( r'\s+', '_', title.lower() )
 
-    plt.savefig( "foo.png", format='png')
+    plt.savefig( "%s/projection-%s.png" % ( outdir, proj_title ), format='png' )
 
     plt.clf()
 
-def get_movies( movies_dir ):
+def get_movies( movies_dir, partition="all" ):
     '''Returns a hash keyed on movie title whose body is the Python
     data structure made up of the _metrics.json for this film in the
-    movies_dir.'''
+    movies_dir.
+
+    Parition is one of 'released', 'blacklist', or anything else.  If
+    it is released only certain films will be operated on, if it is
+    blacklist the inverse of that set is operated on, if it is
+    something else all films are operated on.
+    '''
     movies = {}
     for dirpath, dirnames, filenames in os.walk( movies_dir):
         for directory in dirnames:
@@ -172,13 +208,15 @@ def get_movies( movies_dir ):
                 'Smashed', 
                 'Snow White and the Huntsman', 
                 'The Croods', 
+                'Beautiful Creatures'
                 ]
+            
+            if partition == "released" and metrics['title'] not in released:
+                continue
+            elif partition == "blacklist" and metrics['title'] in released:
+                continue
 
-            #if metrics['title'] in released:
-            if metrics['title'] not in released:
-                movies[metrics['title']] = metrics
-            else:
-                print "Skipping blacklist script: %s" % ( metrics['title'] )
+            movies[metrics['title']] = metrics
 
     return movies
 
@@ -202,13 +240,8 @@ def normalize_movies( movies, dist_funcs, dimensions, stretch = False ):
         for dim in dimensions:
             coordinate = movie[dim]
 
-            value = -1
+            value = r_dist( movie , dim )
 
-            if dim in dist_funcs:
-                value = dist_funcs[dim]( zero[dim], coordinate )
-            else:
-                value = default_dist( zero[dim], coordinate )
-            
             if value > max_dimensions.get( dim, -1 ):
                 max_dimensions[dim] = value
             if value < min_dimensions.get( dim, 999999999 ):
@@ -220,19 +253,13 @@ def normalize_movies( movies, dist_funcs, dimensions, stretch = False ):
     # [0, 1]
     fudge_factor = 0.99
 
-    # DEBUG - how to scale down a vector appropriately - subtracting
-    # min_dimensions is wrong.
-
     if stretch:
         for k in sorted( movies.keys() ):
             movie = movies[k]
             for dim in dimensions:
                 value = movie[dim]
-
-                if dim in dist_funcs:
-                    new_value = dist_funcs[dim]( zero[dim], movie[dim] )
-                else:
-                    new_value = default_dist( zero[dim], movie[dim] )
+                
+                new_value = r_dist( movie, dim )
             
                 if dim == 'character_x_speakers':
                     movie[dim] = [ { 'speakers' : x['speakers'] * ( new_value - min_dimensions[dim] ) / new_value } for x in movie[dim] if new_value != 0 ]
@@ -243,9 +270,6 @@ def normalize_movies( movies, dist_funcs, dimensions, stretch = False ):
                 elif dim == 'dialog_words_score':
                     movie[dim] = [ x * ( new_value - min_dimensions[dim] ) / new_value for x in movie[dim] if new_value != 0 ]
                 else:
-                    #import pdb
-                    #if k == 'Amour' and dim == 'adj-adv_noun-verb_ratio':
-                    #    pdb.set_trace()
                     movie[dim] = value - min_dimensions[dim]
 
     # Normalize the values.
@@ -271,10 +295,7 @@ def normalize_movies( movies, dist_funcs, dimensions, stretch = False ):
             else:
                 movie[dim] = fudge_factor * float( value ) / scale
 
-            if dim in dist_funcs:
-                new_value = dist_funcs[dim]( zero[dim], movie[dim] )
-            else:
-                new_value = default_dist( zero[dim], movie[dim] )
+            new_value = r_dist( movie, dim )
             
             if new_value > 1:
                 print "ERROR - value over 1 post normalization."
@@ -287,13 +308,6 @@ def default_dist( a, b ):
     return abs( a-b )
 
 def register_dist_funcs( dist_funcs ):
-    '''
-    def log_dist( a, b ):
-        return abs( math.log( a ) - math.log( b ) )
-
-    dist_funcs[ dimensions[2] ] = log_dist
-    dist_funcs[ dimensions[7] ] = log_dist
-    '''
     def five_vect( a, b, lookup ):
         result_dist = 0
         for i in range( 0, 5 ):
@@ -318,19 +332,19 @@ def register_dist_funcs( dist_funcs ):
 
     def character_x_speakers( a, b ):
         return five_vect( a, b, 'speakers' )
-    dist_funcs[ dimensions[9] ] = character_x_speakers
+    dist_funcs[ 'character_x_speakers' ] = character_x_speakers
 
     def scenes_percentage_for_characters( a, b ):
         return five_vect( a, b, 'percentage_of_scenes' )
-    dist_funcs[ dimensions[10] ] = scenes_percentage_for_characters
+    dist_funcs[ 'scenes_percentage_for_characters' ] = scenes_percentage_for_characters
 
     def percent_dialog_by_character( a, b ):
         return five_vect( a, b, 'percent_dialog' )
-    dist_funcs[ dimensions[11] ] = percent_dialog_by_character
+    dist_funcs[ 'percent_dialog_by_character' ] = percent_dialog_by_character
 
     def dialog_words_score( a, b ):
         return ( ( a[0] - b[0] )**2 + ( a[1] - b[1] )**2 )**0.5
-    dist_funcs[ dimensions[12] ] = dialog_words_score
+    dist_funcs[ 'dialog_words_score' ] = dialog_words_score
 
 def cartesian_distance( dists ):
     '''Takes in an array of distances between coordinates, and
@@ -341,7 +355,7 @@ def cartesian_distance( dists ):
         total_dist += dist**2
     return total_dist**0.5
 
-def compute_distances( movies, dist_funcs, distance_func ):
+def compute_distances( movies, dist_funcs, distance_func, dimensions ):
     '''Returns a hash of hash.  The keys are every pair of movies, and
     the value is distance between them.'''
     distances = {}
@@ -363,27 +377,32 @@ def compute_distances( movies, dist_funcs, distance_func ):
     return distances
 
 def eccentricity( distances ):
-    '''A hash of movie, eccentricity.'''
+    '''Returns a hash of movie, eccentricity.'''
     result = {}
-    denominator = len( distances.keys() )
+    denominator = len( distances.keys() ) - 1
     for k1 in sorted( distances.keys() ):
         numerator = 0
         for k2, distance in distances[k1].items():
+            if k1 == k2:
+                continue
             numerator += distance
         result[k1] = numerator / denominator
     return result
 
 def density( distances ):
-    '''A hash of movie, density.'''
+    '''Returns a hash of movie, density.'''
     result = {}
     for k1 in sorted( distances.keys() ):
         numerator = 0
         for k2, distance in distances[k1].items():
+            if k1 == k2:
+                continue
             try:
                 numerator += 1 / math.e**( distance**2 )
             except:
                 # If we have an overflow don't worry about it, just
                 # add nothing.
+                raise Exception( "WHOOPS!" )
                 pass
         result[k1] = numerator
     return result
@@ -391,83 +410,60 @@ def density( distances ):
 def compute_projection( distances, projection_func ):
     return projection_func( distances )
 
-def get_inverse_covering( projection, covering ):
-    '''Given a covering, which is defined as an array of tuples, the
-    elements a, b of which define the interval: [a, b], and a
-    projection data structure, return:
-    
-    An array of hashes, the i'th element of which corresponds to the
-    inverse image of the things in the projection for the i'th tuple.
-
-    The format of these hashes is:
-    { range: ( a, b ), movies: { 'Movie 1': True, 'Movie 2': True, ... } }'''
-
-    inverse_covering = []
-
-    for interval in covering:
-        start = interval[0]
-        end = interval[1]
-
-        current_inverse = { 'range' : interval, 'movies' : {} }
-
-        for movie, value in projection.items():
-            if start <= value and value <= end:
-                current_inverse['movies'][movie] = True
-        
-        inverse_covering.append( current_inverse )
-
-    return inverse_covering
-                
-def get_clusters( movies_input, distances, epsilon ):
+def get_clusters( movies_input, distances, epsilon, method=None ):
     '''Given a hash of movie keys, the distances data structure, and
     epsilon threshold distance, returns an array of hashes of movie
     keys where each hash is a subset of the input movies containing
     the points which are within a transitive closure of epsilon of
     one another.'''
 
-    # Don't change the input value.
-    movies = {}
-    for movie in movies_input.keys():
-        movies[movie] = True
+    if method is None:
+        # Don't change the input value.
+        movies = {}
+        for movie in movies_input.keys():
+            movies[movie] = True
     
-    clusters = []
+        clusters = []
 
-    #import pdb
-    #pdb.set_trace()
+        while len( movies ):
+            current_cluster = {}
 
-    while len( movies ):
-        current_cluster = {}
-
-        cluster_changed = True
-        while cluster_changed:
-            cluster_changed = False
-            movie_keys = movies.keys()
-            for movie in movie_keys:
-                if len( current_cluster ) == 0:
-                    cluster_changed = True
-                    current_cluster[movie] = True
-                    del movies[movie]
-                else:
-                    for cluster_movie in current_cluster.keys():
-                        if distances[cluster_movie][movie] <= epsilon:
-                            cluster_changed = True
-                            current_cluster[movie] = True
-                            if movie in movies:
-                                del movies[movie]
-
-
-        #for movie in movie_keys:
-        #    if len( current_cluster ) == 0:
-        #        current_cluster[movie] = True
-        #        del movies[movie]
-        #    else:
-        #        for cluster_movie in current_cluster.keys():
-        #            if distances[cluster_movie][movie] <= epsilon:
-        #                current_cluster[movie] = True
-        #                if movie in movies:
-        #                    del movies[movie]
-            
-        clusters.append( current_cluster )
+            cluster_changed = True
+            while cluster_changed:
+                cluster_changed = False
+                movie_keys = movies.keys()
+                for movie in movie_keys:
+                    if len( current_cluster ) == 0:
+                        cluster_changed = True
+                        current_cluster[movie] = True
+                        del movies[movie]
+                    else:
+                        for cluster_movie in current_cluster.keys():
+                            if distances[cluster_movie][movie] <= epsilon:
+                                cluster_changed = True
+                                current_cluster[movie] = True
+                                if movie in movies:
+                                    del movies[movie]
+            clusters.append( current_cluster )
+    else:
+        print "ERROR - nondefault clustermethods not implemented yet."
+        sys.exit( 0 )
+        # method is the hcluster algorithm to use.
+        # Transform our distances into a square distance matrix.
+        '''
+        square_dist = []
+        print movies_input.keys()
+        for a in sorted( movies_input.keys() ):
+            current = []
+            for b in sorted( movies_input.keys() ):
+                current.append( distances[a][b] )
+            square_dist.append( current )
+        condensed_dist = hcluster.squareform( square_dist )
+        clusters = method( condensed_dist )
+        print hcluster.dendrogram( clusters )
+        plt.show()
+        sys.exit( 0 )
+        '''
 
     return clusters
 
@@ -484,7 +480,7 @@ def cluster_epsilon_finder( movies, distances ):
     distance until there is only one cluster, while recording the
     distances involved.
 
-    4. We select the median distance recorded in step 3.
+    4. We return the array of epsilons to the caller.
     '''
     # Handle pathological cases
     if not len( movies ):
@@ -562,199 +558,252 @@ def cluster_epsilon_finder( movies, distances ):
 
     return cluster_distances
 
-def make_covering( low, high, width, overlap ):
-    step = float( width ) / overlap
-    current = low
-    covering = []
-    while current < high:
-        covering.append( ( current, current + width ) )
-        current += step
-    return covering
-
-def output_d3( filename, vertices, edges, cliques, header, html_filename ):
-    f = open( outdir+filename+".json", 'w' )
+def output_d3( outdir, filename, vertices, edges, cliques, header, html_filename ):
+    # NOTE: "element" can't have .'s in it or it causes some browser
+    # incompatibilities with id's that have .'s in them...
+    element = re.sub( r'\.', '_', filename )
+    f = open( outdir+filename, 'w' )
     json.dump( { "nodes" : vertices, "links" : edges, "cliques" : cliques }, f )
     f.close()
     f = open( outdir+html_filename, 'a' )
     html_body = '''
-<p>
-%s
-</p>
-<script>
-script_graph( "%s", 768, 432, false );
-</script>
-''' % ( header, filename+".json" )
+    <td>
+      <p>
+        %s
+      </p>
+      <p id="%s"></p>
+      <script>
+        script_graph( "%s", "#%s", 432, 432, false );
+      </script>
+    </td>
+''' % ( header, element, filename, element )
     f.write( html_body )
     f.close()
 
-def make_graph( low, high, width, overlap, epsilon ):
-    covering = make_covering( low, high, width, overlap )
+def make_graphs( movies, distances, dimensions, proj_dimensions, epsilon, width, slide, shading_key=None ):
+    # The substantial code complexity below is to allow this code to
+    # work with any number of projected dimensions.
+    
+    # Slide is intended to be >= 0.5 - by design and conventional
+    # practice we don't want more than 2 regions overlapping in one
+    # dimension.
 
-    print "Covering is:", covering
+    # We consider intervals of width whose overlaps are made by
+    # sliding the initial point slide percentage of width along.
+    #
+    # Start at 0 and proceed until we start an interval >=1
+    start = 0
+    step = width * slide
 
-    inverse_covering = get_inverse_covering( projection, covering )
+    movie_cell_map = {}
+    cell_movie_map = {}
 
-    # Array of { "name":"Foo","group":cluster_idx }
-    vertices = []
-    # Array of { "source":idx of thing in vertices, "target":idx of thing in vertices", value:1 }
+    #print "Step is:", step
+
+    for movie in sorted( movies.keys() ):
+        # We build an array of arrays, the i'th position of which is
+        # the array of cells this movie is in for dimension i.
+        movie_cells = []
+
+        for dim in proj_dimensions:
+            # Each movie is in 1 or 2 cells for each dimension.
+            dimension_cells = []
+            coordinate = movies[movie][dim]
+
+            value = r_dist( movies[movie], dim )
+
+            #print "Coordinate is:", coordinate
+            #print "Value is:", value
+
+            # Get the latest cell who starts at or before value.
+            last_cell = int( math.floor( float( value ) / step ) )
+
+            # See if this point is also in the prior cell.
+            #
+            # This code is written to accomodate the point being in
+            # multiple prior cells, which could happen if more than
+            # two cells overlap at a point.
+            prior_offset = 1
+            while ( step * ( last_cell - prior_offset ) + width > value ):
+                dimension_cells.append( last_cell - prior_offset )
+                prior_offset += 1
+
+            dimension_cells.append( last_cell )
+            movie_cells.append( dimension_cells )
+
+        #print "MOVIE CELLS:"
+        #pp.pprint( movie_cells )
+
+        # Compose a list of cell keys where the cell key is of the
+        # form: a_b_c_d..._z where a, b, c are cells this movie is
+        # found in in each of the a..z dimentions
+        next_cell_keys = [ [x] for x in movie_cells[0] ]
+        for dim_cells in movie_cells[1:]:
+            cell_keys = next_cell_keys
+            next_cell_keys = []
+            for dim_cell in dim_cells:
+                for cell_key in cell_keys:
+                    next_cell_keys.append( cell_key + [dim_cell] )
+
+        cell_keys = next_cell_keys
+
+        #print "CELL KEYS:"
+        #pp.pprint( cell_keys )
+                
+        for cell_key in cell_keys:
+            cell_string = '_'.join( [ str( x ) for x in cell_key ] )
+
+            #print "cell_key:", cell_key
+            #print "cell_string:", cell_string
+
+            if movie in movie_cell_map:
+                movie_cell_map[movie][cell_string] = True
+            else:
+                movie_cell_map[movie] = { cell_string : True }
+
+            if cell_string in cell_movie_map:
+                cell_movie_map[cell_string][movie] = True
+            else:
+                cell_movie_map[cell_string] = { movie : True }
+
+        #pp.pprint( movie_cell_map )
+            
+    #pp.pprint( movie_cell_map )
+    #pp.pprint( cell_movie_map )
+
+    node_map = {}
+    node_keys = {}
+    movie_node_map = {}
+    all_movie_clusters = []
+    nodes = []
     edges = []
-
+    cliques = []
     graph = nx.Graph()
 
-    label_to_vertex = {}
+    # If true only add nodes if they are not strict subsets of existing nodes.
+    eliminate_subsets = False
 
-    for p_idx, partition in enumerate( inverse_covering ):
-        partition_clusters = get_clusters( partition['movies'], distances, epsilon )
-        print "Range from %s to %s had %s movies, which formed the following clusters:" % ( partition['range'][0], partition['range'][1], len( partition['movies'].keys() ) )
+    for cell_string in sorted( cell_movie_map ):
+        cell_movie_keys = cell_movie_map[cell_string].keys()
+                
+        cell_movies = { key : value for ( key, value ) in movies.items() if key in cell_movie_keys }
 
-        for idx, cluster in enumerate( partition_clusters ):
-            print "\tCluster %s" % idx
-            label = 'Cover %s: ' % ( p_idx ) + ', '.join( sorted( cluster.keys() ) )
+        cell_movie_clusters = get_clusters( cell_movies, distances, epsilon )
 
-            #graph.add_node( label )
-            #vertices.append( { "name" : label, "group" : p_idx } )
-            #label_to_vertex[label] = len( vertices ) - 1
+        if eliminate_subsets:
+            for cell_movie_cluster in cell_movie_clusters:
+                cluster_movies = cell_movie_cluster.keys()
 
-            #import pdb
-            #pdb.set_trace()
+                add_node = True
+                # Determine if this node is a subset of any existing
+                # node.
+                for existing_cluster in all_movie_clusters:
+                    subset_of_current = True
+                    for cluster_movie in cluster_movies:
+                        if cluster_movie not in existing_cluster:
+                            subset_of_current = False
+                            break
 
-            add_to_graph = True
-            for node, data in graph.nodes( data=True ):
-                same_as_existing = True
-                for movie in cluster.keys():
-                    if movie not in data:
-                        same_as_existing = False
-                for movie in data.keys():
-                    if movie not in cluster:
-                        same_as_existing = False
-                if same_as_existing:
-                    add_to_graph = False
-                    print "Skipping cluster: %s as identical to %s" % ( label, node )
-                    break
+                    if subset_of_current:
+                        add_node = False
+                        break
 
+                # Delete any existing nodes that are subsets of this
+                # node.
+                def is_subset( a, b ):
+                    for thing in a:
+                        if thing not in b:
+                            return False
+                    return True
 
-            if add_to_graph:
-                graph.add_node( label )
-                vertices.append( { "name" : label, "group" : p_idx, "elements" : len( cluster.keys() ), "shading" : float( partition['range'][0] ) / high } )
-                label_to_vertex[label] = len( vertices ) - 1
+                if add_node:
+                    all_movie_clusters = [ x for x in all_movie_clusters if not is_subset( x, cluster_movies ) ]
 
-            for movie in sorted( cluster.keys() ):
-                if add_to_graph:
-                    graph.node[label][movie] = True
-                print "\t\t%s" % movie
-                for node, data in graph.nodes( data=True ):
-                    if movie in data and node != label and add_to_graph:
-                        graph.add_edge( node, label )
-                        edges.append( { "source" : label_to_vertex[node], "target" : label_to_vertex[label], "value" : 1 } )
- 
+                    all_movie_clusters.append( cell_movie_cluster )
+        else:
+            all_movie_clusters += cell_movie_clusters
+
+    for cell_movie_cluster in all_movie_clusters:
+        cluster_movies = cell_movie_cluster.keys()
+        label = ', '.join( sorted( cluster_movies ) )
+                    
+        add_node = False
+        
+        if label not in node_map:
+            add_node = True
+
+        if add_node:
+            node_map[label] = len( nodes )
+            node_keys[len( nodes )] = cell_movie_cluster
+
+            shading = 0.5
+            if shading_key:
+                for cluster_movie in cluster_movies:
+                    movie_shading = movies[cluster_movie].get( shading_key, 0.5 )
+                    shading += movie_shading
+
+                shading = float( shading ) / len( cluster_movies )
+                shading = shading**2
+
+            nodes.append( { "name" : label, 
+                            "group" : 0,
+                            "elements" : len( cluster_movies ),
+                            "shading" : shading } )
+            graph.add_node( len( nodes ) - 1 )
+                    
+            for cluster_movie in cluster_movies:
+                if cluster_movie not in movie_node_map:
+                    movie_node_map[cluster_movie] = { label : True }
+                elif label not in movie_node_map[cluster_movie]:
+                    for dest_label in movie_node_map[cluster_movie].keys():
+                        edges.append( { "source" : node_map[label],
+                                        "target" : node_map[dest_label],
+                                        "value" : 1 } )
+                        graph.add_edge( node_map[label], node_map[dest_label] )
+
+                movie_node_map[cluster_movie][label] = True
                         
-        #nx.write_dot( graph, 'file.dot' )           
-        #positions = nx.graphviz_layout( graph, prog='neato' )
-        #positions = nx.spring_layout( graph )
-        #nx.draw( graph, pos=positions )
-        #nx.draw_random( graph )
-        #plt.show()
+    # We don't care about trivial cliques.
+    cliques = [ x for x in list( nx.find_cliques( graph ) ) if len( x ) > 2 ]
+                                                
+    # Things are only actually a clique for us if all connected nodes
+    # also contain a particular movie.
+    filtered_cliques = []
+    for clique in cliques:
+        #print "FOR CLIQUE:", clique
+        #print [ set( node_keys[x].keys() ) for x in clique ]
+        common_movies = reduce( set.intersection, [ set( node_keys[x].keys() ) for x in clique ] )
+        if len( common_movies ) > 0:
+            #print "COMMON MOVIES:", common_movies
+            filtered_cliques.append( clique )
+        else:
+            #print "NO COMMON MOVIES", width, step, epsilon
+            pass
 
-    #nx.draw_circle( graph )
+    return ( nodes, edges, filtered_cliques )
 
-    '''
-    positions = nx.spring_layout( graph, scale=1024 )
-    plt.figure( 1, figsize=(16,16) )
-    nx.draw( graph, positions, font_size=8 )
-    plt.show()
-    #plt.figure( num=None, figsize=( 8, 8 ), facecolor='w', edgecolor='k' )
-    #plt.savefig( "8x8_cover_width_%s_overlap_%s_epsilon_%0.02f.png" % ( width, overlap, epsilon ) )
-    #plt.figure( num=None, figsize=( 16, 16 ) )
-    #plt.savefig( "16x16_cover_width_%s_overlap_%s_epsilon_%0.02f.png" % ( width, overlap, epsilon ) )
-    '''
-    #import pdb
-    #pdb.set_trace()
-    plt.clf()
-    positions = nx.spring_layout( graph, k=.1, iterations=100 )
-    plt.figure( figsize=(16,9) )
-    nx.draw( graph, pos=positions )
-    filename = "cover_width_%s_overlap_%s_epsilon_%0.02f" % ( width, overlap, epsilon )
-    plt.savefig( outdir+"%s.png" % ( filename ) )
+def get_dimensions( measures, projection ):
+    '''Return a list of permutations whereby each element of measures
+    is removed and used as the second element of projection.'''
 
-    output_d3( filename, vertices, edges, "Cover width: %s, Overlap: %s, Epsilon: %0.02f" % ( width, overlap, epsilon ) )
+    result = []
 
+    for i in range( len( measures ) ):
+        dim_projections = [ projection, measures[i] ]
+        result.append( ( measures[:i]+measures[i+1:], dim_projections, measures[i] ) )
 
-movies = get_movies( movies_dir )
+    return result
 
-dist_funcs = {}
+def graph_html( outdir, mode="create", idx=0, label='', value=0, x='', y='' ):
+    if mode == "create":
+        f = open( outdir+"/graphs-%s-%s-%d.html" % ( x, y, idx ), 'w' )
+    else:
+        f = open( outdir+"/graphs-%s-%s-%d.html" % ( x, y, idx ), 'a' )
 
-register_dist_funcs( dist_funcs )
-
-normalize_movies( movies, dist_funcs, dimensions, stretch=True )
-
-import pprint
-pp = pprint.PrettyPrinter( indent=4 )
-
-# We could in principle have difference means of calculating our
-# distance.
-distance_func = cartesian_distance
-distances = compute_distances( movies, dist_funcs, distance_func )
-print "Distances:"
-pp.pprint( distances )
-
-#sys.exit( 0 )
-
-projection_func = eccentricity
-projection = compute_projection( distances, projection_func )
-#print "Eccentricities:"
-#pp.pprint( projection )
-
-for movie in projection.keys():
-    movies[movie]['eccentricity'] = projection[movie]
-
-projection_func = density
-projection = compute_projection( distances, projection_func )
-#print "Densities:"
-#pp.pprint( projection )
-
-for movie in projection.keys():
-    movies[movie]['density'] = projection[movie]
-
-normalize_movies( movies, dist_funcs, proj_dimensions, stretch=False )
-
-dispersion_plot( movies, dimensions + proj_dimensions )
-
-#sys.exit( 0 )
-
-#pp.pprint( movies )
-
-epsilon_candidates = cluster_epsilon_finder( movies, distances )
-print "Cluster epsilon candidates", epsilon_candidates
-epsilon = numpy.median( epsilon_candidates )*1.01
-#epsilon = 10
-#print "Epsilon selected as: (multiplied by 1.01 to handle rounding errors)", epsilon
-
-#sys.exit( 0 );
-
-'''
-Cluster epsilon candidates [0.22330063787069326, 0.2511306348925836, 0.2639388771565251, 0.2757646442235098, 0.27810011483160546, 0.2795511376769949, 0.2876920384218235, 0.2980822464462885, 0.3010822496806647, 0.3011736967534839, 0.30402253950588926, 0.30645304263645007, 0.3082525911098726, 0.31336536917538066, 0.32432085019718543, 0.3349683082062762, 0.33505624131577527, 0.3439685579800951, 0.3467663279329608, 0.3535920028747929, 0.36116422538226683, 0.37773496873138923, 0.38824711522521693, 0.3971227982049881, 0.4224647206477482, 0.4263873227981536, 0.43456196475858183, 0.4426104058207407, 0.44384296209962476, 0.4471198592958267, 0.4561554334225029, 0.5119670973390952, 0.519554668999664, 0.5209469993664607, 0.5302172507788592, 0.5516442485050557, 0.5683377532469294, 0.571645231097002, 0.5771026529011121, 0.5802623122316142, 0.608676320014425, 0.7184419322194331, 0.7437195899701966, 0.8663661658807281, 0.8740249567328455, 0.9483837188469724]
-'''
-
-
-#epsilons = [ 0.32870830977624693, 0.3913397549356695, 0.5444156540919776,  0.9951102608430269 ]
-
-#epsilons = [ 0.35, 0.55 ]
-
-# Decent when including the last metric.
-epsilons = [ .3, .4, .5, .6, .7, .8, .9, 1 ]
-
-#epsilons = [ .7 ]
-
-# DEBUG
-#epsilons = [ x*1.01 for x in epsilon_candidates ]
-
-for epsilon in epsilons:
-
-    clusters = get_clusters( movies, distances, epsilon )
-
-    f = open( outdir+"graphs-%d.html" % ( 10*epsilon ), 'w' )
-    html_front = '''
+    if mode == "create":
+        html_front = '''
 <!DOCTYPE html>
+<head>
 <meta charset="utf-8">
 <style>
 
@@ -769,247 +818,192 @@ for epsilon in epsilons:
 }
 
 </style>
-<body>
-<script src="http://d3js.org/d3.v3.min.js"></script>
-<script src="graph.js"></script>
 '''
-    f.write( html_front )
-    f.close()
-
-    movie_clusters = {}
-    for movie in movies.keys():
-        done = False
-        for ( idx, cluster ) in enumerate( clusters ):
-            if movie in cluster:
-                movie_clusters[movie] = idx
-                done = True
-                break
-        if not done:
-            print "ERROR - no cluster idx found for:", movie
-            sys.exit( 1 )
-    #pp.pprint( movie_clusters )
-
-    cluster_movie_labels = {}
-    for ( idx, cluster ) in enumerate( clusters ):
-        cluster_movie_labels[idx] = cluster
-    pp.pprint( cluster_movie_labels )
-
-    #for width in [ .125, .25, float( 1 )/3, .5, float( 2 )/3, 0.75, 0.8]:
-    for width in [ 1.0/160, 1.0/80, 1.0/40, 1.0/20, .1, .2, .4, .8 ]:
-#    for width in [ .1 ]:
-#    for slide in [ .5, .6, .7, .8, .9 ]:
-
-#    for width in [ .75, .5, .3 ]:
-    #for width in [ .45, .6, .75 ]:
-        # Slide is intended to be >= 0.5 - by design and conventional
-        # practice we don't want more than 2 regions overlapping in one
-        # dimension.
-#        for slide in [ .9, .7, .5 ]:
-        for slide in [ .5, .75, .9 ]:
-        #for slide in [ .7 ]:
-            # We consider intervals of width whose overlaps are made by
-            # sliding the initial point slide percentage of width along.
-            #
-            # Start at 0 and proceed until we start an
-            # interval >=1
-            start = 0
-            end = 1
-            step = width * slide
-
-            movie_cell_map = {}
-            cell_movie_map = {}
-
-            #print "Step is:", step
-
-            for movie in sorted( movies.keys() ):
-                # We build an array of arrays, the i'th position of which
-                # is the array of cells this movie is in for dimension i.
-                movie_cells = []
-
-                for dim in proj_dimensions:
-                    # Each movie is in 1 or 2 cells for each dimension.
-                    dimension_cells = []
-                    coordinate = movies[movie][dim]
-
-                    if dim in dist_funcs:
-                        value = dist_funcs[dim]( zero[dim], coordinate )
-                    else:
-                        value = default_dist( zero[dim], coordinate )
-
-                    #print "Coordinate is:", coordinate
-                    #print "Value is:", value
-
-                    # Get the latest cell who starts at or before value.
-                    first_cell = int( math.floor( float( value ) / step) )
-
-                    # See if this point is also in the prior cell.
-                    if first_cell > 0 and step*(first_cell - 1) + width > value:
-                        dimension_cells.append( first_cell - 1 )
-
-                    dimension_cells.append( first_cell )
-                
-                    movie_cells.append( dimension_cells )
-
-                #print "MOVIE CELLS:"
-                #pp.pprint( movie_cells )
-
-                # Compose a list of cell keys where the cell key is of
-                # the form: a_b_c_d..._z where a, b, c are cells this
-                # movie is found in in each of the a..z dimentions
-                next_cell_keys = [ [x] for x in movie_cells[0] ]
-                for dim_cells in movie_cells[1:]:
-                    cell_keys = next_cell_keys
-                    next_cell_keys = []
-                    for dim_cell in dim_cells:
-                        for cell_key in cell_keys:
-                            next_cell_keys.append( cell_key + [dim_cell] )
-
-                cell_keys = next_cell_keys
-
-                #print "CELL KEYS:"
-                #pp.pprint( cell_keys )
-                
-                for cell_key in cell_keys:
-                    cell_string = '_'.join( [ str( x ) for x in cell_key ] )
-
-                    #print "cell_key:", cell_key
-                    #print "cell_string:", cell_string
-
-                    if movie in movie_cell_map:
-                        movie_cell_map[movie][cell_string] = True
-                    else:
-                        movie_cell_map[movie] = { cell_string : True }
-                    if cell_string in cell_movie_map:
-                        cell_movie_map[cell_string][movie] = True
-                    else:
-                        cell_movie_map[cell_string] = { movie : True }
-
-                #pp.pprint( movie_cell_map )
-            
-            #pp.pprint( movie_cell_map )
-            #pp.pprint( cell_movie_map )
-
-            node_map = {}
-            node_keys = {}
-            movie_node_map = {}
-            all_movie_clusters = []
-            nodes = []
-            edges = []
-            cliques = []
-            graph = nx.Graph()
-
-            # If true only add nodes if they are not strict subsets of existing nodes.
-            eliminate_subsets = False
-
-            for cell_string in sorted( cell_movie_map ):
-                cell_movie_keys = cell_movie_map[cell_string].keys()
-                
-                cell_movies = { key : value for ( key, value ) in movies.items() if key in cell_movie_keys }
-
-                cell_movie_clusters = get_clusters( cell_movies, distances, epsilon )
-
-                if eliminate_subsets:
-                    for cell_movie_cluster in cell_movie_clusters:
-                        cluster_movies = cell_movie_cluster.keys()
-
-                        add_node = True
-                        # Determine if this node is a subset of
-                        # any existing node.
-                        for existing_cluster in all_movie_clusters:
-                            subset_of_current = True
-                            for cluster_movie in cluster_movies:
-                                if cluster_movie not in existing_cluster:
-                                    subset_of_current = False
-                                    break
-                            if subset_of_current:
-                                add_node = False
-                                break
-                        # Delete any existing nodes that are
-                        # subsets of this node.
-                        def is_subset( a, b ):
-                            for thing in a:
-                                if thing not in b:
-                                    return False
-                            return True
-                        if add_node:
-                            all_movie_clusters = [ x for x in all_movie_clusters if not is_subset( x, cluster_movies ) ]
-
-                            all_movie_clusters.append( cell_movie_cluster )
-                else:
-                    all_movie_clusters += cell_movie_clusters
-
-            for cell_movie_cluster in all_movie_clusters:
-                cluster_movies = cell_movie_cluster.keys()
-                label = ', '.join( sorted( cluster_movies ) )
-                    
-                add_node = False
-
-                if label not in node_map:
-                    add_node = True
-
-                if add_node:
-                    node_map[label] = len( nodes )
-                    node_keys[len( nodes )] = cell_movie_cluster
-
-                    shading = 0
-                    for cluster_movie in cluster_movies:
-                        movie_shading = 0
-                        for dim in proj_dimensions:
-                            movie_shading += default_dist( zero[dim], movies[cluster_movie][dim] )**2
-                        movie_shading = movie_shading**0.5
-                        movie_shading = float( movie_shading ) / len( proj_dimensions )**0.5
-                        shading += movie_shading
-                    shading = float( shading ) / len( cluster_movies )
-                    shading = shading**2
-
-                    nodes.append( { "name" : label, 
-                                    "group" : 0, #movie_clusters[cluster_movies[0]],
-                                    "elements" : len( cluster_movies ),
-                                    "shading" : shading } )
-                    graph.add_node( len( nodes ) - 1 )
-                    
-
-                    for cluster_movie in cluster_movies:
-                        if cluster_movie not in movie_node_map:
-                            movie_node_map[cluster_movie] = { label : True }
-                        elif label not in movie_node_map[cluster_movie]:
-                            for dest_label in movie_node_map[cluster_movie].keys():
-                                edges.append( { "source" : node_map[label],
-                                                "target" : node_map[dest_label],
-                                                "value" : 1 } )
-                                graph.add_edge( node_map[label], node_map[dest_label] )
-
-                        movie_node_map[cluster_movie][label] = True
-                        
-            # We don't care about trivial cliques.
-            cliques = [ x for x in list( nx.find_cliques( graph ) ) if len( x ) > 2 ]
-                                                
-            # Things are only actually a clique for us if all
-            # connected nodes also contain a particular movie.
-            print "DOING CLIQUES"
-            filtered_cliques = []
-            for clique in cliques:
-                print "FOR CLIQUE:", clique
-                #print [ set( node_keys[x].keys() ) for x in clique ]
-                common_movies = reduce( set.intersection, [ set( node_keys[x].keys() ) for x in clique ] )
-                if len( common_movies ) > 0:
-                   print "COMMON MOVIES:", common_movies
-                   filtered_cliques.append( clique )
-                else:
-                    print "NO COMMON MOVIES", width, step, epsilon
-
-
-            filename = "cover_width_%s_overlap_%s_epsilon_%0.02f" % ( width, step, epsilon )
-
-            output_d3( filename, nodes, edges, filtered_cliques, "Width: %s, Step: %s, Epsilon: %0.02f" % ( width, step, epsilon ), "graphs-%d.html" % ( 10*epsilon ) )
-
-
-#    make_graph( 0, 74, width, 2, epsilon )
-#    make_graph( 13000, 33950, width, 4, epsilon )
-
-    f = open( outdir+"graphs-%d.html" % ( 10*epsilon ), 'a' )
-    html_back = '''
+        html_front += '  <title>%s %s Projection, %s=%s</title>\n' % ( x.capitalize(), y.capitalize(), label.capitalize(), value )
+        html_front += '''  <script src="http://d3js.org/d3.v3.min.js"></script>
+  <script src="graph.js"></script>
+</head>
+<body>
+  <h1>%s %s Projection, %s=%s</h1>
+  <p><a href="index.html">Back to index</a></p>
+  <table border="1px">
+''' % ( x.capitalize(), y.capitalize(), label.capitalize(), value )
+        f.write( html_front )
+    elif mode == "start_row":
+        html_body = "  <tr>\n"
+        f.write( html_body )
+    elif mode == "end_row":
+        html_body = "  </tr>\n"
+        f.write( html_body )
+    elif mode == "end":
+        html_back = '''
+  </table>
 </body>
 '''
-    f.write( html_back )
+        f.write( html_back )
+
     f.close()
+
+def index_html( outdir, mode="create", idx=0, label='', value=0, x='', y='' ):
+    if mode == "create":
+        f = open( outdir+"/index.html", 'w' )
+        html_front = '''
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8" />
+  <style>
+
+.node {
+  stroke: #fff;
+  stroke-width: 1.5px;
+}
+
+.link {
+  stroke: #999;
+  stroke-opacity: .6;
+}
+
+  </style>
+  <title>Story Topology</title>
+</head>
+<body>
+  <ul>
+'''
+        f.write( html_front )
+        f.close()
+    elif mode == "append":
+        f = open( outdir+"/index.html", 'a' )
+        li = '<li><a href="graphs-%s-%s-%d.html">%s %s Projection, %s=%s</a></li>\n' % ( x, y, idx, x.capitalize(), y.capitalize(), label.capitalize(), value )
+        f.write( li )
+        f.close()
+    elif mode == "end":
+        f = open( outdir+"/index.html", 'a' )
+        html_back = '''  </ul>
+</body>
+'''
+        f.write( html_back )
+        f.close()
+
+if __name__=="__main__":
+
+    # GOALS:
+    #
+    # 1. Print everything in a table arranged by eccentricity, width.
+    #    * Pages are arranged by step.
+    #    * Pages have URL back to parent.
+    #
+    # 2. Make N sets of charts, one for eccentricity + dim_i for measure I.
+    #   * Set proj_title appropriately.
+
+    # Read in movie JSON files.
+    movies_dir = "../example-scripts/parsed"
+
+    dist_funcs = {}
+    register_dist_funcs( dist_funcs )
+
+    partitions = [ 'released', 'blacklist', 'all' ]
+
+    for partition in partitions:
+        movies = get_movies( movies_dir, partition )
+
+        outdir = "/wintmp/movie/graph12/%s/" % ( partition )
+        #outdir = "/home/mhayward/movie/RackStatic/public/graph3/%s/" % ( partition )
+        plotdir = '/wintmp/movie/plots/graph12/%s/' % ( partition )
+
+        if not os.path.isdir( outdir ):
+            os.makedirs( outdir )
+        if not os.path.isdir( plotdir ):
+            os.makedirs( plotdir ) 
+
+        shutil.copy( os.path.split( __file__ )[0] + '/graph-new.js', "%s/graph.js" % ( outdir ) )
+
+        normalize_movies( movies, dist_funcs, dimensions, stretch=True )
+
+        index_html( outdir, "create" )
+
+        for ( dim, proj, current_proj ) in get_dimensions( dimensions, 'eccentricity' ):
+            # We could in principle have difference means of calculating our
+            # distance.
+            print "Working on dimensions: %s, %s" % ( 'eccentricity', current_proj )
+            distance_func = cartesian_distance
+            distances = compute_distances( movies, dist_funcs, distance_func, dim )
+            #print "Distances:"
+            #pp.pprint( distances )
+
+            projection_func = eccentricity
+            projection = compute_projection( distances, projection_func )
+
+            for movie in projection.keys():
+                movies[movie]['eccentricity'] = projection[movie]
+
+            projection_func = density
+            projection = compute_projection( distances, projection_func )
+
+            for movie in projection.keys():
+                movies[movie]['density'] = projection[movie]
+
+            normalize_movies( movies, dist_funcs, proj, stretch=False )
+
+            dispersion_plot( movies, proj + dim, outdir )
+            projection_plot( movies, proj, title=" vs ".join( proj ), outdir=outdir )
+
+            # We use the maximum difference between any two sequential
+            # data points along one of our projection dimension to
+            # help us pick our steps.
+            #
+            # By ensuring our widths are at least 2*max_proj_diffs we
+            # ensure that each point in our space is in a tile with at
+            # least one other point when step = 0.5.
+            max_proj_diffs = -1
+            for p in proj:
+                ps = [ r_dist( movies[k], p ) for k in movies.keys() ]
+                ps.sort()
+                p_diffs = [ ps[x] - ps[x-1] for x in range( 1, len( ps ) ) ]
+                p_diff = max( p_diffs )
+                print "Maximum %s diff = %s" % ( p, p_diff )
+                if p_diff > max_proj_diffs:
+                    max_proj_diffs = p_diff
+
+            epsilon_candidates = cluster_epsilon_finder( movies, distances )
+            print "Cluster epsilon candidates", epsilon_candidates
+            # NOTE: Just because the larges epsilon candidate is X
+            # does not mean any two points will be linked together
+            # with X in our graph - as we consider subsets of the
+            # graph.  The ensure everything gets lumped together you'd
+            # have to make epsilon the largest distance between any
+            # two points.
+            max_epsilon = epsilon_candidates[-1]
+            epsilons = [ max_epsilon / 3 , max_epsilon / 2, 2 * max_epsilon / 3, max_epsilon ]
+            epsilons.reverse()
+            widths = [ max_proj_diffs / 16, max_proj_diffs / 8, max_proj_diffs / 4, max_proj_diffs, max_proj_diffs*2 ]
+            widths.reverse()
+            slides = [ .5, .75, .9 ]
+
+            print "Steps   : %s" % ( slides )
+            print "Widths  : %s" % ( widths )
+            print "Epsilons: %s" % ( epsilons )
+
+            for ( step_idx, slide ) in enumerate( slides ):
+                index_html( outdir, "append", step_idx, 'slide', slide, 'eccentricity', current_proj )
+                graph_html( outdir, "create", step_idx, 'slide', slide, 'eccentricity', current_proj )
+
+                for epsilon in epsilons:
+                    graph_html( outdir, "start_row", step_idx, 'slide', slide, 'eccentricity', current_proj )
+                    for width in widths:
+                        shading_key = None
+                        if partition == 'released':
+                            shading_key = 'rt'
+                        nodes, edges, filtered_cliques = make_graphs( movies, distances, dim, proj, epsilon, width, slide, shading_key = shading_key )
+
+                        filename = "_".join( [ 'eccentricity', current_proj, "%0.02f" % ( slide ), "%0.02f" % ( width ), "%0.02f" % ( epsilon ) ] ) + ".json"
+
+                        print "Creating output for: %s-%s" % ( partition, filename )
+
+                        output_d3( outdir, filename, nodes, edges, filtered_cliques, "Width: %s, Epsilon: %0.02f" % ( width, epsilon ), "graphs-%s-%s-%d.html" % ( 'eccentricity', current_proj, step_idx ) )
+                        
+                    graph_html( outdir, "end_row", step_idx, 'slide', slide, 'eccentricity', current_proj )
+                
+                graph_html( outdir, "end", step_idx, 'slide', slide, 'eccentricity', current_proj )
+                
+    index_html( outdir, "end" )
+

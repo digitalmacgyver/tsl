@@ -1,5 +1,6 @@
 #!/usr/bin/python
 
+import csv
 import json
 import math
 import nltk
@@ -31,10 +32,8 @@ scripts = [
     #( 'Ratatouille', '../example-scripts/ratatouille.txt' ),
     # Questionable formatting
     #( 'Analyze That', '../example-scripts/analyze_that.txt' ),
-    #( 'Batman Begins', '../example-scripts/batman_begins.txt' ),
     #( 'Death to Smoochy', '../example-scripts/death_to_smoochy.txt' ),
     #( 'Get Carter', '../example-scripts/get_carter.txt' ),
-    #( 'Gothika', '../example-scripts/gothika.txt' ),
     #( 'Groundhogs Day', '../example-scripts/groundhogs_day.txt' ),
     #( 'Red Planet', '../example-scripts/red_planet.txt' ),
     #( 'Smurfs', '../example-scripts/smurfs.txt' ),
@@ -62,7 +61,7 @@ scripts = [
     #( 'Lone Survivor', '../example-scripts/lone_survivor.txt' ),
     #( 'Kill Your Darlings', '../example-scripts/kill_your_darlings.txt' ),
     #( 'Kick Ass 2', '../example-scripts/kick_ass_2.txt' ),
-    #( '1969 A Space Odyssy', '../example-scripts/1969_a_space_odyssey.txt' ),
+    #( '1969 A Space Odyssey', '../example-scripts/1969_a_space_odyssey.txt' ),
     #( 'The Great Gatsby', '../example-scripts/the_great_gatsby.txt' ),
     #( 'The Invisible Woman', '../example-scripts/the_invisible_woman.txt' ),
     #( 'The Past', '../example-scripts/the_past.txt' ),
@@ -115,7 +114,84 @@ scripts = [
     #( 'Man of Sorrow', '../example-scripts/man_of_sorrow.txt' ),
     #( 'Nicholas', '../example-scripts/nicholas.txt' ),
     #( 'Patient Z', '../example-scripts/patient_z.txt' ),
+    ( 'Beautiful Creatures', '../example-scripts/beautiful_creatures.txt' ),
+    ( 'Section 6', '../example-scripts/section_6.txt' ),
+    ( 'Seed', '../example-scripts/seed.txt' ),
+    ( 'Shovel Buddies', '../example-scripts/shovel_buddies.txt' ),
+    ( 'Spotlight', '../example-scripts/spotlight.txt' ),
+    ( 'Superbrat', '../example-scripts/superbrat.txt' ),
+    ( 'Sweetheart', '../example-scripts/sweetheart.txt' ),
+    ( 'The Shark is not Working', '../example-scripts/the_shark_is_not_working.txt' ),
     ]
+
+def populate_release_stats( name, output ):
+    released = {
+        'Chinatown' : { 'rt' : .98 }, 
+        'Dune' : { 'rt' : .55 }, 
+        'Ghostbusters' : { 'rt' : .97 }, 
+        'The Matrix' : { 'rt' : .87 }, 
+        'Good Will Hunting' : { 'rt' : 0.97 }, 
+        'The Book of Eli' : { 'rt' : 0.48 }, 
+        'Starwars' : { 'rt' : 0.93 }, 
+        'Alien' : { 'rt' : 0.97 }, 
+        'Vertigo' : { 'rt' : 0.98 }, 
+        'Terminator 2' : { 'rt' : 0.92 }, 
+        'Ratatouille' : { 'rt' : 0.96 }, 
+        'Analyze That' : { 'rt' : 0.27 }, 
+        'Batman Begins' : { 'rt' : 0.85 }, 
+        'Death to Smoochy' : { 'rt' : 0.42 }, 
+        'Get Carter' : { 'rt' : 0.12 }, 
+        'Gothika' : { 'rt' : 0.15 }, 
+        'Groundhogs Day' : { 'rt' : 0.97 }, 
+        'Red Planet' : { 'rt' : 0.14 }, 
+        'Smurfs' : { 'rt' : 0.22 }, 
+        'Sweet November' : { 'rt' : 0.16 }, 
+        'Taking Lives' : { 'rt' : 0.22 }, 
+        'Thirteen Ghosts' : { 'rt' : 0.14 }, 
+        '42' : { 'rt' : 0.79 }, 
+        'Frozen' : { 'rt' : 0.89 }, 
+        'Fruitvale Station' : { 'rt' : 0.93 }, 
+        'All is Lost' : { 'rt' : 0.93 }, 
+        'Amour' : { 'rt' : 0.93 }, 
+        'Argo' : { 'rt' : 0.96 }, 
+        'August Osage County' : { 'rt' : 0.64 }, 
+        'Celest and Jesse Forever' : { 'rt' : 0.7 }, 
+        'Chronicle' : { 'rt' : 0.85 }, 
+        'Dallas Buyers Club' : { 'rt' : 0.93 }, 
+        'Despicable Me 2' : { 'rt' : 0.74 }, 
+        'The Wolf of Wall Street' : { 'rt' : .76 }, 
+        'Prince of Persia' : { 'rt' : 0.36 }, 
+        'Oz the Great and Powerful' : { 'rt' : 0.59 }, 
+        'Nebraska' : { 'rt' : 0.92 }, 
+        'Monsters University' : { 'rt' : 0.78 }, 
+        'Magic Mike' : { 'rt' : 0.8 }, 
+        'Lone Survivor' : { 'rt' : 0.75 }, 
+        'Kill Your Darlings' : { 'rt' : 0.76 }, 
+        'Kick Ass 2' : { 'rt' : 0.29 }, 
+        'The Great Gatsby' : { 'rt' : 0.49 }, 
+        'The Invisible Woman' : { 'rt' : 0.76 }, 
+        'The Past' : { 'rt' : 0.94 }, 
+        'Twilight' : { 'rt' : 0.49 }, 
+        'Wadjda' : { 'rt' : 0.99 }, 
+        'Woman in Black' : { 'rt' : 0.66 }, 
+        'Prisoners' : { 'rt' : 0.82 }, 
+        'Real Steel' : { 'rt' : 0.6 }, 
+        'Rush' : { 'rt' : 0.89 }, 
+        'Rust and Bone' : { 'rt' : 0.82 }, 
+        'Skyfall' : { 'rt' : 0.92 }, 
+        'Smashed' : { 'rt' : 0.84 }, 
+        'Snow White and the Huntsman' : { 'rt' : 0.48 }, 
+        'The Croods' : { 'rt' : 0.7 }, 
+        'Beautiful Creatures' : { 'rt' : 0.46 },
+        }
+
+    if name not in released:
+        #raise Exception( "ERROR - NO DATA FOR %s" % ( name ) )
+        pass
+    else:
+        output['rt'] = released[name]['rt']
+
+    return
 
 def process_script( script ):
     #import pdb
@@ -148,6 +224,8 @@ def process_script( script ):
 
     output = {}
 
+    populate_release_stats( name, output )
+
     output['title'] = name
 
     top_characters = top_presences( Presences, noun_types=[CHARACTER] )
@@ -164,6 +242,9 @@ def process_script( script ):
         print text.collocations()
 
     # Distinct words.
+    #import pdb
+    #pdb.set_trace()
+        
     all_words = nltk.wordpunct_tokenize( raw_script )
     word_tokens = [ t for t in all_words if re.search( r'\w', t ) ]
     text = nltk.Text( word_tokens )
@@ -579,5 +660,28 @@ def output_top_interactions( interactions, filename ):
         f.write( "\n" )
     f.close()
 
+f = open( "/wintmp/movies.csv", 'r' )
+movie_csv = csv.reader( f )
+
+release_stats = {}
+
+#for row in movie_csv:
+#    if row[6] in release_stats:
+#        print "ERROR - SECOND COPY OF:", row[6]
+#    release_stats[row[6]] = {
+#        'date' : row[0],
+#        'domestic_box' : row[1],
+#        'international_box' : row[2],
+#        'domestic_dvd_sales' : row[3],
+#        'production_budget' : row[4],
+#        'rt' : row[5],
+#        'name' : row[6],
+#        'key' : row[7],
+#        }
+
+#import pdb
+#pdb.set_trace()
+
 for script in scripts:
     process_script( script )
+
