@@ -208,7 +208,8 @@ def get_movies( movies_dir, partition="all" ):
                 'Smashed', 
                 'Snow White and the Huntsman', 
                 'The Croods', 
-                'Beautiful Creatures'
+                'Beautiful Creatures',
+                'The Killing Floor'
                 ]
             
             if partition == "released" and metrics['title'] not in released:
@@ -230,7 +231,6 @@ def normalize_movies( movies, dist_funcs, dimensions, stretch = False ):
     values occupy the range from 0-1 by subtracting min_value from
     each value first.
     '''
-
     # Calculate the maximum and minimum value.
     max_dimensions = {}
     min_dimensions = {}
@@ -262,13 +262,25 @@ def normalize_movies( movies, dist_funcs, dimensions, stretch = False ):
                 new_value = r_dist( movie, dim )
             
                 if dim == 'character_x_speakers':
-                    movie[dim] = [ { 'speakers' : x['speakers'] * ( new_value - min_dimensions[dim] ) / new_value } for x in movie[dim] if new_value != 0 ]
+                    if new_value != 0:
+                        movie[dim] = [ { 'speakers' : x['speakers'] * ( new_value - min_dimensions[dim] ) / new_value } for x in movie[dim] ]
+                    else:
+                        movie[dim] = zero[dim]
                 elif dim == 'scenes_percentage_for_characters':
-                    movie[dim] = [ { 'percentage_of_scenes' : x['percentage_of_scenes'] * ( new_value - min_dimensions[dim] ) / new_value } for x in movie[dim] if new_value != 0 ]
+                    if new_value != 0:
+                        movie[dim] = [ { 'percentage_of_scenes' : x['percentage_of_scenes'] * ( new_value - min_dimensions[dim] ) / new_value } for x in movie[dim] ]
+                    else:
+                        movie[dim] = zero[dim]
                 elif dim == 'percent_dialog_by_character':
-                    movie[dim] = [ { 'percent_dialog' : x['percent_dialog'] * ( new_value - min_dimensions[dim] ) / new_value } for x in movie[dim] if new_value != 0 ]
+                    if new_value != 0:
+                        movie[dim] = [ { 'percent_dialog' : x['percent_dialog'] * ( new_value - min_dimensions[dim] ) / new_value } for x in movie[dim] ]
+                    else:
+                        movie[dim] = zero[dim]
                 elif dim == 'dialog_words_score':
-                    movie[dim] = [ x * ( new_value - min_dimensions[dim] ) / new_value for x in movie[dim] if new_value != 0 ]
+                    if new_value != 0:
+                        movie[dim] = [ x * ( new_value - min_dimensions[dim] ) / new_value for x in movie[dim] ]
+                    else:
+                        movie[dim] = zero[dim]
                 else:
                     movie[dim] = value - min_dimensions[dim]
 
@@ -573,7 +585,7 @@ def output_d3( outdir, filename, vertices, edges, cliques, header, html_filename
       </p>
       <p id="%s"></p>
       <script>
-        script_graph( "%s", "#%s", 432, 432, false );
+        script_graph( "%s", "#%s", 540, 540, false );
       </script>
     </td>
 ''' % ( header, element, filename, element )
@@ -906,9 +918,9 @@ if __name__=="__main__":
     for partition in partitions:
         movies = get_movies( movies_dir, partition )
 
-        outdir = "/wintmp/movie/graph12/%s/" % ( partition )
+        outdir = "/wintmp/movie/graph13/%s/" % ( partition )
         #outdir = "/home/mhayward/movie/RackStatic/public/graph3/%s/" % ( partition )
-        plotdir = '/wintmp/movie/plots/graph12/%s/' % ( partition )
+        plotdir = '/wintmp/movie/plots/graph13/%s/' % ( partition )
 
         if not os.path.isdir( outdir ):
             os.makedirs( outdir )
@@ -942,7 +954,7 @@ if __name__=="__main__":
             for movie in projection.keys():
                 movies[movie]['density'] = projection[movie]
 
-            normalize_movies( movies, dist_funcs, proj, stretch=False )
+            normalize_movies( movies, dist_funcs, proj, stretch=True )
 
             dispersion_plot( movies, proj + dim, outdir )
             projection_plot( movies, proj, title=" vs ".join( proj ), outdir=outdir )

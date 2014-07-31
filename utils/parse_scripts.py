@@ -118,6 +118,14 @@ scripts = [
     #( 'Superbrat', '../example-scripts/superbrat.txt' ),
     #( 'Sweetheart', '../example-scripts/sweetheart.txt' ),
     #( 'The Shark is not Working', '../example-scripts/the_shark_is_not_working.txt' ),
+    #( 'The Line', '../example-scripts/the_line.txt' ),
+    #( 'The Killing Floor', '../example-scripts/the_killing_floor.txt' ),
+    #( 'The Fixer', '../example-scripts/the_fixer.txt' ),
+    #( 'The End of the Tour', '../example-scripts/the_end_of_the_tour.txt' ),
+    #( 'The Company Man', '../example-scripts/the_company_man.txt' ),
+    #( 'The Boy and His Tiger', '../example-scripts/the_boy_and_his_tiger.txt' ),
+    #( 'The Autopsy of Jane Doe', '../example-scripts/the_autopsy_of_jane_doe.txt' ),
+    #( 'Tchaikovskys Requiem', '../example-scripts/tchaikovskys_requiem.txt' ),
     ]
 
 
