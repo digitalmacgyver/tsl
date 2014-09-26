@@ -918,8 +918,8 @@ if __name__=="__main__":
     for partition in partitions:
         movies = get_movies( movies_dir, partition )
 
-        outdir = "/wintmp/movie/graph13/%s/" % ( partition )
-        #outdir = "/home/mhayward/movie/RackStatic/public/graph3/%s/" % ( partition )
+        #outdir = "/wintmp/movie/graph13/%s/" % ( partition )
+        outdir = "/home/mhayward/movie/RackStatic/public/graph4/%s/" % ( partition )
         plotdir = '/wintmp/movie/plots/graph13/%s/' % ( partition )
 
         if not os.path.isdir( outdir ):
